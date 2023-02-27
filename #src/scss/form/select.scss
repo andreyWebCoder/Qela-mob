@@ -1,0 +1,157 @@
+/* Кастомный SELECT */
+.select {
+	position: relative;
+	background-color: $form-select-bg;
+	width: 100%;
+
+	// select multiplae
+	&_multiple {
+		.select__option {
+			position: relative;
+			padding-left: 40px;
+
+			&::after {
+				content: '';
+				width: $form-select-checbox-size;
+				height: $form-select-checbox-size;
+				border: $form-select-border-width solid $form-select-border-color;
+				position: absolute;
+				border-radius: $form-select-checbox-radius;
+				top: 50%;
+				left: 15px;
+				transform: translateY(-50%);
+			}
+
+			&::before {
+				content: '';
+				font-family: 'icons';
+				content: "\e924";
+				position: absolute;
+				left: 16px;
+				color: $form-select-checbox-color;
+				opacity: 0;
+				transition: opacity 0.3s ease 0s;
+			}
+		}
+	}
+
+	@media (any-hover:hover) {
+		&:hover {
+			.select__title {
+				border-color: $black;
+			}
+
+			.select__options {
+				border-color: $black;
+			}
+		}
+	}
+
+
+	// .select__itemexample
+	&__item {
+		position: relative;
+	}
+
+	// .select__title
+	&__title {
+		border: $form-select-border-width solid $form-select-border-color;
+		border-radius: $form-select-border-radius;
+		color: $form-select-color;
+		cursor: pointer;
+		transition: border-color 0.3s ease 0s;
+	}
+
+	// .select__value
+	&__value {
+		display: flex;
+		font-size: $form-select-font-size;
+		height: 40px;
+		padding: 0px 16px;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+
+
+		span {
+			height: auto;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+		}
+
+		&:before {
+			content: "\e903";
+			font-family: 'icons';
+			display: inline-block;
+			transition: transform 0.3s ease 0s;
+			font-size: $form-select-font-size;
+			color: $form-select-indicator-color;
+		}
+	}
+
+	// .select__options
+	&__options {
+		color: $form-select-color;
+		position: absolute;
+		top: 29px;
+		border-radius: 0 0 8px 8px;
+		min-width: 100%;
+		left: 0;
+		background-color: $form-select-bg;
+		border-top: 0;
+		border: $form-select-border-width solid $form-select-border-color;
+		border-top: 0;
+		font-size: $form-select-font-size;
+		padding: 10px 0px 5px 0px;
+		transition: border-color 0.3s ease 0s;
+	}
+
+	// .select__option
+	&__option {
+		cursor: pointer;
+		padding: 12px 15px;
+		margin: 0px 0px 0px 0px;
+
+		@media (any-hover:hover) {
+			&:hover {
+				background-color: $gray-100;
+			}
+		}
+
+		&._selected {
+			background-color: $form-select-options-selected;
+
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	&._active {
+		z-index: 5;
+
+		.select__title {
+			border-color: $form-select-focus-border-color;
+		}
+
+		.select__options {
+			border-color: $form-select-focus-border-color;
+		}
+
+		.select__value {
+			color: $black;
+
+			&:before {
+				transform: rotate(-180deg);
+			}
+		}
+
+		.select__options {
+			display: block;
+		}
+	}
+}
+
+/* Кастомный SELECT */

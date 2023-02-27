@@ -1,0 +1,60 @@
+.qela-reg {
+	.qela-buttons {
+		margin: 84px 0px 0px 0px;
+	}
+}
+
+.qela-enter {
+	.qela-logo {
+		margin: 120px 0px 90px 0px;
+	}
+
+	.qela-buttons {
+		margin: 70px 0px 0px 0px;
+	}
+}
+
+.qela-form {
+	.link-text {
+		text-decoration: none;
+		font-weight: 500;
+		line-height: 19px;
+		letter-spacing: -0.15px;
+	}
+
+	.text {
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		letter-spacing: -0.15px;
+		margin-top: 30px;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.form-check {
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+
+	.qela-buttons {
+		display: inline-flex;
+		justify-content: end;
+		flex-direction: column;
+	}
+
+	button {
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+}
+
+.gela-form-name {
+	font-weight: 600;
+	line-height: 21px;
+	color: $black-700;
+}

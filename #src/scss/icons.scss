@@ -1,0 +1,176 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 24px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ic-"],
+[class*="ic-"] {
+
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+.ic-bell:before {
+	content: "\e900";
+}
+
+.ic-box-arrow:before {
+	content: "\e901";
+}
+
+.ic-calendar:before {
+	content: "\e902";
+}
+
+.ic-chevron:before {
+	content: "\e903";
+}
+
+.ic-city:before {
+	content: "\e904";
+}
+
+.ic-clock:before {
+	content: "\e905";
+}
+
+.ic-cloze:before {
+	content: "\e906";
+}
+
+.ic-commit:before {
+	content: "\e907";
+}
+
+.ic-delete:before {
+	content: "\e908";
+}
+
+.ic-dollar:before {
+	content: "\e909";
+}
+
+.ic-dots:before {
+	content: "\e90a";
+}
+
+.ic-dots-2:before {
+	content: "\e90b";
+}
+
+.ic-download:before {
+	content: "\e90c";
+}
+
+.ic-edit:before {
+	content: "\e90d";
+}
+
+.ic-files:before {
+	content: "\e90e";
+}
+
+.ic-jostik:before {
+	content: "\e90f";
+}
+
+.ic-latter:before {
+	content: "\e910";
+}
+
+.ic-lattice:before {
+	content: "\e911";
+}
+
+.ic-mail:before {
+	content: "\e912";
+}
+
+.ic-map:before {
+	content: "\e913";
+}
+
+.ic-mark:before {
+	content: "\e914";
+}
+
+.ic-no-success:before {
+	content: "\e915";
+}
+
+.ic-notes:before {
+	content: "\e916";
+}
+
+.ic-people:before {
+	content: "\e917";
+}
+
+.ic-phone:before {
+	content: "\e918";
+}
+
+.ic-plus:before {
+	content: "\e919";
+}
+
+.ic-print:before {
+	content: "\e91a";
+}
+
+.ic-search:before {
+	content: "\e91b";
+}
+
+.ic-settings:before {
+	content: "\e91c";
+}
+
+.ic-spead:before {
+	content: "\e91d";
+}
+
+.ic-speaker:before {
+	content: "\e91e";
+}
+
+.ic-stop:before {
+	content: "\e91f";
+}
+
+.ic-stop-2:before {
+	content: "\e920";
+}
+
+.ic-success:before {
+	content: "\e921";
+}
+
+.ic-success-2:before {
+	content: "\e922";
+}
+
+.ic-tent:before {
+	content: "\e923";
+}
+
+.ic-check:before {
+	content: "\e924";
+}
+
+.ic-arrow:before {
+	content: "\e925";
+}
+
+.ic-eye-close:before {
+	content: "\e926";
+}

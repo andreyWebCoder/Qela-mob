@@ -1,0 +1,80 @@
+.dots-table {
+	display: inline-block;
+	margin: 0px 0px 0px 4px;
+	font-size: 11px;
+	line-height: 13px;
+	padding: 0px 9px 0px 0px;
+	position: relative;
+	cursor: pointer;
+
+	@media (max-width:($md2+px)) {
+		font-size: 14px;
+		padding: 10px 10px 10px 5px;
+		margin: -2px 0px 0px 0px;
+	}
+
+	&.active {
+		@media (max-width:($md2+px)) {
+			.dots-table__body {
+				bottom: 0;
+				opacity: 1;
+				pointer-events: auto;
+			}
+		}
+	}
+
+	@media (any-hover:hover) {
+		&:hover {
+			.dots-table__body {
+				bottom: -8px;
+				opacity: 1;
+				pointer-events: auto;
+			}
+		}
+	}
+
+	span {
+		pointer-events: none;
+	}
+
+	// .dots-table__body
+
+	&__body {
+		position: absolute;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		background-color: $white;
+		padding: 12px;
+		left: 100%;
+		bottom: 0;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.3s ease 0s;
+	}
+
+	// a
+
+	a {
+		display: block;
+		color: $black;
+		font-size: 11px;
+		line-height: 13px;
+		cursor: pointer;
+		transition: color 0.2s ease 0s;
+		text-decoration: none;
+
+		@media (any-hover:hover) {
+			&:hover {
+				color: $violet;
+			}
+		}
+
+		&:not(:last-child) {
+			margin: 0px 0px 3px 0px;
+
+			@media (max-width:($md2+px)) {
+				margin: 0px 0px 10px 0px;
+			}
+		}
+	}
+}

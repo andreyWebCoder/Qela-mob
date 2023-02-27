@@ -1,0 +1,155 @@
+.dropdown {
+	.btn-dropdown {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		border: none;
+		background-color: transparent;
+		color: $gray-700;
+		transition: color 0.2s ease 0s;
+
+		&.show {
+			color: $black;
+
+			&::before {
+				transform: rotate(-180deg);
+				color: $black;
+			}
+		}
+
+		&::before {
+			font-size: 12px;
+			margin: 0px 0px 0px 4px;
+			color: $gray-700;
+			transition: all 0.2s ease 0s;
+		}
+
+	}
+
+	.dropdown-item {
+		transition: color 0.2s ease 0s;
+	}
+
+	.dropdown-menu {
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	}
+
+	.form-check {
+		font-size: 14px;
+	}
+}
+
+.qela-filter {
+	.body {
+		display: flex;
+		align-items: center;
+	}
+
+	.form-check {
+		margin-bottom: 0;
+	}
+
+	.qela-name {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		color: $gray-700;
+		margin: 0px 10px 0px 0px;
+	}
+
+	&.small {
+		.dropdown-btn {
+			font-size: 11px;
+			color: $gray-700;
+			padding: 0px;
+
+			&::before {
+				font-size: 12px;
+			}
+		}
+	}
+
+}
+
+.qela-dropdown {
+	position: relative;
+	width: 100%;
+
+	.dropdown-btn {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		line-height: 17px;
+		background-color: transparent;
+		border: none;
+		white-space: nowrap;
+
+		&::before {
+			font-size: 14px;
+			color: $gray-700;
+			margin: 0px 0px 0px 4px;
+			transition: transform 0.3s ease 0s;
+		}
+
+		&.active {
+			&::before {
+				transform: rotate(-180deg);
+
+			}
+		}
+
+		&.selected {}
+	}
+
+	.dropdown-list {
+		position: absolute;
+		z-index: 2;
+		padding: 12px;
+		min-width: 115px;
+		background: $white;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		left: 0;
+		top: calc(100% + 10px);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: all 0.3s ease 0s;
+
+		&.visible {
+			top: calc(100% + 4px);
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+	}
+
+	.dropdown-item {
+		font-size: 11px;
+		line-height: 18px;
+		color: $gray-700;
+		cursor: pointer;
+		transition: color 0.3s ease 0s;
+		position: relative;
+
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				color: $black;
+
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+
+		&.not-visible {
+			display: none;
+		}
+	}
+}
