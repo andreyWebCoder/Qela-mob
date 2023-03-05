@@ -1,0 +1,77 @@
+.qela-nav {
+	display: flex;
+
+	button {
+		height: 55px;
+		flex: 1 1 auto;
+		border: none;
+		font-weight: 600;
+		font-size: 13px;
+		color: #999999;
+		background-color: $white;
+
+		&.active {
+			border-bottom: 2px solid $yellow;
+			color: $black;
+		}
+
+		border-bottom: 2px solid #E2E2E2;
+	}
+}
+
+.navbar {
+	padding: 0;
+	margin: 40px 0px 0px 0px;
+	background-color: $white;
+}
+
+.collapse {
+	width: 100%;
+}
+
+.navbar-nav {
+	flex-direction: row;
+}
+
+.nav-item {
+	flex: 1 1 auto;
+}
+
+.nav-link {
+	padding: 0;
+	height: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 12px;
+	color: $gray-700;
+
+	&:hover {
+		color: $gray-700;
+	}
+
+	&.active {
+		color: $violet;
+	}
+
+	&::before {
+		font-size: 28px;
+	}
+}
+
+.indicator {
+	padding: 14px 0 9px 0;
+	background-color: $white;
+	text-align: center;
+
+	span {
+		display: inline-block;
+		width: 134px;
+		height: 5px;
+		background: #000000;
+		border-radius: 100px;
+	}
+}

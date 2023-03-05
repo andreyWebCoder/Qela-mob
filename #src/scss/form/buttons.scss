@@ -10,3 +10,23 @@
 .btn-primary {
 	color: $white;
 }
+
+.btn-outline-secondary {
+	background: #F2F2F2;
+	border-color: $black;
+	font-weight: 600;
+	font-size: 16px;
+	color: $black;
+
+	&:active {
+		color: $black  !important;
+		border-color: $black  !important;
+		background: #F2F2F2 !important;
+	}
+
+	&:hover {
+		color: $black;
+		border-color: $black;
+		background: #F2F2F2;
+	}
+}

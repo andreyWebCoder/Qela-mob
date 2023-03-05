@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('_head.html',{
+"title":"Voting-disable-popup"
+})
+
+<body>
+	<main>
+		<div class="voting">
+			<div class="voting-top">
+				<button type="button" class="back ic-chevron"></button>
+				<h1 class="pb-3">Voting</h1>
+			</div>
+			<div class="container-fluid">
+				<div class="row gy-2">
+					<div class="col-12 mb-3">
+						<div class="disable-message">
+							<div class="text ic-alert-triangle">Warning! Available for verified users only</div>
+							<a href="#" class="link-verified">Get verified</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="large-text">
+							Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto
+						</div>
+					</div>
+					<div class="col-12 mb-4">
+						<div class="text">
+							The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population. </div>
+					</div>
+					<div class="col-12">
+						<div class="voting-label">
+							Question
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="text-md">
+							Do you support the Eighth Requirement of the Equality March 2021 Manifesto?
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="voting-label">
+							Your opinion
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="option checked">
+							<span class="option-text">Yes, I fully support</span>
+							<span class="option-icon ic-check"></span>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="option">
+							<span class="option-text">No, I don’t agree</span>
+							<span class="option-icon ic-check"></span>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="option">
+							<span class="option-text">I will refrain from answering</span>
+							<span class="option-icon ic-check"></span>
+						</div>
+					</div>
+					<div class="col-12 mb-5">
+						<div class="option">
+							<span class="option-text">I don’t like this poll</span>
+							<span class="option-icon ic-check"></span>
+						</div>
+					</div>
+					<div class="col-12 mb-4 mt-0">
+						<button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#modal1">Vote (modal)</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-modal="true" role="dialog">
+			<div class="modal-dialog modal-sm modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title" id="modal1Label">Voting available for verified users only</h1>
+					</div>
+					<div class="modal-body">
+						<p>Get verified and to get access</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="modal-btn">Get verified</button>
+						<button type="button" class="modal-btn" data-bs-dismiss="modal">Next time</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- =========================== -->
+	@@include('_js.html',{})
+</body>
+
+</html>

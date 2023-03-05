@@ -1,0 +1,25 @@
+.time {
+	display: flex;
+
+	span {
+		font-size: 12px;
+		line-height: 16px;
+		color: rgba(0, 0, 0, 0.7);
+		margin: 0px 16px 0px 0px;
+	}
+
+	.progress {
+		border: 1px solid $yellow;
+		background-color: white;
+	}
+
+	.progress-bar {
+		font-size: 10px;
+		line-height: 12px;
+		color: $black;
+		font-size: 400;
+		padding: 2px;
+		background-color: $yellow;
+		overflow: visible;
+	}
+}

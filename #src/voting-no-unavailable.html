@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('_head.html',{
+"title":"Voting-no-anavaible"
+})
+
+<body>
+	<main>
+		<div class="voting">
+			<div class="voting-top white">
+				<h1>Voting</h1>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<nav class="qela-nav mb-4">
+						<button type="button" class="active">General</button>
+						<button type="button">Local</button>
+						<button type="button">History</button>
+					</nav>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="unavailable ic-stop">
+					History unavailable yet
+				</div>
+			</div>
+			<div class="nav-wrap">
+				<nav class="navbar">
+					<div class="collapse">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link ic-profile" href="#">Profile</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ic-flag" href="#">Quests</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ic-voting active" href="#">Voting</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ic-qela" href="#">Organization</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="indicator"><span></span></div>
+			</div>
+		</div>
+
+	</main>
+	<!-- =========================== -->
+	@@include('_js.html',{})
+</body>
+
+</html>

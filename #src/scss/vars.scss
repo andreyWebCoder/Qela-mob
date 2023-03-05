@@ -16,6 +16,7 @@ $yellow: #FFE000;
 $red: #E20000;
 $red-light-1: #FFF2F0;
 $red-light-2: #FFADAD;
+$violet-dark-2: #6257F3;
 $violet: #978FFF;
 $violet-light-0: #F5F4FF;
 $violet-light: #F0EEFF;
@@ -165,15 +166,26 @@ $dropdown-item-padding-x: $spacer * 0;
 // Modals
 
 // scss-docs-start modal-variables
-$modal-inner-padding: 24px;
+$modal-inner-padding: 16px;
 $modal-footer-margin-between: 0;
-$modal-content-color: $gray-01;
+$modal-content-color: $black;
 $modal-content-bg: $white;
 $modal-content-border-color: transparent;
 $modal-content-border-width: 0;
-$modal-content-border-radius: 17px;
-$modal-content-box-shadow-xs: 0px 4px 10px rgba(0, 0, 0, 0.05);
-$modal-content-box-shadow-sm-up: 0px 4px 10px rgba(0, 0, 0, 0.05);
+$modal-content-border-radius: 14px;
+$modal-content-box-shadow-xs: none;
+$modal-content-box-shadow-sm-up: none;
 $modal-backdrop-bg: $black;
-$modal-backdrop-opacity: 0.2;
+$modal-backdrop-opacity: 0.4;
+$modal-sm: 270px;
 // scss-docs-end modal-variables
+
+$progress-height: 1rem;
+$progress-font-size: 11px;
+$progress-bg: #DCD9FB;
+$progress-border-radius: 6px;
+$progress-bar-color: #333333;
+$progress-bar-bg: $primary;
+// nav
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$navbar-light-active-color: $violet;
