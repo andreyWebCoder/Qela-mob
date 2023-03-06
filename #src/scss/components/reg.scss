@@ -45,12 +45,6 @@
 		justify-content: end;
 		flex-direction: column;
 	}
-
-	button {
-		&:not(:last-child) {
-			margin: 0px 0px 16px 0px;
-		}
-	}
 }
 
 .gela-form-name {

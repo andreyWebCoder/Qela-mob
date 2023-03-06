@@ -10278,6 +10278,10 @@ textarea.form-control-lg {
   content: "\e92d";
 }
 
+.ic-eye:before {
+  content: "\e92e";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
@@ -10373,8 +10377,7 @@ main {
 .qela-group .form-icon {
   position: absolute;
   right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 13.5px;
   width: 24px;
   height: 24px;
   display: flex;
@@ -10920,9 +10923,6 @@ h2 {
   display: inline-flex;
   justify-content: end;
   flex-direction: column;
-}
-.qela-form button:not(:last-child) {
-  margin: 0px 0px 16px 0px;
 }
 
 .gela-form-name {
