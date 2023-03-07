@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-	<title>Voting-done</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/vendors.css">
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+@@include('_head.html',{
+"title":"Voting-done"
+})
 
 <body>
 	<main>
@@ -53,7 +48,24 @@
 					</div>
 					<div class="col-12">
 						<div class="voting-label">
-							Your opinion
+							Decision
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="voting-decision">
+							<div class="text-editor">
+								<p>The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population.</p>
+								<p>The eighth requirement. Raise the healthcare system's focus on.</p>
+							</div>
+							<hr>
+							<div class="img">
+								<img src="img/ok-ic.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="voting-label">
+							Result
 						</div>
 					</div>
 					<div class="col-12">
@@ -100,8 +112,7 @@
 
 	</main>
 	<!-- =========================== -->
-	<script src="js/app.js"></script>
-<script src="js/vendors.js"></script>
+	@@include('_js.html',{})
 </body>
 
 </html>

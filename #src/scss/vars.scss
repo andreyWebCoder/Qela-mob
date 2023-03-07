@@ -9,6 +9,7 @@ $gray-600: rgba(60, 60, 67, 0.6);
 $gray-700: #7E8389;
 $gray-800: rgba(0, 0, 0, .2);
 $black: #000;
+$dark: #191919;
 $black-700: rgba(0, 0, 0, 0.7);
 // scss-docs-end gray-color-variables
 // scss-docs-start color-variables
@@ -23,6 +24,7 @@ $violet-light: #F0EEFF;
 $violet-light-2: #E5E3FF;
 $violet-light-3: #CCC8FF;
 $gray-01: #4D4D4D;
+$lightgray-2: #D1D1D2;
 $lightgray-3: #BBBDC0;
 $text_disable: #767676;
 $disabled-surf-1: #EFEFEF;
@@ -66,10 +68,10 @@ $headings-margin-bottom: $spacer * 0;
 $headings-font-weight: 400;
 $headings-line-height: 1.2;
 // hr
-$hr-margin-y: 30px;
-$hr-border-color: $gray-500; // Allows for inherited colors
+$hr-margin-y: 0;
+$hr-border-color: $lightgray-2; // Allows for inherited colors
 $hr-border-width: var(--#{$prefix}border-width);
-$hr-opacity: 0.4;
+$hr-opacity: 1;
 // Tables
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
