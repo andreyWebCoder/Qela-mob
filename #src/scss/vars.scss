@@ -23,6 +23,7 @@ $violet-light-0: #F5F4FF;
 $violet-light: #F0EEFF;
 $violet-light-2: #E5E3FF;
 $violet-light-3: #CCC8FF;
+$violet-light-4: #E2E2E2;
 $gray-01: #4D4D4D;
 $lightgray-2: #D1D1D2;
 $lightgray-3: #BBBDC0;
@@ -64,9 +65,41 @@ $font-family-base: "SFProDisplay";
 $font-size-base: 1rem; //16px
 $line-height-base: 1.25;
 // scss-docs-start headings-variables
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base  !default;
+
 $headings-margin-bottom: $spacer * 0;
-$headings-font-weight: 400;
+$headings-font-weight: 500;
 $headings-line-height: 1.2;
+
+$display-font-sizes: (
+	1: 5rem,
+	2: 4.5rem,
+	3: 4rem,
+	4: 3.5rem,
+	5: 3rem,
+	6: 1.75rem
+);
+$display-font-weight: 400;
+$lead-font-size: $font-size-base * 1.25;
+$lead-font-weight: 300;
+
+$small-font-size: .875em;
+
+$sub-sup-font-size: .75em;
+
+$text-muted: $gray-600;
+
+$initialism-font-size: $small-font-size;
+
+$blockquote-margin-y: 0;
+$blockquote-font-size: $font-size-base * 1.25;
+$blockquote-footer-color: $gray-600;
+$blockquote-footer-font-size: $small-font-size;
 // hr
 $hr-margin-y: 0;
 $hr-border-color: $lightgray-2; // Allows for inherited colors
@@ -112,12 +145,12 @@ $form-label-color: $gray-700;
 $form-label-font-weight: 500;
 // scss-docs-end form-label-variables
 // scss-docs-start form-input-variables
+$input-border-width: 1px;
 $input-bg: $white;
 $input-border-color: transparent;
 $input-disabled-color: #7E7E7E;
 $input-disabled-bg: $white;
 $input-disabled-border-color: #D1D1D2;
-
 $input-focus-bg: $input-bg;
 $input-focus-border-color: transparent;
 // $input-focus-box-shadow: 0px 0px 0px 1px $violet;
@@ -191,3 +224,48 @@ $progress-bar-bg: $primary;
 // nav
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $navbar-light-active-color: $violet;
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 1rem;
+$nav-link-font-size: 13px;
+$nav-link-font-weight: 600;
+$nav-link-color: $gray-700;
+$nav-link-hover-color: $gray-700;
+$nav-link-disabled-color: $gray-200;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-color: $gray-700;
+$nav-tabs-link-active-bg: $white;
+$nav-tabs-link-active-border-color: $yellow;
+
+$nav-pills-border-radius: 0;
+$nav-pills-link-active-color: $black;
+$nav-pills-link-active-bg: $white;
+//card
+$card-spacer-y: $spacer;
+$card-spacer-x: $spacer;
+$card-title-spacer-y: $spacer;
+$card-border-width: 0;
+$card-border-radius: 8px;
+$card-bg: $white;
+//card
+// badge
+$badge-font-size: .625em;
+$badge-font-weight: 400;
+$badge-padding-y: 4px;
+$badge-padding-x: 4px;
+$badge-border-radius: 14px;
+// badge
+//list-group
+$list-group-color: $black;
+$list-group-bg: $white;
+$list-group-border-color: transparent;
+$list-group-border-width: $border-width;
+$list-group-border-radius: $border-radius;
+
+$list-group-item-padding-y: 0.85rem;
+$list-group-item-padding-x: $spacer;
+
+$list-group-active-color: $black;
+$list-group-active-bg: $white;
+$list-group-active-border-color: $violet;
+//list-group

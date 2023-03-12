@@ -30,3 +30,21 @@
 		background: #F2F2F2;
 	}
 }
+
+.btn-back {
+	display: block;
+	position: absolute;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	left: 8px;
+	top: 50%;
+	text-decoration: none;
+	transform: translateY(-50%);
+
+	&::before {
+		transform: rotate(90deg);
+		font-size: 24px;
+		color: $black;
+	}
+}
