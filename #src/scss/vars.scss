@@ -32,6 +32,8 @@ $disabled-surf-1: #EFEFEF;
 $disabled-surf-2: #CACACA;
 $green: #70C174;
 $green-lite: #EFF7F2;
+
+$secondary: $lightgray-2;
 $primary: $violet;
 
 // Prefix for :root CSS variables
@@ -269,3 +271,13 @@ $list-group-active-color: $black;
 $list-group-active-bg: $white;
 $list-group-active-border-color: $violet;
 //list-group
+//alert
+$alert-padding-y: $spacer * 0.875;
+$alert-padding-x: $spacer;
+$alert-margin-bottom: 0;
+$alert-border-radius: $border-radius;
+$alert-border-width: 0;
+$alert-bg-scale: -80%;
+$alert-color-scale: 0%;
+$alert-dismissible-padding-r: $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
+//alert

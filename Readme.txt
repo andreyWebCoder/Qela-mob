@@ -1,0 +1,13 @@
+================= Дата 15.03.23 ======================================
+- Избавились от сетки bootstrap.
+- Избавились от input, label (checkbox) в list-group.
+- list-group-item добавлен класс checkbox-container который отвечает за стилизацию чекбокса.
+- Переделана страница voting-done.html
+- Добавлен qela-progres, переделаны progress.
+- Изменена страница voting-disable.html
+- Добавил alert
+- Изменена страница voting-disable-popup.html
+- Изменена страница voting-history.html
+- Изменена страница voting-finished.html
+- Добавлен qela-decision оболочка текстового редактора
+- Изменена страница voting-no-unavailable.html

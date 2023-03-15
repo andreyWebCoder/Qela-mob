@@ -6,87 +6,48 @@
 
 <body>
 	<main>
-		<div class="voting">
-			<div class="voting-top">
-				<button type="button" class="back ic-chevron"></button>
-				<h1 class="pb-3 title">Voting</h1>
+		<div class="d-flex flex-column gap-2">
+			<div class="position-relative mb-3">
+				<h1 class="h5 text-center pt-2">Voting</h1>
+				<a href="#" class="btn-back mt-2 ic-chevron"></a>
 			</div>
-			<div class="container-fluid">
-				<div class="row gy-2">
-					<div class="col-12 mb-3">
-						<div class="disable-message">
-							<div class="text ic-alert-triangle">Warning! Available for verified users only</div>
-							<a href="#" class="link-verified">Get verified</a>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="large-text">
-							Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto
-						</div>
-					</div>
-					<div class="col-12 d-flex">
-						<div class="time">
-							<div class="label">Time left</div>
-							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-								<div class="progress-bar" style="width: 80%">3 d. 22 h. 33 min.</div>
-							</div>
-						</div>
-						<div class="formula">
-							<div class="label">Formula</div>
-							<div class="value">1=1</div>
-						</div>
-					</div>
-					<div class="col-12">
-						<hr>
-					</div>
-					<div class="col-12 mb-4">
-						<div class="text">
-							The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population. </div>
-					</div>
-					<div class="col-12">
-						<div class="voting-label">
-							Question
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="text-md">
-							Do you support the Eighth Requirement of the Equality March 2021 Manifesto?
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="voting-label">
-							Your opinion
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="option checked">
-							<span class="option-text">Yes, I fully support</span>
-							<span class="option-icon ic-check"></span>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="option">
-							<span class="option-text">No, I don’t agree</span>
-							<span class="option-icon ic-check"></span>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="option">
-							<span class="option-text">I will refrain from answering</span>
-							<span class="option-icon ic-check"></span>
-						</div>
-					</div>
-					<div class="col-12 mb-5">
-						<div class="option">
-							<span class="option-text">I don’t like this poll</span>
-							<span class="option-icon ic-check"></span>
-						</div>
-					</div>
-					<div class="col-12 mb-4 mt-0">
-						<button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#modal1">Vote (modal)</button>
-					</div>
+
+			<div class="alert alert-primary qela-alert" role="alert">
+				<span class="ic-alert-triangle text-primary"></span>
+				<div class="mb-2">
+					An example alert with an icon
 				</div>
+				<a href="#">Get verified</a>
 			</div>
+			<p class="display-6 m-0">Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto</p>
+			<div>
+				<span class="qela-badge me-3"><small>Time left</small><span class="badge text-bg-warning">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge"><small>Formula</small><span class="badge text-bg-primary">1=1</span></span>
+			</div>
+			<hr>
+			<p><small>The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population.</small></p>
+			<h3 class="h6 qela-label"><strong>Question</strong></h3>
+			<p class="h5 mb-3">Do you support the Eighth Requirement of the Equality March 2021 Manifesto?</p>
+			<h3 class="h6 qela-label"><strong>Your opinion</strong></h3>
+			<ul class="list-group qela-list-group mb-3 d-flex flex-column gap-2">
+				<li class="list-group-item checkbox-container active">
+					Yes, I fully support
+					<span class="ic-check"></span>
+				</li>
+				<li class="list-group-item checkbox-container">
+					No, I don’t agree
+					<span class="ic-check"></span>
+				</li>
+				<li class="list-group-item checkbox-container">
+					I will refrain from answering
+					<span class="ic-check"></span>
+				</li>
+				<li class="list-group-item checkbox-container">
+					I don’t like this poll
+					<span class="ic-check"></span>
+				</li>
+			</ul>
+			<button type="button" class="btn btn-warning w-100  mb-4" data-bs-toggle="modal" data-bs-target="#modal1"><strong>Vote (modal)</strong></button>
 		</div>
 		<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-modal="true" role="dialog">
 			<div class="modal-dialog modal-sm modal-dialog-centered">

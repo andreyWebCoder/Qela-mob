@@ -1,15 +1,4 @@
-.voting-top {
-	padding: 0 30px;
-	position: relative;
-
-	&.white {
-		background-color: $white;
-	}
-
-}
-
-.unavailable {
-	height: 100%;
+.qela-unavailable {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,27 +10,13 @@
 	color: $gray-700;
 	width: 110px;
 	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 
 	&::before {
 		font-size: 64px;
 		margin: 0px 0px 24px 0px;
-	}
-}
-
-.voting-decision {
-	padding: 24px 16px 16px 16px;
-	background-color: $white;
-	border: 3px solid $violet;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-	border-radius: 8px;
-
-	hr {
-		margin: 24px 0 14px 0;
-	}
-
-	.img {
-		display: block;
-		margin: 0 auto;
-		width: 50px;
 	}
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ua">
 <head>
-	<title>Voting-done</title>
+	<title>Voting-finished</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/vendors.css">
@@ -11,110 +11,54 @@
 
 <body>
 	<main>
-		<div class="voting">
-			<div class="voting-top">
-				<h1 class="pb-3 title">Voting results</h1>
+		<div class="d-flex flex-column gap-2">
+			<h1 class="h5 text-center pt-2 mb-3">Voting results</h1>
+			<p class="display-6 m-0">Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto</p>
+			<div>
+				<span class="qela-badge me-3"><span class="badge text-bg-secondary">finished</span></span>
+				<span class="qela-badge"><small>Formula</small><span class="badge text-bg-primary">1=1</span></span>
 			</div>
-			<div class="container-fluid">
-				<div class="row gy-2">
-					<div class="col-12">
-						<div class="large-text">
-							Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto
-						</div>
-					</div>
-					<div class="col-12 d-flex">
-						<div class="time">
-							<div class="label">Time left</div>
-							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-								<div class="progress-bar" style="width: 80%">3 d. 22 h. 33 min.</div>
-							</div>
-						</div>
-						<div class="formula">
-							<div class="label">Formula</div>
-							<div class="value">1=1</div>
-						</div>
-					</div>
-					<div class="col-12">
-						<hr>
-					</div>
-					<div class="col-12 mb-4">
-						<div class="text">
-							The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population. </div>
-					</div>
-					<div class="col-12">
-						<div class="voting-label">
-							Question
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="text-md">
-							Do you support the Eighth Requirement of the Equality March 2021 Manifesto?
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="voting-label">
-							Decision
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="voting-decision">
-							<div class="text-editor">
-								<p>The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population.</p>
-								<p>The eighth requirement. Raise the healthcare system's focus on.</p>
-							</div>
-							<hr>
-							<div class="img">
-								<img src="img/ok-ic.svg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="voting-label">
-							Result
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="item-progres active">
-							<div class="label">Yes, I fully support</div>
-							<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-								<div class="progress-bar" style="width: 48%"><span>48%</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="item-progres">
-							<div class="label">No, I don’t agree</div>
-							<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-								<div class="progress-bar" style="width: 16%"><span>16%</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="item-progres">
-							<div class="label">I will refrain from answering</div>
-							<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-								<div class="progress-bar" style="width: 9%"><span>9%</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 mb-4">
-						<div class="item-progres ">
-							<div class="label">I don’t like this poll</div>
-							<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-								<div class="progress-bar" style="width: 9%"><span>9%</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 mt-0">
-						<button type="submit" class="btn btn-warning w-100">Re-vote</button>
-					</div>
-					<div class="col-12 mt-3 mb-4">
-						<button type="submit" class="btn btn-outline-secondary w-100">Back to the vote list</button>
-					</div>
-				</div>
-			</div>
-		</div>
+			<hr>
+			<p><small>The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population.</small></p>
+			<h3 class="h6 qela-label"><strong>Question</strong></h3>
+			<p class="h5 mb-3">Do you support the Eighth Requirement of the Equality March 2021 Manifesto?</p>
 
+			<h3 class="h6 qela-label"><strong>Decision</strong></h3>
+			<div class="qela-decision">
+				<p>The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population.</p>
+				<p>The eighth requirement. Raise the healthcare system's focus on.</p>
+				<hr class="mb-3 mt-2">
+				<img src="img/ok-ic.svg" alt="">
+			</div>
+			<h3 class="h6 qela-label"><strong>Result</strong></h3>
+			<ul class="list-group qela-list-group mb-3 d-flex flex-column gap-2">
+				<li class="list-group-item active">
+					Yes, I fully support
+					<div class="progress qela-progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 0%"><span>0%</span></div>
+					</div>
+				</li>
+				<li class="list-group-item">
+					No, I don’t agree
+					<div class="progress qela-progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 100%"><span>100%</span></div>
+					</div>
+				</li>
+				<li class="list-group-item">
+					I will refrain from answering
+					<div class="progress qela-progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 25%"><span>25%</span></div>
+					</div>
+				</li>
+				<li class="list-group-item">
+					I don’t like this poll
+					<div class="progress qela-progress mt-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 9%"><span>9%</span></div>
+					</div>
+				</li>
+			</ul>
+			<button type="submit" class="btn btn-outline-secondary w-100 mb-4">Back to the vote list</button>
+		</div>
 	</main>
 	<!-- =========================== -->
 	<script src="js/app.js"></script>

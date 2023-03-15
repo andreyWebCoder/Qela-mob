@@ -2,28 +2,42 @@
 	.list-group-item {
 		border-radius: 10px;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-		display: flex;
-		align-items: center;
 		font-size: 17px;
-		flex-direction: row-reverse;
-		justify-content: space-between;
+	}
 
-		&:not(:last-child) {
-			margin: 0px 0px 8px 0px;
+	.checkbox-container {
+		padding-right: 60px;
+		position: relative;
+
+		&.active {
+			span {
+				border-color: $violet;
+				background-color: $violet;
+
+				&::before {
+					opacity: 1;
+				}
+			}
 		}
-	}
 
-	.form-check-input[type=checkbox] {
-		border-radius: 50%;
-	}
+		span {
+			position: absolute;
+			border: 1px solid $black;
+			border-radius: 50%;
+			width: 1.25em;
+			height: 1.25em;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 
-	.form-check-input {
-		width: 1.25em;
-		height: 1.25em;
-		margin: 0;
-	}
-
-	.form-check-label {
-		margin: 0px 25px 0px 0px;
+			&::before {
+				font-size: 17px;
+				opacity: 0;
+				color: $white;
+			}
+		}
 	}
 }
