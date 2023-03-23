@@ -7,80 +7,73 @@
 <body>
 	<main>
 		<!-- Форма регистрации -->
-		<div class="qela-reg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12">
-						<a href="#" class="qela-logo">
-							<img src="img/logo.svg" alt="">
-						</a>
-					</div>
-					<div class="col-12">
-						<h1>Registration</h1>
-					</div>
-					<div class="qela-form">
-						<div class="row">
-							<form class="col-12">
-								<div class="row gy-3">
-									<div class="col-12">
-										<div class="gela-form-name">General</div>
-									</div>
-									<div class="col-12">
-										<input type="text" class="form-control" id="inputText" placeholder="Full Name">
-										<span class="form-error">Error text</span>
-									</div>
-									<div class="col-12">
-										<div class="qela-group">
-											<input type="text" class="form-control" id="basic-url" placeholder="Birthday">
-											<button type="button" class="form-icon ic-calendar"></button>
-											<span class="form-error">Error text</span>
-										</div>
-									</div>
-									<div class="col-12 mt-4">
-										<div class="gela-form-name">Contact info</div>
-									</div>
-									<div class="col-12">
-										<input type="email" placeholder="Email" class="form-control" id="inputEmail1">
-										<span class="form-error">Error text</span>
-									</div>
-									<div class="col-12">
-										<input type="tel" placeholder="Phone number" class="form-control" id="inputNumber1">
-										<span class="form-error">Error text</span>
-									</div>
-									<div class="col-12 mt-4">
-										<div class="gela-form-name">Create password</div>
-									</div>
-									<div class="col-12">
-										<div class="qela-group">
-											<input type="password" value="6+5+465+65" placeholder="Enter password" class="form-control " id="inputPassword1">
-											<button type="button" class="form-icon password ic-eye-close" data-target="#inputPassword1"></button>
-											<span class="form-error">Error text</span>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="qela-group">
-											<input type="password" placeholder="Confirm password" class="form-control " id="inputPassword2">
-											<span class="form-error">Error text</span>
-										</div>
-									</div>
-									<div class="col-12 mt-5">
-										<div class="form-check">
-											<label class="form-check-label" for="Check1">I agree with <a href="#">Terms & Conditions</a></label>
-											<input type="checkbox" class="form-check-input" id="Check1">
-										</div>
-									</div>
-									<div class="col-12 qela-buttons">
-										<button type="submit" class="btn btn-primary mb-3">Next</button>
-										<button type="button" class="btn btn-link">Need help</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-
+		<a href="#" class="qela-logo">
+			<img src="img/logo.svg" alt="">
+		</a>
+		<h1 class="h3 text-center mb-4">Registration</h1>
+		<form class="mt-2 qela-form d-flex flex-column gap-3">
+			<div>
+				<label for="inputText1" class="form-label ">Name</label>
+				<input type=" text" class="form-control invalid" id="inputText1" placeholder="Name">
+				<span class="form-error">Error text</span>
+				<span class="helper-text">helper-text</span>
 			</div>
-		</div>
+			<div>
+				<label for="inputText2" class="form-label ">Last Name</label>
+				<input type="text" class="form-control" id="inputText2" placeholder="Last Name">
+				<span class="form-error">Error text</span>
+				<span class="helper-text">helper-text</span>
+			</div>
+			<div>
+				<label for="inputEmail1" class="form-label ">Email</label>
+				<input type="email" placeholder="Email" class="form-control" id="inputEmail1">
+				<span class="form-error">Error text</span>
+				<span class="helper-text">helper-text</span>
+			</div>
+			<div>
+				<label for="inputNumber1" class="form-label ">Phone number</label>
+				<input type="tel" placeholder="Phone number" class="form-control" id="inputNumber1">
+				<span class="form-error">Error text</span>
+				<span class="helper-text">helper-text</span>
+			</div>
+			<div>
+				<label for="inputEmail1" class="form-label ">Password</label>
+				<div class="input-group qela-input-group has-validation">
+					<input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="button-addon1">
+					<button class="btn qela-btn ic-eye-close" type="button" id="button-addon1"></button>
+				</div>
+				<span class="form-error">Error text1</span>
+				<span class="helper-text">helper-text</span>
+			</div>
+			<div>
+				<label for="inputEmail2" class="form-label">Confirm password</label>
+				<div class="input-group qela-input-group">
+					<input type="text" class="form-control" placeholder="Confirm password" aria-label="Confirm password" aria-describedby="button-addon2">
+					<button class="btn qela-btn ic-eye" type="button" id="button-addon2"></button>
+				</div>
+				<span class="form-error">Error text1</span>
+				<span class="helper-text">helper-text</span>
+			</div>
+			<a href="#" class="link-secondary ms-1">Forgot your password?</a>
+			<!-- Подзаголовки если нужны -->
+			<h6 class="opacity-75 fw-semibold ms-1 mt-2">Haven’t found your issue?<br>Write to us</h6>
+			<div>
+				<label for="exampleFormControlTextarea1" class="form-label">Your report</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your report" rows="5"></textarea>
+				<span class="form-error">Error text1</span>
+				<span class="helper-text">helper-text</span>
+			</div>
+			<div class="form-check mt-4">
+				<label class="form-check-label" for="Check1">I agree with <a href="#" class="link-secondary">Terms & Conditions</a></label>
+				<input type="checkbox" class="form-check-input" checked id="Check1">
+			</div>
+			<div class="mb-4 qela-mt-7">
+				<button type="submit" class="btn btn-secondary w-100">Start</button>
+			</div>
+			<div class="text-center mb-5">
+				<div><small>Do not have an account?</small><a href="#" class="link-secondary fw-normal ms-1"><small>Sign up</small></a></div>
+			</div>
+		</form>
 	</main>
 	<!-- =========================== -->
 	@@include('_js.html',{})

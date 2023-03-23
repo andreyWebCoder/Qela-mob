@@ -1,8 +1,8 @@
 .form-control {
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+	box-shadow: none;
 
 	&:focus {
-		box-shadow: 0px 4px 10px rgba(151, 143, 255, 0.3);
+		box-shadow: none;
 	}
 
 	&:disabled {
@@ -16,46 +16,76 @@
 	&.invalid {
 		border-color: $red-light-2;
 
-		&:focus {
-			box-shadow: 0px 5px 12px rgba(255, 173, 173, 0.6);
+		&~.form-error {
+			display: block;
+		}
+
+		&~.helper-text {
+			display: none;
+		}
+	}
+}
+
+.form-label {
+	margin-left: 4px;
+}
+
+.qela-btn {
+	padding: 5px 16px;
+	border-color: transparent;
+	background: $white;
+	color: $lightgray-3;
+
+	&:active {
+		color: $lightgray-3  !important;
+		border-color: transparent !important;
+		background: $white  !important;
+	}
+
+	&:hover {
+		background: $white;
+		border-color: transparent;
+		color: $lightgray-3;
+	}
+}
+
+.helper-text {
+	display: block;
+	width: 100%;
+	color: $gray-700;
+	line-height: 120%;
+	padding: 2px 0px 0px 4px;
+}
+
+.form-error {
+	width: 100%;
+	color: $red;
+	font-size: 14px;
+	line-height: 13px;
+	padding: 4px 0px 0px 4px;
+	display: none;
+}
+
+.qela-input-group {
+	&.has-validation {
+		border: 1px solid $red-light-2;
+		border-radius: $input-border-radius;
+
+		&~.helper-text {
+			display: none;
 		}
 
 		&~.form-error {
 			display: block;
 		}
 	}
-}
-
-.form-error {
-	color: $red;
-	font-size: 14px;
-	line-height: 13px;
-	padding: 8px 0px 0px 0px;
-	display: none;
-}
-
-.qela-group {
-	position: relative;
 
 	.form-control {
-		padding-right: 52px;
-	}
-
-	.form-icon {
-		position: absolute;
-		right: 16px;
-		top: 13.5px;
-		width: 24px;
-		height: 24px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		border: none;
-		background-color: transparent;
-
-		&::before {
-			color: $lightgray-3;
-			font-size: 20px;
-		}
 	}
+
+	.qela-btn {
+		border: none;
+	}
+
 }

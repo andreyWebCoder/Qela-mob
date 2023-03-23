@@ -33,8 +33,11 @@ $disabled-surf-2: #CACACA;
 $green: #70C174;
 $green-lite: #EFF7F2;
 
-$secondary: $lightgray-2;
-$primary: $violet;
+
+$primary: $yellow;
+
+// $secondary: $lightgray-2;
+$secondary: $violet;
 
 // Prefix for :root CSS variables
 $variable-prefix: bs-; // Deprecated in v5.2.0 for the shorter `$prefix`
@@ -133,7 +136,6 @@ $btn-border-width: $input-btn-border-width;
 $btn-border-radius: $border-radius;
 $btn-font-weight: 500;
 
-
 $btn-link-color: $black;
 $btn-transition: color .3s ease-in-out,
 	background-color .3s ease-in-out,
@@ -149,19 +151,26 @@ $form-label-font-weight: 500;
 // scss-docs-start form-input-variables
 $input-border-width: 1px;
 $input-bg: $white;
-$input-border-color: transparent;
+$input-border-color: $white;
+$input-border-radius: $border-radius;
 $input-disabled-color: #7E7E7E;
 $input-disabled-bg: $white;
 $input-disabled-border-color: #D1D1D2;
 $input-focus-bg: $input-bg;
-$input-focus-border-color: transparent;
-// $input-focus-box-shadow: 0px 0px 0px 1px $violet;
-
+$input-focus-border-color: $white;
 $input-placeholder-color: $gray-500;
 $input-plaintext-color: $gray-500;
 $input-focus-bg: $input-bg;
-$input-transition: border-color .2s ease-in-out,
-	box-shadow .2s ease-in-out;
+
+$input-focus-border-color: $input-border-color;
+$input-focus-width: $input-border-width;
+$input-box-shadow: none;
+
+$input-group-addon-padding-y: 5px;
+$input-group-addon-padding-x: 16px;
+$input-group-addon-color: $gray-01;
+$input-group-addon-bg: $white;
+$input-group-addon-border-color: $input-border-color;
 // scss-docs-end form-input-variables
 // scss-docs-start form-check-variables
 $form-check-input-width: 1.125em;

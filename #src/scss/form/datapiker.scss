@@ -1,110 +1,4 @@
 // ===================================================
-.datepicker {
-	h3 {
-		font-size: 15px;
-		line-height: 18px;
-		padding: 0px 0px 9px 0px;
-	}
-
-	// .datepicker__name
-
-	&__name {
-		margin: 0px 0px 8px 0px;
-		font-weight: 600;
-		font-size: 13px;
-		line-height: 16px;
-		color: $gray-01;
-	}
-
-	// .datepicker__row
-
-	&__row {
-		display: grid;
-		gap: 10px;
-		grid-template-columns: auto 30px auto;
-
-		@media (max-width:($md3+px)) {
-			grid-template-columns: 1fr;
-		}
-	}
-
-	// .datepicker__item
-
-	&__item {
-		background: $violet-light;
-		border-radius: 8px;
-		padding: 12px;
-	}
-
-	// .datepicker__wrap
-
-	&__wrap {
-		display: flex;
-		justify-content: space-between;
-		margin: 0px 0px 16px 0px;
-		flex: 1 1 auto;
-	}
-
-	// .datepicker__buttons
-
-	&__buttons {
-		button {
-			display: inline-block;
-			font-size: 12px;
-			line-height: 15px;
-			text-transform: uppercase;
-			color: $gray-01;
-			border-radius: 4px;
-			background-color: $violet-light-0;
-			padding: 6px 10px;
-			border: none;
-			transition: color 0.3s ease 0s, background 0.3s ease 0s;
-
-			@media (any-hover:hover) {
-				&:hover {
-					color: $black;
-					background-color: $violet-light;
-				}
-			}
-
-			&.active {
-				color: $white;
-				background-color: $violet;
-
-				&:disabled {
-					background: $disabled-surf-2;
-					color: $white;
-				}
-			}
-
-			&:disabled {
-				pointer-events: none;
-				background: $disabled-surf-1;
-				color: $text_disable;
-			}
-		}
-	}
-
-	// .datepicker__sep
-
-	&__sep {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		span {
-			font-size: 18px;
-			padding: 6px;
-			background-color: $violet-light;
-			border-radius: 50%;
-
-			@media (max-width:($md3+px)) {
-				transform: rotate(90deg);
-			}
-		}
-	}
-}
-
 .dp__main {
 	font-family: $font-family-base;
 }
@@ -112,7 +6,7 @@
 .dp__input_readonly {}
 
 .dp__input {
-	height: 40px;
+	height: 50px;
 	border-radius: $border-radius;
 	color: $gray-01;
 	border-color: $input-border-color;
@@ -145,6 +39,12 @@
 
 }
 
+.dp__icon {
+	fill: #BBBDC0;
+	width: 20px;
+	height: 20px;
+}
+
 .dp__input_icon_pad {
 	padding: 0 16px;
 }
@@ -152,7 +52,12 @@
 .dp__input_reg {}
 
 .dp__input_icon {
-	display: none;
+	left: auto;
+	right: 16px;
+}
+
+.dp__input_icons {
+	padding: 0;
 }
 
 .dp__clear_icon {
@@ -196,9 +101,9 @@
 }
 
 .dp__icon {
-	fill: #BBBDC0;
-	width: 18px;
-	height: 18px;
+	fill: $lightgray-3;
+	width: 20px;
+	height: 20px;
 }
 
 .dp__calendar_header_separator {
