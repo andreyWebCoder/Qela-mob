@@ -12,6 +12,16 @@
 
 .form-check-input {
 	&.invalid {
-		border-color: $red-light-2
+		border-color: $red-light-2;
+
+		&:checked {
+			border-color: $violet;
+		}
+
+		&~.form-error {
+			display: block;
+			margin-left: -$form-check-padding-start;
+			padding-left: 0;
+		}
 	}
 }
