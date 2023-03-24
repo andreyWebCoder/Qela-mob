@@ -4,7 +4,7 @@
 	font-size: 14px;
 	letter-spacing: 0.2px;
 
-	&.alert-primary {
+	&.alert {
 		span {
 			position: absolute;
 			left: 16px;
@@ -16,10 +16,15 @@
 		}
 
 		a {
-			color: $violet-dark-2;
 			text-decoration: none;
 			font-size: 14px;
 			letter-spacing: 0.2px;
+		}
+	}
+
+	&.alert-secondary {
+		a {
+			color: $violet-dark-2;
 		}
 	}
 }
