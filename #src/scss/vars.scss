@@ -25,14 +25,15 @@ $violet-light-2: #E5E3FF;
 $violet-light-3: #CCC8FF;
 $violet-light-4: #E2E2E2;
 $gray-01: #4D4D4D;
+$lightgray: #F6F6F6;
+$lightgray-1: #E8E8E8;
 $lightgray-2: #D1D1D2;
 $lightgray-3: #BBBDC0;
-$text_disable: #767676;
+$text_disable: #A8A8A8;
 $disabled-surf-1: #EFEFEF;
 $disabled-surf-2: #CACACA;
 $green: #70C174;
 $green-lite: #EFF7F2;
-
 
 $primary: $yellow;
 $info: $lightgray-2;
@@ -131,11 +132,26 @@ $input-btn-border-width: var(--#{$prefix}border-width);
 $btn-font-size: $input-btn-font-size;
 $btn-padding-y: $input-btn-padding-y;
 $btn-padding-x: 25px;
+
+$btn-padding-y-sm: 7.5px;
+$btn-padding-x-sm: 16px;
+$btn-font-size-sm: 0.75rem;
+
+
 $btn-border-width: $input-btn-border-width;
 $btn-border-radius: $border-radius;
 $btn-font-weight: 500;
-
 $btn-link-color: $black;
+// ----
+$btn-box-shadow: none;
+$btn-focus-width: 0;
+$btn-focus-box-shadow: none;
+$btn-disabled-opacity: 1;
+$btn-active-box-shadow: none;
+
+$btn-link-color: $violet;
+$btn-link-disabled-color: $text_disable;
+
 $btn-transition: color .3s ease-in-out,
 	background-color .3s ease-in-out,
 	border-color .3s ease-in-out,
