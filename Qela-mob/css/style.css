@@ -30,7 +30,7 @@
   --bs-info: #D1D1D2;
   --bs-warning: #FFE000;
   --bs-danger: #E20000;
-  --bs-light: #F6F6F6;
+  --bs-light: #fff;
   --bs-dark: #191919;
   --bs-primary-rgb: 255, 224, 0;
   --bs-secondary-rgb: 151, 143, 255;
@@ -38,7 +38,7 @@
   --bs-info-rgb: 209, 209, 210;
   --bs-warning-rgb: 255, 224, 0;
   --bs-danger-rgb: 226, 0, 0;
-  --bs-light-rgb: 246, 246, 246;
+  --bs-light-rgb: 255, 255, 255;
   --bs-dark-rgb: 25, 25, 25;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -2079,13 +2079,13 @@ progress {
 
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: #F6F6F6;
-  --bs-table-border-color: #dddddd;
-  --bs-table-striped-bg: #eaeaea;
+  --bs-table-bg: #fff;
+  --bs-table-border-color: #e6e6e6;
+  --bs-table-striped-bg: #f2f2f2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dddddd;
+  --bs-table-active-bg: #e6e6e6;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e4e4e4;
+  --bs-table-hover-bg: #ececec;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2400,15 +2400,15 @@ textarea.form-control-lg {
 }
 
 .form-check-input {
-  width: 1.125em;
-  height: 1.125em;
-  margin-top: 0.0625em;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.125em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #F0EEFF;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid #000;
+  border: 1px solid #F0EEFF;
   appearance: none;
   print-color-adjust: exact;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -2428,7 +2428,7 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #000;
+  border-color: #F0EEFF;
   outline: 0;
   box-shadow: none;
 }
@@ -2450,11 +2450,11 @@ textarea.form-control-lg {
 .form-check-input:disabled {
   pointer-events: none;
   filter: none;
-  opacity: 0.5;
+  opacity: 1;
 }
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
   cursor: default;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .form-check-label {
@@ -3110,19 +3110,19 @@ textarea.form-control-lg {
 
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: #F6F6F6;
-  --bs-btn-border-color: #F6F6F6;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #d1d1d1;
-  --bs-btn-hover-border-color: #c5c5c5;
-  --bs-btn-focus-shadow-rgb: 209, 209, 209;
+  --bs-btn-hover-bg: #d9d9d9;
+  --bs-btn-hover-border-color: #cccccc;
+  --bs-btn-focus-shadow-rgb: 217, 217, 217;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #c5c5c5;
-  --bs-btn-active-border-color: #b9b9b9;
+  --bs-btn-active-bg: #cccccc;
+  --bs-btn-active-border-color: #bfbfbf;
   --bs-btn-active-shadow: none;
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #F6F6F6;
-  --bs-btn-disabled-border-color: #F6F6F6;
+  --bs-btn-disabled-bg: #fff;
+  --bs-btn-disabled-border-color: #fff;
 }
 
 .btn-dark {
@@ -3245,19 +3245,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  --bs-btn-color: #F6F6F6;
-  --bs-btn-border-color: #F6F6F6;
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #F6F6F6;
-  --bs-btn-hover-border-color: #F6F6F6;
-  --bs-btn-focus-shadow-rgb: 246, 246, 246;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-focus-shadow-rgb: 255, 255, 255;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #F6F6F6;
-  --bs-btn-active-border-color: #F6F6F6;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #fff;
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #F6F6F6;
+  --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #F6F6F6;
+  --bs-btn-disabled-border-color: #fff;
   --bs-gradient: none;
 }
 
@@ -4483,8 +4483,8 @@ textarea.form-control-lg {
 
 .alert-light {
   --bs-alert-color: black;
-  --bs-alert-bg: #fdfdfd;
-  --bs-alert-border-color: #fcfcfc;
+  --bs-alert-bg: white;
+  --bs-alert-border-color: white;
 }
 .alert-light .alert-link {
   color: black;
@@ -5201,17 +5201,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-light {
-  color: #626262;
-  background-color: #fdfdfd;
+  color: #666666;
+  background-color: white;
 }
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: #626262;
-  background-color: #e4e4e4;
+  color: #666666;
+  background-color: #e6e6e6;
 }
 .list-group-item-light.list-group-item-action.active {
   color: #fff;
-  background-color: #626262;
-  border-color: #626262;
+  background-color: #666666;
+  border-color: #666666;
 }
 
 .list-group-item-dark {
@@ -5266,7 +5266,7 @@ textarea.form-control-lg {
 
 .text-bg-light {
   color: #000 !important;
-  background-color: RGBA(246, 246, 246, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-dark {
@@ -5317,10 +5317,10 @@ textarea.form-control-lg {
 }
 
 .link-light {
-  color: #F6F6F6 !important;
+  color: #fff !important;
 }
 .link-light:hover, .link-light:focus {
-  color: #f8f8f8 !important;
+  color: white !important;
 }
 
 .link-dark {
@@ -10464,9 +10464,6 @@ main {
   max-width: 576px;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   padding: 0 16px;
 }
 main.qela-padding {
@@ -10767,10 +10764,10 @@ main.qela-padding {
 }
 
 .form-control {
-  box-shadow: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 .form-control:focus {
-  box-shadow: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 .form-control:disabled {
   box-shadow: none;
@@ -10853,6 +10850,16 @@ main.qela-padding {
   text-decoration: none;
 }
 
+.form-check-input:disabled {
+  background-color: #EFEFEF;
+}
+.form-check-input:disabled ~ .form-check-label {
+  color: #A8A8A8;
+}
+.form-check-input:checked:disabled {
+  background-color: #E2E2E2;
+  border-color: #E2E2E2;
+}
 .form-check-input.invalid {
   border-color: #FFADAD;
 }
@@ -10863,6 +10870,12 @@ main.qela-padding {
   display: block;
   margin-left: -26px;
   padding-left: 0;
+}
+
+.qela-link {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: -0.15px;
 }
 
 .modal-sm {
@@ -10959,7 +10972,7 @@ main.qela-padding {
 }
 
 .qela-topbar {
-  padding: 0 1rem 12px 1rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
 }
 .qela-topbar .navbar-brand img {
   height: 40px;
@@ -11215,11 +11228,6 @@ main.qela-padding {
   transform: translate(-50%, -50%);
 }
 
-.qela-form a {
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: -0.15px;
-}
 .qela-form .form-check:not(:last-child) {
   margin-right: 16px;
 }

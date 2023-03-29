@@ -11,6 +11,21 @@
 }
 
 .form-check-input {
+	&:disabled {
+		background-color: $disabled-surf-1;
+
+		&~.form-check-label {
+			color: $text_disable;
+		}
+	}
+
+	&:checked {
+		&:disabled {
+			background-color: $violet-light-4;
+			border-color: $violet-light-4;
+		}
+	}
+
 	&.invalid {
 		border-color: $red-light-2;
 

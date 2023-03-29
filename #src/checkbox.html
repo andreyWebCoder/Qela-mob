@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('_head.html',{
+"title":"Checkbox"
+})
+
+<body>
+	<main>
+		<!-- Навигация (якоря) -->
+		<aside class="fixed-top pt-2 d-lg-block d-none" style="width: 280px;">
+			<a class="text-center d-block text-secondary display-6 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
+			<nav>
+				<ol class="d-flex flex-column gap-2">
+					<li><a href="#h3Btn1" class="text-black">Checkbox square</a></li>
+					<li><a href="#h3Btn2" class="text-black">Checkbox label</a></li>
+				</ol>
+			</nav>
+		</aside>
+		<!-- Навигация (якоря) -->
+		<!-- Checkbox square -->
+		<div class="mt-3 mb-3 d-flex flex-column gap-3">
+			<h3 id="h3Btn1">Checkbox square</h3>
+			<div class="d-flex">
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input">
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" disabled>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" checked>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" disabled checked>
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input invalid">
+				</div>
+			</div>
+			<!-- Checkbox square -->
+			<!-- Checkbox label -->
+			<h3 id="h3Btn1">Checkbox label</h3>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" id="Check1">
+				<label class="form-check-label" for="Check1">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" disabled id="Check2">
+				<label class="form-check-label" for="Check2">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" checked id="Check3">
+				<label class="form-check-label" for="Check3">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" disabled checked id="Check4">
+				<label class="form-check-label" for="Check4">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input invalid" id="Check5">
+				<label class="form-check-label" for="Check5">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<!-- Checkbox label -->
+			<!-- Checkbox label + link -->
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" id="Check1">
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+				<label class="form-check-label" for="Check1">I agree with <a href="#" class="link-secondary">Terms &amp; Conditions</a></label>
+			</div>
+			<!-- Checkbox label + link -->
+		</div>
+	</main>
+	<!-- =========================== -->
+	@@include('_js.html',{})
+</body>
+
+</html>

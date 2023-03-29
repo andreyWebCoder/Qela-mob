@@ -38,7 +38,7 @@ $green-lite: #EFF7F2;
 $primary: $yellow;
 $info: $lightgray-2;
 $secondary: $violet;
-
+$light: $white ;
 // Prefix for :root CSS variables
 $variable-prefix: bs-; // Deprecated in v5.2.0 for the shorter `$prefix`
 $prefix: $variable-prefix;
@@ -188,12 +188,13 @@ $input-group-addon-bg: $white;
 $input-group-addon-border-color: $input-border-color;
 // scss-docs-end form-input-variables
 // scss-docs-start form-check-variables
-$form-check-input-width: 1.125em;
+$form-check-input-width: 1em;
 $form-check-padding-start: 26px;
 $form-check-margin-bottom: 10px;
-$form-check-input-border: 1px solid $black;
+$form-check-input-border: 1px solid $violet-light;
+$form-check-input-bg: $violet-light ;
 $form-check-input-border-radius: .15em;
-$form-check-input-focus-border: $black;
+$form-check-input-focus-border: $violet-light;
 $form-check-input-checked-color: $white;
 $form-check-input-checked-bg-color: $violet;
 $form-check-label-cursor: pointer;
@@ -201,6 +202,9 @@ $form-check-transition: background-color .3s ease-in-out, border-color .3s ease-
 $form-check-input-focus-box-shadow: none;
 $form-check-input-checked-border-color: $violet;
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-input-disabled-opacity: 1;
+$form-check-label-disabled-opacity: $form-check-input-disabled-opacity;
+$form-check-btn-check-disabled-opacity: 1;
 // scss-docs-end form-check-variables
 // Dropdowns
 //

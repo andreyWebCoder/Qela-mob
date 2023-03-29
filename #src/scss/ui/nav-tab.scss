@@ -52,7 +52,7 @@
 }
 
 .qela-topbar {
-	padding: 0 $spacer 12px $spacer;
+	padding: $spacer*0.75 $spacer $spacer*0.75 $spacer;
 
 	.navbar-brand {
 		img {
