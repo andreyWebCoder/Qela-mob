@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<title>Tabs</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/vendors.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<main>
+		<!-- Навигация (якоря) -->
+		<aside class="fixed-top pt-2" style="width: 280px;">
+			<a class="text-center d-block text-secondary display-6 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
+			<nav>
+				<ol class="d-flex flex-column gap-2">
+					<li><a href="#h3Btn1" class="text-black">Tab-bar</a></li>
+					<li><a href="#h3Btn2" class="text-black">Tabs</a></li>
+				</ol>
+			</nav>
+		</aside>
+		<!-- Навигация (якоря) -->
+		<div class="mt-3 mb-3 d-flex flex-column gap-3">
+			<h3 id="h3Btn1">Tab-bar</h3>
+			<ul class="nav nav-pills nav-fill qela-nav">
+				<li class="nav-item">
+					<a class="nav-link ic-home" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ic-profile" href="#">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ic-flag" href="#">Quests</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ic-voting active" aria-current="page" href="#">Voting</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ic-qela" href="#">Organization</a>
+				</li>
+			</ul>
+			<h3 class="mt-5" id="h3Btn2">Tabs</h3>
+			<ul class="nav nav-pills nav-fill mb-4 qela-tab">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">General</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Local</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">History</a>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<!-- =========================== -->
+	<script src="js/app.js"></script>
+<script src="js/vendors.js"></script>
+</body>
+
+</html>

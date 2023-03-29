@@ -137,10 +137,6 @@
 	padding: 0;
 	text-decoration: none;
 
-	&.text-info {
-		color: $gray-700  !important;
-	}
-
 	&:disabled {
 		background-color: transparent;
 		border: none;
@@ -213,18 +209,76 @@
 // voting title button back
 .btn-back {
 	display: block;
-	position: absolute;
 	padding: 0;
 	border: none;
 	background-color: transparent;
-	left: 0;
-	top: 50%;
 	text-decoration: none;
+	position: absolute;
+	left: 16px;
+	top: 50%;
 	transform: translateY(-50%);
+	color: $black;
+
+	&:hover {
+		color: $black;
+
+	}
 
 	&::before {
 		transform: rotate(90deg);
 		font-size: 24px;
-		color: $black;
+	}
+}
+
+.qela-btnTop {
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	color: $violet;
+	background-color: $violet-light-2;
+	border-radius: 20px;
+
+	&:hover {
+		color: $violet;
+	}
+
+	.left {
+		padding: 10px;
+		border-right: 1px solid $body-bg;
+
+		&::before {
+			font-size: 22px;
+		}
+	}
+
+	.right {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		padding: 6px 6px 6px 10px;
+
+		img {
+			width: 24px;
+			display: block;
+		}
+	}
+}
+
+.qela-btnInfo {
+	color: $violet;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: $violet-light-2;
+	border-radius: 50%;
+
+	&::before {
+		font-size: 22px;
 	}
 }

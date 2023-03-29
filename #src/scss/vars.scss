@@ -250,6 +250,8 @@ $progress-bar-color: #333333;
 $progress-bar-bg: $primary;
 // nav
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$navbar-padding-y: $spacer;
+$navbar-padding-x: $spacer;
 $navbar-light-active-color: $violet;
 $nav-link-padding-y: 1rem;
 $nav-link-padding-x: 1rem;
@@ -306,3 +308,6 @@ $alert-bg-scale: -80%;
 $alert-color-scale: 0%;
 $alert-dismissible-padding-r: $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
 //alert
+// nav
+
+// nav

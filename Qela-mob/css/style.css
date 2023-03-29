@@ -3758,8 +3758,8 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-padding-x: 1rem;
+  --bs-navbar-padding-y: 1rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
@@ -10451,6 +10451,14 @@ textarea.form-control-lg {
   content: "\e932";
 }
 
+.ic-add:before {
+  content: "\e933";
+}
+
+.ic-info:before {
+  content: "\e934";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
@@ -10508,6 +10516,14 @@ main.qela-padding {
   display: block;
   margin: 0 auto;
   width: 50px;
+}
+
+.text-secondary {
+  color: #6257F3 !important;
+}
+
+.text-info {
+  color: #7E8389 !important;
 }
 
 .btn:disabled {
@@ -10629,9 +10645,6 @@ main.qela-padding {
   padding: 0;
   text-decoration: none;
 }
-.btn-link.text-info {
-  color: #7E8389 !important;
-}
 .btn-link:disabled {
   background-color: transparent;
   border: none;
@@ -10688,19 +10701,69 @@ main.qela-padding {
 
 .btn-back {
   display: block;
-  position: absolute;
   padding: 0;
   border: none;
   background-color: transparent;
-  left: 0;
-  top: 50%;
   text-decoration: none;
+  position: absolute;
+  left: 16px;
+  top: 50%;
   transform: translateY(-50%);
+  color: #000;
+}
+.btn-back:hover {
+  color: #000;
 }
 .btn-back::before {
   transform: rotate(90deg);
   font-size: 24px;
-  color: #000;
+}
+
+.qela-btnTop {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #978FFF;
+  background-color: #E5E3FF;
+  border-radius: 20px;
+}
+.qela-btnTop:hover {
+  color: #978FFF;
+}
+.qela-btnTop .left {
+  padding: 10px;
+  border-right: 1px solid #F6F6F6;
+}
+.qela-btnTop .left::before {
+  font-size: 22px;
+}
+.qela-btnTop .right {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 6px 6px 10px;
+}
+.qela-btnTop .right img {
+  width: 24px;
+  display: block;
+}
+
+.qela-btnInfo {
+  color: #978FFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #E5E3FF;
+  border-radius: 50%;
+}
+.qela-btnInfo::before {
+  font-size: 22px;
 }
 
 .form-control {
@@ -10873,6 +10936,55 @@ main.qela-padding {
 .qela-nav .nav-link::before {
   margin-top: 5px;
   font-size: 28px;
+}
+
+.qela-navbar {
+  padding-left: 72px;
+  padding-right: 72px;
+  justify-content: center;
+}
+.qela-navbar .text-center {
+  flex: 1 1 auto;
+  text-align: center;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.qela-navbar .btn {
+  position: absolute;
+  right: 16px;
+}
+
+.qela-topbar {
+  padding: 0 1rem 12px 1rem;
+}
+.qela-topbar .navbar-brand img {
+  height: 40px;
+}
+
+.qela-avatar {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.qela-avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.qela-avatar span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
 }
 
 .qela-card {
