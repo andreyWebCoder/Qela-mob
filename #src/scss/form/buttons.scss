@@ -134,7 +134,6 @@
 }
 
 .btn-link {
-	padding: 0;
 	text-decoration: none;
 
 	&:disabled {
@@ -149,19 +148,31 @@
 		color: $text_disable  !important;
 	}
 
-	&.ic-left {
-		padding: 0px 0px 0px 24px;
+	&.ic-left,
+	&.ic-right {
+		padding: 12px 16px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 
 		&::before {
-			left: 0;
+			position: static;
+			transform: translateY(0);
 		}
 	}
 
 	&.ic-right {
-		padding: 0px 24px 0px 0px;
+		flex-direction: row-reverse;
 
-		&::before {
-			right: 0;
+		&::before {}
+	}
+
+	&.btn-sm {
+		padding: 0;
+
+		&.ic-left,
+		&.ic-right {
+			padding: 0;
 		}
 	}
 
