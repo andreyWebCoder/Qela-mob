@@ -10453,6 +10453,14 @@ textarea.form-control-lg {
   content: "\e934";
 }
 
+.ic-file-copy:before {
+  content: "\e935";
+}
+
+.ic-circle:before {
+  content: "\e936";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
@@ -10771,6 +10779,11 @@ a:hover {
 }
 .qela-btnInfo::before {
   font-size: 22px;
+}
+
+.list-group a {
+  color: #000;
+  text-decoration: none;
 }
 
 .form-control {
@@ -11116,18 +11129,19 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
-.qela-list .checkbox-container {
+
+.qela-condenced .checkbox-container {
   padding-right: 60px;
   position: relative;
 }
-.qela-list .checkbox-container.active span {
+.qela-condenced .checkbox-container.active span {
   border-color: #978FFF;
   background-color: #978FFF;
 }
-.qela-list .checkbox-container.active span::before {
+.qela-condenced .checkbox-container.active span::before {
   opacity: 1;
 }
-.qela-list .checkbox-container span {
+.qela-condenced .checkbox-container span {
   position: absolute;
   border: 1px solid #000;
   border-radius: 50%;
@@ -11140,14 +11154,94 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-.qela-list .checkbox-container span::before {
-  font-size: 17px;
+.qela-condenced .checkbox-container span::before {
+  font-size: 16px;
   opacity: 0;
   color: #fff;
 }
+.qela-condenced .radiobutton-container {
+  padding-right: 60px;
+  position: relative;
+}
+.qela-condenced .radiobutton-container.active span {
+  border-color: #978FFF;
+  background-color: #fff;
+  border-width: 2px;
+}
+.qela-condenced .radiobutton-container.active span::before {
+  opacity: 1;
+  color: #978FFF;
+}
+.qela-condenced .radiobutton-container span {
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qela-condenced .radiobutton-container span::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #978FFF;
+  opacity: 0;
+}
 
+.qela-description .list-group-item {
+  box-shadow: none;
+}
+.qela-description .list-group-item.active {
+  border: none;
+}
 .qela-description .list-group-item:not(:last-child) {
   border-bottom: 1px solid #D1D1D2;
+}
+
+.qela-custom .btn {
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-copyed {
+  border: none;
+  background-color: transparent;
+}
+.btn-copyed span {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  color: #BBBDC0;
+}
+.btn-copyed span::before {
+  color: #000;
+}
+.btn-copyed span.filled {
+  color: #70C174;
+  display: none;
+}
+.btn-copyed span.filled::before {
+  color: #70C174;
+}
+.btn-copyed.success {
+  pointer-events: none;
+}
+.btn-copyed.success span {
+  display: none;
+}
+.btn-copyed.success span.filled {
+  display: flex;
 }
 
 .text-editor h1, .text-editor .h1,

@@ -1,3 +1,10 @@
+.list-group {
+	a {
+		color: $body-color;
+		text-decoration: none;
+	}
+}
+
 .form-control {
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 
