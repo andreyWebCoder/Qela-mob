@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ua">
 @@include('_head.html',{
-"title":"Checkbox"
+"title":"Checkbox rodio"
 })
 
 <body>
 	<main>
 		<!-- Навигация (якоря) -->
 		<aside class="fixed-top pt-2 d-lg-block d-none" style="width: 280px;">
-			<a class="text-center d-block text-secondary display-6 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
+			<a class="text-center d-block text-secondary display-1 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
 			<nav>
 				<ol class="d-flex flex-column gap-2">
 					<li><a href="#h3Btn1" class="text-black">Checkbox square</a></li>
 					<li><a href="#h3Btn2" class="text-black">Checkbox label</a></li>
+					<li><a href="#h3Btn3" class="text-black">Radiobutton square</a></li>
+					<li><a href="#h3Btn4" class="text-black">Radiobutton label</a></li>
 				</ol>
 			</nav>
 		</aside>
@@ -39,7 +41,7 @@
 			</div>
 			<!-- Checkbox square -->
 			<!-- Checkbox label -->
-			<h3 id="h3Btn1">Checkbox label</h3>
+			<h3 class="mt-4" id="h3Btn1">Checkbox label</h3>
 			<div class="form-check">
 				<input type="checkbox" class="form-check-input" id="Check1">
 				<label class="form-check-label" for="Check1">Checkbox-label</label>
@@ -62,7 +64,7 @@
 			</div>
 			<div class="form-check">
 				<input type="checkbox" class="form-check-input invalid" id="Check5">
-				<label class="form-check-label" for="Check5">Checkbox-label</label>
+				<label class="form-check-label" for="Check5">Checkbox-label Checkbox-label Checkbox-label Checkbox-label Checkbox-label</label>
 				<span class="form-error">Error text1 Error text1 Error text1</span>
 			</div>
 			<!-- Checkbox label -->
@@ -70,9 +72,57 @@
 			<div class="form-check">
 				<input type="checkbox" class="form-check-input" id="Check1">
 				<span class="form-error">Error text1 Error text1 Error text1</span>
-				<label class="form-check-label" for="Check1">I agree with <a href="#" class="link-secondary">Terms &amp; Conditions</a></label>
+				<label class="form-check-label" for="Check1">I agree with <a href="#">Terms &amp; Conditions</a></label>
 			</div>
 			<!-- Checkbox label + link -->
+			<!-- Radiobutton square -->
+			<h3 class="mt-4" id="h3Btn3">Radiobutton square</h3>
+			<div class="d-flex">
+				<div class="form-check">
+					<input class="form-check-input" type="radio">
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" disabled type="radio">
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" checked type="radio">
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" checked disabled type="radio">
+				</div>
+				<div class="form-check">
+					<input class="form-check-input invalid" type="radio">
+				</div>
+			</div>
+			<!-- Radiobutton square -->
+			<!-- Radiobutton label -->
+			<h3 class="mt-4" id="h3Btn4">Radiobutton label</h3>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="Radio1">
+				<label class="form-check-label" for="Radio1">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="Radio2" disabled>
+				<label class="form-check-label" for="Radio2">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="Radio3" checked>
+				<label class="form-check-label" for="Radio3">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input" id="Radio4" disabled checked>
+				<label class="form-check-label" for="Radio4">Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<div class="form-check">
+				<input type="radio" class="form-check-input invalid" id="Radio5">
+				<label class="form-check-label" for="Radio5">Checkbox-label Checkbox-label Checkbox-label Checkbox-label Checkbox-label</label>
+				<span class="form-error">Error text1 Error text1 Error text1</span>
+			</div>
+			<!-- Radiobutton label -->
 		</div>
 	</main>
 	<!-- =========================== -->

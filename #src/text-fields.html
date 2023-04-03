@@ -8,61 +8,49 @@
 	<main>
 		<!-- Навигация (якоря) -->
 		<aside class="fixed-top pt-2 d-lg-block d-none" style="width: 280px;">
-			<a class="text-center d-block text-secondary display-6 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
+			<a class="text-center d-block text-secondary display-1 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
 			<nav>
 				<ol class="d-flex flex-column gap-2">
 					<li><a href="#h3Btn1" class="text-black">Field solo</a></li>
-
-					<li><a href="#h3Btn2" class="text-black">Nav-bar icon left</a></li>
-					<li><a href="#h3Btn3" class="text-black">Nav-bar icon left, button right</a></li>
-					<li><a href="#h3Btn4" class="text-black">Nav-bar button right</a></li>
-					<li><a href="#h3Btn5" class="text-black">Avatars</a></li>
-					<li><a href="#h3Btn6" class="text-black">Top bar avatar</a></li>
-					<li><a href="#h3Btn7" class="text-black">Top bar avatar, info-button right</a></li>
-					<li><a href="#h3Btn8" class="text-black">Top bar avatar, logo right</a></li>
+					<li><a href="#h3Btn2" class="text-black">Field solo-simple</a></li>
+					<li><a href="#h3Btn3" class="text-black">Text-field btn-group</a></li>
+					<li><a href="#h3Btn3" class="text-black">Field text-area</a></li>
 				</ol>
 			</nav>
 		</aside>
 		<!-- Навигация (якоря) -->
 
-		<div class="mt-3 mb-3 d-flex flex-column gap-3">
-			<h3 id="h3Btn1">Field solo</h3>
+		<form class="mt-3 mb-3 d-flex flex-column gap-3">
+			<h3 class="h1" id="h3Btn1">Field solo</h3>
 			<div>
 				<label for="inputText1" class="form-label">Name</label>
 				<input type="text" class="form-control" id="inputText1" placeholder="Name">
 				<span class="form-error">Error text</span>
 				<span class="helper-text">helper-text</span>
 			</div>
-
-		</div>
-		<form class="mt-2 d-flex flex-column gap-3">
 			<div>
-				<label for="inputText1" class="form-label ">Name</label>
-				<input type=" text" class="form-control invalid" id="inputText1" placeholder="Name">
+				<label for="inputText2" class="form-label">Name</label>
+				<input type="text" class="form-control" id="inputText2" value="Taras" placeholder="Name">
 				<span class="form-error">Error text</span>
 				<span class="helper-text">helper-text</span>
 			</div>
 			<div>
-				<label for="inputText2" class="form-label ">Last Name</label>
-				<input type="text" class="form-control" id="inputText2" placeholder="Last Name">
+				<label for="inputText3" class="form-label">Name</label>
+				<input type="text" class="form-control invalid" id="inputText3" placeholder="Name">
 				<span class="form-error">Error text</span>
 				<span class="helper-text">helper-text</span>
 			</div>
-			<div>
-				<label for="inputEmail1" class="form-label ">Email</label>
-				<input type="email" placeholder="Email" class="form-control" id="inputEmail1">
-				<span class="form-error">Error text</span>
-				<span class="helper-text">helper-text</span>
+			<h3 class="h1 mt-5" id="h3Btn2">Field solo-simple</h3>
+			<div class="d-flex gap-3 ">
+				<input type="number" class="form-control text-center">
+				<input type="number" class="form-control text-center">
+				<input type="number" value="5" class="form-control text-center">
+				<input type="number" value="15" class="form-control text-center invalid">
 			</div>
-			<div>
-				<label for="inputNumber1" class="form-label ">Phone number</label>
-				<input type="tel" placeholder="Phone number" class="form-control" id="inputNumber1">
-				<span class="form-error">Error text</span>
-				<span class="helper-text">helper-text</span>
-			</div>
+			<h3 class="h1 mt-5" id="h3Btn3">Text-field btn-group</h3>
 			<div>
 				<label for="inputEmail1" class="form-label ">Password</label>
-				<div class="input-group qela-input-group has-validation">
+				<div class="input-group qela-input-group">
 					<input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="button-addon1">
 					<button class="btn qela-btn ic-eye-close" type="button" id="button-addon1"></button>
 				</div>
@@ -71,32 +59,25 @@
 			</div>
 			<div>
 				<label for="inputEmail2" class="form-label">Confirm password</label>
-				<div class="input-group qela-input-group">
+				<div class="input-group qela-input-group has-validation">
 					<input type="text" class="form-control" placeholder="Confirm password" aria-label="Confirm password" aria-describedby="button-addon2">
 					<button class="btn qela-btn ic-eye" type="button" id="button-addon2"></button>
 				</div>
 				<span class="form-error">Error text1</span>
 				<span class="helper-text">helper-text</span>
 			</div>
-			<a href="#" class="link-secondary ms-1">Forgot your password?</a>
-			<!-- Подзаголовки если нужны -->
-			<p class="opacity-75 h-6 fw-semibold mb-0">Haven’t found your issue?<br>Write to us</p>
+			<h3 class="h1 mt-5" id="h3Btn4">Field text-area</h3>
 			<div>
 				<label for="exampleFormControlTextarea1" class="form-label">Your report</label>
 				<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your report" rows="5"></textarea>
 				<span class="form-error">Error text1</span>
 				<span class="helper-text">helper-text</span>
 			</div>
-			<div class="form-check mt-4">
-				<label class="form-check-label" for="Check1">I agree with <a href="#" class="link-secondary">Terms &amp; Conditions</a></label>
-				<input type="checkbox" class="form-check-input invalid" id="Check1">
-				<span class="form-error">Error text1 Error text1 Error text1</span>
-			</div>
-			<div class="mb-4 qela-mt-7">
-				<button type="submit" class="btn btn-secondary w-100">Start</button>
-			</div>
-			<div class="text-center mb-5">
-				<div><small>Do not have an account?</small><a href="#" class="link-secondary fw-normal ms-1"><small>Sign up</small></a></div>
+			<div>
+				<label for="exampleFormControlTextarea2" class="form-label">Your report</label>
+				<textarea class="form-control invalid" id="exampleFormControlTextarea2" placeholder="Your report" rows="5"></textarea>
+				<span class="form-error">Error text1</span>
+				<span class="helper-text">helper-text</span>
 			</div>
 		</form>
 	</main>

@@ -15,6 +15,27 @@ main {
 	}
 }
 
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+	padding: $spacer * 0.5 0 $spacer 0;
+}
+
+.display-1 {
+	padding-top: 0;
+}
+
+a {
+	color: $violet-dark-2;
+
+	&:hover {
+		color: $violet-dark-2;
+	}
+}
+
 .qela-mt-7 {
 	margin-top: 80px;
 }

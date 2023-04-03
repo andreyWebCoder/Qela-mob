@@ -70,11 +70,11 @@ $font-family-base: "SFProDisplay";
 $font-size-base: 1rem; //16px
 $line-height-base: 1.25;
 // scss-docs-start headings-variables
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
+$h1-font-size: $font-size-base * 1.75 !default;
+$h2-font-size: $font-size-base * 1.5 !default;
+$h3-font-size: $font-size-base * 1.375 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base * 1.125 !default;
 $h6-font-size: $font-size-base  !default;
 
 $headings-margin-bottom: $spacer * 0;
@@ -111,6 +111,12 @@ $hr-margin-y: 0;
 $hr-border-color: $lightgray-2; // Allows for inherited colors
 $hr-border-width: var(--#{$prefix}border-width);
 $hr-opacity: 1;
+// img
+$thumbnail-padding: 0;
+$thumbnail-bg: $body-bg;
+$thumbnail-border-width: none;
+$thumbnail-border-color: none;
+$thumbnail-border-radius: 10px;
 // Tables
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
@@ -189,9 +195,9 @@ $input-group-addon-bg: $white;
 $input-group-addon-border-color: $input-border-color;
 // scss-docs-end form-input-variables
 // scss-docs-start form-check-variables
-$form-check-input-width: 1em;
-$form-check-padding-start: 26px;
-$form-check-margin-bottom: 10px;
+$form-check-input-width: 1.375em;
+$form-check-padding-start: 30px;
+$form-check-margin-bottom: 0;
 $form-check-input-border: 1px solid $violet-light;
 $form-check-input-bg: $violet-light ;
 $form-check-input-border-radius: .15em;
@@ -203,6 +209,7 @@ $form-check-transition: background-color .3s ease-in-out, border-color .3s ease-
 $form-check-input-focus-box-shadow: none;
 $form-check-input-checked-border-color: $violet;
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$violet}'/></svg>");
 $form-check-input-disabled-opacity: 1;
 $form-check-label-disabled-opacity: $form-check-input-disabled-opacity;
 $form-check-btn-check-disabled-opacity: 1;
@@ -251,8 +258,8 @@ $progress-height: 1rem;
 $progress-font-size: 11px;
 $progress-bg: #DCD9FB;
 $progress-border-radius: 6px;
-$progress-bar-color: #333333;
-$progress-bar-bg: $primary;
+$progress-bar-color: $black;
+$progress-bar-bg: $secondary;
 // nav
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $navbar-padding-y: $spacer;

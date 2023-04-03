@@ -1,8 +1,7 @@
-.qela-list-group {
+.qela-list {
 	.list-group-item {
 		border-radius: 10px;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-		font-size: 17px;
 	}
 
 	.checkbox-container {
@@ -38,6 +37,14 @@
 				opacity: 0;
 				color: $white;
 			}
+		}
+	}
+}
+
+.qela-description {
+	.list-group-item {
+		&:not(:last-child) {
+			border-bottom: 1px solid $info;
 		}
 	}
 }

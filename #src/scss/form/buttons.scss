@@ -187,21 +187,14 @@
 
 .btn-sm {
 	&.ic-right {
-		padding-right: 32px;
-		padding-left: 32px;
 
 		&::before {
-			font-size: 16px;
 			right: 8px;
 		}
 	}
 
 	&.ic-left {
-		padding-right: 32px;
-		padding-left: 32px;
-
 		&::before {
-			font-size: 16px;
 			left: 8px;
 		}
 	}
