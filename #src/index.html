@@ -9,22 +9,39 @@
 	<main class="main">
 		<div class="container">
 			<h2 class="title">Верстка "Qela mobile":</h2>
-			<ol class="list">
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/buttons.html" class="link">Buttons</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/tabs.html" class="link">Tabs</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/subtitles.html" class="link">Subtitles</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/text-fields.html" class="link">Text-fields</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/nav.html" class="link">Nav</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/links.html" class="link">Links</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/logo.html" class="link">Logos</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/check-radio.html" class="link">Checkbox & radiobutton</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/typography.html" class="link">Typography</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/progress.html" class="link">Progress</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/lists.html" class="link">Lists</a></li>
-
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/reg.html" class="link">Register</a></li>
-				<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/voting.html" class="link">Voting</a></li>
-			</ol>
+			<div class="flex">
+				<div>
+					<h3 class="subtitle">Global components App:</h3>
+					<ol class="list">
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/buttons.html" class="link">Buttons</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/tabs.html" class="link">Tabs</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/subtitles.html" class="link">Subtitles</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/text-fields.html" class="link">Text-fields</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/nav.html" class="link">Nav</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/links.html" class="link">Links</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/logo.html" class="link">Logos</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/check-radio.html" class="link">Checkbox & radiobutton</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/typography.html" class="link">Typography</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/progress.html" class="link">Progress</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/lists.html" class="link">Lists</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/empty.html" class="link">Empty space</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/popup.html" class="link">Popups</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/alert.html" class="link">Alert</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/breadcrambs.html" class="link">Breadcrambs</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/img.html" class="link">Img-overlay</a></li>
+					</ol>
+				</div>
+				<div>
+					<h3 class="subtitle">Page components App:</h3>
+					<ol class="list">
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/reg.html" class="link">Register</a></li>
+						<li class="item"><a target="_blank" href="http://andreyfront.owlweb.com.ua/Qela-mob/voting.html" class="link">Voting</a></li>
+					</ol>
+				</div>
+				<div>
+					<h3 class="subtitle">Page components App:</h3>
+				</div>
+			</div>
 		</div>
 	</main>
 </body>
@@ -67,6 +84,10 @@
 		-moz-text-size-adjust: 100%;
 		-webkit-text-size-adjust: 100%;
 		padding: 0;
+	}
+
+	main {
+		max-width: 100%;
 	}
 
 	input,
@@ -129,23 +150,37 @@
 	.container {
 		max-width: 1220px;
 		margin: 0 auto;
-		padding: 50px;
+		padding: 50px 10px;
 	}
 
 	.title {
 		font-weight: 700;
-		font-size: 36px;
+		font-size: 32px;
 		color: rgba(235, 231, 145, 0.8);
-		margin: 0px 0px 40px 0px;
+		margin: 0px 0px 20px 0px;
+	}
+
+	.flex {
+		display: flex;
+		gap: 50px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.subtitle {
+		font-weight: 600;
+		margin: 0px 0px 10px 0px;
+		color: rgba(235, 231, 145, 0.8);
+		font-size: 24px;
 	}
 
 	.list {
 		counter-reset: ol-numbers;
-		font-size: 28px;
+		font-size: 22px;
 	}
 
 	.item:not(:last-child) {
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 15px 0px;
 	}
 
 	.list .item {

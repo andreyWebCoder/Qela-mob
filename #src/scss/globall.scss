@@ -88,3 +88,29 @@ a {
 .text-info {
 	color: $gray-700  !important;
 }
+
+.qela-img {
+	padding-bottom: 100vh;
+	position: relative;
+
+	&::before {
+		content: '';
+		left: 0;
+		top: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		z-index: 2;
+		opacity: 0.5
+	}
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}

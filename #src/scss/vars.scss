@@ -14,7 +14,10 @@ $black-700: rgba(0, 0, 0, 0.7);
 // scss-docs-end gray-color-variables
 // scss-docs-start color-variables
 $yellow: #FFE000;
+$orange-light: #FFE3BB;
+$orange-dark: #FF7A00;
 $red: #E20000;
+$red-light: #FFD6D6;
 $red-light-1: #FFF2F0;
 $red-light-2: #FFADAD;
 $violet-dark-2: #6257F3;
@@ -25,6 +28,7 @@ $violet-light-2: #E5E3FF;
 $violet-light-3: #CCC8FF;
 $violet-light-4: #E2E2E2;
 $gray-01: #4D4D4D;
+$grey-light: #F2F2F2;
 $lightgray: #F6F6F6;
 $lightgray-1: #E8E8E8;
 $lightgray-2: #D1D1D2;
@@ -36,6 +40,7 @@ $green: #70C174;
 $green-lite: #EFF7F2;
 
 $primary: $yellow;
+$warning: $orange-dark;
 $info: $lightgray-2;
 $secondary: $violet;
 $light: $white ;
@@ -250,10 +255,22 @@ $modal-content-border-radius: 14px;
 $modal-content-box-shadow-xs: none;
 $modal-content-box-shadow-sm-up: none;
 $modal-backdrop-bg: $black;
-$modal-backdrop-opacity: 0.4;
+$modal-backdrop-opacity: 0.5;
 $modal-sm: 270px;
 // scss-docs-end modal-variables
-
+// offcanvas
+$offcanvas-padding-y: $modal-inner-padding;
+$offcanvas-padding-x: $modal-inner-padding;
+$offcanvas-horizontal-width: 100%;
+$offcanvas-vertical-height: auto;
+$offcanvas-border-color: $modal-content-border-color;
+$offcanvas-border-width: $modal-content-border-width;
+$offcanvas-bg-color: $modal-content-bg;
+$offcanvas-color: $modal-content-color;
+$offcanvas-box-shadow: $modal-content-box-shadow-xs;
+$offcanvas-backdrop-bg: $modal-backdrop-bg;
+$offcanvas-backdrop-opacity: $modal-backdrop-opacity;
+// offcanvas
 $progress-height: 1rem;
 $progress-font-size: 11px;
 $progress-bg: #DCD9FB;
@@ -311,8 +328,8 @@ $list-group-active-bg: $white;
 $list-group-active-border-color: $violet;
 //list-group
 //alert
-$alert-padding-y: $spacer * 0.875;
-$alert-padding-x: $spacer;
+$alert-padding-y: $spacer;
+$alert-padding-x: $spacer * 2.625;
 $alert-margin-bottom: 0;
 $alert-border-radius: $border-radius;
 $alert-border-width: 0;
@@ -320,6 +337,15 @@ $alert-bg-scale: -80%;
 $alert-color-scale: 0%;
 $alert-dismissible-padding-r: $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
 //alert
-// nav
-
-// nav
+//_breadcrumb
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding-x: 0;
+$breadcrumb-margin-bottom: 0;
+$breadcrumb-bg: null;
+$breadcrumb-divider-color: $black;
+$breadcrumb-active-color: $black;
+$breadcrumb-divider: quote("");
+$breadcrumb-divider-flipped: $breadcrumb-divider;
+$breadcrumb-border-radius: null;
+//_breadcrumb
