@@ -1,4 +1,5 @@
 ================= Дата 07.04.23 ======================================
+-- Добавлены Иконки
 -- Правки навигации aside в Layouts
 -- Добавлены Layouts: success1.html, success2.html, success3.html, success4.html,
 -- В logo.html в img логотипов добавлено ширину 
