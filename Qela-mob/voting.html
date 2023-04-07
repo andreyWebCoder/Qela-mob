@@ -10,111 +10,106 @@
 </head>
 
 <body>
-	<main class="qela-padding">
-		<div class="qela-top">
-			<h1 class="h5 text-center pt-2 pb-2 bg-white">Voting</h1>
-			<ul class="nav nav-pills nav-fill mb-4 qela-tab">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#">General</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Local</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">History</a>
-				</li>
-			</ul>
-		</div>
-		<!-- cards start-->
-		<div class="d-flex flex-column gap-2 mb-4">
+	<main>
+		<!-- Навигация (якоря)-->
+		<aside class="fixed-top pt-2 d-lg-block d-none" style="width: 280px;">
+			<a class="text-center d-block text-secondary display-1 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
+			<nav>
+				<ol class="d-flex flex-column gap-2">
+					<li><a href="#h3Btn1" class="text-black">Cards voting</a></li>
+					<li><a href="#h3Btn2" class="text-black">Voting info card</a></li>
+					<li><a href="#h3Btn3" class="text-black">Voting info page</a></li>
+					<li><a href="#h3Btn4" class="text-black">Time</a></li>
+					<li><a href="#h3Btn5" class="text-black">Formula</a></li>
+					<li><a href="#h3Btn6" class="text-black">Decision</a></li>
+				</ol>
+			</nav>
+		</aside>
+		<!-- Навигация (якоря) -->
+		<div class="mt-3 mb-3 d-flex flex-column gap-3">
+			<!-- cards -->
+			<h3 class="h1" id="h3Btn1">Cards voting</h3>
 			<div class="card qela-card">
 				<div class="card-body">
 					<h5 class="h6 card-title">Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto </h5>
-					<span class="qela-badge me-3"><small>Time left</small><span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
-					<span class="qela-badge"><small>Formula</small><span class="badge text-bg-secondary">1=1</span></span>
+					<span class="qela-badge small"><span>Time left</span><span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
+					<span class="qela-badge small"><span>Fx</span><span class="badge text-bg-secondary">1=1</span></span>
+					<span class="qela-badge small"><span class="badge text-bg-secondary">Voted</span></span>
 				</div>
 			</div>
 			<div class="card qela-card">
 				<div class="card-body">
 					<h5 class="h6 card-title">Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto </h5>
-					<span class="qela-badge me-3"><span class="badge text-bg-info">finished</span></span>
-					<span class="qela-badge"><small>Formula</small><span class="badge text-bg-secondary">1=1</span></span>
+					<span class="qela-badge small"><span class="badge text-bg-info">Finished</span></span>
+					<span class="qela-badge small"><span>Fx</span><span class="badge text-bg-secondary">1=1</span></span>
+					<span class="qela-badge small"><span class="badge text-bg-secondary">Voted</span></span>
 				</div>
 			</div>
-			<!-- cards end-->
-			<!-- title v2 start-->
-			<div class="position-relative mb-3">
-				<h1 class="h5 text-center pt-2">Voting</h1>
-				<a href="#" class="btn-back mt-2 ic-chevron"></a>
-			</div>
-			<!-- title v2 end-->
-			<p class="display-6 m-0">Regarding support for the Eighth Requirement of the Equality March 2021 Manifesto</p>
+			<!-- Voting info card -->
+			<h3 class="h1 mt-5" id="h3Btn2">Voting info card</h3>
 			<div>
-				<span class="qela-badge me-3"><small>Time left</small><span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
-				<span class="qela-badge"><small>Formula</small><span class="badge text-bg-secondary">1=1</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-info">Finished</span></span>
+				<span class="qela-badge small"><span>Fx</span><span class="badge text-bg-secondary">1=1</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-secondary">Voted</span></span>
 			</div>
-			<hr>
-			<p><small>The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population.</small></p>
-			<h3 class="h6 opacity-75"><strong>Question</strong></h3>
-			<p class="h5 mb-3">Do you support the Eighth Requirement of the Equality March 2021 Manifesto?</p>
-
-
-			<!-- modal btn start -->
-			<button type="button" class="btn btn-primary w-100 mt-2 mb-4" data-bs-toggle="modal" data-bs-target="#modal1"><strong>click (modal)</strong></button>
-
-			<!-- list-group whith progress end -->
-			<!-- decision start -->
+			<div>
+				<span class="qela-badge small">Time left<span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge small"><span>Fx</span><span class="badge text-bg-secondary">1=1</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-secondary">Voted</span></span>
+			</div>
+			<!-- voting info page -->
+			<h3 class="h1 mt-5" id="h3Btn3">Voting info page</h3>
+			<div>
+				<span class="qela-badge"><span class="badge text-bg-info">Finished</span></span>
+				<span class="qela-badge"><span>Fx</span><span class="badge text-bg-secondary rounded-3">1=1</span></span>
+				<span class="qela-badge"><span class="badge text-bg-secondary rounded-3">Voted</span></span>
+			</div>
+			<div>
+				<span class="qela-badge">Time left<span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge"><span>Fx</span><span class="badge text-bg-secondary rounded-3">1=1</span></span>
+				<span class="qela-badge"><span class="badge text-bg-secondary rounded-3">Voted</span></span>
+			</div>
+			<!-- time -->
+			<h3 class="h1 mt-5" id="h3Btn4">Time</h3>
+			<!-- small -->
+			<div>
+				<span class="qela-badge small"><span>Time left</span><span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-light">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-info">Finished</span></span>
+			</div>
+			<!-- big -->
+			<div>
+				<span class="qela-badge"><span>Time left</span><span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge"><span class="badge text-bg-primary">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge"><span class="badge text-bg-light">3 d. 22 h. 33 min.</span></span>
+				<span class="qela-badge"><span class="badge text-bg-info">Finished</span></span>
+			</div>
+			<!-- Formula -->
+			<h3 class="h1 mt-5" id="h3Btn5">Formula</h3>
+			<!-- small -->
+			<div>
+				<span class="qela-badge small"><span>Fx</span><span class="badge text-bg-secondary">1=1</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-secondary">1=1</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-secondary">Qela</span></span>
+				<span class="qela-badge small"><span class="badge text-bg-secondary">Voted</span></span>
+			</div>
+			<!-- big -->
+			<div>
+				<span class="qela-badge"><span>Fx</span><span class="badge text-bg-secondary rounded-3">1=1</span></span>
+				<span class="qela-badge"><span class="badge text-bg-secondary rounded-3">1=1</span></span>
+				<span class="qela-badge"><span class="badge text-bg-secondary rounded-3">Qela</span></span>
+				<span class="qela-badge"><span class="badge text-bg-secondary rounded-3">Voted</span></span>
+			</div>
+			<!-- Decision -->
+			<h3 class="h1 mt-5" id="h3Btn6">Decision</h3>
 			<div class="qela-decision">
 				<p>The eighth requirement. Raise the healthcare system's focus on the epidemic well-being of the LGBTQ+ communities, mental, sexual and reproductive health, and expand stable state and municipal funding for quality public health services for all key groups of population.</p>
 				<p>The eighth requirement. Raise the healthcare system's focus on.</p>
 				<hr class="mb-3 mt-2">
 				<img src="img/ok-ic.svg" alt="">
 			</div>
-			<!-- decision end -->
-			<div class="qela-bottom">
-				<ul class="nav nav-pills nav-fill qela-nav">
-					<li class="nav-item">
-						<a class="nav-link ic-home" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link ic-profile" href="#">Profile</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link ic-flag" href="#">Quests</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link ic-voting active" aria-current="page" href="#">Voting</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link ic-qela" href="#">Organization</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="qela-unavailable ic-stop">
-				History unavailable yet
-			</div>
-			<!-- modal start -->
-			<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-modal="true" role="dialog">
-				<div class="modal-dialog modal-sm modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h1 class="modal-title" id="modal1Label">Voting available for verified users only</h1>
-						</div>
-						<div class="modal-body">
-							<p>Get verified and to get access</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="modal-btn">Get verified</button>
-							<button type="button" class="modal-btn" data-bs-dismiss="modal">Next time</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- modal end -->
 	</main>
-
-
 	<!-- =========================== -->
 	<script src="js/app.js"></script>
 <script src="js/vendors.js"></script>

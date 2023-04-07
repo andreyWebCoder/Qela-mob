@@ -1,4 +1,6 @@
 .qela-tab {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+
 	.nav-link {
 		border-bottom: 2px solid $violet-light-4;
 		background-color: $white;
@@ -23,8 +25,15 @@
 		}
 
 		&::before {
-			margin-top: 5px;
 			font-size: 28px;
+		}
+	}
+
+	&.bg-transparent {
+		.nav-link {
+			&.active {
+				background-color: transparent !important;
+			}
 		}
 	}
 }
@@ -52,7 +61,7 @@
 }
 
 .qela-topbar {
-	padding: $spacer*0.75 $spacer $spacer*0.75 $spacer;
+	padding: $spacer*0.5 $spacer $spacer*0.5 $spacer;
 
 	.navbar-brand {
 		img {
@@ -83,4 +92,9 @@
 		line-height: 28px;
 		color: $white;
 	}
+}
+
+.qela-blur {
+	background-color: rgba(255, 255, 255, 0.75) !important;
+	backdrop-filter: blur(16px) !important;
 }

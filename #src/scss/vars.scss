@@ -44,6 +44,9 @@ $warning: $orange-dark;
 $info: $lightgray-2;
 $secondary: $violet;
 $light: $white ;
+// отключает адаптивній шрифт и другие свойства
+$enable-rfs: false;
+
 // Prefix for :root CSS variables
 $variable-prefix: bs-; // Deprecated in v5.2.0 for the shorter `$prefix`
 $prefix: $variable-prefix;
@@ -75,12 +78,12 @@ $font-family-base: "SFProDisplay";
 $font-size-base: 1rem; //16px
 $line-height-base: 1.25;
 // scss-docs-start headings-variables
-$h1-font-size: $font-size-base * 1.75 !default;
-$h2-font-size: $font-size-base * 1.5 !default;
-$h3-font-size: $font-size-base * 1.375 !default;
-$h4-font-size: $font-size-base * 1.25 !default;
-$h5-font-size: $font-size-base * 1.125 !default;
-$h6-font-size: $font-size-base  !default;
+$h1-font-size: $font-size-base * 1.75;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.375;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.125;
+$h6-font-size: $font-size-base;
 
 $headings-margin-bottom: $spacer * 0;
 $headings-font-weight: 500;
@@ -282,8 +285,8 @@ $progress-bar-bg: $secondary;
 $navbar-padding-y: $spacer;
 $navbar-padding-x: $spacer;
 $navbar-light-active-color: $violet;
-$nav-link-padding-y: 1rem;
-$nav-link-padding-x: 1rem;
+$nav-link-padding-y: 1.25rem;
+$nav-link-padding-x: 0.75rem;
 $nav-link-font-size: 13px;
 $nav-link-font-weight: 600;
 $nav-link-color: $gray-700;
@@ -307,11 +310,11 @@ $card-border-radius: 8px;
 $card-bg: $white;
 //card
 // badge
-$badge-font-size: .625em;
+$badge-font-size: 14px;
 $badge-font-weight: 400;
 $badge-padding-y: 4px;
-$badge-padding-x: 4px;
-$badge-border-radius: 14px;
+$badge-padding-x: 6px;
+$badge-border-radius: 21px;
 // badge
 //list-group
 $list-group-color: $black;

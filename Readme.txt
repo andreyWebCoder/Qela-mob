@@ -1,3 +1,14 @@
+================= Дата 07.04.23 ======================================
+-- Добавлены Layouts: success1.html, success2.html, success3.html, success4.html,
+-- В logo.html в img логотипов добавлено ширину 
+================= Дата 06.04.23 ======================================
+-- Добавлены Layouts: layout1.html, layout2.html, layout3.html, layout-top.html,
+	symple.html
+-- Класс qela-padding заменен на класс qela-fullscreen padding разбит на
+	отдельние классы qela-pad1, qela-pad2, qela-pad3, qela-pad_top 
+-- Добавлен класс qela-blur с белым фоном и ефектом blur
+-- Правки в nav.html & tabs.html добавлены компоненты с прозрачным фоном
+-- Правки в voting.html Полная переработка компонентов
 ================= Дата 05.04.23 ======================================
 -- Добавлено img.html (img-overlay (for design))
 -- Добавлено breadcrambs.html 

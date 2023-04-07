@@ -1,18 +1,26 @@
 .qela-badge {
 	display: inline-flex;
 	align-items: center;
+	gap: 4px;
 
-	small {
-		margin: 0px 4px 0px 0px;
-		font-size: 12px;
-		line-height: 100%;
-		color: $black-700;
+	&:not(:last-child) {
+		margin-right: 16px;
 	}
 
 	.badge {
 		&.text-bg-secondary {
 			color: $white  !important;
 			font-weight: 600;
+		}
+	}
+
+	&.small {
+		font-size: 12px;
+		border-radius: 14px;
+
+		.badge {
+			font-size: 12px;
+			padding: 2px 4px;
 		}
 	}
 }

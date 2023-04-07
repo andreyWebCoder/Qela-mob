@@ -4,15 +4,41 @@ main {
 	max-width: 576px;
 	margin: 0 auto;
 	position: relative;
-	// display: flex;
-	// flex-direction: column;
-	// min-height: 100vh;
 	padding: 0 16px;
+}
 
-	&.qela-padding {
-		padding-top: 114px;
-		padding-bottom: 60px;
-	}
+.qela-fullscreen {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.qela-pad1 {
+	padding-top: 134px;
+	padding-bottom: 55px;
+}
+
+.qela-pad2 {
+	padding-top: 134px;
+	padding-bottom: 165px;
+}
+
+.qela-pad3 {
+	padding-top: 72px;
+	padding-bottom: 165px;
+}
+
+.qela-pad_top {
+	padding-top: 72px;
+}
+
+.qela-pad_bottom {
+	padding-bottom: 165px;
+}
+
+.qela-success {
+	padding-top: 120px;
+	padding-bottom: 48px;
 }
 
 .display-1,
