@@ -11005,6 +11005,34 @@ textarea.form-control-lg {
   content: "\e936";
 }
 
+.ic-writing:before {
+  content: "\e937";
+}
+
+.ic-voting-24:before {
+  content: "\e938";
+}
+
+.ic-flame:before {
+  content: "\e939";
+}
+
+.ic-flag-24:before {
+  content: "\e93a";
+}
+
+.ic-exclamation-mark:before {
+  content: "\e93b";
+}
+
+.ic-chart-pie:before {
+  content: "\e93c";
+}
+
+.ic-bulb:before {
+  content: "\e93d";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
