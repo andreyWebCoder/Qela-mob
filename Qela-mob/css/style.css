@@ -11033,6 +11033,14 @@ textarea.form-control-lg {
   content: "\e93d";
 }
 
+.ic-camera-plus:before {
+  content: "\e93e";
+}
+
+.ic-checkmark-starburst-filled:before {
+  content: "\e93f";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
@@ -11147,9 +11155,24 @@ a:hover {
   color: #7E8389 !important;
 }
 
+.qela-ibg {
+  position: relative;
+}
+.qela-ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.qela-img_1x1 {
+  padding-bottom: 100%;
+}
+
 .qela-img {
   padding-bottom: 100vh;
-  position: relative;
 }
 .qela-img::before {
   content: "";
@@ -11162,13 +11185,29 @@ a:hover {
   z-index: 2;
   opacity: 0.5;
 }
-.qela-img img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+
+.qela-username {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.qela-username span {
+  color: #8C83FE;
+}
+.qela-username span::before {
+  font-size: 20px;
+}
+
+.qela-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qela-id .btn-copyed {
+  min-width: 165px;
+}
+.qela-id .success {
+  background-color: #EFF7F2;
 }
 
 .btn:disabled {
@@ -11405,6 +11444,19 @@ a:hover {
 }
 .qela-btnInfo::before {
   font-size: 22px;
+}
+
+.btn-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #7E8389;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  z-index: 2;
 }
 
 .list-group a {
@@ -11861,9 +11913,6 @@ a:hover {
   align-items: center;
   gap: 10px;
   color: #BBBDC0;
-}
-.btn-copyed span::before {
-  color: #000;
 }
 .btn-copyed span.filled {
   color: #70C174;

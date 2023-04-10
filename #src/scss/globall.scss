@@ -115,9 +115,25 @@ a {
 	color: $gray-700  !important;
 }
 
+.qela-ibg {
+	position: relative;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+.qela-img_1x1 {
+	padding-bottom: 100%;
+}
+
 .qela-img {
 	padding-bottom: 100vh;
-	position: relative;
 
 	&::before {
 		content: '';
@@ -130,13 +146,32 @@ a {
 		z-index: 2;
 		opacity: 0.5
 	}
+}
 
-	img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		object-fit: cover;
+.qela-username {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+
+	span {
+		color: $violet-dark;
+
+		&::before {
+			font-size: 20px;
+		}
+	}
+}
+
+.qela-id {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.btn-copyed {
+		min-width: 165px;
+	}
+
+	.success {
+		background-color: $green-lite;
 	}
 }

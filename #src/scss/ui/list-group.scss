@@ -110,7 +110,6 @@
 }
 
 .btn-copyed {
-
 	border: none;
 	background-color: transparent;
 
@@ -120,10 +119,6 @@
 		align-items: center;
 		gap: 10px;
 		color: $lightgray-3;
-
-		&::before {
-			color: $black;
-		}
 
 		&.filled {
 			color: $green;
