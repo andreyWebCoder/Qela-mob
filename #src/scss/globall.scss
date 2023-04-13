@@ -130,11 +130,19 @@ a {
 }
 
 .bg-orange {
-	background-color: $orange  !important;
+	background: $orange  !important;
 }
 
 .text-orange {
 	color: $orange  !important;
+}
+
+.bg-green {
+	background: $green-dark  !important;
+}
+
+.text-green {
+	color: $green-dark  !important;
 }
 
 .qela-ibg {
@@ -210,6 +218,11 @@ a {
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
 	height: 62px;
+
+	&.clamp-7 {
+		-webkit-line-clamp: 6;
+		height: 115px;
+	}
 }
 
 .qela-awards {

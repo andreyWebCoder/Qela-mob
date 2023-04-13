@@ -11376,11 +11376,19 @@ a:hover {
 }
 
 .bg-orange {
-  background-color: #FF8B00 !important;
+  background: #FF8B00 !important;
 }
 
 .text-orange {
   color: #FF8B00 !important;
+}
+
+.bg-green {
+  background: #0F9178 !important;
+}
+
+.text-green {
+  color: #0F9178 !important;
 }
 
 .qela-ibg {
@@ -11450,6 +11458,10 @@ a:hover {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   height: 62px;
+}
+.qela-clamp.clamp-7 {
+  -webkit-line-clamp: 6;
+  height: 115px;
 }
 
 .qela-awards {
