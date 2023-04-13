@@ -14,6 +14,8 @@ $black-700: rgba(0, 0, 0, 0.7);
 // scss-docs-end gray-color-variables
 // scss-docs-start color-variables
 $yellow: #FFE000;
+$yellow-light :#FFEB75;
+$orange: #FF8B00;
 $orange-light: #FFE3BB;
 $orange-dark: #FF7A00;
 $red: #E20000;
@@ -126,22 +128,10 @@ $thumbnail-bg: $body-bg;
 $thumbnail-border-width: none;
 $thumbnail-border-color: none;
 $thumbnail-border-radius: 10px;
-// Tables
-//
-// Customizes the `.table` component with basic values, each used across all table variations.
-
-// scss-docs-start table-variables
-// $table-cell-padding-y: .5rem;
-// $table-cell-padding-x: 0;
-// $table-cell-vertical-align: middle;
-// $table-border-color: $gray-100;
-// $table-hover-color: $black;
-// $table-hover-bg: $table-border-color;
-// scss-docs-end table-variables
 // scss-docs-start input-btn-variables
 $input-btn-padding-y: 13.5px;
 $input-btn-padding-x: 16px;
-$input-btn-font-size: 17px;
+$input-btn-font-size: 16px;
 $input-btn-border-width: var(--#{$prefix}border-width);
 // scss-docs-end input-btn-variables
 // scss-docs-start btn-variables
@@ -150,13 +140,13 @@ $btn-padding-y: $input-btn-padding-y;
 $btn-padding-x: 25px;
 
 $btn-padding-y-sm: 7.5px;
-$btn-padding-x-sm: 16px;
-$btn-font-size-sm: $input-btn-font-size;
+$btn-padding-x-sm: 8px;
+$btn-font-size-sm: 12px;
 
 
 $btn-border-width: $input-btn-border-width;
 $btn-border-radius: $border-radius;
-$btn-font-weight: 500;
+$btn-font-weight: 600;
 $btn-link-color: $black;
 // ----
 $btn-box-shadow: none;
@@ -309,6 +299,7 @@ $card-title-spacer-y: $spacer;
 $card-border-width: 0;
 $card-border-radius: 8px;
 $card-bg: $white;
+$card-cap-bg: $white;
 //card
 // badge
 $badge-font-size: 14px;

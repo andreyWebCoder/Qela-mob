@@ -93,6 +93,20 @@ a {
 	justify-content: center;
 }
 
+.qela-avatar_min {
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid $white;
+
+	&:not(:first-child) {
+		margin-left: -6px;
+	}
+
+	img {
+		display: block;
+	}
+}
+
 .qela-decision {
 	padding: 24px 16px 16px 16px;
 	background-color: $white;
@@ -113,6 +127,14 @@ a {
 
 .text-info {
 	color: $gray-700  !important;
+}
+
+.bg-orange {
+	background-color: $orange  !important;
+}
+
+.text-orange {
+	color: $orange  !important;
 }
 
 .qela-ibg {
@@ -177,5 +199,61 @@ a {
 
 	.success {
 		background-color: $green-lite;
+	}
+}
+
+.qela-clamp {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	height: 62px;
+}
+
+.qela-awards {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 75px;
+	min-width: 75px;
+}
+
+.qela-disabled {
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(5px);
+	width: 100%;
+
+	&>div {
+		max-width: 220px;
+		margin: 0 auto;
+	}
+}
+
+.qela-blur_block {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $white;
+		filter: blur(10px);
+		border-radius: 2px;
+		z-index: -1;
+	}
+}
+
+.qela-fs7 {
+	font-size: 12px !important;
+}
+
+.fs-6 {
+	&::before {
+		font-size: 16px;
 	}
 }

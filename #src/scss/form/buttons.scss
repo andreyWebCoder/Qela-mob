@@ -105,7 +105,6 @@
 
 .btn-outline-secondary {
 	border-color: $black;
-	font-weight: 600;
 	color: $black;
 
 	&:active {
@@ -135,6 +134,7 @@
 
 .btn-link {
 	text-decoration: none;
+	font-weight: 600;
 
 	&:disabled {
 		background-color: transparent;
@@ -163,8 +163,6 @@
 
 	&.ic-right {
 		flex-direction: row-reverse;
-
-		&::before {}
 	}
 
 	&.btn-sm {
@@ -186,16 +184,22 @@
 }
 
 .btn-sm {
+	&.btn-link {
+		font-size: 16px;
+	}
+
 	&.ic-right {
 
 		&::before {
 			right: 8px;
+			font-size: 16px;
 		}
 	}
 
 	&.ic-left {
 		&::before {
 			left: 8px;
+			font-size: 16px;
 		}
 	}
 

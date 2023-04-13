@@ -1,3 +1,27 @@
 .qela-card {
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+.card {
+	&.mini {
+		width: 300px;
+	}
+
+	&.text-bg-primary {
+		background-color: $yellow-light  !important;
+	}
+
+	&.text-bg-info {
+		background-color: $lightgray-1  !important;
+	}
+}
+
+.carousel-item {
+	display: flex;
+	gap: 16px;
+
+	&.active {
+		display: flex;
+
+	}
+}
