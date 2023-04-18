@@ -18,7 +18,7 @@ $yellow-light :#FFEB75;
 $orange: #FF8B00;
 $orange-light: #FFE3BB;
 $orange-dark: #FF7A00;
-$red: #E20000;
+$red: #DF3B28;
 $red-light: #FFD6D6;
 $red-light-1: #FFF2F0;
 $red-light-2: #FFADAD;
@@ -47,6 +47,7 @@ $primary: $yellow;
 $warning: $orange-dark;
 $info: $lightgray-2;
 $secondary: $violet;
+$success: $green-dark;
 $light: $white ;
 // отключает адаптивній шрифт и другие свойства
 $enable-rfs: false;
@@ -138,7 +139,7 @@ $input-btn-border-width: var(--#{$prefix}border-width);
 // scss-docs-start btn-variables
 $btn-font-size: $input-btn-font-size;
 $btn-padding-y: $input-btn-padding-y;
-$btn-padding-x: 25px;
+$btn-padding-x: $input-btn-padding-x;
 
 $btn-padding-y-sm: 7.5px;
 $btn-padding-x-sm: 8px;

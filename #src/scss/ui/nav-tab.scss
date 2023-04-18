@@ -81,6 +81,15 @@
 	justify-content: center;
 	text-align: center;
 
+	&.md {
+		width: 60px;
+		height: 60px;
+
+		span {
+			font-size: 32px;
+		}
+	}
+
 	img {
 		width: 100%;
 		border-radius: 50%;

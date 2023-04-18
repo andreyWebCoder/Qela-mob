@@ -75,6 +75,20 @@
 	}
 }
 
+.btn-danger {
+	color: $white;
+
+	&:hover {
+		color: $white;
+		background-color: $red;
+	}
+
+	&:active {
+		color: $white  !important;
+		background: $red  !important;
+	}
+}
+
 .btn-light {
 	font-weight: 600;
 

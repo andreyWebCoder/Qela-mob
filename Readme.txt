@@ -1,4 +1,13 @@
+================= Дата 18.04.23 ======================================
+-- Классы bg-green, text-green удалены и заменены bg-success, text-success
+-- Изменения quest1.html, quest2.html
+-- Добавлен quest3.html
+-- Добавлен icons.html, добавлены недостающие и перезалиты неправильние иконки
 ================= Дата 13.04.23 ======================================
+-- Добавлен success5.html
+-- Добавлен quest4.html
+-- Добавлена кнопка error в button.html
+-- Изменения в list.html добавлен компонент List-item radiobutton
 -- Добавлен quest2.html
 -- Изменения в subtitles.html
 -- Небольшие изменеия в quest1.html и talents.html
