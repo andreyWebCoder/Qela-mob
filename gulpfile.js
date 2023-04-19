@@ -36,7 +36,8 @@ let path = {
 		css: project_name + "/css/",
 		images: project_name + "/img/",
 		fonts: project_name + "/fonts/",
-		json: project_name + "/json/"
+		json: project_name + "/json/",
+		videos: project_name + "/videos/"
 	},
 	src: {
 		favicon: src_folder + "/img/favicon.{jpg,png,svg,gif,ico,webp}",
@@ -45,14 +46,16 @@ let path = {
 		css: [src_folder + "/scss/style.scss", src_folder + "/scss/vendors.scss"],
 		images: [src_folder + "/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}", "!**/favicon.*"],
 		fonts: src_folder + "/fonts/*.ttf",
-		json: src_folder + "/json/**/*.*"
+		json: src_folder + "/json/**/*.*",
+		videos: src_folder + "/videos/*.*"
 	},
 	watch: {
 		html: src_folder + "/**/*.html",
 		js: src_folder + "/**/*.js",
 		css: src_folder + "/scss/**/*.scss",
 		images: src_folder + "/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
-		json: src_folder + "/json/**/*.*"
+		json: src_folder + "/json/**/*.*",
+		videos: src_folder + "/videos/*.*"
 	},
 	clean: "./" + project_name + "/"
 };
@@ -133,6 +136,11 @@ function favicon() {
 			})
 		)
 		.pipe(dest(path.build.html))
+}
+function videos() {
+	return src(path.src.videos)
+		.pipe(plumber())
+		.pipe(dest(path.build.videos))
 }
 function fonts_otf() {
 	return src('./' + src_folder + '/fonts/*.otf')
@@ -302,10 +310,11 @@ function htmlBuild() {
 let fontsBuild = gulp.series(fonts_otf, fonts, fontstyle);
 let buildDev = gulp.series(clean, gulp.parallel(fontsBuild, copyFolders, json, html, css, js, favicon, images));
 let watch = gulp.series(buildDev, gulp.parallel(watchFiles, browserSync));
-let build = gulp.parallel(htmlBuild, cssBuild, jsBuild, imagesBuild);
+let build = gulp.parallel(htmlBuild, cssBuild, jsBuild, imagesBuild, videos);
 
 exports.copy = copyFolders;
 exports.fonts = fontsBuild;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+exports.videos = videos;

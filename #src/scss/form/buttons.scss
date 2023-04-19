@@ -75,6 +75,20 @@
 	}
 }
 
+.btn-warning {
+	color: $white;
+
+	&:hover {
+		color: $white;
+		background-color: $orange-dark;
+	}
+
+	&:active {
+		color: $white  !important;
+		background: $orange-dark  !important;
+	}
+}
+
 .btn-danger {
 	color: $white;
 
