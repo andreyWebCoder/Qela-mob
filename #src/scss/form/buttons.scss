@@ -212,10 +212,6 @@
 }
 
 .btn-sm {
-	&.btn-link {
-		font-size: 16px;
-	}
-
 	&.ic-right {
 
 		&::before {
@@ -228,6 +224,18 @@
 		&::before {
 			left: 8px;
 			font-size: 16px;
+		}
+	}
+
+	&.btn-link {
+		font-size: 16px;
+		font-weight: 400;
+
+		&.ic-left,
+		&.ic-right {
+			&::before {
+				font-size: 24px;
+			}
 		}
 	}
 
