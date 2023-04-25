@@ -187,7 +187,8 @@ a {
 	align-items: center;
 	gap: 4px;
 
-	span {
+	&[class="ic-"],
+	[class*="ic-"] {
 		color: $violet-dark;
 
 		&::before {

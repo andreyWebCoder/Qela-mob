@@ -113,7 +113,8 @@
 	border: none;
 	background-color: transparent;
 
-	span {
+	&[class="ic-"],
+	[class*="ic-"] {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
@@ -133,7 +134,8 @@
 	&.success {
 		pointer-events: none;
 
-		span {
+		&[class="ic-"],
+		[class*="ic-"] {
 			display: none;
 
 			&.filled {

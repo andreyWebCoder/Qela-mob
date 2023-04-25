@@ -11555,10 +11555,12 @@ a:hover {
   align-items: center;
   gap: 4px;
 }
-.qela-username span {
+.qela-username[class=ic-],
+.qela-username [class*=ic-] {
   color: #8C83FE;
 }
-.qela-username span::before {
+.qela-username[class=ic-]::before,
+.qela-username [class*=ic-]::before {
   font-size: 20px;
 }
 
@@ -12915,27 +12917,32 @@ a:hover {
   border: none;
   background-color: transparent;
 }
-.btn-copyed span {
+.btn-copyed[class=ic-],
+.btn-copyed [class*=ic-] {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   gap: 10px;
   color: #BBBDC0;
 }
-.btn-copyed span.filled {
+.btn-copyed[class=ic-].filled,
+.btn-copyed [class*=ic-].filled {
   color: #70C174;
   display: none;
 }
-.btn-copyed span.filled::before {
+.btn-copyed[class=ic-].filled::before,
+.btn-copyed [class*=ic-].filled::before {
   color: #70C174;
 }
 .btn-copyed.success {
   pointer-events: none;
 }
-.btn-copyed.success span {
+.btn-copyed.success[class=ic-],
+.btn-copyed.success [class*=ic-] {
   display: none;
 }
-.btn-copyed.success span.filled {
+.btn-copyed.success[class=ic-].filled,
+.btn-copyed.success [class*=ic-].filled {
   display: flex;
 }
 
