@@ -185,14 +185,21 @@ a {
 .qela-username {
 	display: flex;
 	align-items: center;
-	gap: 4px;
+	justify-content: center;
+	flex-wrap: nowrap;
+
+	&>div {
+		display: block;
+	}
 
 	&[class="ic-"],
 	[class*="ic-"] {
 		color: $violet-dark;
+		display: block;
 
 		&::before {
 			font-size: 20px;
+			padding: 4px;
 		}
 	}
 }
@@ -223,6 +230,12 @@ a {
 	&.clamp-7 {
 		-webkit-line-clamp: 6;
 		height: 115px;
+	}
+
+	&.clamp-name1 {
+		-webkit-line-clamp: 1;
+		height: 28px;
+		white-space: nowrap;
 	}
 }
 

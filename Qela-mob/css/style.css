@@ -11553,15 +11553,21 @@ a:hover {
 .qela-username {
   display: flex;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.qela-username > div {
+  display: block;
 }
 .qela-username[class=ic-],
 .qela-username [class*=ic-] {
   color: #8C83FE;
+  display: block;
 }
 .qela-username[class=ic-]::before,
 .qela-username [class*=ic-]::before {
   font-size: 20px;
+  padding: 4px;
 }
 
 .qela-id {
@@ -11588,6 +11594,11 @@ a:hover {
 .qela-clamp.clamp-7 {
   -webkit-line-clamp: 6;
   height: 115px;
+}
+.qela-clamp.clamp-name1 {
+  -webkit-line-clamp: 1;
+  height: 28px;
+  white-space: nowrap;
 }
 
 .qela-awards {
