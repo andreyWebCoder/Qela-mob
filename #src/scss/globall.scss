@@ -234,7 +234,7 @@ a {
 
 	&.clamp-name1 {
 		-webkit-line-clamp: 1;
-		height: 28px;
+		height: auto;
 		white-space: nowrap;
 	}
 }

@@ -11597,7 +11597,7 @@ a:hover {
 }
 .qela-clamp.clamp-name1 {
   -webkit-line-clamp: 1;
-  height: 28px;
+  height: auto;
   white-space: nowrap;
 }
 
@@ -12297,7 +12297,7 @@ a:hover {
   margin-top: -3px;
   box-shadow: none;
 }
-.qela-range input[type=range] input[type=range]::-ms-track {
+.qela-range input[type=range]::-ms-track {
   width: 100%;
   height: 50px;
   cursor: pointer;
@@ -12307,19 +12307,19 @@ a:hover {
   border-color: transparent;
   color: transparent;
 }
-.qela-range input[type=range] input[type=range]::-ms-fill-lower {
+.qela-range input[type=range]::-ms-fill-lower {
   background: transparent;
   border: none;
   border-radius: 5px;
   box-shadow: none;
 }
-.qela-range input[type=range] input[type=range]::-ms-fill-upper {
+.qela-range input[type=range]::-ms-fill-upper {
   background: transparent;
   border: none;
   border-radius: 5px;
   box-shadow: none;
 }
-.qela-range input[type=range] input[type=range]::-ms-thumb {
+.qela-range input[type=range]::-ms-thumb {
   background: #FFFFFF;
   border: 1px solid;
   border-radius: 5px;
@@ -12335,6 +12335,15 @@ a:hover {
 }
 .qela-range input[type=range] input[type=range]:focus::-ms-fill-upper {
   background: none;
+}
+.qela-range input[type=range]:disabled::-webkit-slider-thumb {
+  display: none;
+}
+.qela-range input[type=range]:disabled::-moz-range-thumb {
+  display: none;
+}
+.qela-range input[type=range]:disabled::-ms-thumb {
+  display: none;
 }
 .qela-range.red .color span:nth-child(1) {
   background: #FFB0B0;
