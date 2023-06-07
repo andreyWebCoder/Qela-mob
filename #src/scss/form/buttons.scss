@@ -251,28 +251,6 @@
 }
 
 // voting title button back
-.btn-back {
-	display: block;
-	padding: 0;
-	border: none;
-	background-color: transparent;
-	text-decoration: none;
-	position: absolute;
-	left: 16px;
-	top: 50%;
-	transform: translateY(-50%);
-	color: $black;
-
-	&:hover {
-		color: $black;
-
-	}
-
-	&::before {
-		transform: rotate(90deg);
-		font-size: 24px;
-	}
-}
 
 .qela-btnTop {
 	display: flex;

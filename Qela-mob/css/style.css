@@ -10988,6 +10988,10 @@ textarea.form-control-lg {
 [class*=ic-]:before {
   display: block;
 }
+[class^=ic-].ico-sm::before,
+[class*=ic-].ico-sm::before {
+  font-size: 16px;
+}
 
 .ic-bell:before {
   content: "\e900";
@@ -11373,6 +11377,118 @@ textarea.form-control-lg {
   content: "\e95f";
 }
 
+.ic-article:before {
+  content: "\e960";
+}
+
+.ic-award:before {
+  content: "\e961";
+}
+
+.ic-book:before {
+  content: "\e962";
+}
+
+.ic-diamond-24:before {
+  content: "\e963";
+}
+
+.ic-diamond-28:before {
+  content: "\e964";
+}
+
+.ic-diamond-filled-24:before {
+  content: "\e965";
+}
+
+.ic-diamond-filled-28:before {
+  content: "\e966";
+}
+
+.ic-layout-grid:before {
+  content: "\e967";
+}
+
+.ic-layout-kanban:before {
+  content: "\e968";
+}
+
+.ic-list-check:before {
+  content: "\e969";
+}
+
+.ic-notebook:before {
+  content: "\e96a";
+}
+
+.ic-swipe:before {
+  content: "\e96b";
+}
+
+.ic-trophy:before {
+  content: "\e96c";
+}
+
+.ic-wallpaper:before {
+  content: "\e96d";
+}
+
+.ic-equal:before {
+  content: "\e96e";
+}
+
+.ic-hand-click:before {
+  content: "\e96f";
+}
+
+.ic-letter-c:before {
+  content: "\e970";
+}
+
+.ic-link:before {
+  content: "\e971";
+}
+
+.ic-link-2:before {
+  content: "\e972";
+}
+
+.ic-refresh:before {
+  content: "\e973";
+}
+
+.ic-triangle-default:before {
+  content: "\e974";
+}
+
+.ic-triangle-filled:before {
+  content: "\e975";
+}
+
+.ic-triangle-inverted-default:before {
+  content: "\e976";
+}
+
+.ic-triangle-inverted-filled:before {
+  content: "\e977";
+}
+
+.ic-triangle-inverted-small:before {
+  content: "\e978";
+}
+
+.ic-triangle-small:before {
+  content: "\e979";
+}
+
+.ic-arrows-minimize:before {
+  content: "\e97a";
+}
+
+.ic-arrows-maximize:before {
+  content: "\e97b";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
@@ -11633,6 +11749,7 @@ a:hover {
   filter: blur(10px);
   border-radius: 2px;
   z-index: -1;
+  will-change: transform;
 }
 
 .qela-fs7 {
@@ -12041,26 +12158,6 @@ a:hover {
 .btn-sm.success::after {
   font-size: 16px;
   right: 8px;
-}
-
-.btn-back {
-  display: block;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  text-decoration: none;
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #000;
-}
-.btn-back:hover {
-  color: #000;
-}
-.btn-back::before {
-  transform: rotate(90deg);
-  font-size: 24px;
 }
 
 .qela-btnTop {
@@ -12642,7 +12739,8 @@ a:hover {
 }
 .qela-navbar .btn {
   position: absolute;
-  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .qela-topbar {
@@ -12684,6 +12782,7 @@ a:hover {
 .qela-blur {
   background-color: rgba(255, 255, 255, 0.5) !important;
   backdrop-filter: blur(16px) !important;
+  will-change: transform;
 }
 
 .qela-card {

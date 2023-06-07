@@ -1,3 +1,10 @@
+================= Дата 07.06.23 ======================================
+-- В иконочный шрифт добавлены новие иконки
+-- Изменения в quest1.html (Actions guest-card)
+-- Изменения в layout1.html, layout2.html, layout3.html, layout-top.html, simple.html
+	success2.html, success3.html, success5.html
+-- Изменения в nav.html Добавлени новие компоненты, переработаны кнопки
+-- Класс btn-back удален по ненадобности
 ================= Дата 22.05.23 ======================================
 -- Правки в profile.html (Компонент User-name)
 -- Изменения в talents.html (input range добавил состояние disabled)

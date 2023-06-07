@@ -272,6 +272,7 @@ a {
 		filter: blur(10px);
 		border-radius: 2px;
 		z-index: -1;
+		will-change: transform;
 	}
 }
 
