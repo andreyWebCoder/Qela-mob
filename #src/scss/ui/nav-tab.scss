@@ -88,19 +88,21 @@
 }
 
 .qela-avatar {
-	display: block;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	text-decoration: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	width: 40px;
+	flex: 0 0 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-decoration: none;
+	position: relative;
 
 	&.md {
 		width: 60px;
 		height: 60px;
+		flex: 0 0 60px;
 
 		span {
 			font-size: 32px;
@@ -108,8 +110,14 @@
 	}
 
 	img {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
+		height: 100%;
 		border-radius: 50%;
+		object-fit: cover;
 	}
 
 	span {
