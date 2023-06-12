@@ -15,13 +15,3 @@
 		background-color: $lightgray-1  !important;
 	}
 }
-
-.carousel-item {
-	display: flex;
-	gap: 16px;
-
-	&.active {
-		display: flex;
-
-	}
-}

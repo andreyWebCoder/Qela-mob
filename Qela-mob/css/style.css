@@ -12807,14 +12807,6 @@ a:hover {
   background-color: #E8E8E8 !important;
 }
 
-.carousel-item {
-  display: flex;
-  gap: 16px;
-}
-.carousel-item.active {
-  display: flex;
-}
-
 .qela-badge {
   display: inline-flex;
   align-items: center;
