@@ -225,7 +225,7 @@ a {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
-	height: 62px;
+	max-height: 62px;
 
 	&.clamp-7 {
 		-webkit-line-clamp: 6;
