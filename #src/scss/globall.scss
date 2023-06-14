@@ -508,3 +508,33 @@ a {
 	line-height: 90px;
 	letter-spacing: -6px;
 }
+
+.qela-step {
+	background-color: $gray-300;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid $gray-500;
+
+	.qela-badge {
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	&.current {
+		background-color: $white;
+		border-width: 2px;
+		border-color: $secondary;
+
+		.qela-badge {
+			display: block;
+		}
+	}
+
+	&.disabled {
+		color: $gray-600;
+		border-color: $gray-300;
+	}
+}
