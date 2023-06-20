@@ -11518,6 +11518,11 @@ main {
   padding-bottom: 165px;
 }
 
+.qela-pad4 {
+  padding-top: 68px;
+  padding-bottom: 55px;
+}
+
 .qela-pad_top {
   padding-top: 72px;
 }
@@ -11629,6 +11634,14 @@ a:hover {
 
 .text-orange {
   color: #FF8B00 !important;
+}
+
+.bg-litegreen {
+  background-color: #90ee90 !important;
+}
+
+.bg-liteblue {
+  background-color: #add8e6 !important;
 }
 
 .qela-ibg {

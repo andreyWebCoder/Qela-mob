@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-	<title>Layouts</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+@@include('_head.html',{
+"title":"Layouts"
+})
 
 <body>
-	<main class="qela-fullscreen qela-pad_top">
-		<aside class="fixed-top pt-2 d-lg-block d-none" style="width: 280px;">
-	<a class="text-center d-block text-secondary display-1 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
-	<nav>
-		<ol class="d-flex flex-column gap-2">
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout1.html" class="text-black">Layout top-bottom-01</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout2.html" class="text-black">Layout top-bottom-02</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout3.html" class="text-black">Layout top-bottom-03</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout4.html" class="text-black">Layout top-bottom-04</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/layout-top.html" class="text-black">Layout top-only</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/symple.html" class="text-black">Layout symple</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success1.html" class="text-black">Layout success simple</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success2.html" class="text-black">Layout success actions-btn</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success3.html" class="text-black">Layout success actions-btn img</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success4.html" class="text-black">Layout success actions-list</a></li>
-			<li><a href="http://andreyfront.owlweb.com.ua/Qela-mob/success5.html" class="text-black">Layaut success actions-btn range</a></li>
-		</ol>
-	</nav>
-</aside>
+	<main class="qela-fullscreen qela-pad4">
+		@@include('components/_aside-layouts.html',{})
 		<div class="qela-top qela-blur">
 			<nav class="navbar bg-transparent qela-navbar">
 				<a href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></a>
@@ -60,13 +39,48 @@
 			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
 		</div>
 		<!--content-->
-		<div class="qela-blur px-3 py-4 d-flex flex-column gap-2">
-			<button type="button" class="btn btn-primary">Vote</button>
-			<button type="button" class="btn btn-outline-secondary">Back to the vote list</button>
+		<div class="qela-bottom qela-blur">
+			<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span class="ic-home icon"></span>
+						<span class="ic-home-filled-28 icon-filled"></span>
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span class="ic-profile icon"></span>
+						<span class="ic-user-filled-28 icon-filled"></span>
+						Profile
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span class="ic-diamond-28 icon"></span>
+						<span class="ic-diamond-filled-28 icon-filled"></span>
+						Quests
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">
+						<span class="ic-voting icon"></span>
+						<span class="ic-voting-filled-28 icon-filled"></span>
+						Voting
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<span class="ic-qela icon"></span>
+						<span class="ic-qela-filled-28 icon-filled"></span>
+						Organization
+					</a>
+				</li>
+			</ul>
 		</div>
 	</main>
 	<!-- =========================== -->
-	<script src="js/vendors.js"></script>
+	@@include('_js.html',{})
 </body>
 
 </html>
