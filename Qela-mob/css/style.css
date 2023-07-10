@@ -12952,6 +12952,11 @@ a:hover {
 }
 .qela-card.card.mini {
   width: 300px;
+  min-height: 160px;
+}
+.qela-card.card.mini .card-body {
+  align-items: center;
+  justify-content: center;
 }
 .qela-card.card.text-bg-primary {
   background-color: #FFEB75 !important;

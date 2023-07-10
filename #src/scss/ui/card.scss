@@ -10,6 +10,12 @@
 
 		&.mini {
 			width: 300px;
+			min-height: 160px;
+
+			.card-body {
+				align-items: center;
+				justify-content: center;
+			}
 		}
 
 		&.text-bg-primary {
