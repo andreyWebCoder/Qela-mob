@@ -1,0 +1,201 @@
+.qela-map {
+	height: 440px;
+
+	.form-control {
+		&[type="search"] {
+			z-index: 2;
+		}
+	}
+}
+
+.qela-pin {
+	display: inline-flex;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease 0s, visibility 0.2s ease 0s;
+	margin-left: -13px;
+	transform: translateY(-60px);
+
+	&.secondary {
+		.qela-pin__num {
+			small {
+				border-color: $secondary;
+			}
+
+			&::after {
+				background-color: $secondary;
+			}
+		}
+
+		.qela-pin__dot {
+			background-color: $secondary;
+		}
+
+		.qela-pin__area {
+			border: 2px solid $secondary;
+			background: #{rgba($secondary, 0.1)};
+		}
+	}
+
+	&.success {
+		.qela-pin__num {
+			small {
+				border-color: $success;
+			}
+
+			&::after {
+				background-color: $success;
+			}
+		}
+
+		.qela-pin__dot {
+			background-color: $success;
+		}
+
+		.qela-pin__area {
+			border: 2px solid $success;
+			background: #{rgba($success, 0.1)};
+		}
+	}
+
+	&.danger {
+		.qela-pin__num {
+			small {
+				border-color: $danger;
+			}
+
+			&::after {
+				background-color: $danger;
+			}
+		}
+
+		.qela-pin__dot {
+			background-color: $danger;
+		}
+
+		.qela-pin__area {
+			border: 1px solid $danger;
+			background: #{rgba($danger, 0.1)};
+		}
+	}
+
+	&.active {
+		visibility: visible;
+		opacity: 1;
+		pointer-events: auto;
+
+		.qela-pin__num {
+			transform: translateY(0px);
+		}
+
+		&.secondary {
+			.qela-pin__dot {
+				background-color: transparent;
+			}
+		}
+
+		&.success {
+			.qela-pin__dot {
+				background-color: transparent;
+			}
+		}
+
+		&.danger {
+			.qela-pin__dot {
+				background-color: transparent;
+			}
+		}
+
+		.qela-pin__area {
+			opacity: 1;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				.qela-pin__num {
+					transform: translateY(-10px);
+				}
+
+				&.secondary {
+					.qela-pin__dot {
+						background-color: $secondary;
+					}
+				}
+
+				&.success {
+					.qela-pin__dot {
+						background-color: $success;
+					}
+				}
+
+				&.danger {
+					.qela-pin__dot {
+						background-color: $danger;
+					}
+				}
+
+				.qela-pin__area {
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	&__num {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+		transition: transform 0.2s ease 0.1s;
+		transform: translateY(-15px);
+
+		small {
+			background-color: $white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 36px;
+			height: 36px;
+			border: 7px solid;
+			border-radius: 50%;
+		}
+
+		&::after {
+			content: '';
+			height: 27px;
+			width: 3px;
+		}
+	}
+
+	&__dot {
+		width: 9px;
+		height: 6px;
+		border-radius: 3px;
+		position: relative;
+		transition: background-color 0.2s ease 0.1s;
+		background-color: transparent;
+	}
+
+	&__area {
+		width: var(--diameter);
+		height: var(--diameter);
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: opacity 0.2s ease 0.1s;
+		opacity: 0;
+	}
+}
+
+.qela-line {
+	height: 4px;
+	width: 100%;
+	border: 1px solid $white;
+}

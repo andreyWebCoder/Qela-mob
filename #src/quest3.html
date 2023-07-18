@@ -39,17 +39,17 @@
 			<!-- Contacts -->
 			<h3 class="h1" id="h3Btn1">Contacts</h3>
 			<div class="d-flex flex-column gap-2">
-				<div class="d-flex gap-1"><span>Supervisor:</span><span>Gary Simon</span></div>
-				<div class="d-flex gap-1"><span>Tel:</span><a href="tel:+14844731620" class="text-decoration-none text-black">+14844731620</a></div>
-				<div class="d-flex gap-1"><span>Email:</span><a href="mailto:contact@design.com" class="text-decoration-none text-black">contact@design.com</a></div>
+				<div class="d-flex gap-1 fs-5"><span>Supervisor:</span><span class="fw-semibold">Gary Simon</span></div>
+				<div class="d-flex gap-1 fs-5"><span>Tel:</span><a href="tel:+14844731620" class="text-decoration-none text-black fw-semibold">+14844731620</a></div>
+				<div class="d-flex gap-1 fs-5"><span>Email:</span><a href="mailto:contact@design.com" class="text-decoration-none text-black fw-semibold">contact@design.com</a></div>
 			</div>
 			<!-- Person contacts -->
 			<h3 class="h1 mt-5" id="h3Btn2">Person contacts</h3>
 			<div class="d-flex flex-column gap-2">
 				<p class="h6 m-0 fw-bold "><span class="opacity-75">Contact person</span></p>
-				<div class="d-flex gap-1"><span>Supervisor:</span><span>Gary Simon</span></div>
-				<div class="d-flex gap-1"><span>Tel:</span><a href="tel:+14844731620" class="text-decoration-none text-black">+14844731620</a></div>
-				<div class="d-flex gap-1"><span>Email:</span><a href="mailto:contact@design.com" class="text-decoration-none text-black">contact@design.com</a></div>
+				<div class="d-flex gap-1 fs-5"><span>Supervisor:</span><span class="fw-semibold">Gary Simon</span></div>
+				<div class="d-flex gap-1 fs-5"><span>Tel:</span><a href="tel:+14844731620" class="text-decoration-none text-black fw-semibold">+14844731620</a></div>
+				<div class="d-flex gap-1 fs-5"><span>Email:</span><a href="mailto:contact@design.com" class="text-decoration-none text-black fw-semibold">contact@design.com</a></div>
 			</div>
 			<!-- Upload-doc-item -->
 			<h3 class="h1 mt-5" id="h3Btn3">Upload-doc-item</h3>
@@ -166,84 +166,39 @@
 				</div>
 			</div>
 			<!-- Map-pin -->
-			<h3 class="h1 mt-5" id="h3Btn8">Map-pin</h3>
-			<!-- secondary -->
-			<div class="d-flex gap-3">
-				<span class="qela-badge small d-flex flex-column gap-0">
-					<span class="badge bg-secondary_dark rounded-1">Start</span>
-					<span class="qela-triangl secondary"></span>
-				</span>
-				<!--  -->
-				<span class="qela-badge small d-flex flex-column gap-0">
-					<span class="badge bg-secondary_dark rounded-1">Start</span>
-					<span class="qela-triangl secondary"></span>
-					<span class="qela-dot bg-secondary_dark"></span>
-				</span>
-				<!--  -->
-				<span class="qela-badge small d-flex flex-column gap-0">
-					<span class="badge bg-secondary_dark rounded-1">Start</span>
-					<span class="qela-triangl secondary"></span>
-					<span class="qela-dot bg-secondary_dark large"></span>
-				</span>
-				<!--  -->
-				<span class="qela-dot bg-secondary_dark"></span>
-				<!--  -->
-				<div class="qela-area secondary">
-					<span class="qela-badge small d-flex flex-column gap-0">
-						<span class="badge bg-secondary_dark rounded-1">Start</span>
-						<span class="qela-triangl secondary"></span>
-						<span class="qela-dot bg-secondary_dark active"></span>
-					</span>
+			<h3 class="h1 mt-5 pb-5" id="h3Btn8">Map-pin</h3>
+			<!-- С помощью класса актив пины анимировано появляються и кнему же привязан ховер-->
+			<div class="d-flex flex-column align-items-start gap-5 ps-5">
+				<div class="qela-pin secondary active">
+					<div class="qela-pin__num">
+						<small>1</small>
+					</div>
+					<div class="qela-pin__dot ">
+						<div class="qela-pin__area" style="--diameter:85px"></div>
+					</div>
 				</div>
-			</div>
-			<!-- success -->
-			<div class="d-flex gap-3">
-				<span class="qela-badge small d-flex flex-column gap-0">
-					<span class="badge bg-success rounded-1">Start</span>
-					<span class="qela-triangl success"></span>
-				</span>
-				<!--  -->
-				<span class="qela-badge small d-flex flex-column gap-0">
-					<span class="badge bg-success rounded-1">Start</span>
-					<span class="qela-triangl success"></span>
-					<span class="qela-dot bg-success"></span>
-				</span>
-				<!--  -->
-				<span class="qela-badge small d-flex flex-column gap-0">
-					<span class="badge bg-success rounded-1">Start</span>
-					<span class="qela-triangl success"></span>
-					<span class="qela-dot bg-success large"></span>
-				</span>
-				<!--  -->
-				<span class="qela-dot bg-success"></span>
-				<!--  -->
-				<div class="qela-area success">
-					<span class="qela-badge small d-flex flex-column gap-0">
-						<span class="badge bg-success rounded-1">Start</span>
-						<span class="qela-triangl success"></span>
-						<span class="qela-dot bg-success active"></span>
-					</span>
+				<div class="qela-pin danger active">
+					<div class="qela-pin__num">
+						<small>1</small>
+					</div>
+					<div class="qela-pin__dot">
+						<div class="qela-pin__area" style="--diameter:85px"></div>
+					</div>
+				</div>
+				<div class="qela-pin success active">
+					<div class="qela-pin__num">
+						<small>1</small>
+					</div>
+					<div class="qela-pin__dot">
+						<div class="qela-pin__area" style="--diameter:85px"></div>
+					</div>
 				</div>
 			</div>
 			<!-- Person-coordinats -->
 			<h3 class="h1 mt-5" id="h3Btn9">Person-coordinats</h3>
-			<div class="qela-coordinats">
-				<span></span>
-			</div>
-			<div class="qela-coordinats active">
-				<span></span>
-			</div>
-			<div class="d-flex align-items-center">
-				<span class="qela-dot bg-secondary_dark"></span>
-				<span class="qela-line w-50 bg-secondary_dark"></span>
-				<span class="qela-dot bg-secondary_dark"></span>
-			</div>
-			<div class="d-flex align-items-center s">
-				<span class="qela-dot bg-success"></span>
-				<span class="qela-line bg-success w-25"></span>
-				<span class="qela-dot bg-success"></span>
-			</div>
-		</div>
+			<div class="qela-line bg-secondary"></div>
+			<div class="qela-line bg-success"></div>
+			<div class="qela-line bg-danger"></div>
 	</main>
 	<!-- =========================== -->
 	@@include('_js.html',{})
