@@ -12298,6 +12298,26 @@ a:hover {
   font-size: 16px;
 }
 
+.btn-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 6px 16px 6px 6px;
+}
+.btn-custom [class^=ic-]:first-child {
+  color: #3B5998;
+}
+.btn-custom [class^=ic-]:first-child::before {
+  font-size: 30px;
+}
+.btn-custom > *:not(:last-child) {
+  margin-right: 24px;
+}
+.btn-custom:hover {
+  background-color: #fff;
+}
+
 .list-group a {
   color: #000;
   text-decoration: none;
