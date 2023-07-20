@@ -13036,6 +13036,9 @@ a:hover {
   padding-right: 60px;
   position: relative;
 }
+.qela-condenced .radiobutton-container img {
+  margin-right: 1rem;
+}
 .qela-condenced .radiobutton-container.active span {
   border-color: #978FFF;
   background-color: #fff;
@@ -13044,6 +13047,11 @@ a:hover {
 .qela-condenced .radiobutton-container.active span::before {
   opacity: 1;
   color: #978FFF;
+}
+.qela-condenced .radiobutton-container.img-pad {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
 }
 .qela-condenced .radiobutton-container span {
   position: absolute;

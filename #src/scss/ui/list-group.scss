@@ -46,6 +46,10 @@
 		padding-right: 60px;
 		position: relative;
 
+		img {
+			margin-right: 1rem;
+		}
+
 		&.active {
 			span {
 				border-color: $violet;
@@ -57,6 +61,12 @@
 					color: $violet;
 				}
 			}
+		}
+
+		&.img-pad {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			padding-left: 0.5rem;
 		}
 
 		span {
@@ -82,6 +92,7 @@
 			}
 		}
 	}
+
 }
 
 .qela-description {
