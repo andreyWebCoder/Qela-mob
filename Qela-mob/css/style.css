@@ -11849,18 +11849,22 @@ a:hover {
 }
 
 .qela-add {
-  position: relative;
-  padding-bottom: 50%;
+  min-height: 170px;
+  width: 50%;
+  color: #978FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
   border: 1px dashed #978FFF;
-}
-.qela-add button {
-  width: calc(100% - 16px);
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 1rem;
+  background-color: #fff;
 }
 .qela-add .icon {
   color: #978FFF;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
 }
 .qela-add .icon::before {
   font-size: 48px;
@@ -11874,6 +11878,11 @@ a:hover {
 .qela-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.qela-grid .qela-add {
+  width: auto;
+  min-height: min-content;
 }
 
 .qela-qr {
@@ -12273,6 +12282,20 @@ a:hover {
   border-radius: 50%;
   border: none;
   z-index: 2;
+}
+
+.btn-del {
+  width: 24px;
+  height: 24px;
+  background: none;
+  padding: 0;
+  color: #000;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+}
+.btn-del::before {
+  font-size: 16px;
 }
 
 .list-group a {
@@ -12859,6 +12882,15 @@ a:hover {
 }
 .qela-card.card.text-bg-info {
   background-color: #E8E8E8 !important;
+}
+
+.card {
+  position: relative;
+}
+.card .btn-del {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
 .qela-badge {

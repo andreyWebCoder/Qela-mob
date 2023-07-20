@@ -27,3 +27,13 @@
 		}
 	}
 }
+
+.card {
+	position: relative;
+
+	.btn-del {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+	}
+}
