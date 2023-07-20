@@ -13007,6 +13007,9 @@ a:hover {
   padding-right: 60px;
   position: relative;
 }
+.qela-condenced .checkbox-container.active {
+  background-color: #F5F4FF;
+}
 .qela-condenced .checkbox-container.active span {
   border-color: #978FFF;
   background-color: #978FFF;
@@ -13038,6 +13041,9 @@ a:hover {
 }
 .qela-condenced .radiobutton-container img {
   margin-right: 1rem;
+}
+.qela-condenced .radiobutton-container.active {
+  background-color: #F5F4FF;
 }
 .qela-condenced .radiobutton-container.active span {
   border-color: #978FFF;

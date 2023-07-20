@@ -11,6 +11,8 @@
 		position: relative;
 
 		&.active {
+			background-color: $violet-light-0;
+
 			span {
 				border-color: $violet;
 				background-color: $violet;
@@ -51,6 +53,8 @@
 		}
 
 		&.active {
+			background-color: $violet-light-0;
+
 			span {
 				border-color: $violet;
 				background-color: $white;
