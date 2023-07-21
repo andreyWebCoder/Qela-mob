@@ -12868,6 +12868,9 @@ a:hover {
 .qela-avatar.md span {
   font-size: 32px;
 }
+.qela-avatar img {
+  border-radius: 50%;
+}
 .qela-avatar span {
   font-weight: 500;
   font-size: 22px;
@@ -13386,6 +13389,54 @@ a:hover {
   height: 4px;
   width: 100%;
   border: 1px solid #fff;
+}
+
+.qela-dialog {
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+}
+.qela-dialog:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.qela-dialog::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid;
+}
+.qela-dialog.secondary {
+  border: 1px solid #978FFF;
+}
+.qela-dialog.secondary::before {
+  border-left-color: #978FFF;
+}
+.qela-dialog p {
+  margin-bottom: 0;
+}
+.qela-dialog h1:not(:last-child), .qela-dialog .h1:not(:last-child) {
+  padding-bottom: 0.5rem;
+}
+.qela-dialog small, .qela-dialog .small {
+  color: #7E8389;
+}
+.qela-dialog > .row {
+  margin-top: 1.5rem;
+}
+.qela-dialog .btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+.qela-dialog .qela-avatar {
+  margin-right: 1.25rem;
+  background-color: #E2E2E2;
 }
 
 .text-editor h1, .text-editor .h1,

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<title>Dialog</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<main>
+		<!-- Навигация (якоря) -->
+		<aside class="fixed-top pt-2 d-lg-block d-none" style="width: 280px;">
+			<a class="text-center d-block text-secondary display-1 mb-2" href="https://andreyfront.owlweb.com.ua/Qela-mob/">Qela-mob</a>
+			<nav>
+				<ol class="d-flex flex-column gap-2">
+					<li><a href="#h3Btn1" class="text-black">Dialog title</a></li>
+					<li><a href="#h3Btn2" class="text-black">Dialog title, text</a></li>
+					<li><a href="#h3Btn3" class="text-black">Dialog subtitle</a></li>
+					<li><a href="#h3Btn4" class="text-black">Dialog subtitle, button</a></li>
+					<li><a href="#h3Btn5" class="text-black">Dialog subtitle, button, avatar - yes</a></li>
+					<li><a href="#h3Btn6" class="text-black">Dialog subtitle, button, avatar - no</a></li>
+				</ol>
+			</nav>
+		</aside>
+		<!-- Навигация (якоря) -->
+
+		<div class="mt-3 mb-4 d-flex flex-column gap-3">
+			<h3 id="h3Btn1">Dialog title</h3>
+			<!-- Dialog title -->
+			<div class="qela-dialog secondary">
+				<h1>Check on locations</h1>
+			</div>
+			<!-- Dialog title, text -->
+			<h3 id="h3Btn2">Dialog title, text</h3>
+			<div class="qela-dialog secondary">
+				<h1>Watch the video and press Next</h1>
+				<p>On Thursday, August 28, at 14:00 there will be a meeting of supporters of medical cannabis legalization, we will get to know each other and talk. Only together we can win! There, Alina Priymak, the head of the "Veterans for Medcanabis" organization, will give a lecture. Also, a well-known businessman Richard Branson will take the word.</p>
+			</div>
+			<!-- Dialog subtitle -->
+			<h3 id="h3Btn3">Dialog subtitle</h3>
+			<div class="qela-dialog secondary">
+				<h3>At the end of the meeting scan provided QR code 👇</h3>
+			</div>
+			<!-- Dialog subtitle, button -->
+			<h3 id="h3Btn4">Dialog subtitle, button</h3>
+			<div class="qela-dialog secondary">
+				<h3>At the end of the meeting scan provided QR code 👇</h3>
+				<a href="#" type="button" class="btn btn-secondary ic-right ic-arrow">zoom.us</a>
+			</div>
+			<!--Dialog subtitle, button, avatar - yes -->
+			<h3 id="h3Btn5">Dialog subtitle, button, avatar - yes</h3>
+			<div class="qela-dialog secondary">
+				<h3>At the end of the meeting scan provided QR code 👇</h3>
+				<div class="row g-0">
+					<a href="#" class="qela-avatar qela-ibg md col-auto">
+						<img src="img/avatar.jpg" width="60" width="60" alt="#">
+					</a>
+					<div class="col-auto">
+						<small>Supervisor Name</small>
+						<div class="fs-3">Emily Johnson</div>
+					</div>
+				</div>
+				<a href="#" type="button" class="btn btn-secondary ic-right ic-phone">+1 (555) 123-4567</a>
+			</div>
+			<!--Dialog subtitle, button, avatar - no -->
+			<h3 id="h3Btn6">Dialog subtitle, button, avatar - no</h3>
+			<div class="qela-dialog secondary">
+				<h3>At the end of the meeting scan provided QR code 👇</h3>
+				<div class="row g-0">
+					<a href="#" class="qela-avatar  md col-auto">
+						<span>J</span>
+					</a>
+					<div class="col-auto">
+						<small>Supervisor Name</small>
+						<div class="fs-3">Emily Johnson</div>
+					</div>
+				</div>
+				<a href="#" type="button" class="btn btn-secondary ic-right ic-phone">+1 (555) 123-4567</a>
+			</div>
+		</div>
+	</main>
+	<!-- =========================== -->
+	<script src="js/vendors.js"></script>
+</body>
+
+</html>
