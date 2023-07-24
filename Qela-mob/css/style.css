@@ -4898,7 +4898,7 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: rgba(60, 60, 67, 0.6);
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #000;
-  --bs-list-group-active-bg: #fff;
+  --bs-list-group-active-bg: #F5F4FF;
   --bs-list-group-active-border-color: #978FFF;
   display: flex;
   flex-direction: column;
@@ -13062,14 +13062,33 @@ a:hover {
   padding-right: 60px;
   position: relative;
 }
-.qela-condenced .checkbox-container.active {
-  background-color: #F5F4FF;
-}
 .qela-condenced .checkbox-container.active span {
   border-color: #978FFF;
   background-color: #978FFF;
 }
 .qela-condenced .checkbox-container.active span::before {
+  opacity: 1;
+}
+.qela-condenced .checkbox-container.success {
+  background-color: #EFF7F2;
+  border: 1px solid #0F9178;
+}
+.qela-condenced .checkbox-container.success span {
+  border-color: #70C174;
+  background-color: #70C174;
+}
+.qela-condenced .checkbox-container.success span::before {
+  opacity: 1;
+}
+.qela-condenced .checkbox-container.error {
+  background-color: #FFF2F0;
+  border: 1px solid #DF3B28;
+}
+.qela-condenced .checkbox-container.error span {
+  border-color: #DF3B28;
+  background-color: #DF3B28;
+}
+.qela-condenced .checkbox-container.error span::before {
   opacity: 1;
 }
 .qela-condenced .checkbox-container span {
@@ -13097,9 +13116,6 @@ a:hover {
 .qela-condenced .radiobutton-container img {
   margin-right: 1rem;
 }
-.qela-condenced .radiobutton-container.active {
-  background-color: #F5F4FF;
-}
 .qela-condenced .radiobutton-container.active span {
   border-color: #978FFF;
   background-color: #fff;
@@ -13108,6 +13124,34 @@ a:hover {
 .qela-condenced .radiobutton-container.active span::before {
   opacity: 1;
   color: #978FFF;
+}
+.qela-condenced .radiobutton-container.success {
+  background-color: #EFF7F2;
+  border: 1px solid #0F9178;
+}
+.qela-condenced .radiobutton-container.success span {
+  border-color: #70C174;
+  background-color: #fff;
+  border-width: 2px;
+}
+.qela-condenced .radiobutton-container.success span::before {
+  opacity: 1;
+  color: #70C174;
+  background-color: #70C174;
+}
+.qela-condenced .radiobutton-container.error {
+  background-color: #FFF2F0;
+  border: 1px solid #DF3B28;
+}
+.qela-condenced .radiobutton-container.error span {
+  border-color: #DF3B28;
+  background-color: #fff;
+  border-width: 2px;
+}
+.qela-condenced .radiobutton-container.error span::before {
+  opacity: 1;
+  color: #DF3B28;
+  background-color: #DF3B28;
 }
 .qela-condenced .radiobutton-container.img-pad {
   padding-top: 0.5rem;
@@ -13139,7 +13183,7 @@ a:hover {
 .qela-description .list-group-item {
   box-shadow: none;
 }
-.qela-description .list-group-item.active {
+.qela-description .list-group-item.active, .qela-description .list-group-item.success, .qela-description .list-group-item.error {
   border: none;
 }
 .qela-description .list-group-item:not(:last-child) {
