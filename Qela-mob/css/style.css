@@ -11958,6 +11958,20 @@ a:hover {
   border-color: #DEE2E6;
 }
 
+.qela-action {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+.qela-action span {
+  font-size: 20px;
+}
+.qela-action .btn {
+  width: 50%;
+}
+
 .qela-awards.red .qela-badge {
   background-color: #EE6666;
 }
