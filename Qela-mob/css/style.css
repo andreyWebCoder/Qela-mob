@@ -13670,7 +13670,7 @@ a:hover {
 .qela-dialog.secondary::before {
   border-left-color: #978FFF;
 }
-.qela-dialog p {
+.qela-dialog p:last-child {
   margin-bottom: 0;
 }
 .qela-dialog h1:not(:last-child), .qela-dialog .h1:not(:last-child) {
@@ -13689,6 +13689,34 @@ a:hover {
 .qela-dialog .qela-avatar {
   margin-right: 1.25rem;
   background-color: #E2E2E2;
+}
+
+.qela-results {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.qela-results [class^=circle-] {
+  display: flex;
+  align-items: center;
+  line-height: 120%;
+}
+.qela-results [class^=circle-]:not(:last-child) {
+  margin-right: 1rem;
+}
+.qela-results [class^=circle-]::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+}
+.qela-results [class^=circle-].circle-danger::before {
+  background-color: #DF3B28;
+}
+.qela-results [class^=circle-].circle-success::before {
+  background-color: #0F9178;
 }
 
 .text-editor h1, .text-editor .h1,
