@@ -11653,6 +11653,34 @@ textarea.form-control-lg {
   content: "\e98b";
 }
 
+.ic-play:before {
+  content: "\e98c";
+}
+
+.ic-img-plus-40:before {
+  content: "\e98d";
+}
+
+.ic-fb:before {
+  content: "\e98e";
+}
+
+.ic-inst:before {
+  content: "\e98f";
+}
+
+.ic-teleg:before {
+  content: "\e990";
+}
+
+.ic-twit:before {
+  content: "\e991";
+}
+
+.ic-youtube:before {
+  content: "\e992";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;

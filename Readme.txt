@@ -1,4 +1,6 @@
 ================= Дата 25.07.23 ======================================
+-- В butons.html правка кнопки custom
+-- Обновлен иконочный шрифт добавлены новые иконки
 -- В butons.html добавлени Buttons map
 -- В quest3.html добавлени Distance, Person coordinats
 -- Правки в subtitles.html
