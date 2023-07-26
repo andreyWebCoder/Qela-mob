@@ -13267,6 +13267,9 @@ input[type=number] {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+.qela-condenced .list-group-item + .list-group-item {
+  border-top-width: 1px;
+}
 .qela-condenced .checkbox-container {
   padding-right: 60px;
   position: relative;
@@ -13278,27 +13281,25 @@ input[type=number] {
 .qela-condenced .checkbox-container.active span::before {
   opacity: 1;
 }
+.qela-condenced .checkbox-container.active.success span {
+  background-color: #10A186;
+}
+.qela-condenced .checkbox-container.active.error span {
+  background-color: #E20000;
+}
 .qela-condenced .checkbox-container.success {
-  background-color: #EFF7F2;
-  border: 1px solid #0F9178;
+  background-color: #EFF7F3;
+  border-color: #10A186;
 }
 .qela-condenced .checkbox-container.success span {
-  border-color: #70C174;
-  background-color: #70C174;
-}
-.qela-condenced .checkbox-container.success span::before {
-  opacity: 1;
+  border-color: #10A186;
 }
 .qela-condenced .checkbox-container.error {
   background-color: #FFF2F0;
-  border: 1px solid #DF3B28;
+  border-color: #E20000;
 }
 .qela-condenced .checkbox-container.error span {
-  border-color: #DF3B28;
-  background-color: #DF3B28;
-}
-.qela-condenced .checkbox-container.error span::before {
-  opacity: 1;
+  border-color: #E20000;
 }
 .qela-condenced .checkbox-container span {
   position: absolute;
@@ -13334,33 +13335,41 @@ input[type=number] {
   opacity: 1;
   color: #978FFF;
 }
+.qela-condenced .radiobutton-container.active.success {
+  background-color: #EFF7F3;
+  border-color: #0F9178;
+}
+.qela-condenced .radiobutton-container.active.success span {
+  border-color: #10A186;
+}
+.qela-condenced .radiobutton-container.active.success span::before {
+  color: #10A186;
+  background-color: #10A186;
+}
+.qela-condenced .radiobutton-container.active.error {
+  background-color: #FFF2F0;
+  border: 1px solid #E20000;
+}
+.qela-condenced .radiobutton-container.active.error span {
+  border-color: #E20000;
+}
+.qela-condenced .radiobutton-container.active.error span::before {
+  color: #DF3B28;
+  background-color: #DF3B28;
+}
 .qela-condenced .radiobutton-container.success {
-  background-color: #EFF7F2;
-  border: 1px solid #0F9178;
+  background-color: #EFF7F3;
+  border-color: #10A186;
 }
 .qela-condenced .radiobutton-container.success span {
-  border-color: #70C174;
-  background-color: #fff;
-  border-width: 2px;
-}
-.qela-condenced .radiobutton-container.success span::before {
-  opacity: 1;
-  color: #70C174;
-  background-color: #70C174;
+  border-color: #10A186;
 }
 .qela-condenced .radiobutton-container.error {
   background-color: #FFF2F0;
-  border: 1px solid #DF3B28;
+  border: 1px solid #E20000;
 }
 .qela-condenced .radiobutton-container.error span {
-  border-color: #DF3B28;
-  background-color: #fff;
-  border-width: 2px;
-}
-.qela-condenced .radiobutton-container.error span::before {
-  opacity: 1;
-  color: #DF3B28;
-  background-color: #DF3B28;
+  border-color: #E20000;
 }
 .qela-condenced .radiobutton-container.img-pad {
   padding-top: 0.5rem;
