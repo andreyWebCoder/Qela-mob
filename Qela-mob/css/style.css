@@ -13673,7 +13673,9 @@ a:hover {
 .qela-dialog p:last-child {
   margin-bottom: 0;
 }
-.qela-dialog h1:not(:last-child), .qela-dialog .h1:not(:last-child) {
+.qela-dialog h1:not(:last-child), .qela-dialog .h1:not(:last-child),
+.qela-dialog h3:not(:last-child),
+.qela-dialog .h3:not(:last-child) {
   padding-bottom: 0.5rem;
 }
 .qela-dialog small, .qela-dialog .small {
