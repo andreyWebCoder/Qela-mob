@@ -1,4 +1,5 @@
 ================= Дата 26.07.23 ======================================
+-- В dialog.html добавил компоненты с Orden и Orden subtitle, btns,custom-input
 -- В text-fields.html добавил компонент Text-field group custom large
 -- В dialog.html добавил компоненты с alert и add img
 -- Правка qela-results Добавил цвет secondary

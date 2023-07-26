@@ -12482,10 +12482,18 @@ a:hover {
   background-color: #E5E3FF;
   font-size: 18px;
   font-weight: 400;
+  display: inline-block;
 }
 .btn-preset:hover {
   background-color: #E5E3FF;
   border-color: #978FFF;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -13714,6 +13722,10 @@ input[type=number] {
 .qela-dialog.secondary::before {
   border-left-color: #978FFF;
 }
+.qela-dialog .icon {
+  display: block;
+  margin: 1rem auto 1.5rem auto;
+}
 .qela-dialog p:last-child {
   margin-bottom: 0;
 }
@@ -13732,9 +13744,16 @@ input[type=number] {
   margin-top: 1rem;
   width: 100%;
 }
+.qela-dialog .btn.btn-preset {
+  width: auto;
+  margin-top: 0;
+}
 .qela-dialog .qela-avatar {
   margin-right: 1.25rem;
   background-color: #E2E2E2;
+}
+.qela-dialog .custom-large {
+  margin: 1.5rem 0;
 }
 
 .qela-results {
@@ -13766,6 +13785,27 @@ input[type=number] {
 }
 .qela-results [class^=circle-].circle-success::before {
   background-color: #0F9178;
+}
+
+.qela-orden {
+  border: 1px solid #978FFF;
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
+  border-radius: 10px;
+}
+.qela-orden .row {
+  align-items: center;
+}
+.qela-orden .orden-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.qela-orden .orden-item img {
+  margin: 0px 0px 0px 0.5rem;
+}
+.qela-orden .orden-item span {
+  font-size: 1.75rem;
+  font-weight: 500;
 }
 
 .text-editor h1, .text-editor .h1,
