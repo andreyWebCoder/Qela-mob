@@ -11681,6 +11681,10 @@ textarea.form-control-lg {
   content: "\e992";
 }
 
+.ic-twit-new:before {
+  content: "\e993";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
