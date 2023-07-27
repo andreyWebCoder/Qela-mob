@@ -12489,6 +12489,31 @@ a:hover {
   border-color: #978FFF;
 }
 
+.btn-pay {
+  padding: 0.625rem 1rem;
+  border: none;
+  width: 100%;
+}
+.btn-pay[class*=apple-] {
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+}
+.btn-pay[class*=google-] {
+  border-radius: 0.25rem;
+}
+.btn-pay.pay-mark {
+  width: auto;
+}
+.btn-pay.apple-white, .btn-pay.google-white {
+  background-color: #fff;
+}
+.btn-pay.apple-black, .btn-pay.google-black {
+  background-color: #000;
+}
+.btn-pay.google-white {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
 .btns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
