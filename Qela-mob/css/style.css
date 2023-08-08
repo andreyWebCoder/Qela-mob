@@ -12106,35 +12106,35 @@ a:hover {
 }
 
 .qela-awards.red .qela-badge {
-  background-color: #EE6666;
+  background-color: #F16E77;
 }
 
 .qela-awards.red .badge-text {
-  color: #EE6666;
+  color: #F16E77;
 }
 
 .qela-awards.violet .qela-badge {
-  background-color: #988AC6;
+  background-color: #A386F2;
 }
 
 .qela-awards.violet .badge-text {
-  color: #988AC6;
+  color: #A386F2;
 }
 
 .qela-awards.green .qela-badge {
-  background-color: #6FBDAE;
+  background-color: #37C3A8;
 }
 
 .qela-awards.green .badge-text {
-  color: #6FBDAE;
+  color: #37C3A8;
 }
 
 .qela-awards.orange .qela-badge {
-  background-color: #DDA466;
+  background-color: #F2A152;
 }
 
 .qela-awards.orange .badge-text {
-  color: #DDA466;
+  color: #F2A152;
 }
 
 .qela-awards.lightgreen .qela-badge {
@@ -12146,27 +12146,27 @@ a:hover {
 }
 
 .qela-awards.lightblue .qela-badge {
-  background-color: #74B9DF;
+  background-color: #72C1F4;
 }
 
 .qela-awards.lightblue .badge-text {
-  color: #74B9DF;
+  color: #72C1F4;
 }
 
 .qela-awards.blue .qela-badge {
-  background-color: #6E9ADA;
+  background-color: #71A9FF;
 }
 
 .qela-awards.blue .badge-text {
-  color: #6E9ADA;
+  color: #71A9FF;
 }
 
 .qela-awards.pink .qela-badge {
-  background-color: #DA6ECF;
+  background-color: #CF6EF1;
 }
 
 .qela-awards.pink .badge-text {
-  color: #DA6ECF;
+  color: #CF6EF1;
 }
 
 .btn:disabled {
@@ -12789,16 +12789,16 @@ input[type=number] {
   background: #FF8484;
 }
 .qela-range.red .color span:nth-child(4) {
-  background: #EE6666;
+  background: #F16E77;
 }
 .qela-range.red input[type=range]::-webkit-slider-thumb {
-  border-color: #E20000;
+  border-color: #CC372E;
 }
 .qela-range.red input[type=range]::-moz-range-thumb {
-  border-color: #E20000;
+  border-color: #CC372E;
 }
 .qela-range.red input[type=range]::-ms-thumb {
-  border-color: #E20000;
+  border-color: #CC372E;
 }
 .qela-range.violet .color span:nth-child(1) {
   background: #BDA9FC;
@@ -12807,19 +12807,19 @@ input[type=number] {
   background: #B99EFD;
 }
 .qela-range.violet .color span:nth-child(3) {
-  background: #B191FF;
+  background: #AA8EFA;
 }
 .qela-range.violet .color span:nth-child(4) {
-  background: #988AC6;
+  background: #A386F2;
 }
 .qela-range.violet input[type=range]::-webkit-slider-thumb {
-  border-color: #543CA0;
+  border-color: #6E63FA;
 }
 .qela-range.violet input[type=range]::-moz-range-thumb {
-  border-color: #543CA0;
+  border-color: #6E63FA;
 }
 .qela-range.violet input[type=range]::-ms-thumb {
-  border-color: #543CA0;
+  border-color: #6E63FA;
 }
 .qela-range.green .color span:nth-child(1) {
   background: #81EAD6;
@@ -12828,19 +12828,19 @@ input[type=number] {
   background: #7AE0CD;
 }
 .qela-range.green .color span:nth-child(3) {
-  background: #66D9C3;
+  background: #59D7BE;
 }
 .qela-range.green .color span:nth-child(4) {
-  background: #6FBDAE;
+  background: #37C3A8;
 }
 .qela-range.green input[type=range]::-webkit-slider-thumb {
-  border-color: #0F9178;
+  border-color: #26A546;
 }
 .qela-range.green input[type=range]::-moz-range-thumb {
-  border-color: #0F9178;
+  border-color: #26A546;
 }
 .qela-range.green input[type=range]::-ms-thumb {
-  border-color: #0F9178;
+  border-color: #26A546;
 }
 .qela-range.orange .color span:nth-child(1) {
   background: #FFC892;
@@ -12849,19 +12849,19 @@ input[type=number] {
   background: #FFB966;
 }
 .qela-range.orange .color span:nth-child(3) {
-  background: #F1B267;
+  background: #FFAC5C;
 }
 .qela-range.orange .color span:nth-child(4) {
-  background: #DDA466;
+  background: #F2A152;
 }
 .qela-range.orange input[type=range]::-webkit-slider-thumb {
-  border-color: #E20000;
+  border-color: #CC372E;
 }
 .qela-range.orange input[type=range]::-moz-range-thumb {
-  border-color: #E20000;
+  border-color: #CC372E;
 }
 .qela-range.orange input[type=range]::-ms-thumb {
-  border-color: #E20000;
+  border-color: #CC372E;
 }
 .qela-range.lightgreen .color span:nth-child(1) {
   background: #A0EFAF;
@@ -12876,13 +12876,13 @@ input[type=number] {
   background: #75D182;
 }
 .qela-range.lightgreen input[type=range]::-webkit-slider-thumb {
-  border-color: #19B22F;
+  border-color: #26A546;
 }
 .qela-range.lightgreen input[type=range]::-moz-range-thumb {
-  border-color: #19B22F;
+  border-color: #26A546;
 }
 .qela-range.lightgreen input[type=range]::-ms-thumb {
-  border-color: #19B22F;
+  border-color: #26A546;
 }
 .qela-range.lightblue .color span:nth-child(1) {
   background: #B0E2F7;
@@ -12891,61 +12891,61 @@ input[type=number] {
   background: #9FD6FB;
 }
 .qela-range.lightblue .color span:nth-child(3) {
-  background: #8CCAF4;
+  background: #97CFF5;
 }
 .qela-range.lightblue .color span:nth-child(4) {
-  background: #74B9DF;
+  background: #72C1F4;
 }
 .qela-range.lightblue input[type=range]::-webkit-slider-thumb {
-  border-color: #188AC9;
+  border-color: #084298;
 }
 .qela-range.lightblue input[type=range]::-moz-range-thumb {
-  border-color: #188AC9;
+  border-color: #084298;
 }
 .qela-range.lightblue input[type=range]::-ms-thumb {
-  border-color: #188AC9;
+  border-color: #084298;
 }
 .qela-range.blue .color span:nth-child(1) {
   background: #B5D2F4;
 }
 .qela-range.blue .color span:nth-child(2) {
-  background: #87B2F8;
+  background: #A6C5F6;
 }
 .qela-range.blue .color span:nth-child(3) {
-  background: #7EABF3;
+  background: #8BB3F4;
 }
 .qela-range.blue .color span:nth-child(4) {
-  background: #6E9ADA;
+  background: #71A9FF;
 }
 .qela-range.blue input[type=range]::-webkit-slider-thumb {
-  border-color: #0E57C1;
+  border-color: #084298;
 }
 .qela-range.blue input[type=range]::-moz-range-thumb {
-  border-color: #0E57C1;
+  border-color: #084298;
 }
 .qela-range.blue input[type=range]::-ms-thumb {
-  border-color: #0E57C1;
+  border-color: #084298;
 }
 .qela-range.pink .color span:nth-child(1) {
-  background: #F4B5EE;
+  background: #EDBBFF;
 }
 .qela-range.pink .color span:nth-child(2) {
-  background: #F887ED;
+  background: #E395FF;
 }
 .qela-range.pink .color span:nth-child(3) {
-  background: #F37EE7;
+  background: #DD7CFF;
 }
 .qela-range.pink .color span:nth-child(4) {
-  background: #DA6ECF;
+  background: #CF6EF1;
 }
 .qela-range.pink input[type=range]::-webkit-slider-thumb {
-  border-color: #C10EAF;
+  border-color: #CA4EF5;
 }
 .qela-range.pink input[type=range]::-moz-range-thumb {
-  border-color: #C10EAF;
+  border-color: #CA4EF5;
 }
 .qela-range.pink input[type=range]::-ms-thumb {
-  border-color: #C10EAF;
+  border-color: #CA4EF5;
 }
 
 .form-check-label a {
