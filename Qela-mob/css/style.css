@@ -13849,6 +13849,24 @@ input[type=number] {
   font-weight: 500;
 }
 
+.qela-description {
+  height: 92px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  display: -webkit-box;
+  transition: all 0.4s ease 0s;
+}
+.qela-description.active {
+  display: block;
+  height: auto;
+}
+
 .text-editor h1, .text-editor .h1,
 .text-editor h2,
 .text-editor .h2,
