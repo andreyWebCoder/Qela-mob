@@ -13849,7 +13849,7 @@ input[type=number] {
   font-weight: 500;
 }
 
-.qela-description {
+.qela-description-text {
   height: 92px;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -13862,7 +13862,7 @@ input[type=number] {
   display: -webkit-box;
   transition: all 0.4s ease 0s;
 }
-.qela-description.active {
+.qela-description-text.active {
   display: block;
   height: auto;
 }
