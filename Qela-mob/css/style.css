@@ -11685,6 +11685,30 @@ textarea.form-control-lg {
   content: "\e993";
 }
 
+.ic-adjustments-h-24:before {
+  content: "\e994";
+}
+
+.ic-arrow-big-down:before {
+  content: "\e995";
+}
+
+.ic-arrow-big-up:before {
+  content: "\e996";
+}
+
+.ic-arrows-down-up:before {
+  content: "\e997";
+}
+
+.ic-video-40:before {
+  content: "\e998";
+}
+
+.ic-hexagon-plus-24:before {
+  content: "\e999";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
