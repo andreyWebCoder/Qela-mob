@@ -13783,6 +13783,16 @@ input[type=number] {
 .qela-dialog .h3:not(:last-child) {
   padding-bottom: 0.5rem;
 }
+.qela-dialog h5:not(:last-child), .qela-dialog .h5:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.qela-dialog img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.qela-dialog img:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
 .qela-dialog small, .qela-dialog .small {
   color: #7E8389;
 }
