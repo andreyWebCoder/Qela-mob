@@ -30,6 +30,7 @@
                     <li><a href="#h3Btn12" class="text-black">List descryption</a></li>
                     <li><a href="#h3Btn13" class="text-black">Dialog subtitle, text, + img</a></li>
                     <li><a href="#h3Btn14" class="text-black">Dialog subtitle, text, + imgs</a></li>
+                    <li><a href="#h3Btn15" class="text-black">Dialog subtitle, text, + input +btn</a></li>
                 </ol>
             </nav>
         </aside>
@@ -120,11 +121,9 @@
             <div class="qela-dialog secondary">
                 <h3>Upload screenshot</h3>
                 <p>Allowed JPG, GIF or PNG. Max size of 800K</p>
-                <div class="py-5">
-                    <button type="button" class="qela-add mx-auto">
-                        <span class="ic-img-plus icon"></span>
-                        add an image
-                    </button>
+                <div class="py-5 qela-grid">
+                    <button type="button" class="qela-add"><span class="ic-img-plus icon"></span> add an
+                        image</button>
                 </div>
             </div>
             <!-- Dialog subtitle, text, alert, icon-->
@@ -199,7 +198,6 @@
             </div>
             <!-- Dialog subtitle, text, + imgs -->
             <h3 id="h3Btn14">Dialog subtitle, text, + imgs</h3>
-
             <div class="qela-dialog secondary">
                 <h1>Display a Unity for Planet flag on your property</h1>
                 <p>Admin describes how it should be done property.</p>
@@ -223,6 +221,27 @@
                     </div>
                     <button type="button" class="qela-add"><span class="ic-img-plus icon"></span> add an
                         image</button>
+                </div>
+            </div>
+            <!-- Dialog subtitle, text, + input +btn -->
+            <h3 id="h3Btn15">Dialog subtitle, text, + input +btn</h3>
+            <div class="qela-dialog secondary">
+                <h1>Send link on video/audio file</h1>
+                <p>You can upload video/audio file on <a href="#" target="_blank">youtube.com</a> or any other
+                    cloud-storage service </p>
+                <div class="d-flex gap-1">
+                    <div class="flex-grow-1">
+                        <input type="text" class="form-control" placeholder="https://...">
+                        <span class="form-error">Error text</span>
+                    </div>
+                    <button type="button" class="btn btn-secondary">Paste</button>
+                </div>
+                <div class="d-flex gap-1">
+                    <div class="flex-grow-1">
+                        <input type="text" class="form-control" placeholder="https://...">
+                        <span class="form-error">Error text</span>
+                    </div>
+                    <button type="button" class="btn btn-light qela-close ic-cloze"></button>
                 </div>
             </div>
         </div>

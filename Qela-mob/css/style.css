@@ -12569,6 +12569,13 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+.qela-close {
+  flex: 0 0 72px;
+  height: auto;
+  background-color: #F6F6F6;
+  padding: 0;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -13810,6 +13817,9 @@ input[type=number] {
   display: block;
   margin: 1rem auto 1.5rem auto;
 }
+.qela-dialog a {
+  text-decoration: none;
+}
 .qela-dialog p:last-child {
   margin-bottom: 0;
 }
@@ -13834,11 +13844,11 @@ input[type=number] {
 .qela-dialog > .row {
   margin-top: 1.5rem;
 }
-.qela-dialog .btn {
+.qela-dialog > .btn {
   margin-top: 1rem;
   width: 100%;
 }
-.qela-dialog .btn.btn-preset {
+.qela-dialog > .btn.btn-preset {
   width: auto;
   margin-top: 0;
 }
