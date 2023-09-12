@@ -12025,13 +12025,24 @@ a:hover {
 }
 
 .qela-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  --bs-gutter-y: 1rem;
+  --bs-gutter-x: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-left: calc(var(--bs-gutter-x) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -1);
 }
-.qela-grid .qela-add {
-  width: auto;
-  min-height: min-content;
+.qela-grid > * {
+  flex: 0 0 calc(50% - var(--bs-gutter-x) * 2);
+  margin-top: var(--bs-gutter-y);
+  margin-left: var(--bs-gutter-x);
+  margin-right: var(--bs-gutter-x);
+  background-color: transparent;
+}
+.qela-grid > *:first-child {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .qela-qr {
@@ -13851,6 +13862,9 @@ input[type=number] {
   width: auto;
   flex: 0 0 auto;
   margin-top: 0;
+}
+.qela-dialog .qela-grid img:not(:last-child) {
+  margin-bottom: 0;
 }
 
 .qela-results {
