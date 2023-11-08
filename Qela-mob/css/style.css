@@ -12255,6 +12255,20 @@ a:hover {
   }
 }
 
+.qela-limit {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+.qela-limit > *:not(:last-child) {
+  margin: 0px 0.5rem 0px 0px;
+}
+.qela-limit.reached {
+  font-weight: 500;
+  color: #FF453A;
+}
+
 .btn:disabled {
   color: #fff;
   background-color: #CACACA;
