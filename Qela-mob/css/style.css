@@ -12145,10 +12145,9 @@ a:hover {
 }
 
 .qela-awards {
+  display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  max-width: 75px;
-  min-width: 75px;
 }
 .qela-awards span:first-child {
   line-height: 1;
