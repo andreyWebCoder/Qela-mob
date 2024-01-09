@@ -11749,6 +11749,10 @@ textarea.form-control-lg {
   content: "\e9a3";
 }
 
+.ic-credit-card:before {
+  content: "\e9a4";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
@@ -13143,6 +13147,52 @@ input[type=number] {
   margin-left: -30px;
   padding-left: 0;
   width: 100%;
+}
+
+.form-switch {
+  padding-left: 0;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .form-switch {
+    gap: 0.5rem;
+  }
+}
+.form-switch .form-check-input {
+  width: 3.2em;
+  margin-left: 0;
+  height: 1.75rem;
+  background-color: #dee2e6;
+  border: none;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='rgba(255, 255, 255, 0.99)'/></svg>");
+  border-radius: 1em;
+  float: none;
+  transition: background-color 0.2s ease 0s, background-position 0.2s linear 0s;
+}
+.form-switch .form-check-input:hover {
+  background-color: rgba(118, 118, 118, 0.4);
+}
+.form-switch .form-check-input:disabled {
+  background-color: #dee2e6;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='rgba(246, 246, 246, 0.99)'/></svg>");
+}
+.form-switch .form-check-input:checked {
+  background-color: #978fff;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='rgba(255, 255, 255, 0.99)'/></svg>");
+}
+.form-switch .form-check-input:checked:hover {
+  background-color: #6e63fa;
+}
+.form-switch .form-check-input:checked:disabled {
+  background-color: #dee2e6;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='rgba(246, 246, 246, 0.99)'/></svg>");
+}
+.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='rgba(255, 255, 255, 0.99)'/></svg>");
 }
 
 .qela-link {
