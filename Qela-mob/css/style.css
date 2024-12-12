@@ -12092,6 +12092,9 @@ a:hover {
 .qela-qr {
   width: 66.66%;
 }
+.qela-qr img {
+  width: 100%;
+}
 .qela-qr::before, .qela-qr::after,
 .qela-qr span {
   content: "";
