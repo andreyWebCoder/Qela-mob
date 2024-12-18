@@ -230,19 +230,20 @@
 		}
 
 
-		.--elastic {
+		/* .--elastic {
 			counter-reset: olcounter;
-		}
+		} */
 
 		.--elastic li {
-			counter-increment: olcounter;
+			/* counter-increment: olcounter; */
 			list-style: none;
 			position: relative;
 			padding-left: 25px;
 		}
 
 		.--elastic li::before {
-			content: counters(olcounter, ".") "";
+			content: "\e936";
+			font-family: 'icons';
 			position: absolute;
 			width: 20px;
 			height: 20px;
@@ -254,7 +255,7 @@
 			align-items: center;
 			justify-content: center;
 			color: inherit;
-			font-size: 11px;
+			font-size: 20px;
 			line-height: 1;
 			transition: background-color 0.3s ease 0s;
 		}
@@ -377,7 +378,7 @@
 						<li><a class="--link" href="#">special-ic</a></li>
 						<li><a class="--link" href="#">subtitles</a></li>
 						<li><a class="--link" href="#">tabs</a></li>
-						<li><a class="--link" href="#">talents</a></li>
+						<li><a class="--link" href="#">talents-badges</a></li>
 						<li><a class="--link" href="#">text-fields</a></li>
 						<li><a class="--link" href="#">typography</a></li>
 						<li><a class="--link" href="#">video</a></li>
@@ -2661,51 +2662,6 @@
 		<hr />
 	</div>
 	<!-- =============== -->
-	<div class="py-2">
-		<div class="d-flex gap-2 py-2 align-items-center flex-wrap">
-			<div class="qela-awards gap-1 red">
-				<span class="badge-text fs-5 text-center lh-1">+1</span>
-				<span class="qela-badge small">
-					<span class="badge fw-normal px-2 py-1 rounded-2">Fundraising</span>
-				</span>
-			</div>
-			<div class="qela-awards gap-1 violet">
-				<span class="badge-text fs-5 text-center lh-1">+1</span><span class="qela-badge small"><span class="badge fw-normal px-2 py-1 rounded-2">Recruiting</span></span>
-			</div>
-			<div class="qela-awards gap-1 green">
-				<span class="badge-text fs-5 text-center lh-1">+1</span><span class="qela-badge small"><span class="badge fw-normal px-2 py-1 rounded-2">Endurance</span></span>
-			</div>
-			<div class="qela-awards gap-1 orange">
-				<span class="badge-text fs-5 text-center lh-1">+1</span><span class="qela-badge small"><span class="badge fw-normal px-2 py-1 rounded-2">Eloquence</span></span>
-			</div>
-			<div class="qela-awards gap-1 lightgreen">
-				<span class="badge-text fs-5 text-center lh-1">+2</span><span class="qela-badge small"><span class="badge fw-normal px-2 py-1 rounded-2">Determination</span></span>
-			</div>
-			<div class="qela-awards gap-1 lightblue">
-				<span class="badge-text fs-5 text-center lh-1">+1</span><span class="qela-badge small"><span class="badge fw-normal px-2 py-1 rounded-2">Originality</span></span>
-			</div>
-			<div class="qela-awards gap-1 blue">
-				<span class="badge-text fs-5 text-center lh-1">+1</span><span class="qela-badge small"><span class="badge fw-normal px-2 py-1 rounded-2">Management</span></span>
-			</div>
-			<div class="qela-awards gap-1 pink">
-				<span class="badge-text fs-5 text-center lh-1">+1</span><span class="qela-badge small"><span class="badge fw-normal px-2 py-1 rounded-2">Savvy</span></span>
-			</div>
-			<div class="d-flex align-items-center">
-				<img src="/img/icons/orden-red.svg" width="32" height="32" alt="orden-red" /><span class="fs-5">+<span>4</span></span>
-			</div>
-			<div class="qela-voice">
-				<div class="body-voice">
-					<img src="/img/icons/orden-red.svg" width="18" height="18" alt="coin">
-					<small>105</small>
-				</div>
-			</div>
-		</div>
-		<!-- =============== -->
-		<hr />
-	</div>
-
-	<!-- =============== -->
-
 	<!-- actions guest-card -->
 	<h3>Actions guest-card*</h3>
 	<div class="qela-action">
@@ -4343,7 +4299,8 @@
 	</ul>
 </section>
 					<section class="d-grid gap-3">
-	<h2 class="h1 mt-4">Talents</h2>
+	<h2 class="h1 mt-4">Talents-badges</h2>
+	<h3>Talents</h3>
 	<!-- red -->
 	<div class="qela-range red">
 		<div class="color"><span></span><span></span><span></span><span></span></div>
@@ -4424,6 +4381,114 @@
 			<div class="ic-chevron-right"></div>
 		</div>
 		<input type="range" value="22" class="form-range" min="0" max="100" step="1" disabled>
+	</div>
+	<!-- =============== -->
+	<h3>Badges</h3>
+	<div class="d-flex gap-3 py-2 align-items-center flex-wrap">
+		<div class="qela-awards red">
+			<span class="number">+2</span>
+			<span class="qela-badge small">
+				<span class="badge">Fundraising</span>
+			</span>
+		</div>
+		<div class="qela-awards violet">
+			<span class="number">+2</span>
+			<span class="qela-badge small">
+				<span class="badge">Recruiting</span>
+			</span>
+		</div>
+		<div class="qela-awards green">
+			<span class="number">+2</span>
+			<span class="qela-badge small">
+				<span class="badge">Endurance</span>
+			</span>
+		</div>
+		<div class="qela-awards orange">
+			<span class="number">+1</span>
+			<span class="qela-badge small">
+				<span class="badge">Eloquence</span>
+			</span>
+		</div>
+		<div class="qela-awards lightgreen">
+			<span class="number">+2</span>
+			<span class="qela-badge small">
+				<span class="badge">Determination</span>
+			</span>
+		</div>
+		<div class="qela-awards lightblue">
+			<span class="number">+1</span><span class="qela-badge small">
+				<span class="badge">Originality</span>
+			</span>
+		</div>
+		<div class="qela-awards blue">
+			<span class="number">+1</span>
+			<span class="qela-badge small">
+				<span class="badge">Management</span>
+			</span>
+		</div>
+		<div class="qela-awards pink">
+			<span class="number">+1</span>
+			<span class="qela-badge small">
+				<span class="badge">Savvy</span>
+			</span>
+		</div>
+		<!-- ==== -->
+		<div class="qela-awards orden">
+			<span class="number">+4</span>
+			<span class="qela-badge small">
+				<span class="badge">Vote weight</span>
+				<img src="img/icons/orden-red.svg" width="26" height="26" alt="orden-red" />
+			</span>
+		</div>
+		<!-- ===== -->
+		<div class="qela-voice">
+			<div class="body-voice">
+				<img src="img/icons/orden-red.svg" width="18" height="18" alt="coin">
+				<small>105</small>
+			</div>
+		</div>
+	</div>
+	<div class="d-flex gap-3 py-2 align-items-center flex-wrap">
+		<div class="qela-awards red light-type">
+			<span class="qela-badge small">
+				<span class="badge">Fundraising</span>
+			</span>
+		</div>
+		<div class="qela-awards violet light-type">
+			<span class="qela-badge small">
+				<span class="badge">Recruiting</span>
+			</span>
+		</div>
+		<div class="qela-awards green light-type">
+			<span class="qela-badge small">
+				<span class="badge">Endurance</span>
+			</span>
+		</div>
+		<div class="qela-awards orange light-type">
+			<span class="qela-badge small">
+				<span class="badge">Eloquence</span>
+			</span>
+		</div>
+		<div class="qela-awards lightgreen light-type">
+			<span class="qela-badge small">
+				<span class="badge">Determination</span>
+			</span>
+		</div>
+		<div class="qela-awards lightblue light-type">
+			<span class="qela-badge small">
+				<span class="badge">Originality</span>
+			</span>
+		</div>
+		<div class="qela-awards blue light-type">
+			<span class="qela-badge small">
+				<span class="badge">Management</span>
+			</span>
+		</div>
+		<div class="qela-awards pink light-type">
+			<span class="qela-badge small">
+				<span class="badge">Savvy</span>
+			</span>
+		</div>
 	</div>
 </section>
 					<section>
