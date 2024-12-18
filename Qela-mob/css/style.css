@@ -13975,7 +13975,7 @@ input[type=number] {
   z-index: 1;
   border-radius: 20px;
   padding: 2px;
-  left: calc(100% - 10px);
+  right: -8px;
   top: -6px;
   min-width: 18px;
 }
@@ -13985,6 +13985,7 @@ input[type=number] {
 .qela-awards .qela-badge.small .badge {
   font-weight: normal;
   padding: 0.25rem 0.5rem;
+  line-height: 14px;
 }
 .qela-awards.red .number {
   color: #f16e77;
@@ -15111,18 +15112,17 @@ input[type=number] {
   border-color: #8278ff;
   background-color: #f4f3ff;
 }
-.qela-place-card .qela-voice {
+.qela-place-card .qela-voice,
+.qela-place-card .qela-awards {
   position: absolute;
   left: 4px;
-  top: 0;
-  transform: translateY(-50%);
+  bottom: calc(100% - 10px);
   z-index: 1;
 }
 .qela-place-card .qela-avatar {
   width: 70px;
   height: 70px;
   flex: 0 0 70px;
-  border: 1px solid #f0eeff;
 }
 
 .qela-place-name {
