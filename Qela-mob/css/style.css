@@ -6484,7 +6484,7 @@ textarea.form-control-lg {
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.05) !important;
 }
 
 .shadow-lg {
@@ -12291,6 +12291,18 @@ textarea.form-control-lg {
 
 .ic-credit-card:before {
   content: "\e9a4";
+}
+
+.ic-trophy-1:before {
+  content: "\e9b4";
+}
+
+.ic-trophy-2:before {
+  content: "\e9b5";
+}
+
+.ic-trophy-3:before {
+  content: "\e9b6";
 }
 
 /* Свои глобальние стили (qela-) */
