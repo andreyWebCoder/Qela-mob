@@ -12724,20 +12724,6 @@ a:hover {
   border-color: #dee2e6;
 }
 
-.qela-action {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-}
-.qela-action span {
-  font-size: 20px;
-}
-.qela-action .btn {
-  width: 50%;
-}
-
 .qela-loader {
   position: fixed;
   width: 100%;
@@ -12887,8 +12873,8 @@ a:hover {
 }
 .btn-info:disabled, .btn-info.disabled {
   color: #a8a8a8;
-  background-color: #e8e8e8;
-  border-color: #e8e8e8;
+  background-color: hsl(0deg, 0%, 91%);
+  border-color: hsl(0deg, 0%, 91%);
 }
 
 .btn-light:hover {
@@ -14155,6 +14141,7 @@ input[type=number] {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
   color: inherit;
   text-decoration: none;
+  position: relative;
 }
 .qela-card.card:hover {
   color: inherit;
@@ -14168,10 +14155,22 @@ input[type=number] {
   justify-content: center;
 }
 .qela-card.card.text-bg-primary {
-  background-color: #ffec66 !important;
+  background-color: #ffe000 !important;
 }
 .qela-card.card.text-bg-info {
-  background-color: #e8e8e8 !important;
+  background-color: #d1d1d2 !important;
+}
+.qela-card.card.is-out {
+  background-color: #e9ecef;
+}
+.qela-card.card.accent {
+  background-color: #fffce5;
+}
+.qela-card.card.accent.is-out {
+  background-color: #fffce5;
+}
+.qela-card .qela-clamp {
+  max-height: none;
 }
 
 .card {
@@ -14181,6 +14180,45 @@ input[type=number] {
   position: absolute;
   top: 16px;
   right: 16px;
+}
+
+.qela-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  gap: 0.25rem;
+}
+.qela-time > [class*=ic-] {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  line-height: 1;
+}
+.qela-time > [class*=ic-]:before {
+  font-size: 1rem;
+}
+.qela-time > [class*=ic-] .btn {
+  font-size: 18px;
+  line-height: 1;
+  background-color: #ffe000;
+  padding: 0.125rem;
+  margin-right: 0.25rem;
+}
+
+.qela-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+.qela-action span {
+  font-size: 1rem;
+}
+.qela-action .btn {
+  width: 50%;
 }
 
 .qela-badge {
