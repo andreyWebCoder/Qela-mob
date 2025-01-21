@@ -12698,12 +12698,13 @@ a:hover {
 }
 
 .qela-clamp {
+  --clamp-line: 3;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: var(--clamp-line);
   max-height: 62px;
 }
 .qela-clamp.clamp-7 {
@@ -12711,7 +12712,7 @@ a:hover {
   height: 115px;
 }
 .qela-clamp.clamp-name1 {
-  -webkit-line-clamp: 1;
+  --clamp-line: 1;
   height: auto;
   white-space: nowrap;
 }
@@ -14359,9 +14360,6 @@ input[type=number] {
 .qela-card.card.accent.is-out {
   background-color: #fffce5;
 }
-.qela-card .qela-clamp {
-  max-height: none;
-}
 
 .card {
   position: relative;
@@ -15696,11 +15694,15 @@ input[type=number] {
 }
 
 .qela-place-name {
-  height: 32px;
   line-height: 15.6px;
   text-align: center;
   display: flex;
   align-items: center;
+  height: 32px;
+}
+.qela-place-name .qela-clamp {
+  --clamp-line: 2;
+  height: auto;
 }
 
 .qela-place-num {
