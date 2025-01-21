@@ -15056,6 +15056,10 @@ input[type=number] {
 .qela-list-leaderboard .list-group-item .accordion-button > div {
   flex-grow: 1;
 }
+.qela-list-leaderboard .list-group-item .qela-clamp {
+  --clamp-line: 2;
+  height: auto;
+}
 .qela-list-leaderboard .qela-voice .body-voice {
   background-color: #fffdf2;
 }
