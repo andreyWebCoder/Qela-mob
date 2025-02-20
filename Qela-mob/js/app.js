@@ -32,3 +32,19 @@ window.onload = function () {
 		}
 	}
 }
+
+// const main = document.querySelector('.qela-fullscreen');
+// const navbarTop = document.querySelector('.qela-top');
+// const navbarBottom = document.querySelector('.qela-bottom')
+// if (navbarTop) {
+// 	const observer = new ResizeObserver(entrirs => {
+// 		const elem = entrirs[0];
+// 		let heightNav = elem.borderBoxSize[0].blockSize;
+// 		main.style.paddingTop = heightNav + 'px';
+// 		console.log(elem);
+
+// 	})
+// 	observer.observe(navbarTop);
+// }
+// console.log(navbarTop);
+3
