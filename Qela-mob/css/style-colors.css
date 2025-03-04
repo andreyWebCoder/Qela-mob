@@ -14177,6 +14177,23 @@ input[type=number] {
   }
 }
 
+.qela-avatar-inner {
+  display: flex;
+}
+.qela-avatar-inner .qela-avatar {
+  position: relative;
+  z-index: 2;
+}
+.qela-avatar-inner .qela-avatar:first-child {
+  z-index: 3;
+}
+.qela-avatar-inner .qela-avatar:last-child {
+  z-index: 1;
+}
+.qela-avatar-inner .qela-avatar:not(:first-child) {
+  margin-left: calc(var(--img-size) * -0.75);
+}
+
 .qela-avatar {
   font-size: 1.5rem;
   display: flex;
@@ -14222,10 +14239,6 @@ input[type=number] {
 }
 .qela-avatar.info-400 {
   border-color: #ced4da;
-}
-
-.qela-users .qela-avatar:not(:first-child) {
-  margin-left: -10px;
 }
 
 .qela-qr {
@@ -14351,23 +14364,6 @@ input[type=number] {
 }
 .qela-topbar .navbar-brand img {
   height: 40px;
-}
-
-.qela-avatar-inner {
-  display: flex;
-}
-.qela-avatar-inner .qela-avatar {
-  position: relative;
-  z-index: 2;
-}
-.qela-avatar-inner .qela-avatar:first-child {
-  z-index: 3;
-}
-.qela-avatar-inner .qela-avatar:last-child {
-  z-index: 1;
-}
-.qela-avatar-inner .qela-avatar:not(:first-child) {
-  margin-left: -30px;
 }
 
 .qela-card.card {
@@ -15622,10 +15618,9 @@ input[type=number] {
 .qela-place {
   padding: 0 0.5rem 0.5rem 0.5rem;
   min-height: 250px;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: #ffd600;
   position: relative;
-  font-size: 12px;
 }
 .qela-place.users--2 .qela-place-inner {
   gap: 1rem;
@@ -15671,17 +15666,18 @@ input[type=number] {
 
 .qela-place-card {
   background-color: #fff;
-  padding: 4px 8px 14px 8px;
-  border-radius: 12px;
+  padding: 0.25rem 0.5rem 0.875rem 0.5rem;
+  border-radius: 0.75rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 0.25rem;
   position: relative;
   border: 2px solid transparent;
   flex: 0 0 102px;
   min-height: 128px;
+  font-size: 0.75rem;
   transition: border-color 0.25s ease 0s, bbackground-color 0.25s ease 0s;
 }
 .qela-place-card:nth-child(1) {
@@ -15721,11 +15717,6 @@ input[type=number] {
   bottom: calc(100% - 10px);
   z-index: 4;
 }
-.qela-place-card .qela-avatar {
-  width: 70px;
-  height: 70px;
-  flex: 0 0 70px;
-}
 .qela-place-card .qela-avatar-inner {
   padding: 1.25rem 0 0.625rem 0;
   align-self: flex-start;
@@ -15735,11 +15726,6 @@ input[type=number] {
   align-self: center;
   line-height: 1;
   transition: transform 0.2s ease-in-out;
-}
-.qela-place-card .qela-avatar-inner .qela-avatar {
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
 }
 
 .qela-place-name {
