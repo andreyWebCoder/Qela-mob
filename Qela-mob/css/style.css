@@ -14342,8 +14342,8 @@ input[type=number] {
 }
 
 .qela-navbar {
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
   justify-content: center;
 }
 .qela-navbar .text-center {
