@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/vendors.css">
+	<!-- <link rel="stylesheet" href="css/style-colors.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -319,7 +320,7 @@
 				<div class="row g-1 align-items-center">
 					<div class="col-auto">
 						<a class="navbar-brand d-inline-flex" href="https://qela-admin.a2v10.com/" target="_blank">
-							<img src="img/logo-3.svg" alt="Logo" width="57" height="40" />
+							<img src="img/logo-sm.svg" alt="Logo" width="57" height="40" />
 						</a>
 					</div>
 					<div class="col">
@@ -386,6 +387,8 @@
 						<li><a class="--link" href="#">voting</a></li>
 						<li><a class="--link" href="#">places</a></li>
 						<li><a class="--link" href="#">accordion</a></li>
+						<li><a class="--link" href="#">chat</a></li>
+						<li><a class="--link" href="#">avatars</a></li>
 					</ol>
 				</nav>
 			</aside>
@@ -397,6 +400,7 @@
 	<h2 class="h1 mt-4">Buttons</h2>
 	<!-- buttons large standart start -->
 	<h3>Buttons types, large </h3>
+	<div class="p-3 bg-primary-500"></div>
 	<button type="button" class="btn btn-primary">Primary</button>
 	<button type="button" class="btn btn-primary" disabled>Primary disabled</button>
 	<button type="button" class="btn btn-secondary">Secondary</button>
@@ -797,6 +801,75 @@
   </div>
 </section>
 
+					<!-- FIX Avatars  -->
+<section class="d-grid gap-3">
+	<h2 class="h1 mt-4">Avatars</h2>
+	<!-- FIX Avatars 100-->
+	<h4>Avatars 100</h4>
+	<div class="d-inline-flex gap-2 flex-wrap">
+		<a href="#" class="qela-avatar qela-ibg online" style="--img-size: 100px">
+			<img src="img/avatar.jpg" alt="#" />
+		</a>
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 100px"> J </a>
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 100px">
+			<img src="img/type-logo.svg" alt="#" />
+		</a>
+		<a href="#" class="qela-avatar" style="--img-size: 100px">
+			<span class="ic-img-plus text-info-500"></span>
+		</a>
+	</div>
+	<!-- FIX Avatars 70-->
+	<h4>Avatars 70</h4>
+	<div class="d-inline-flex gap-2 flex-wrap">
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 70px">
+			<img class="border-0" src="img/avatar.jpg" alt="#" />
+		</a>
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 70px"> J </a>
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 70px">
+			<img src="img/type-logo.svg" alt="#" />
+		</a>
+	</div>
+	<!-- FIX Avatars 40-->
+	<h4>Avatars 40</h4>
+	<div class="d-inline-flex gap-2 flex-wrap">
+		<a href="#" class="qela-avatar qela-ibg border-1 online-sm" style="--img-size: 40px">
+			<img src="img/avatar.jpg" alt="#" />
+		</a>
+		<a href="#" class="qela-avatar qela-ibg fs-6" style="--img-size: 40px">
+			<small>J</small>
+		</a>
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 40px">
+			<img src="img/type-logo.svg" alt="#" />
+		</a>
+	</div>
+	<!-- FIX Avatars 30-->
+	<h4>Avatars 30</h4>
+	<div class="d-inline-flex gap-2 flex-wrap">
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+			<img src="img/avatar.jpg" alt="#" />
+		</a>
+		<a href="#" class="qela-avatar qela-ibg fs-6" style="--img-size: 30px">
+			<small><small>J</small></small>
+		</a>
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+			<img src="img/type-logo.svg" alt="#" />
+		</a>
+	</div>
+	<!-- FIX Avatars 30 Users-->
+	<h4>Avatars 30 (Users)</h4>
+	<div class="d-inline-flex align-items-center qela-users">
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+			<img class="border-1" src="img/avatar.jpg" alt="#" />
+		</a>
+		<a href="#" class="qela-avatar qela-ibg fs-6" style="--img-size: 30px">
+			<small><small>J</small></small>
+		</a>
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+			<img class="border-1" src="img/type-logo.svg" alt="#" />
+		</a>
+		<span class="text-info-900 ms-2">120</span>
+	</div>
+</section>
 					<section class="d-grid gap-3">
     <!-- Breadcrambs -->
     <h2 class="h1 mt-4" id="h3Btn1">Breadcrambs</h2>
@@ -852,6 +925,23 @@
 			<p class="card-text text-info"><small>30 September 2021</small></p>
 		</div>
 	</div>
+</section>
+					<section class="d-grid gap-3">
+	<!-- Chat -->
+	<h2 class="h1 mt-4">Chat</h2>
+	<!-- User status -->
+	<div class="d-flex">
+		<span class="fs-12">Failed</span>
+	</div>
+	<h3>User status</h3>
+	<!-- Like/Dislike counter -->
+	<h3>Like/Dislike counter</h3>
+	<!-- Messages -->
+	<h3>Messages</h3>
+	<!-- Chat Sections -->
+	<h3>Chat Sections</h3>
+
+
 </section>
 					<section class="d-grid gap-3">
 	<h2 class="h1 mt-4">Coming soon</h2>
@@ -1132,7 +1222,6 @@
 		<span class="ic-bell"></span>
 		<span class="ic-box-arrow"></span>
 		<span class="ic-calendar"></span>
-		<span class="ic-chevron"></span>
 		<span class="ic-city"></span>
 		<span class="ic-clock"></span>
 		<span class="ic-cloze"></span>
@@ -1141,13 +1230,14 @@
 		<span class="ic-dollar"></span>
 		<span class="ic-dots"></span>
 		<span class="ic-dots-2"></span>
+		<span class="ic-grip-horizontal"></span>
+		<span class="ic-dots-row"></span>
 		<span class="ic-download"></span>
 		<span class="ic-edit"></span>
 		<span class="ic-files"></span>
 		<span class="ic-jostik"></span>
 		<span class="ic-latter"></span>
 		<span class="ic-lattice"></span>
-		<span class="ic-mail"></span>
 		<span class="ic-map"></span>
 		<span class="ic-mark"></span>
 		<span class="ic-no-success"></span>
@@ -1158,43 +1248,39 @@
 		<span class="ic-print"></span>
 		<span class="ic-search"></span>
 		<span class="ic-settings"></span>
-		<span class="ic-spead"></span>
 		<span class="ic-speaker"></span>
 		<span class="ic-stop"></span>
 		<span class="ic-stop-2"></span>
 		<span class="ic-success"></span>
 		<span class="ic-success-2"></span>
 		<span class="ic-tent"></span>
-		<span class="ic-check"></span>
+		<span class="ic-arrow-left"></span>
+		<span class="ic-send"></span>
 		<span class="ic-arrow"></span>
 		<span class="ic-eye-close"></span>
-		<span class="ic-qela"></span>
-		<span class="ic-voting"></span>
-		<span class="ic-profile"></span>
-		<span class="ic-flag"></span>
 		<span class="ic-donats"></span>
 		<span class="ic-error-warning-fill"></span>
 		<span class="ic-alert-triangle"></span>
 		<span class="ic-eye"></span>
-		<span class="ic-home"></span>
 		<span class="ic-chevron-right"></span>
 		<span class="ic-chevron-left"></span>
+		<span class="ic-chevron-up"></span>
+		<span class="ic-chevron"></span>
+		<span class="ic-check"></span>
+		<span class="ic-check-big"></span>
 		<span class="ic-check-filled"></span>
 		<span class="ic-add"></span>
 		<span class="ic-info"></span>
 		<span class="ic-file-copy"></span>
 		<span class="ic-circle"></span>
 		<span class="ic-writing"></span>
-		<span class="ic-voting-24"></span>
 		<span class="ic-flame"></span>
-		<span class="ic-flag-24"></span>
 		<span class="ic-exclamation-mark"></span>
 		<span class="ic-chart-pie"></span>
 		<span class="ic-bulb"></span>
 		<span class="ic-camera-plus"></span>
 		<span class="ic-checkmark-starburst-filled"></span>
 		<span class="ic-donation"></span>
-		<span class="ic-chevron-up"></span>
 		<span class="ic-img"></span>
 		<span class="ic-img-plus"></span>
 		<span class="ic-log-out"></span>
@@ -1211,27 +1297,8 @@
 		<span class="ic-help-circle"></span>
 		<span class="ic-alert-triangle-2"></span>
 		<span class="ic-alert-starburst-filled"></span>
-		<span class="ic-dots-row"></span>
-		<span class="ic-check-big"></span>
-		<span class="ic-flag-filled-24"></span>
-		<span class="ic-flag-filled-28"></span>
-		<span class="ic-home-24"></span>
-		<span class="ic-home-filled-24"></span>
-		<span class="ic-home-filled-28"></span>
-		<span class="ic-qela-filled-28"></span>
-		<span class="ic-user-24"></span>
-		<span class="ic-user-filled-24"></span>
-		<span class="ic-user-filled-28"></span>
-		<span class="ic-voting-filled-24"></span>
-		<span class="ic-voting-filled-28"></span>
-		<span class="ic-arrow-left"></span>
 		<span class="ic-article"></span>
 		<span class="ic-award"></span>
-		<span class="ic-book"></span>
-		<span class="ic-diamond-24"></span>
-		<span class="ic-diamond-28"></span>
-		<span class="ic-diamond-filled-24"></span>
-		<span class="ic-diamond-filled-28"></span>
 		<span class="ic-layout-grid"></span>
 		<span class="ic-layout-kanban"></span>
 		<span class="ic-list-check"></span>
@@ -1259,7 +1326,6 @@
 		<span class="ic-edit-2"></span>
 		<span class="ic-key"></span>
 		<span class="ic-minus"></span>
-		<span class="ic-list-check1"></span>
 		<span class="ic-redo"></span>
 		<span class="ic-undo"></span>
 		<span class="ic-triangle-left-small"></span>
@@ -1268,7 +1334,6 @@
 		<span class="ic-location"></span>
 		<span class="ic-google-map"></span>
 		<span class="ic-img-32"></span>
-		<span class="ic-scan"></span>
 		<span class="ic-play"></span>
 		<span class="ic-img-plus-40"></span>
 		<span class="ic-fb"></span>
@@ -1283,8 +1348,6 @@
 		<span class="ic-arrows-down-up"></span>
 		<span class="ic-video-40"></span>
 		<span class="ic-hexagon-plus-24"></span>
-		<span class="ic-bell-28"></span>
-		<span class="ic-bell-filled-28"></span>
 		<span class="ic-bill"></span>
 		<span class="ic-chevron-down-right"></span>
 		<span class="ic-inkedin"></span>
@@ -1293,9 +1356,38 @@
 		<span class="ic-triangle-2-up"></span>
 		<span class="ic-web-site"></span>
 		<span class="ic-world"></span>
+		<span class="ic-credit-card"></span>
+		<span class="ic-tag"></span>
+		<span class="ic-hand"></span>
+		<span class="ic-maps-global-28"></span>
+		<span class="ic-message-circle"></span>
+		<span class="ic-player-play"></span>
+		<span class="ic-radiobutton"></span>
+		<span class="ic-scroll"></span>
+		<span class="ic-square-check"></span>
+		<span class="ic-star"></span>
 		<span class="ic-trophy-1"></span>
 		<span class="ic-trophy-2"></span>
 		<span class="ic-trophy-3"></span>
+		<span class="ic-calendar-time"></span>
+		<span class="ic-hour-glass"></span>
+		<span class="ic-chevrons-right"></span>
+		<span class="ic-chevrons-left"></span>
+		<span class="ic-donation-outlined"></span>
+		<span class="ic-diamond"></span>
+		<span class="ic-diamond-filled"></span>
+		<span class="ic-voting"></span>
+		<span class="ic-voting-filled"></span>
+		<span class="ic-user"></span>
+		<span class="ic-user-filled"></span>
+		<span class="ic-bell-filled"></span>
+		<span class="ic-bell-28"></span>
+		<span class="ic-qela"></span>
+		<span class="ic-qela-filled"></span>
+		<span class="ic-dislike-filled"></span>
+		<span class="ic-dislike"></span>
+		<span class="ic-like-filled"></span>
+		<span class="ic-like"></span>
 	</div>
 </section>
 					<section class="d-grid gap-3">
@@ -1540,14 +1632,14 @@
 	<ul class="list-group qela-description">
 		<li class="list-group-item">
 			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<span class="ic-flag-filled-24 qela-icon"></span>
+				<span class="ic-diamond-filled qela-icon"></span>
 				<h6>Голосування</h6>
 				<span class="ic-chevron-right text-info"></span>
 			</a>
 		</li>
 		<li class="list-group-item">
 			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<span class="ic-voting-filled-24 qela-icon"></span>
+				<span class="ic-voting-filled qela-icon"></span>
 				<h6>Квести</h6>
 				<span class="ic-chevron-right text-info"></span>
 			</a>
@@ -1959,6 +2051,44 @@
 			</li>
 		</ul>
 	</div>
+	<!--  List discussions -->
+	<h3>List discussions</h3>
+	<ul class="list-group list-group-flush qela-description">
+		<li class="list-group-item">
+			<a href="#" class="d-flex align-items-center gap-2">
+				<div class="qela-avatar qela-ibg" style="--img-size: 40px;">
+					<img src="img/type-logo.svg" alt="#">
+				</div>
+				<div class="flex-grow-1">
+					<div class="display-7 text-info-600 qela-clamp" style="--clamp-line: 1;">Current Branch</div>
+					<div class="qela-clamp" style="--clamp-line: 1;">Branch name</div>
+				</div>
+				<span class="qela-list-num bg-info-400 fs-6 fw-normal">5</span>
+			</a>
+		</li>
+		<li class="list-group-item">
+			<a href="#" class="d-flex align-items-center gap-2">
+				<div class="qela-avatar info-400 qela-ibg" style="--img-size: 40px;">
+					<i class="text-info-600 ic-diamond"></i>
+				</div>
+				<div class="flex-grow-1">
+					<div class="qela-clamp" style="--clamp-line: 1;">Quests</div>
+				</div>
+				<span class="qela-list-num bg-primary-400 fs-6 fw-normal">40</span>
+			</a>
+		</li>
+		<li class="list-group-item">
+			<a href="#" class="d-flex align-items-center gap-2">
+				<div class="qela-avatar qela-ibg" style="--img-size: 40px;">
+					<img src="img/type-logo.svg" alt="#">
+				</div>
+				<div class="flex-grow-1">
+					<div class="qela-clamp" style="--clamp-line: 1;">Branch name</div>
+					<div class="display-7 text-info-600 qela-clamp" style="--clamp-line: 1;">Hello could you help me to take this quest successfully I just Hello could you help me to take this quest successfully</div>
+				</div>
+			</a>
+		</li>
+	</ul>
 </section>
 					<section class="d-grid gap-3">
   <h2 class="h1 mt-4">Logos</h2>
@@ -1994,329 +2124,53 @@
 </section>
 
 					<section class="d-grid gap-3">
-  <h2 class="h1 mt-4">Nav</h2>
-  <!-- Nav-bar -->
-  <h3>Nav-bar</h3>
-  <nav class="navbar bg-white qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <nav class="navbar bg-transparent qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <nav class="navbar bg-body qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <nav class="navbar bg-opacity-25 bg-black text-white qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <!-- Nav-bar -->
-  <!-- Nav-bar icon left-->
-  <h3 class="mt-5">Nav-bar icon left</h3>
-  <nav class="navbar bg-white qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <nav class="navbar bg-transparent qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <nav class="navbar bg-body qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <nav class="navbar bg-opacity-25 bg-black text-white qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-white ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-  </nav>
-  <!-- Nav-bar icon left-->
-  <!-- Nav-bar icon left, button right-->
-  <h3 class="mt-5">Nav-bar icon left, button right</h3>
-  <nav class="navbar bg-white qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-secondary end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <nav class="navbar bg-transparent qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-secondary end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <nav class="navbar bg-body qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-secondary end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <nav class="navbar bg-opacity-25 bg-black text-white qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-white ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a href="#" type="button" class="btn btn-link btn-sm text-white end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <!-- Nav-bar icon left, button right-->
-  <!-- Nav-bar icon left, button icon right-->
-  <h3 class="mt-5">Nav-bar icon left, button icon right</h3>
-  <nav class="navbar bg-white qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-black ic-share-2 end-0 me-3"
-    ></a>
-  </nav>
-  <nav class="navbar bg-transparent qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-black ic-share-2 end-0 me-3"
-    ></a>
-  </nav>
-  <nav class="navbar bg-body qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-black ic-share-2 end-0 me-3"
-    ></a>
-  </nav>
-  <nav class="navbar bg-opacity-25 bg-black text-white qela-navbar">
-    <a
-      href="#"
-      class="btn btn-link btn-sm text-white ic-chevron-left start-0 ms-3"
-    ></a>
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-white ic-share-2 end-0 me-3"
-    ></a>
-  </nav>
-  <!-- Nav-bar icon left, button icon right-->
-  <!-- Nav-bar button right-->
-  <h3 class="mt-5">Nav-bar button right</h3>
-  <nav class="navbar bg-white qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-secondary end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <nav class="navbar bg-transparent qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-secondary end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <nav class="navbar bg-body qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-    <a
-      href="#"
-      type="button"
-      class="btn btn-link btn-sm text-secondary end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <nav class="navbar bg-opacity-25 bg-black text-white qela-navbar">
-    <span class="h6 text-center"> Campaigns </span>
-    <a href="#" type="button" class="btn btn-link btn-sm text-white end-0 me-3"
-      >Cancel</a
-    >
-  </nav>
-  <!-- Nav-bar button right-->
-  <!-- Avatars -->
-  <h3 class="mt-5">Avatars</h3>
-  <div class="d-flex gap-1">
-    <a href="#" class="qela-avatar qela-ibg">
-      <img src="img/avatar.jpg" alt="#" />
-    </a>
-    <a href="#" class="qela-avatar">
-      <span>J</span>
-    </a>
-    <a href="#" class="qela-avatar qela-ibg">
-      <img src="img/icons/F-icon.svg" alt="#" />
-    </a>
-  </div>
-  <!-- Avatars -->
-  <!-- Top bar avatar-->
-  <h3 class="mt-5">Top bar avatar</h3>
-  <nav class="navbar bg-white qela-topbar">
-    <a class="navbar-brand p-0" href="#">
-      <img src="img/logo.svg" />
-    </a>
-    <div class="d-flex gap-1 align-content-center">
-      <a href="#" class="qela-btnTop">
-        <div class="ic-add left"></div>
-        <div class="text-black right">
-          <span>150</span>
-          <img src="img/icons/orden-red.svg" alt="#" />
-        </div>
-      </a>
-      <a href="#" class="qela-avatar qela-ibg">
-        <img src="img/avatar.jpg" alt="#" />
-      </a>
-    </div>
-  </nav>
-  <!-- bg-transparent -->
-  <nav class="navbar bg-transparent qela-topbar">
-    <a class="navbar-brand p-0" href="#">
-      <img src="img/logo.svg" />
-    </a>
-    <div class="d-flex gap-1 align-content-center">
-      <a href="#" class="qela-btnTop">
-        <div class="ic-add left"></div>
-        <div class="text-black right">
-          <span>150</span>
-          <img src="img/icons/orden-red.svg" alt="#" />
-        </div>
-      </a>
-      <a href="#" class="qela-avatar qela-ibg">
-        <img src="img/avatar.jpg" alt="#" />
-      </a>
-    </div>
-  </nav>
-  <!-- Top bar avatar-->
-  <!-- Top bar avatar, info button right-->
-  <h3 class="mt-5">Top bar avatar, info-button right</h3>
-  <nav class="navbar bg-white qela-topbar">
-    <a class="navbar-brand p-0" href="#">
-      <img src="img/logo-2.svg" />
-    </a>
-    <div class="d-flex gap-1 align-content-center">
-      <a href="#" class="qela-btnTop">
-        <div class="ic-add left"></div>
-        <div class="text-black right">
-          <span>150</span>
-          <img src="img/icons/orden-red.svg" alt="#" />
-        </div>
-      </a>
-      <a href="#" class="qela-avatar qela-ibg">
-        <img src="img/Quest.png" alt="#" />
-      </a>
-    </div>
-    <a href="#" class="qela-btnInfo ic-info"></a>
-  </nav>
-  <!-- bg-transparent -->
-  <nav class="navbar bg-transparent qela-topbar">
-    <a class="navbar-brand p-0" href="#">
-      <img src="img/logo-2.svg" />
-    </a>
-    <div class="d-flex gap-1 align-content-center">
-      <a href="#" class="qela-btnTop">
-        <div class="ic-add left"></div>
-        <div class="text-black right">
-          <span>150</span>
-          <img src="img/icons/orden-red.svg" alt="#" />
-        </div>
-      </a>
-      <a href="#" class="qela-avatar qela-ibg">
-        <img src="img/avatar.jpg" alt="#" />
-      </a>
-    </div>
-    <a href="#" class="qela-btnInfo ic-info"></a>
-  </nav>
-  <!-- Top bar avatar, info button right-->
-  <!-- Top bar avatar, logo right-->
-  <h3 class="mt-5">Top bar avatar, logo right</h3>
-  <nav class="navbar bg-white qela-topbar">
-    <a class="navbar-brand p-0" href="#">
-      <img src="img/logo-3.svg" />
-    </a>
-    <div class="d-flex gap-1 align-content-center">
-      <a href="#" class="qela-btnTop">
-        <div class="ic-add left"></div>
-        <div class="text-black right">
-          <span>150</span>
-          <img src="img/icons/orden-red.svg" alt="#" />
-        </div>
-      </a>
-      <a href="#" class="qela-avatar qela-ibg">
-        <img src="img/avatar.jpg" alt="#" />
-      </a>
-    </div>
-    <a href="#" class="qela-avatar qela-ibg bg-secondary">
-      <img src="img/icons/F-icon.svg" alt="#" />
-    </a>
-  </nav>
-  <!-- bg-transparent -->
-  <nav class="navbar bg-transparent qela-topbar">
-    <a class="navbar-brand p-0" href="#">
-      <img src="img/logo-3.svg" />
-    </a>
-    <div class="d-flex gap-1 align-content-center">
-      <a href="#" class="qela-btnTop">
-        <div class="ic-add left"></div>
-        <div class="text-black right">
-          <span>150</span>
-          <img src="img/icons/orden-red.svg" alt="#" />
-        </div>
-      </a>
-      <a href="#" class="qela-avatar qela-ibg">
-        <img src="img/avatar.jpg" alt="#" />
-      </a>
-    </div>
-    <a href="#" class="qela-avatar qela-ibg bg-secondary">
-      <img src="img/icons/F-icon.svg" alt="#" />
-    </a>
-  </nav>
+	<h2 class="h1 mt-4">Nav</h2>
+	<!-- Nav-bar -->
+	<h3>Nav-bar</h3>
+	<nav class="navbar bg-white qela-navbar">
+		<span class="h6 text-center"> Campaigns </span>
+	</nav>
+	<!-- Nav-bar icon left-->
+	<nav class="navbar bg-white qela-navbar">
+		<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
+		<span class="h6 text-center"> Campaigns </span>
+	</nav>
+	<!-- Nav-bar icon left, button right-->
+	<nav class="navbar bg-white qela-navbar">
+		<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
+		<span class="h6 text-center"> Campaigns </span>
+		<a href="#" type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
+	</nav>
+	<!-- Nav-bar icon left, button icon right-->
+	<nav class="navbar bg-white qela-navbar">
+		<a href="#" class="btn  ic-chevron-left start-0 ms-3"></a>
+		<span class="h6 text-center"> Campaigns </span>
+		<a href="#" type="button" class="btn  ic-dots end-0 me-3"></a>
+	</nav>
+	<!-- Nav-bar button right-->
+	<nav class="navbar bg-white qela-navbar">
+		<span class="h6 text-center"> Campaigns </span>
+		<a href="#" type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
+	</nav>
+	<!-- Top bar-->
+	<h3 class="mt-5">Top bar</h3>
+	<nav class="navbar bg-white qela-topbar">
+		<a class="navbar-brand p-0" href="#">
+			<img src="img/logo-sm.svg" />
+		</a>
+		<a href="#" class="qela-btn-top">
+			<div class="ic-add left"></div>
+			<div class="text-black right">
+				<span>150</span>
+				<img src="img/icons/orden-red.svg" alt="#" />
+			</div>
+		</a>
+		<div class="d-flex gap-2">
+			<button type="button" class="btn p-0 border-0 text-secondary-700 me-1 ic-message-circle"></button>
+			<button type="button" class="btn p-0 border-0 text-secondary-700 ic-bell"></button>
+		</div>
+	</nav>
 </section>
-
 					<section class="position-relative d-grid gap-3">
   <!-- Popups -->
   <h2 class="h1 mt-4">Popups</h2>
@@ -4049,120 +3903,54 @@
 	<ul class="nav nav-pills nav-fill qela-nav">
 		<li class="nav-item">
 			<a class="nav-link" href="#">
-				<span class="ic-home icon"></span>
-				<span class="ic-home-filled-28 icon-filled"></span>
+				<i class="ic-home icon"></i>
+				<i class="ic-home-filled icon-filled"></i>
 				Home
 			</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#">
-				<span class="ic-profile icon"></span>
-				<span class="ic-user-filled-28 icon-filled"></span>
+				<i class="ic-user icon"></i>
+				<i class="ic-user-filled icon-filled"></i>
 				Profile
 			</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#">
-				<span class="ic-diamond-28 icon"></span>
-				<span class="ic-diamond-filled-28 icon-filled"></span>
+				<i class="ic-diamond icon"></i>
+				<i class="ic-diamond-filled icon-filled"></i>
 				Quests
 			</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#">
-				<span class="ic-voting icon"></span>
-				<span class="ic-voting-filled-28 icon-filled"></span>
+				<i class="ic-voting icon"></i>
+				<i class="ic-voting-filled icon-filled"></i>
 				Voting
 			</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link active" href="#">
-				<span class="ic-bell icon">
-					<span class="badge bg-danger">25</span>
+				<!-- <i class="ic-qela icon"></i>
+				<i class="ic-qela-filled icon-filled"></i> -->
+				<span class="qela-avatar qela-ibg" style="--img-size: 28px;">
+					<img src="img/type-logo.svg" alt="#">
 				</span>
-				<span class="ic-bell-filled-28 icon-filled">
-					<span class="badge bg-danger">25</span>
-				</span>
-				New
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<span class="ic-qela icon"></span>
-				<span class="ic-qela-filled-28 icon-filled"></span>
 				Organization
 			</a>
 		</li>
 	</ul>
-	<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<span class="ic-home icon"></span>
-				<span class="ic-home-filled-28 icon-filled"></span>
-				Home
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<span class="ic-profile icon"></span>
-				<span class="ic-user-filled-28 icon-filled"></span>
-				Profile
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<span class="ic-diamond-28 icon"></span>
-				<span class="ic-diamond-filled-28 icon-filled"></span>
-				Quests
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" href="#">
-				<span class="ic-voting icon"></span>
-				<span class="ic-voting-filled-28 icon-filled"></span>
-				Voting
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<span class="ic-bell icon">
-					<span class="badge bg-danger">25</span>
-				</span>
-				<span class="ic-bell-filled-28 icon-filled">
-					<span class="badge bg-danger">25</span>
-				</span>
-				New
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<span class="ic-qela icon"></span>
-				<span class="ic-qela-filled-28 icon-filled"></span>
-				Organization
-			</a>
-		</li>
-	</ul>
+	<!-- ====== -->
 	<h3>Tabs</h3>
 	<ul class="nav nav-pills nav-fill qela-tab">
 		<li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="#">General</a>
+			<button type="button" class="nav-link active" aria-current="page">General</button>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Local</a>
+			<button type="button" class="nav-link">Local</button>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">History</a>
-		</li>
-	</ul>
-	<ul class="nav nav-pills nav-fill shadow-none qela-tab ">
-		<li class="nav-item">
-			<a class="nav-link bg-transparent active" aria-current="page" href="#">General</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link bg-transparent" href="#">Local</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link bg-transparent" href="#">History</a>
+			<button type="button" class="nav-link">History</button>
 		</li>
 	</ul>
 </section>
