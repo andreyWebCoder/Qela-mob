@@ -14304,6 +14304,7 @@ input[type=number] {
   background-color: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   padding-bottom: 1.5rem;
+  border-top: 1px solid #e9e9e8;
 }
 .qela-nav .nav-item {
   flex: 1 1 20%;
@@ -14372,6 +14373,30 @@ input[type=number] {
 }
 .qela-topbar .navbar-brand img {
   height: 40px;
+}
+.qela-topbar .btn {
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+.qela-topbar .btn .qela-counter {
+  position: absolute;
+  left: 12px;
+  bottom: 13px;
+}
+
+.qela-counter {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.125rem;
+  border-radius: 0.875rem;
+  background-color: #ff453a;
+  color: #ffffff;
+  line-height: 100%;
+  height: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .qela-card.card {

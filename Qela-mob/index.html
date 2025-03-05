@@ -878,18 +878,21 @@
 	</div>
 	<!-- FIX Avatars 30 Users-->
 	<h4>Avatars 30 (Users)</h4>
-	<div class="d-inline-flex align-items-center qela-users">
-		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
-			<img class="border-1" src="img/avatar.jpg" alt="#" />
-		</a>
-		<a href="#" class="qela-avatar qela-ibg fs-6" style="--img-size: 30px">
-			<small><small>J</small></small>
-		</a>
-		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
-			<img class="border-1" src="img/type-logo.svg" alt="#" />
-		</a>
+	<div class="d-flex align-items-center">
+		<div class="qela-avatar-inner">
+			<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+				<img class="border-1" src="img/avatar.jpg" alt="#" />
+			</a>
+			<a href="#" class="qela-avatar qela-ibg fs-6" style="--img-size: 30px">
+				<small><small>J</small></small>
+			</a>
+			<a href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+				<img class="border-1" src="img/type-logo.svg" alt="#" />
+			</a>
+		</div>
 		<span class="text-info-900 ms-2">120</span>
 	</div>
+
 </section>
 					<section class="d-grid gap-3">
     <!-- Breadcrambs -->
@@ -977,252 +980,227 @@
 	</div>
 </section>
 					<section class="d-grid gap-3">
-  <h2 class="h1 mt-4">Dialogs</h2>
-  <h3>Dialog title</h3>
-  <!-- Dialog title -->
-  <div class="qela-dialog secondary">
-    <h1>Check on locations</h1>
-  </div>
-  <!-- Dialog title, text -->
-  <h3>Dialog title, text</h3>
-  <div class="qela-dialog secondary">
-    <h1>Watch the video and press Next</h1>
-    <p>
-      On Thursday, August 28, at 14:00 there will be a meeting of supporters of
-      medical cannabis legalization, we will get to know each other and talk.
-      Only together we can win! There, Alina Priymak, the head of the "Veterans
-      for Medcanabis" organization, will give a lecture. Also, a well-known
-      businessman Richard Branson will take the word.
-    </p>
-  </div>
-  <!-- Dialog subtitle -->
-  <h3>Dialog subtitle</h3>
-  <div class="qela-dialog secondary">
-    <h3>At the end of the meeting scan provided QR code 👇</h3>
-  </div>
-  <!-- Dialog subtitle, button -->
-  <h3>Dialog subtitle, button</h3>
-  <div class="qela-dialog secondary">
-    <h3>At the end of the meeting scan provided QR code 👇</h3>
-    <a href="#" type="button" class="btn btn-secondary ic-right ic-arrow"
-      >zoom.us</a
-    >
-  </div>
-  <!--Dialog subtitle, button, avatar - yes -->
-  <h3>Dialog subtitle, button, avatar - yes</h3>
-  <div class="qela-dialog secondary">
-    <h3>At the end of the meeting scan provided QR code 👇</h3>
-    <div class="row g-0">
-      <a href="#" class="qela-avatar qela-ibg md col-auto">
-        <img src="img/avatar.jpg" width="60" width="60" alt="#" />
-      </a>
-      <div class="col-auto">
-        <small>Supervisor Name</small>
-        <div class="fs-3">Emily Johnson</div>
-      </div>
-    </div>
-    <a href="#" type="button" class="btn btn-secondary ic-right ic-phone"
-      >+1 (555) 123-4567</a
-    >
-  </div>
-  <!--Dialog subtitle, button, avatar - no -->
-  <h3>Dialog subtitle, button, avatar - no</h3>
-  <div class="qela-dialog secondary">
-    <h3>At the end of the meeting scan provided QR code 👇</h3>
-    <div class="row g-0">
-      <a href="#" class="qela-avatar md col-auto">
-        <span>J</span>
-      </a>
-      <div class="col-auto">
-        <small>Supervisor Name</small>
-        <div class="fs-3">Emily Johnson</div>
-      </div>
-    </div>
-    <a href="#" type="button" class="btn btn-secondary ic-right ic-phone"
-      >+1 (555) 123-4567</a
-    >
-  </div>
-  <!-- Dialog title, text, items results-->
-  <h3>Dialog title, text, items results</h3>
-  <div class="qela-dialog secondary">
-    <h1>Total score:</h1>
-    <p>3 - right, 2 - wrong</p>
-    <div class="qela-results">
-      <span class="circle-danger">Right answers</span>
-      <span class="circle-success">Wrong answers</span>
-    </div>
-  </div>
-  <!-- Dialog subtitle, text, alert-->
-  <h3>Dialog title, text, items results</h3>
-  <div class="qela-dialog secondary">
-    <h3>Make a screenshot </h3>
-    <div class="mb-4">
-      <p>Make sure your whole screen is visible.</p>
-      <p>The time and date should be visible.</p>
-      <p>Don’t edit the screenshot.</p>
-    </div>
-    <div class="alert alert-info qela-alert pe-3">
-      <span class="ic-alert-triangle text-secondary"></span>
-      After a human sees your screenshot, it will be deleted. We won’t store it
-      in our system.
-    </div>
-  </div>
-  <!-- Dialog subtitle, text, add img-->
-  <h3>Dialog subtitle, text, add img</h3>
-  <div class="qela-dialog secondary">
-    <h3>Upload screenshot</h3>
-    <p>Allowed JPG, GIF or PNG. Max size of 800K</p>
-    <div class="py-5 qela-grid">
-      <button type="button" class="qela-add">
-        <span class="ic-img-plus icon"></span> add an image
-      </button>
-    </div>
-  </div>
-  <!-- Dialog subtitle, text, alert, icon-->
-  <h3>Dialog subtitle, text, alert, icon</h3>
-  <div class="qela-dialog secondary">
-    <img
-      src="img/icons/warning-secondary.svg"
-      class="icon"
-      alt="warning"
-      width="39"
-      height="39"
-    />
-    <h3>To finish the Quest upload screenshot of payment success as a proof</h3>
-    <div class="mb-4">
-      <p>Make sure your whole screen is visible.</p>
-      <p>The time and date should be visible.</p>
-      <p>Don’t edit the screenshot.</p>
-    </div>
-    <div class="alert alert-info qela-alert pe-3">
-      <span class="ic-alert-triangle text-secondary"></span>
-      After a human sees your screenshot, it will be deleted. We won’t store it
-      in our system.
-    </div>
-  </div>
-  <!-- Orden subtitle, btns,custom-input-->
-  <h3>Orden subtitle, btns,custom-input</h3>
-  <div class="qela-dialog secondary">
-    <h3 class="text-center">Input donate sum</h3>
-    <div class="input-group qela-input-group custom-large">
-      <input
-        id="inputCustom"
-        type="number"
-        class="form-control"
-        placeholder="0"
-      />
-      <label for="inputCustom" class="input-group-text">$</label>
-    </div>
-    <span class="form-error">Error text1</span>
-    <div class="btns">
-      <button class="btn btn-preset">5$</button>
-      <button class="btn btn-preset">10$</button>
-      <button class="btn btn-preset">15$</button>
-      <button class="btn btn-preset">50$</button>
-    </div>
-  </div>
-  <!-- Orden subtitle-->
-  <h3>Orden subtitle</h3>
-  <div class="qela-orden">
-    <div class="row g-0 mt-0">
-      <h3 class="col-6">Your vote weight will increase on:</h3>
-      <div class="col-6 orden-item">
-        <span>+20</span>
-        <img
-          src="img/icons/orden-red.svg"
-          width="48"
-          height="48"
-          alt="orden-red"
-        />
-      </div>
-    </div>
-  </div>
-  <!-- Descryption -->
-  <h3>List descryption</h3>
-  <div class="qela-dialog secondary">
-    <h3 class="pb-2">Get from</h3>
-    <ul class="list-group qela-description">
-      <li class="list-group-item">
-        <a href="">
-          <span class="ic-mark text-info"></span>
-          <div>
-            <p class="text-info m-0"><small>Start</small></p>
-            <div>
-              Сільпо, вулиця Шевченка, 358А, Львів, Львівська область, 79000
-            </div>
-          </div>
-          <span class="btn btn-link text-info btn-sm ic-right ic-chevron-right"
-            >google maps</span
-          >
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- Dialog subtitle, text, + img -->
-  <h3>Dialog subtitle, text, + img</h3>
-  <div class="qela-dialog secondary">
-    <h1>Display a Unity for Planet flag on your property</h1>
-    <p>Admin describes how it should be done property.</p>
-    <h5>Use these examples:</h5>
-    <div>
-      <img src="img/dialog1.jpg" alt="" />
-      <img src="img/dialog2.jpg" alt="" />
-    </div>
-  </div>
-  <!-- Dialog subtitle, text, + imgs -->
-  <h3>Dialog subtitle, text, + imgs</h3>
-  <div class="qela-dialog secondary">
-    <h1>Display a Unity for Planet flag on your property</h1>
-    <p>Admin describes how it should be done property.</p>
-    <h5>Use these examples:</h5>
-    <div class="py-5 qela-grid">
-      <div class="card">
-        <img src=" img/dialog2.jpg" class="card-img" alt="card-img" />
-        <button class="btn-del ic-cloze"></button>
-      </div>
-      <div class="card">
-        <img src=" img/Quest.png" class="card-img" alt="card-img" />
-        <button class="btn-del ic-cloze"></button>
-      </div>
-      <div class="card">
-        <img src="img/card-2.jpg" class="card-img" alt="card-img" />
-        <button class="btn-del ic-cloze"></button>
-      </div>
-      <div class="card">
-        <img src="img/Quest.png" class="card-img" alt="card-img" />
-        <button class="btn-del ic-cloze"></button>
-      </div>
-      <button type="button" class="qela-add">
-        <span class="ic-img-plus icon"></span> add an image
-      </button>
-    </div>
-  </div>
-  <!-- Dialog subtitle, text, + input +btn -->
-  <h3>Dialog subtitle, text, + input +btn</h3>
-  <div class="qela-dialog secondary">
-    <h1>Send link on video/audio file</h1>
-    <p>
-      You can upload video/audio file on
-      <a href="#" target="_blank">youtube.com</a> or any other cloud-storage
-      service
-    </p>
-    <div class="d-flex gap-1">
-      <div class="flex-grow-1">
-        <input type="text" class="form-control" placeholder="https://..." />
-        <span class="form-error">Error text</span>
-      </div>
-      <button type="button" class="btn btn-secondary">Paste</button>
-    </div>
-    <div class="d-flex gap-1">
-      <div class="flex-grow-1">
-        <input type="text" class="form-control" placeholder="https://..." />
-        <span class="form-error">Error text</span>
-      </div>
-      <button type="button" class="btn btn-light qela-close ic-cloze"></button>
-    </div>
-  </div>
+	<h2 class="h1 mt-4">Dialogs</h2>
+	<h3>Dialog title</h3>
+	<!-- Dialog title -->
+	<div class="qela-dialog secondary">
+		<h1>Check on locations</h1>
+	</div>
+	<!-- Dialog title, text -->
+	<h3>Dialog title, text</h3>
+	<div class="qela-dialog secondary">
+		<h1>Watch the video and press Next</h1>
+		<p>
+			On Thursday, August 28, at 14:00 there will be a meeting of supporters of
+			medical cannabis legalization, we will get to know each other and talk.
+			Only together we can win! There, Alina Priymak, the head of the "Veterans
+			for Medcanabis" organization, will give a lecture. Also, a well-known
+			businessman Richard Branson will take the word.
+		</p>
+	</div>
+	<!-- Dialog subtitle -->
+	<h3>Dialog subtitle</h3>
+	<div class="qela-dialog secondary">
+		<h3>At the end of the meeting scan provided QR code 👇</h3>
+	</div>
+	<!-- Dialog subtitle, button -->
+	<h3>Dialog subtitle, button</h3>
+	<div class="qela-dialog secondary">
+		<h3>At the end of the meeting scan provided QR code 👇</h3>
+		<a href="#" type="button" class="btn btn-secondary ic-right ic-arrow">zoom.us</a>
+	</div>
+	<!--Dialog subtitle, button, avatar - yes -->
+	<h3>Dialog subtitle, button, avatar - yes</h3>
+	<div class="qela-dialog secondary">
+		<h3>At the end of the meeting scan provided QR code 👇</h3>
+		<div class="row g-0">
+			<a href="#" class="qela-avatar qela-ibg md col-auto" style="--img-size: 60px;">
+				<img src="img/avatar.jpg" alt="#" />
+			</a>
+			<div class="col-auto">
+				<small>Supervisor Name</small>
+				<div class="fs-3">Emily Johnson</div>
+			</div>
+		</div>
+		<a href="#" type="button" class="btn btn-secondary ic-right ic-phone">+1 (555) 123-4567</a>
+	</div>
+	<!--Dialog subtitle, button, avatar - no -->
+	<h3>Dialog subtitle, button, avatar - no</h3>
+	<div class="qela-dialog secondary">
+		<h3>At the end of the meeting scan provided QR code 👇</h3>
+		<div class="row g-0">
+			<a href="#" class="qela-avatar md col-auto" style="--img-size: 60px;">
+				<span>J</span>
+			</a>
+			<div class="col-auto">
+				<small>Supervisor Name</small>
+				<div class="fs-3">Emily Johnson</div>
+			</div>
+		</div>
+		<a href="#" type="button" class="btn btn-secondary ic-right ic-phone">+1 (555) 123-4567</a>
+	</div>
+	<!-- Dialog title, text, items results-->
+	<h3>Dialog title, text, items results</h3>
+	<div class="qela-dialog secondary">
+		<h1>Total score:</h1>
+		<p>3 - right, 2 - wrong</p>
+		<div class="qela-results">
+			<span class="circle-danger">Right answers</span>
+			<span class="circle-success">Wrong answers</span>
+		</div>
+	</div>
+	<!-- Dialog subtitle, text, alert-->
+	<h3>Dialog title, text, items results</h3>
+	<div class="qela-dialog secondary">
+		<h3>Make a screenshot </h3>
+		<div class="mb-4">
+			<p>Make sure your whole screen is visible.</p>
+			<p>The time and date should be visible.</p>
+			<p>Don’t edit the screenshot.</p>
+		</div>
+		<div class="alert alert-info qela-alert pe-3">
+			<span class="ic-alert-triangle text-secondary"></span>
+			After a human sees your screenshot, it will be deleted. We won’t store it
+			in our system.
+		</div>
+	</div>
+	<!-- Dialog subtitle, text, add img-->
+	<h3>Dialog subtitle, text, add img</h3>
+	<div class="qela-dialog secondary">
+		<h3>Upload screenshot</h3>
+		<p>Allowed JPG, GIF or PNG. Max size of 800K</p>
+		<div class="py-5 qela-grid">
+			<button type="button" class="qela-add">
+				<span class="ic-img-plus icon"></span> add an image
+			</button>
+		</div>
+	</div>
+	<!-- Dialog subtitle, text, alert, icon-->
+	<h3>Dialog subtitle, text, alert, icon</h3>
+	<div class="qela-dialog secondary">
+		<img src="img/icons/warning-secondary.svg" class="icon" alt="warning" width="39" height="39" />
+		<h3>To finish the Quest upload screenshot of payment success as a proof</h3>
+		<div class="mb-4">
+			<p>Make sure your whole screen is visible.</p>
+			<p>The time and date should be visible.</p>
+			<p>Don’t edit the screenshot.</p>
+		</div>
+		<div class="alert alert-info qela-alert pe-3">
+			<span class="ic-alert-triangle text-secondary"></span>
+			After a human sees your screenshot, it will be deleted. We won’t store it
+			in our system.
+		</div>
+	</div>
+	<!-- Orden subtitle, btns,custom-input-->
+	<h3>Orden subtitle, btns,custom-input</h3>
+	<div class="qela-dialog secondary">
+		<h3 class="text-center">Input donate sum</h3>
+		<div class="input-group qela-input-group custom-large">
+			<input id="inputCustom" type="number" class="form-control" placeholder="0" />
+			<label for="inputCustom" class="input-group-text">$</label>
+		</div>
+		<span class="form-error">Error text1</span>
+		<div class="btns">
+			<button class="btn btn-preset">5$</button>
+			<button class="btn btn-preset">10$</button>
+			<button class="btn btn-preset">15$</button>
+			<button class="btn btn-preset">50$</button>
+		</div>
+	</div>
+	<!-- Orden subtitle-->
+	<h3>Orden subtitle</h3>
+	<div class="qela-orden">
+		<div class="row g-0 mt-0">
+			<h3 class="col-6">Your vote weight will increase on:</h3>
+			<div class="col-6 orden-item">
+				<span>+20</span>
+				<img src="img/icons/orden-red.svg" width="48" height="48" alt="orden-red" />
+			</div>
+		</div>
+	</div>
+	<!-- Descryption -->
+	<h3>List descryption</h3>
+	<div class="qela-dialog secondary">
+		<h3 class="pb-2">Get from</h3>
+		<ul class="list-group qela-description">
+			<li class="list-group-item">
+				<a href="">
+					<span class="ic-mark text-info"></span>
+					<div>
+						<p class="text-info m-0"><small>Start</small></p>
+						<div>
+							Сільпо, вулиця Шевченка, 358А, Львів, Львівська область, 79000
+						</div>
+					</div>
+					<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">google maps</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Dialog subtitle, text, + img -->
+	<h3>Dialog subtitle, text, + img</h3>
+	<div class="qela-dialog secondary">
+		<h1>Display a Unity for Planet flag on your property</h1>
+		<p>Admin describes how it should be done property.</p>
+		<h5>Use these examples:</h5>
+		<div>
+			<img src="img/dialog1.jpg" alt="" />
+			<img src="img/dialog2.jpg" alt="" />
+		</div>
+	</div>
+	<!-- Dialog subtitle, text, + imgs -->
+	<h3>Dialog subtitle, text, + imgs</h3>
+	<div class="qela-dialog secondary">
+		<h1>Display a Unity for Planet flag on your property</h1>
+		<p>Admin describes how it should be done property.</p>
+		<h5>Use these examples:</h5>
+		<div class="py-5 qela-grid">
+			<div class="card">
+				<img src=" img/dialog2.jpg" class="card-img" alt="card-img" />
+				<button class="btn-del ic-cloze"></button>
+			</div>
+			<div class="card">
+				<img src=" img/Quest.png" class="card-img" alt="card-img" />
+				<button class="btn-del ic-cloze"></button>
+			</div>
+			<div class="card">
+				<img src="img/card-2.jpg" class="card-img" alt="card-img" />
+				<button class="btn-del ic-cloze"></button>
+			</div>
+			<div class="card">
+				<img src="img/Quest.png" class="card-img" alt="card-img" />
+				<button class="btn-del ic-cloze"></button>
+			</div>
+			<button type="button" class="qela-add">
+				<span class="ic-img-plus icon"></span> add an image
+			</button>
+		</div>
+	</div>
+	<!-- Dialog subtitle, text, + input +btn -->
+	<h3>Dialog subtitle, text, + input +btn</h3>
+	<div class="qela-dialog secondary">
+		<h1>Send link on video/audio file</h1>
+		<p>
+			You can upload video/audio file on
+			<a href="#" target="_blank">youtube.com</a> or any other cloud-storage
+			service
+		</p>
+		<div class="d-flex gap-1">
+			<div class="flex-grow-1">
+				<input type="text" class="form-control" placeholder="https://..." />
+				<span class="form-error">Error text</span>
+			</div>
+			<button type="button" class="btn btn-secondary">Paste</button>
+		</div>
+		<div class="d-flex gap-1">
+			<div class="flex-grow-1">
+				<input type="text" class="form-control" placeholder="https://..." />
+				<span class="form-error">Error text</span>
+			</div>
+			<button type="button" class="btn btn-light qela-close ic-cloze"></button>
+		</div>
+	</div>
 </section>
-
 					<section class="d-grid gap-3">
   <h2 class="h1 mt-4">Empty-space</h2>
   <h3>Empty-space ic-subtitle-descriptor</h3>
@@ -1977,7 +1955,8 @@
 		<li class="list-group-item">
 			<div class="d-flex align-items-center gap-3">
 				<span class="qela-list-num">4</span>
-				<a href="#" class="qela-avatar qela-ibg"><img src="img/avatar.jpg" alt="#"></a>
+				<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;">
+					<img src="img/avatar.jpg" alt="#"></a>
 				<small class="flex-grow-1">User Name</small>
 				<div class="qela-voice">
 					<div class="body-voice">
@@ -1990,7 +1969,7 @@
 		<li class="list-group-item ">
 			<div class="d-flex align-items-center gap-3">
 				<span class="qela-list-num">4</span>
-				<a href="#" class="qela-avatar qela-ibg"><img src="img/avatar.jpg" alt="#"></a>
+				<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;"><img src="img/avatar.jpg" alt="#"></a>
 				<small class="flex-grow-1">User Name</small>
 				<div class="qela-voice">
 					<div class="body-voice">
@@ -2012,7 +1991,9 @@
 			<li class="list-group-item active">
 				<div class="d-flex align-items-center gap-3">
 					<span class="qela-list-num">4</span>
-					<a href="#" class="qela-avatar qela-ibg"><img src="img/avatar.jpg" alt="#"></a>
+					<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;">
+						<img src="img/avatar.jpg" alt="#">
+					</a>
 					<small class="flex-grow-1">User Name</small>
 					<div class="qela-voice">
 						<div class="body-voice">
@@ -2025,7 +2006,7 @@
 			<li class="list-group-item ">
 				<div class="d-flex align-items-center gap-3">
 					<span class="qela-list-num">4</span>
-					<a href="#" class="qela-avatar qela-ibg"><img src="img/avatar.jpg" alt="#"></a>
+					<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;"><img src="img/avatar.jpg" alt="#"></a>
 					<small class="flex-grow-1">User Name</small>
 					<div class="qela-voice">
 						<div class="body-voice">
@@ -2048,7 +2029,7 @@
 			<li class="list-group-item active">
 				<div class="d-flex align-items-center gap-3">
 					<span class="qela-list-num">4</span>
-					<a href="#" class="qela-avatar qela-ibg"><img src="img/avatar.jpg" alt="#"></a>
+					<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;"><img src="img/avatar.jpg" alt="#"></a>
 					<small class="flex-grow-1">User Name</small>
 					<div class="qela-voice">
 						<div class="body-voice">
@@ -2061,7 +2042,7 @@
 			<li class="list-group-item ">
 				<div class="d-flex align-items-center gap-3">
 					<span class="qela-list-num">4</span>
-					<a href="#" class="qela-avatar qela-ibg"><img src="img/avatar.jpg" alt="#"></a>
+					<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;"><img src="img/avatar.jpg" alt="#"></a>
 					<small class="flex-grow-1">User Name</small>
 					<div class="qela-voice">
 						<div class="body-voice">
@@ -2175,7 +2156,7 @@
 		<a href="#" type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
 	</nav>
 	<!-- Top bar-->
-	<h3 class="mt-5">Top bar</h3>
+	<h3>Top bar</h3>
 	<nav class="navbar bg-white qela-topbar">
 		<a class="navbar-brand p-0" href="#">
 			<img src="img/logo-sm.svg" />
@@ -2187,9 +2168,13 @@
 				<img src="img/icons/orden-red.svg" alt="#" />
 			</div>
 		</a>
-		<div class="d-flex gap-2">
-			<button type="button" class="btn p-0 border-0 text-secondary-700 me-1 ic-message-circle"></button>
-			<button type="button" class="btn p-0 border-0 text-secondary-700 ic-bell"></button>
+		<div class="d-flex gap-3">
+			<button type="button" class="btn ic-message-circle">
+				<span class="qela-counter">25</span>
+			</button>
+			<button type="button" class="btn ic-bell">
+				<span class="qela-counter">25</span>
+			</button>
 		</div>
 	</nav>
 </section>
@@ -3506,7 +3491,7 @@
 		<p class="h6 me-2 mb-2 fw-bold">
 			<span class="opacity-75">Description</span>
 		</p>
-		<p class="qela-clamp clamp-7">
+		<p class="qela-clamp mb-0" style="--clamp-line:7">
 			On Thursday, August 28, at 14:00 there will be a meeting of supporters of
 			medical cannabis legalization, we will get to know each other and talk.
 			Only together we can win! There, Alina Priymak, the head of the "Veterans
@@ -3518,10 +3503,31 @@
 			organization, will give a lecture. Also, a well-known businessman Richard
 			Branson will take the word.
 		</p>
-		<button type="button" class="btn btn-link text-info btn-sm ic-right ic-chevron-right">
+		<button type="button" class="btn btn-link text-info btn-sm ic-right ic-chevron-right ms-auto">
 			More
 		</button>
 	</div>
+	<!-- Quest-coments -->
+	<h3>Quest-coments</h3>
+	<div class="d-flex align-items-center gap-2">
+		<i class="ic-message-circle"></i>
+		<small class="text-info-800">Comments (4)</small>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- Time-&-markers quest-page -->
 	<h3>Time-&-markers quest-page</h3>
 	<div class="pt-2">
@@ -3749,16 +3755,16 @@
 	<h2 class="h1 mt-4">Organisation</h2>
 	<!-- Organisation-logo -->
 	<h3>Organisation-logo</h3>
-	<a href="#" class="qela-avatar md qela-ibg">
+	<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px">
 		<img src="img/icons/F-icon.svg" alt="#">
 	</a>
-	<a href="#" class="qela-avatar md bg-secondary">
-		<img src="img/icons/qela-w.svg" width="32" height="28" alt="qela">
+	<a href="#" class="qela-avatar bg-secondary" style="--img-size: 34px">
+		<img src="img/icons/qela-w.svg" alt="qela">
 	</a>
 	<!-- Organization-logo-name -->
 	<h3>Organization-logo-name</h3>
 	<div class="d-flex gap-3">
-		<a href="#" class="qela-avatar md qela-ibg">
+		<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px">
 			<img src="img/icons/F-icon.svg" alt="#">
 		</a>
 		<div>
