@@ -1253,6 +1253,7 @@
 		<span class="ic-success"></span>
 		<span class="ic-success-2"></span>
 		<span class="ic-tent"></span>
+		<span class="ic-arrow-down"></span>
 		<span class="ic-arrow-left"></span>
 		<span class="ic-send"></span>
 		<span class="ic-arrow"></span>
@@ -1388,6 +1389,11 @@
 		<span class="ic-dislike"></span>
 		<span class="ic-like-filled"></span>
 		<span class="ic-like"></span>
+		<span class="ic-archive"></span>
+		<span class="ic-mute"></span>
+		<span class="ic-report"></span>
+		<span class="ic-task"></span>
+		<span class="ic-reply"></span>
 	</div>
 </section>
 					<section class="d-grid gap-3">
@@ -2142,21 +2148,28 @@
 	<nav class="navbar bg-white qela-navbar">
 		<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
 		<span class="h6 text-center"> Campaigns </span>
-		<a href="#" type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
-	</nav>
-	<!-- Nav-bar icon left, button icon right-->
-	<nav class="navbar bg-white qela-navbar">
-		<a href="#" class="btn  ic-chevron-left start-0 ms-3"></a>
-		<span class="h6 text-center"> Campaigns </span>
-		<a href="#" type="button" class="btn  ic-dots end-0 me-3"></a>
+		<a href="#" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
 	</nav>
 	<!-- Nav-bar button right-->
 	<nav class="navbar bg-white qela-navbar">
 		<span class="h6 text-center"> Campaigns </span>
-		<a href="#" type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
+		<a href="#" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
+	</nav>
+	<!-- Nav-bar icon left, button icon right-->
+	<nav class="navbar bg-white qela-navbar">
+		<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
+		<span class="h6 text-center"> Campaigns </span>
+		<!-- <button type="button" class="btn ic-dots end-0 me-3"></a> -->
+		<div class="dropdown  qela-dropdown end-0 me-3">
+			<button class="btn ic-dots" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+			<ul class="dropdown-menu dropdown-menu-end mt-3">
+				<li><button type="button" class="dropdown-item ic-mute" href="#">Unmute</button></li>
+				<li><button type="button" class="dropdown-item ic-archive" href="#">Unarchive</button></li>
+			</ul>
+		</div>
 	</nav>
 	<!-- Top bar-->
-	<h3>Top bar</h3>
+	<h3 class="mt-5">Top bar</h3>
 	<nav class="navbar bg-white qela-topbar">
 		<a class="navbar-brand p-0" href="#">
 			<img src="img/logo-sm.svg" />
@@ -3509,25 +3522,10 @@
 	</div>
 	<!-- Quest-coments -->
 	<h3>Quest-coments</h3>
-	<div class="d-flex align-items-center gap-2">
+	<a href="#" class="d-flex align-items-center gap-2 text-black text-decoration-none">
 		<i class="ic-message-circle"></i>
-		<small class="text-info-800">Comments (4)</small>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<small class="text-info-800 text-decoration-underline">Comments (4)</small>
+	</a>
 	<!-- Time-&-markers quest-page -->
 	<h3>Time-&-markers quest-page</h3>
 	<div class="pt-2">

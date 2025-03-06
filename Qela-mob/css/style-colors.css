@@ -11959,6 +11959,10 @@ textarea.form-control-lg {
   content: "\e935";
 }
 
+.ic-arrow-down:before {
+  content: "\e967";
+}
+
 .ic-arrow-left:before {
   content: "\e971";
 }
@@ -12503,8 +12507,8 @@ textarea.form-control-lg {
   content: "\e966";
 }
 
-.ic-dislike:before {
-  content: "\e967";
+.ic-dislike-default:before {
+  content: "\e96e";
 }
 
 .ic-like-filled:before {
@@ -12513,6 +12517,26 @@ textarea.form-control-lg {
 
 .ic-like:before {
   content: "\e96b";
+}
+
+.ic-archive:before {
+  content: "\e970";
+}
+
+.ic-mute:before {
+  content: "\e974";
+}
+
+.ic-report:before {
+  content: "\e975";
+}
+
+.ic-task:before {
+  content: "\e976";
+}
+
+.ic-reply:before {
+  content: "\e977";
 }
 
 /* Свои глобальние стили (qela-) */
@@ -14359,12 +14383,18 @@ input[type=number] {
   -webkit-line-clamp: 1;
 }
 .qela-navbar .btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   padding: 0;
   border: none;
   color: #000000;
+}
+.qela-navbar > .btn,
+.qela-navbar .qela-dropdown {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.qela-navbar .qela-dropdown .dropdown-menu-end {
+  right: -16px;
 }
 
 .qela-topbar {
@@ -14397,6 +14427,19 @@ input[type=number] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.qela-dropdown .dropdown-menu {
+  overflow: hidden;
+}
+.qela-dropdown .dropdown-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.qela-dropdown .dropdown-item::before {
+  color: #676767;
 }
 
 .qela-card.card {

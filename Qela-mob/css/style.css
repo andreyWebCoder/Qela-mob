@@ -3458,31 +3458,31 @@ textarea.form-control-lg {
 
 .dropdown-menu {
   --bs-dropdown-zindex: 1000;
-  --bs-dropdown-min-width: 8rem;
-  --bs-dropdown-padding-x: 12px;
-  --bs-dropdown-padding-y: 12px;
+  --bs-dropdown-min-width: 12.125rem;
+  --bs-dropdown-padding-x: 0;
+  --bs-dropdown-padding-y: 0rem;
   --bs-dropdown-spacer: 0.125rem;
-  --bs-dropdown-font-size: 0.6875rem;
-  --bs-dropdown-color: #676767;
+  --bs-dropdown-font-size: 1rem;
+  --bs-dropdown-color: #000000;
   --bs-dropdown-bg: #ffffff;
-  --bs-dropdown-border-color: var(--bs-border-color-translucent);
-  --bs-dropdown-border-radius: 10px;
-  --bs-dropdown-border-width: 0px;
-  --bs-dropdown-inner-border-radius: 10px;
-  --bs-dropdown-divider-bg: rgba(126, 131, 137, 0.2);
+  --bs-dropdown-border-color: #e9e9e8;
+  --bs-dropdown-border-radius: 8px;
+  --bs-dropdown-border-width: 1px;
+  --bs-dropdown-inner-border-radius: 7px;
+  --bs-dropdown-divider-bg: #e9e9e8;
   --bs-dropdown-divider-margin-y: 0.4rem;
-  --bs-dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --bs-dropdown-link-color: #676767;
+  --bs-dropdown-box-shadow: rgba(0, 0, 0, 0.05);
+  --bs-dropdown-link-color: #000000;
   --bs-dropdown-link-hover-color: #000000;
-  --bs-dropdown-link-hover-bg: none;
+  --bs-dropdown-link-hover-bg: transparent;
   --bs-dropdown-link-active-color: #000000;
-  --bs-dropdown-link-active-bg: transparent;
+  --bs-dropdown-link-active-bg: #ffffff;
   --bs-dropdown-link-disabled-color: #bababa;
-  --bs-dropdown-item-padding-x: 0rem;
-  --bs-dropdown-item-padding-y: 0.25rem;
+  --bs-dropdown-item-padding-x: 1rem;
+  --bs-dropdown-item-padding-y: 1rem;
   --bs-dropdown-header-color: #8c8b8b;
-  --bs-dropdown-header-padding-x: 0rem;
-  --bs-dropdown-header-padding-y: 12px;
+  --bs-dropdown-header-padding-x: 1rem;
+  --bs-dropdown-header-padding-y: 0rem;
   position: absolute;
   z-index: var(--bs-dropdown-zindex);
   display: none;
@@ -3739,14 +3739,14 @@ textarea.form-control-lg {
 .dropdown-menu-dark {
   --bs-dropdown-color: #dddddd;
   --bs-dropdown-bg: #4b4b4b;
-  --bs-dropdown-border-color: var(--bs-border-color-translucent);
+  --bs-dropdown-border-color: #e9e9e8;
   --bs-dropdown-box-shadow: ;
   --bs-dropdown-link-color: #dddddd;
   --bs-dropdown-link-hover-color: #ffffff;
-  --bs-dropdown-divider-bg: rgba(126, 131, 137, 0.2);
+  --bs-dropdown-divider-bg: #e9e9e8;
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #000000;
-  --bs-dropdown-link-active-bg: transparent;
+  --bs-dropdown-link-active-bg: #ffffff;
   --bs-dropdown-link-disabled-color: #bababa;
   --bs-dropdown-header-color: #bababa;
 }
@@ -11959,6 +11959,10 @@ textarea.form-control-lg {
   content: "\e935";
 }
 
+.ic-arrow-down:before {
+  content: "\e967";
+}
+
 .ic-arrow-left:before {
   content: "\e971";
 }
@@ -12503,8 +12507,8 @@ textarea.form-control-lg {
   content: "\e966";
 }
 
-.ic-dislike:before {
-  content: "\e967";
+.ic-dislike-default:before {
+  content: "\e96e";
 }
 
 .ic-like-filled:before {
@@ -12513,6 +12517,26 @@ textarea.form-control-lg {
 
 .ic-like:before {
   content: "\e96b";
+}
+
+.ic-archive:before {
+  content: "\e970";
+}
+
+.ic-mute:before {
+  content: "\e974";
+}
+
+.ic-report:before {
+  content: "\e975";
+}
+
+.ic-task:before {
+  content: "\e976";
+}
+
+.ic-reply:before {
+  content: "\e977";
 }
 
 /* Свои глобальние стили (qela-) */
@@ -14359,12 +14383,18 @@ input[type=number] {
   -webkit-line-clamp: 1;
 }
 .qela-navbar .btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   padding: 0;
   border: none;
   color: #000000;
+}
+.qela-navbar > .btn,
+.qela-navbar .qela-dropdown {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.qela-navbar .qela-dropdown .dropdown-menu-end {
+  right: -16px;
 }
 
 .qela-topbar {
@@ -14397,6 +14427,19 @@ input[type=number] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.qela-dropdown .dropdown-menu {
+  overflow: hidden;
+}
+.qela-dropdown .dropdown-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.qela-dropdown .dropdown-item::before {
+  color: #676767;
 }
 
 .qela-card.card {
