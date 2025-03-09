@@ -301,6 +301,7 @@
 
 			main.qela-body {
 				padding-left: 0;
+				padding-right: 0;
 			}
 
 			.--btn {
@@ -409,12 +410,13 @@
 						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/success3">success-vote</a></li>
 						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/success4">success-list bottom</a></li>
 						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/success5">success-telent</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/chat">chat</a></li>
 					</ul>
 				</nav>
 
 			</aside>
 			<!-- Навигация (якоря) -->
-			<div style="max-width: 576px" class="mx-auto px-3">
+			<div style="max-width: 576px; width: 100%;" class="mx-auto px-3">
 				<div class="mt-3 pb-3 d-flex flex-column gap-3">
 					<!-- FIX Buttons  -->
 <section class="d-grid gap-3">
@@ -953,19 +955,98 @@
 					<section class="d-grid gap-3">
 	<!-- Chat -->
 	<h2 class="h1 mt-4">Chat</h2>
-	<!-- User status -->
-	<div class="d-flex">
-		<span class="fs-12">Failed</span>
-	</div>
 	<h3>User status</h3>
+	<!-- User status -->
+	<div class="d-flex gap-2">
+		<span class="text-danger-600 display-7">Failed</span>
+		<span class="text-info-800 display-7">Admin</span>
+		<span class="text-success-800 display-7">Passed</span>
+		<span class="qela-text-blue-600 display-7">Not taken</span>
+		<span class="text-warning-600 display-7">In progress</span>
+	</div>
 	<!-- Like/Dislike counter -->
 	<h3>Like/Dislike counter</h3>
-	<!-- Messages -->
-	<h3>Messages</h3>
+	<div>
+		<div class="qela-chat-like">
+			<button type="button" class="btn current">
+				<i class="ic-like"></i>
+				<i class="ic-like-filled"></i>
+				<span>90</span>
+			</button>
+			<button type="button" class="btn ">
+				<i class="ic-dislike"></i>
+				<i class="ic-dislike-filled"></i>
+				<span>90</span>
+			</button>
+		</div>
+	</div>
+	<!-- Messages  reply-->
+	<h3>Messages reply</h3>
+	<div class="qela-chat-reply">
+		<div class="qela-chat-top">
+			<span class="fw-semibold">Green Forest</span>
+		</div>
+		<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again? I also have a question if I can take the quest again?I also have a question if I can take the quest again?</div>
+	</div>
 	<!-- Chat Sections -->
 	<h3>Chat Sections</h3>
-
-
+	<ul class="qela-chat-list">
+		<li class="qela-chat-mess">
+			<div class="qela-chat-top">
+				<span class="fw-semibold">Green Forest</span>
+				<span class="text-danger-600 display-7 align-self-start">Failed</span>
+			</div>
+			<div>I also have a question if I can take the quest again?</div>
+			<div class="d-flex align-items-center gap-2">
+				<div class="qela-chat-like">
+					<button type="button" class="btn current">
+						<i class="ic-like"></i>
+						<i class="ic-like-filled"></i>
+						<span>90</span>
+					</button>
+					<button type="button" class="btn ">
+						<i class="ic-dislike"></i>
+						<i class="ic-dislike-filled"></i>
+						<span>90</span>
+					</button>
+				</div>
+				<span class="qela-chat-time">13:13</span>
+			</div>
+		</li>
+		<li class="qela-chat-mess">
+			<div>I also have a question if I can take the quest again? I also have a question if I can take the quest again tomorrow?</div>
+		</li>
+		<li class="qela-avatar qela-ibg fs-6" style="--img-size: 30px;"><small><small>MT</small></small></li>
+	</ul>
+	<ul class="qela-chat-list my-list">
+		<li class="qela-chat-mess">
+			<div>I also have a question if I can take the quest again?</div>
+			<div class="d-flex align-items-center gap-2">
+				<div class="qela-chat-like">
+					<button type="button" class="btn current">
+						<i class="ic-like"></i>
+						<i class="ic-like-filled"></i>
+						<span>90</span>
+					</button>
+					<button type="button" class="btn">
+						<i class="ic-dislike"></i>
+						<i class="ic-dislike-filled"></i>
+						<span>90</span>
+					</button>
+				</div>
+				<span class="qela-chat-time">13:13</span>
+			</div>
+		</li>
+		<li class="qela-chat-mess">
+			<div>I also have a question if I can take the quest again? I also have a question if I can take the quest again tomorrow?</div>
+		</li>
+	</ul>
+	<!-- Chat Input text -->
+	<h3>Chat Input text</h3>
+	<div class="qela-chat-input">
+		<button type="button" class="btn ic-send"></button>
+		<input type="text" class="form-control" id="inputText1" placeholder="Name">
+	</div>
 </section>
 					<section class="d-grid gap-3">
 	<h2 class="h1 mt-4">Coming soon</h2>
@@ -1382,7 +1463,6 @@
 		<span class="ic-user"></span>
 		<span class="ic-user-filled"></span>
 		<span class="ic-bell-filled"></span>
-		<span class="ic-bell-28"></span>
 		<span class="ic-qela"></span>
 		<span class="ic-qela-filled"></span>
 		<span class="ic-dislike-filled"></span>
@@ -2183,10 +2263,10 @@
 		</a>
 		<div class="d-flex gap-3">
 			<button type="button" class="btn ic-message-circle">
-				<span class="qela-counter">25</span>
+				<span class="qela-counter">1</span>
 			</button>
 			<button type="button" class="btn ic-bell">
-				<span class="qela-counter">25</span>
+				<span class="qela-counter">2565</span>
 			</button>
 		</div>
 	</nav>
@@ -4375,6 +4455,11 @@
 	<video class="w-100" controls muted poster="img/video-img.jpg">
 		<source src="videos/nature.mp4" type="video/mp4">
 	</video>
+	<!-- Video -->
+	<h2 class="h1 mt-4">Video</h2>
+	<div class="qela-ibg qela-img_16x9">
+		<iframe height="325" src="https://www.youtube.com/embed/XUS6UJzLIb4" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen=""></iframe>
+	</div>
 </section>
 					<section class="d-grid  gap-3">
 	<h2 class="h1 mt-4">Voting</h2>

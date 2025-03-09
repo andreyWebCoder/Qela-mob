@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<title>Chat</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/vendors.css">
+	<!-- <link rel="stylesheet" href="css/style-colors.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<aside class="fixed-top pt-2 d-lg-block d-none overflow-auto" style="width: 280px; height: 100vh;">
+	<div class="m-3">
+		<a href="https://frilanser-of-ua.github.io/QelaMob-components/" class="btn btn-secondary ic-chevron-left">Components</a>
+	</div>
+	<nav>
+		<ol class="d-flex flex-column gap-2">
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/discussions">discussions</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/img">img</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/layout-top">header-fix</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/layout">layout-default</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/layout1">header-footer-fix</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/layout2">header-footer-fix(tabs)</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/layout3">header-footer-fix(user)</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/layout4">header-footer-fix(back)</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/symple">layout-simple</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/leaderboard">leaderboard</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/leaderboard-filters">leaderboard-filters</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/leaderboard">leaderboard</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/success1">success</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/success2">success-btn bottom</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/success3">success-vote</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/success4">success-list bottom</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/success5">success-telent</a></li>
+			<li><a class="text-black" href="https://frilanser-of-ua.github.io/QelaMob-components/chat">chat</a></li>
+		</ol>
+	</nav>
+</aside>
+	<main class="qela-fullscreen">
+		<div class="qela-top bg-white mb-0">
+			<nav class="navbar bg-white qela-navbar"><a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
+				<span class="h6 text-center"> Quest name 3 </span>
+				<div class="dropdown qela-dropdown end-0 me-3">
+					<button class="btn ic-dots" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+					<ul class="dropdown-menu dropdown-menu-end mt-3">
+						<li><button type="button" class="dropdown-item ic-mute" href="#">Unmute</button></li>
+						<li><button type="button" class="dropdown-item ic-archive" href="#">Unarchive</button></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!--content-->
+		<div class="flex-grow-1">
+			<div class="qela-chat">
+				<div class="p-1 text-center align-self-center">
+					<span class="badge qela-chat-badge">17 Feb 2025</span>
+				</div>
+				<ul class="qela-chat-list my-list">
+					<li class="qela-chat-mess">
+						<div>I just have a question about this quest. When should I send you the screenshot? I just have a question about this quest. When should I send you the screenshot?</div>
+						<div class="d-flex align-items-center gap-2">
+							<span class="qela-chat-time">13:13</span>
+						</div>
+					</li>
+				</ul>
+				<ul class="qela-chat-list">
+					<li class="qela-chat-mess">
+						<div class="qela-chat-reply">
+							<div class="qela-chat-top">
+								<span class="fw-semibold">Green Forest</span>
+							</div>
+							<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again?</div>
+						</div>
+						<div class="qela-chat-top">
+							<span class="fw-semibold">Green Forest</span>
+							<span class="text-danger-600 display-7 align-self-start">Failed</span>
+						</div>
+						<div>I also have a question if I can take the quest again?</div>
+						<div class="d-flex align-items-center gap-2">
+							<div class="qela-chat-like">
+								<button type="button" class="btn current">
+									<i class="ic-like"></i>
+									<i class="ic-like-filled"></i>
+									<span>90</span>
+								</button>
+								<button type="button" class="btn ">
+									<i class="ic-dislike"></i>
+									<i class="ic-dislike-filled"></i>
+									<span>90</span>
+								</button>
+							</div>
+							<span class="qela-chat-time">13:13</span>
+						</div>
+					</li>
+					<li class="qela-chat-mess">
+						<div>I also have a question if I can take the quest again? I also have a question if </div>
+						<div class="d-flex align-items-center gap-2">
+							<span class="qela-chat-time">13:13</span>
+						</div>
+					</li>
+					<li class="qela-avatar qela-ibg fs-6" style="--img-size: 30px;"><small><small>MT</small></small></li>
+				</ul>
+				<ul class="qela-chat-list my-list">
+					<li class="qela-chat-mess">
+						<div class="qela-chat-reply">
+							<div class="qela-chat-top">
+								<span class="fw-semibold">Green Forest</span>
+							</div>
+							<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again?</div>
+						</div>
+						<div>Sure!</div>
+						<div class="d-flex align-items-center gap-2">
+							<span class="qela-chat-time">13:13</span>
+						</div>
+					</li>
+					<li class="qela-chat-mess">
+						<div>I just have a question about this quest. When should I send you the screenshot? I just have a question about this quest. When should I send you the screenshot?</div>
+						<div class="d-flex align-items-center gap-2">
+							<span class="qela-chat-time">13:13</span>
+						</div>
+					</li>
+				</ul>
+				<!-- button  chat  -->
+				<div class="qela-chat-btn text-end">
+					<button type="button" class="btn-round ic-arrow-down"></button>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="qela-bottom bg-white">
+			<div class="p-2">
+				<div class="qela-chat-input">
+					<button type="button" class="btn ic-send"></button>
+					<input type="text" class="form-control" id="inputText1" placeholder="Name">
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- =========================== -->
+	<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
