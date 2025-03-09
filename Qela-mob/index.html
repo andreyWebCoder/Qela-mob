@@ -411,6 +411,7 @@
 						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/success4">success-list bottom</a></li>
 						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/success5">success-telent</a></li>
 						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/chat">chat</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/QelaMob-components/chat-reply-mess">chat-reply-mess</a></li>
 					</ul>
 				</nav>
 
@@ -423,7 +424,6 @@
 	<h2 class="h1 mt-4">Buttons</h2>
 	<!-- buttons large standart start -->
 	<h3>Buttons types, large </h3>
-	<div class="p-3 bg-primary-500"></div>
 	<button type="button" class="btn btn-primary">Primary</button>
 	<button type="button" class="btn btn-primary" disabled>Primary disabled</button>
 	<button type="button" class="btn btn-secondary">Secondary</button>
@@ -988,6 +988,16 @@
 		</div>
 		<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again? I also have a question if I can take the quest again?I also have a question if I can take the quest again?</div>
 	</div>
+	<!-- ======  Messages  reply- with button close -->
+	<div class="d-flex align-items-center gap-3">
+		<div class="qela-chat-reply">
+			<div class="qela-chat-top">
+				<span class="fw-semibold">Green Forest</span>
+			</div>
+			<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again? I also have a question if I can take the quest again?I also have a question if I can take the quest again?</div>
+		</div>
+		<button type="button" class="btn p-0 border-0 text-secondary-700 ic-cloze"></button>
+	</div>
 	<!-- Chat Sections -->
 	<h3>Chat Sections</h3>
 	<ul class="qela-chat-list">
@@ -1046,6 +1056,28 @@
 	<div class="qela-chat-input">
 		<button type="button" class="btn ic-send"></button>
 		<input type="text" class="form-control" id="inputText1" placeholder="Name">
+	</div>
+	<!-- Pinned message -->
+	<h3>Pinned message</h3>
+	<div class="qela-pinned-mess">
+		<div class="text-secondary-700">Pinned message</div>
+		<small class="qela-clamp" style="--clamp-line: 1">Hello could you help me to take this quest successfully Hello could you help me to take this quest successfully I just have a question. Hello could you help me to take this quest successfully I just have a question</small>
+	</div>
+	<!-- Report a message -->
+	<h3>Report a message</h3>
+	<div class="qela-report-mess">
+		<div class="d-flex gap-2">
+			<span class="h6 me-auto">Report a message</span>
+			<button type="button" class="btn btn-link btn-sm text-secondary-700 ">Cancel</button>
+		</div>
+		<span class="display-7 text-info-600">What is wrong with this message?</span>
+		<ul class="list-group">
+			<li class="list-group-item">An item</li>
+			<li class="list-group-item">A second item</li>
+			<li class="list-group-item">A third item</li>
+			<li class="list-group-item">A fourth item</li>
+			<li class="list-group-item">And a fifth one</li>
+		</ul>
 	</div>
 </section>
 					<section class="d-grid gap-3">

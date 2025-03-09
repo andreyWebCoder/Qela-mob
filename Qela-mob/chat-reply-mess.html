@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ua">
 <head>
-	<title>Chat</title>
+	<title>Chat reply mess</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/vendors.css">
@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="overflow-hidden">
 	<aside class="fixed-top pt-2 d-lg-block d-none overflow-auto" style="width: 280px; height: 100vh;">
 	<div class="m-3">
 		<a href="https://frilanser-of-ua.github.io/QelaMob-components/" class="btn btn-secondary ic-chevron-left">Components</a>
@@ -57,7 +57,7 @@
 			</div>
 		</div>
 		<!--content-->
-		<div class="flex-grow-1">
+		<div class="flex-grow-1 report--mess">
 			<div class="qela-chat">
 				<div class="p-1 text-center align-self-center">
 					<span class="badge qela-chat-badge">17 Feb 2025</span>
@@ -109,7 +109,7 @@
 					<li class="qela-avatar qela-ibg fs-6" style="--img-size: 30px;"><small><small>MT</small></small></li>
 				</ul>
 				<ul class="qela-chat-list my-list">
-					<li class="qela-chat-mess" data-bs-toggle="dropdown" aria-expanded="false">
+					<li class="qela-chat-mess report" data-bs-toggle="dropdown" aria-expanded="false">
 						<div class="qela-chat-reply">
 							<div class="qela-chat-top">
 								<span class="fw-semibold">Green Forest</span>
@@ -119,6 +119,15 @@
 						<div>Sure!</div>
 						<div class="d-flex align-items-center gap-2">
 							<span class="qela-chat-time">13:13</span>
+						</div>
+						<div class="dropdown qela-dropdown end-0">
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><button type="button" class="dropdown-item ic-reply">Reply</button></li>
+								<li><button type="button" class="dropdown-item ic-like">Like</button></li>
+								<li><button type="button" class="dropdown-item ic-dislike">Dislike</button></li>
+								<li><button type="button" class="dropdown-item ic-file-copy">Copy</button></li>
+								<li><button type="button" class="dropdown-item danger ic-report">Report</button></li>
+							</ul>
 						</div>
 					</li>
 					<li class="qela-chat-mess">
