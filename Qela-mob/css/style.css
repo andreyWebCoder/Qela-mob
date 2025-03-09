@@ -14398,6 +14398,7 @@ input[type=number] {
 .qela-topbar {
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-bottom: 1px solid #e9e9e8;
+  height: 57px;
 }
 .qela-topbar .navbar-brand img {
   height: 40px;
