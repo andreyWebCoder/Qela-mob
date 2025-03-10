@@ -14396,9 +14396,12 @@ input[type=number] {
 }
 
 .qela-topbar {
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid #e9e9e8;
   height: 57px;
+}
+.qela-topbar .navbar-brand {
+  margin-right: auto;
 }
 .qela-topbar .navbar-brand img {
   height: 40px;
@@ -14412,6 +14415,12 @@ input[type=number] {
   position: absolute;
   left: 12px;
   bottom: 13px;
+}
+.qela-topbar .qela-btn-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .qela-counter {
