@@ -1,0 +1,92 @@
+@use "sass:math";
+
+/* Bootstrap style imports*/
+@import "bootstrap/functions";
+@import "vars"; // Переназначение переменных
+@import "bootstrap/variables";
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+$all-colors: map-merge-multiple($primarys, $secondarys, $warnings, $succeses, $dangers, $infos);
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"color":
+			map-merge(
+				map-get($utilities, "color"),
+				(
+					values: map-merge(map-get(map-get($utilities, "color"), "values"), ($all-colors))
+				)
+			)
+	)
+);
+$utilities: map-merge(
+	$utilities,
+	(
+		"background-color":
+			map-merge(
+				map-get($utilities, "background-color"),
+				(
+					values: map-merge(map-get(map-get($utilities, "background-color"), "values"), ($all-colors))
+				)
+			)
+	)
+);
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/button-group";
+@import "bootstrap/dropdown";
+
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/accordion";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
+
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/progress";
+@import "bootstrap/list-group";
+@import "bootstrap/offcanvas";
+@import "bootstrap/carousel";
+
+// @import "bootstrap/bootstrap";
+
+// Helpers
+@import "bootstrap/helpers";
+// /* Bootstrap style imports*/
+// Utilities
+@import "bootstrap/utilities/api";
+
+@import "resources";
+/* ======================================================================== */
+/* Qela */
+/* Шрифты */
+@import "fonts";
+/* Иконочный шрифт */
+@import "icons";
+/* Свои глобальние стили (qela-) */
+@import "globall";
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ>================================
+@import "forms";
+@import "ui";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ>==================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ 	БЛОКОВ>======================================
+@import "./components/first";
+@import "./components/reg";
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ 	БЛОКОВ>===========================================

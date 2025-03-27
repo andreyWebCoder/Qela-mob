@@ -1,0 +1,55 @@
+.qela-alert {
+	position: relative;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+
+	&.alert {
+		span {
+			position: absolute;
+			left: 16px;
+			top: 1em;
+
+			&::before {
+				font-size: 16px;
+			}
+
+			&.ic-large {
+				position: static;
+
+				&::before {
+					font-size: 38px;
+				}
+			}
+		}
+
+		a {
+			text-decoration: none;
+			font-size: 14px;
+			letter-spacing: 0.2px;
+		}
+	}
+
+	.btn-close {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		padding: 1px;
+		opacity: 1;
+	}
+
+	&.alert-secondary {
+		background-color: $secondary-200;
+	}
+
+	&.alert-danger {
+		background-color: $danger-200;
+	}
+
+	&.alert-warning {
+		background-color: $warning-200;
+	}
+
+	&.alert-info {
+		background-color: $gray-100;
+	}
+}

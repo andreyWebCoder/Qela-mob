@@ -1,0 +1,180 @@
+.qela-dialog {
+	padding: 1.5rem;
+	border-radius: 10px;
+	position: relative;
+	background-color: $white;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 1.5rem;
+		width: 0;
+		height: 0;
+		border-top: 8px solid transparent;
+		border-right: 0 solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 8px solid;
+	}
+
+	&.secondary {
+		border: 1px solid $secondary;
+
+		&::before {
+			border-left-color: $secondary;
+		}
+	}
+
+	.icon {
+		display: block;
+		margin: 1rem auto 1.5rem auto;
+	}
+	a {
+		text-decoration: none;
+	}
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	h1,
+	h3 {
+		&:not(:last-child) {
+			padding-bottom: 0.5rem;
+		}
+	}
+	h5 {
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+	img {
+		border-radius: 0.5rem;
+		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+	small {
+		color: $gray-700;
+	}
+
+	> .row {
+		margin-top: 1.5rem;
+	}
+
+	> .btn {
+		margin-top: 1rem;
+		width: 100%;
+
+		&.btn-preset {
+			width: auto;
+			margin-top: 0;
+		}
+	}
+
+	.qela-avatar {
+		margin-right: 1.25rem;
+		background-color: $gray-300;
+	}
+
+	.custom-large {
+		margin: 1.5rem 0;
+	}
+	.qela-description {
+		.list-group-item {
+			padding: 0;
+			> a {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 1rem;
+				.btn {
+					width: auto;
+					flex: 0 0 auto;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.qela-grid {
+		img {
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.qela-results {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	[class^="circle-"] {
+		display: flex;
+		align-items: center;
+		line-height: 120%;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			margin-right: 0.25rem;
+		}
+
+		&.circle-secondary {
+			&::before {
+				background-color: $secondary;
+			}
+		}
+
+		&.circle-danger {
+			&::before {
+				background-color: $danger;
+			}
+		}
+
+		&.circle-success {
+			&::before {
+				background-color: $success;
+			}
+		}
+	}
+}
+
+.qela-orden {
+	border: 1px solid $secondary;
+	padding: 1.5rem 1rem 1.5rem 1.5rem;
+	border-radius: 10px;
+
+	.row {
+		align-items: center;
+	}
+
+	.orden-item {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		img {
+			margin: 0px 0px 0px 0.5rem;
+		}
+
+		span {
+			font-size: 1.75rem;
+			font-weight: 500;
+		}
+	}
+}

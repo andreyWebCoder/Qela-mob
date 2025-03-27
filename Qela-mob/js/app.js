@@ -8,4 +8,4 @@ const observer = new ResizeObserver(entrirs => {
 	console.log(btnChatBottom.style.bottom = heightAside + 'px');
 
 })
-observer.observe(navBottom);
+if (btnChatBottom && navBottom) observer.observe(navBottom);

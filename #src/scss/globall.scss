@@ -1,0 +1,468 @@
+main {
+	max-width: 576px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 rem(16);
+}
+.qela-fullscreen {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+	transition: min-height 0.2s linear;
+	&.img-full {
+		margin-right: rem(-16);
+		margin-left: rem(-16);
+	}
+}
+.qela-page {
+	flex-grow: 1;
+	margin-right: rem(-16);
+	margin-left: rem(-16);
+}
+.qela-top,
+.qela-bottom {
+	position: sticky;
+	left: 0;
+	z-index: 10;
+	margin-right: rem(-16);
+	margin-left: rem(-16);
+}
+.qela-top {
+	top: 0;
+	margin-bottom: rem(16);
+}
+
+.qela-bottom {
+	margin-top: rem(16);
+	bottom: 0;
+}
+.qela-page-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	gap: rem(16);
+	text-align: center;
+	span {
+		font-size: rem(18);
+		color: $info-600;
+		padding: 0 rem(16);
+	}
+	i {
+		color: $info;
+		line-height: 1;
+		&::before {
+			font-size: rem(104);
+		}
+	}
+}
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+	padding: $spacer * 0.5 0 $spacer 0;
+}
+
+.display-1 {
+	padding-top: 0;
+}
+
+a {
+	color: $secondary-700;
+
+	&:hover {
+		color: $secondary-700;
+	}
+}
+
+.qela-mt-7 {
+	margin-top: 80px;
+}
+
+.qela-logo {
+	margin: 120px 0px 90px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.qela-avatar_min {
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid $white;
+
+	&:not(:first-child) {
+		margin-left: -6px;
+	}
+
+	img {
+		display: block;
+	}
+}
+
+.qela-decision {
+	padding: 24px 16px 16px 16px;
+	background-color: $white;
+	border: 3px solid $secondary-500;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 50px;
+	}
+}
+
+.bg-secondary_dark {
+	background: $secondary-700 !important;
+}
+
+.text-info {
+	color: $gray-700 !important;
+}
+
+.bg-orange {
+	background: $orange !important;
+}
+
+.text-orange {
+	color: $orange !important;
+}
+
+.qela-username {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+
+	& > div {
+		display: block;
+	}
+
+	&[class="ic-"],
+	[class*="ic-"] {
+		color: $secondary-500;
+		display: block;
+
+		&::before {
+			font-size: rem(20);
+			padding: rem(4);
+		}
+	}
+}
+
+.qela-id {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.btn-copyed {
+		min-width: 165px;
+	}
+
+	.success {
+		background-color: $success-100;
+	}
+}
+
+.qela-clamp {
+	--clamp-line: 3;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: var(--clamp-line);
+	// max-height: 62px;
+
+	&.clamp-7 {
+		-webkit-line-clamp: 6;
+		height: 115px;
+	}
+
+	&.clamp-name1 {
+		// -webkit-line-clamp: 1;
+		--clamp-line: 1;
+		height: auto;
+		white-space: nowrap;
+	}
+}
+
+.qela-disabled {
+	position: relative;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(5px);
+	width: 100%;
+
+	& > div {
+		max-width: 220px;
+		margin: 0 auto;
+	}
+}
+
+.qela-blur_block {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $white;
+		filter: blur(10px);
+		border-radius: 2px;
+		z-index: -1;
+		will-change: transform;
+	}
+}
+
+.qela-fs7 {
+	font-size: 12px !important;
+}
+
+.fs-6 {
+	&::before {
+		font-size: 16px !important;
+	}
+}
+
+.qela-upload {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	display: flex;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.qela-upload_ic {
+	background-color: $gray-300;
+	color: $white;
+	padding: 10px;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.qela-add {
+	min-height: 170px;
+	width: 50%;
+	color: $secondary-500;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 0.5rem;
+	border: 1px dashed $secondary-500;
+	padding: 1rem;
+	background-color: $white;
+
+	.icon {
+		color: $secondary-500;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+
+		&::before {
+			font-size: 48px;
+
+			@media (max-width: 360px) {
+				font-size: 36px;
+			}
+		}
+	}
+}
+
+.qela-grid {
+	--bs-gutter-y: 1rem;
+	--bs-gutter-x: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	// align-items: start;
+	margin-top: calc(var(--bs-gutter-y) * -1);
+	margin-left: calc(var(--bs-gutter-x) * -1);
+	margin-right: calc(var(--bs-gutter-x) * -1);
+	> * {
+		flex: 0 0 calc(50% - (var(--bs-gutter-x) * 2));
+		margin-top: var(--bs-gutter-y);
+		margin-left: var(--bs-gutter-x);
+		margin-right: var(--bs-gutter-x);
+		background-color: transparent;
+		&:first-child {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+	// .qela-add {
+	//     margin-right: auto;
+	//     margin-left: auto;
+	// }
+}
+
+.qela-qr {
+	width: 66.66%;
+	img {
+		width: 100%;
+	}
+	&::before,
+	&::after,
+	span {
+		content: "";
+		position: absolute;
+		width: 15.5%;
+		height: 15.5%;
+		border: 4px solid $secondary-500;
+		pointer-events: none;
+	}
+
+	&::before {
+		content: "";
+		bottom: -2px;
+		left: -2px;
+		border-right: none;
+		border-top: none;
+	}
+
+	&::after {
+		content: "";
+		bottom: -2px;
+		right: -2px;
+		border-left: none;
+		border-top: none;
+	}
+
+	span {
+		&:first-child {
+			top: -2px;
+			left: -2px;
+			border-right: none;
+			border-bottom: none;
+		}
+
+		&:last-child {
+			right: -2px;
+			top: -2px;
+			border-left: none;
+			border-bottom: none;
+		}
+	}
+}
+
+.qela-initials {
+	color: $white;
+	font-weight: 600;
+	font-size: 75px;
+	line-height: 90px;
+	letter-spacing: -6px;
+}
+
+.qela-step {
+	background-color: $gray-300;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid $gray-500;
+
+	.qela-badge {
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	&.current {
+		background-color: $white;
+		border-width: 2px;
+		border-color: $secondary;
+
+		.qela-badge {
+			display: block;
+		}
+	}
+
+	&.disabled {
+		color: $gray-600;
+		border-color: $gray-300;
+	}
+}
+
+.qela-loader {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	background-color: rgba($black, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	flex-direction: column;
+	span {
+		color: $white;
+		font-style: 18px;
+	}
+
+	$offset: 187;
+	$duration: 1.4s;
+
+	.spinner {
+		animation: rotator $duration linear infinite;
+	}
+
+	@keyframes rotator {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(270deg);
+		}
+	}
+
+	.path {
+		stroke-dasharray: $offset;
+		stroke-dashoffset: 0;
+		transform-origin: center;
+		animation: dash $duration ease-in-out infinite;
+		stroke: #f7c223;
+	}
+
+	@keyframes dash {
+		0% {
+			stroke-dashoffset: $offset;
+		}
+		50% {
+			stroke-dashoffset: calc($offset / 4);
+			transform: rotate(135deg);
+		}
+		100% {
+			stroke-dashoffset: $offset;
+			transform: rotate(450deg);
+		}
+	}
+}
+.qela-limit {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+	> * {
+		&:not(:last-child) {
+			margin: 0px 0.5rem 0px 0px;
+		}
+	}
+
+	&.reached {
+		font-weight: 500;
+		color: $danger-500;
+	}
+}

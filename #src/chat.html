@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('_head.html',{
+"title":"Chat"
+})
+
+<body>
+	@@include('components/_aside-layouts.html',{})
+	<main class="qela-fullscreen">
+		<div class="qela-top bg-white mb-0">
+			<nav class="navbar bg-white qela-navbar"><a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
+				<span class="h6 text-center"> Quest name 3 </span>
+				<div class="dropdown qela-dropdown end-0 me-3">
+					<button class="btn ic-dots" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+					<ul class="dropdown-menu dropdown-menu-end mt-3">
+						<li><button type="button" class="dropdown-item ic-mute" href="#">Unmute</button></li>
+						<li><button type="button" class="dropdown-item ic-archive" href="#">Unarchive</button></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="qela-pinned-mess">
+				<div class="text-secondary-700">Pinned message</div>
+				<small class="qela-clamp" style="--clamp-line: 1">Hello could you help me to take this quest successfully Hello could you help me to take this quest successfully I just have a question. Hello could you help me to take this quest successfully I just have a question</small>
+			</div>
+		</div>
+		<!--content-->
+		<div class="flex-grow-1">
+			<div class="qela-report-overlay show"></div>
+			<div class="qela-chat">
+				<span class="badge qela-chat-badge">17 Feb 2025</span>
+				<div class="qela-chat-mess my-mess">
+					<div>I just have a question about this quest. When should I send you the screenshot? I just have a question about this quest. When should I send you the screenshot?</div>
+					<div class="d-flex align-items-center gap-2">
+						<span class="qela-chat-time">13:13</span>
+					</div>
+				</div>
+				<div class="qela-chat-mess my-mess">
+					<div>Hello!</div>
+					<div class="d-flex align-items-center gap-2">
+						<span class="qela-chat-time">13:13</span>
+					</div>
+				</div>
+				<div class="qela-chat-mess mt-2">
+					<div class="qela-chat-reply">
+						<div class="qela-chat-top">
+							<span class="fw-semibold">Green Forest</span>
+						</div>
+						<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again?</div>
+					</div>
+					<div class="qela-chat-top">
+						<span class="fw-semibold">Green Forest</span>
+						<span class="text-danger-600 display-7 align-self-start">Failed</span>
+					</div>
+					<div>I also have a question if I can take the quest again?
+					</div>
+					<div class="d-flex align-items-center gap-2">
+						<div class="qela-chat-like">
+							<button type="button" class="btn current">
+								<i class="ic-like"></i>
+								<i class="ic-like-filled"></i>
+								<span>90</span>
+							</button>
+							<button type="button" class="btn ">
+								<i class="ic-dislike"></i>
+								<i class="ic-dislike-filled"></i>
+								<span>90</span>
+							</button>
+						</div>
+						<span class="qela-chat-time">13:13</span>
+					</div>
+				</div>
+				<div class="qela-chat-mess">
+					<div>I also have a question if I can take the quest again? I also have a question if </div>
+					<div class="d-flex align-items-center gap-2">
+						<span class="qela-chat-time">13:13</span>
+					</div>
+					<div class="qela-avatar qela-ibg fs-6" style="--img-size: 30px;"><small><small>MT</small></small></div>
+				</div>
+				<div class="qela-chat-mess mt-2" data-bs-toggle="dropdown" aria-expanded="false">
+					<div class="qela-chat-reply">
+						<div class="qela-chat-top">
+							<span class="fw-semibold">Green Forest</span>
+						</div>
+						<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again?</div>
+					</div>
+					<div>Sure!</div>
+					<div class="d-flex align-items-center gap-2">
+						<span class="qela-chat-time">13:13</span>
+					</div>
+				</div>
+				<div class="qela-chat-mess">
+					<div>I just have a question about this quest. When should I send you the screenshot? I just have a question about this quest. When should I send you the screenshot?</div>
+					<div class="d-flex align-items-center gap-2">
+						<span class="qela-chat-time">13:13</span>
+					</div>
+				</div>
+				<!-- button  chat  -->
+				<div class="qela-chat-btn text-end">
+					<button type="button" class="btn-round ic-arrow-down"></button>
+				</div>
+				<!-- report-mess -->
+				<div class="qela-report-mess show">
+					<div class="d-flex gap-2"><span class="h6 me-auto">Report a message</span><button type="button" class="btn btn-link btn-sm text-secondary-700">Cancel</button></div><span class="display-7 text-info-600">What is wrong with this message?</span>
+					<ul class="list-group">
+						<li class="list-group-item">An item</li>
+						<li class="list-group-item">A second item</li>
+						<li class="list-group-item">A third item</li>
+						<li class="list-group-item">A fourth item</li>
+						<li class="list-group-item">And a fifth one</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="qela-bottom bg-white">
+			<div class="p-2">
+				<div class="d-flex align-items-center gap-3 mb-1">
+					<div class="qela-chat-reply">
+						<div class="qela-chat-top">
+							<span class="fw-semibold">Green Forest</span>
+						</div>
+						<div class="qela-clamp" style="--clamp-line: 1">I also have a question if I can take the quest again? I also have a question if I can take the quest again?I also have a question if I can take the quest again?</div>
+					</div>
+					<button type="button" class="btn p-0 border-0 text-secondary-700 ic-cloze"></button>
+				</div>
+				<div class="qela-chat-input">
+					<button type="button" class="btn ic-send"></button>
+					<input type="text" class="form-control" id="inputText1" placeholder="Name">
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- =========================== -->
+	@@include('_js.html',{})
+</body>
+
+</html>

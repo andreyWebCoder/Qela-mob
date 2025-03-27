@@ -1,0 +1,375 @@
+.qela-list {
+	.list-group-item {
+		border-radius: 10px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+	}
+}
+
+.qela-condenced {
+	.list-group-item + .list-group-item {
+		border-top-width: 1px;
+	}
+
+	.checkbox-container {
+		padding-right: 60px;
+		position: relative;
+
+		&.active {
+			span {
+				border-color: $secondary-500;
+				background-color: $secondary-500;
+
+				&::before {
+					opacity: 1;
+				}
+			}
+
+			&.success {
+				span {
+					background-color: $success-500;
+				}
+			}
+
+			&.error {
+				span {
+					background-color: $danger;
+				}
+			}
+		}
+
+		&.success {
+			background-color: $success-100;
+			border-color: $success-400;
+
+			span {
+				border-color: $success-500;
+			}
+		}
+
+		&.error {
+			background-color: $danger-100;
+			border-color: $danger-300;
+
+			span {
+				border-color: $danger;
+			}
+		}
+
+		span {
+			position: absolute;
+			border: 1px solid $black;
+			border-radius: 50%;
+			width: 1.25em;
+			height: 1.25em;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&::before {
+				font-size: 16px;
+				opacity: 0;
+				color: $white;
+			}
+		}
+	}
+
+	.radiobutton-container {
+		padding-right: 60px;
+		position: relative;
+
+		img {
+			margin-right: 1rem;
+		}
+
+		&.active {
+			span {
+				border-color: $secondary-500;
+				background-color: $white;
+				border-width: 2px;
+
+				&::before {
+					opacity: 1;
+					color: $secondary-500;
+				}
+			}
+
+			&.success {
+				background-color: $success-100;
+				border-color: $success-400;
+
+				span {
+					border-color: $success-500;
+
+					&::before {
+						color: $success-500;
+						background-color: $success-500;
+					}
+				}
+			}
+
+			&.error {
+				background-color: $danger-100;
+				border: 1px solid $danger-300;
+
+				span {
+					border-color: $danger;
+
+					&::before {
+						color: $danger;
+						background-color: $danger;
+					}
+				}
+			}
+		}
+
+		&.success {
+			background-color: $success-100;
+			border-color: $success-400;
+
+			span {
+				border-color: $success;
+			}
+		}
+
+		&.error {
+			background-color: $danger-100;
+			border: 1px solid $danger-300;
+
+			span {
+				border-color: $danger;
+			}
+		}
+
+		&.img-pad {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			padding-left: 0.5rem;
+		}
+
+		span {
+			position: absolute;
+			border: 1px solid $black;
+			border-radius: 50%;
+			width: 22px;
+			height: 22px;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&::before {
+				content: "";
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				background-color: $secondary-500;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.qela-description {
+	.list-group-item {
+		box-shadow: none;
+
+		&.active,
+		&.success,
+		&.error {
+			border: none;
+		}
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $info;
+		}
+		.qela-clamp {
+			max-height: unset;
+		}
+	}
+}
+
+.qela-custom {
+	.btn {
+		border-radius: 0 10px 10px 0;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+	}
+}
+
+.qela-icon {
+	width: 30px;
+	height: 30px;
+	background-color: $secondary;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: $white;
+	border-radius: 7px;
+
+	&::before {
+		font-size: 18px;
+	}
+}
+.qela-notification {
+	--bs-list-group-item-padding-x: 1rem;
+	--bs-list-group-item-padding-y: 1rem;
+	--bs-list-group-border-radius: 0;
+
+	.list-group-item {
+		display: inline-flex;
+		gap: 1rem;
+		position: relative;
+		&.new {
+			background-color: #f8f9fa;
+			.qela-badge {
+				display: block !important;
+			}
+		}
+		> div {
+			h2,
+			small {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+				text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			small {
+				-webkit-line-clamp: 2;
+				color: $gray-900;
+			}
+			&:last-child {
+				flex-basis: 48px;
+				> div {
+					&:first-child {
+						color: $gray-700;
+					}
+				}
+			}
+		}
+	}
+	.qela-badge {
+		position: absolute;
+		top: -11px;
+		right: -3px;
+		display: none !important;
+	}
+}
+.qela-preview {
+	height: 48px;
+	flex-basis: 48px;
+	width: 48px;
+	border-radius: 8px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.red {
+		background-color: $telent-red-600;
+	}
+	&.violet {
+		background-color: $telent-violet-600;
+	}
+	&.green {
+		background-color: $telent-green-600;
+	}
+	&.orange {
+		background-color: $telent-orange-600;
+	}
+	&.lightgreen {
+		background-color: $telent-lightgreen-600;
+	}
+	&.lightblue {
+		background-color: $telent-lightblue-600;
+	}
+	&.blue {
+		background-color: $telent-blue-600;
+	}
+	&.pink {
+		background-color: $telent-pink-600;
+	}
+	span {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		color: $white;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.qela-list-leaderboard {
+	padding-top: rem(8);
+	display: flex;
+	flex-direction: column;
+	gap: rem(8);
+	.list-group-item {
+		box-shadow: none;
+		border-top-width: 1px;
+		padding: 0;
+		border-radius: 8px;
+		&[class*="active--"] {
+			position: sticky;
+			left: 0;
+			z-index: 5;
+			> div,
+			.accordion-button {
+				background-color: $secondary-200;
+				border: 1px solid $secondary;
+				&.accordion {
+					border: none;
+					background-color: transparent;
+				}
+			}
+		}
+		&.active--top {
+			top: 100px;
+		}
+		&.active--bottom {
+			bottom: 80px;
+		}
+		> div,
+		.accordion-button {
+			padding: rem(8);
+			border-radius: 8px;
+			background-color: $info-100;
+			&.accordion {
+				padding: 0;
+				background-color: transparent;
+			}
+		}
+		.accordion-button {
+			&::after {
+				content: "\e903";
+				font-family: "icons";
+				margin-left: rem(8);
+				line-height: 1;
+				font-size: 24px;
+				color: $gray-700;
+			}
+			> div {
+				flex-grow: 1;
+			}
+		}
+		.qela-clamp {
+			--clamp-line: 2;
+			height: auto;
+		}
+	}
+	.qela-voice {
+		.body-voice {
+			background-color: $primary-100;
+		}
+	}
+}

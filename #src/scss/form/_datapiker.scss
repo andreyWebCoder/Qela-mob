@@ -1,0 +1,281 @@
+$dp__font_family: $font-family-base;
+.qela-datapikers {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	.spacer {
+		height: 40px;
+		width: 1px;
+		background-color: $gray-400;
+		align-self: flex-end;
+	}
+}
+.dp__main {
+}
+
+.dp__input_readonly {
+}
+
+.dp__input {
+	height: 40px;
+	border-radius: $border-radius;
+	color: $secondary-800;
+	border-color: $input-border-color;
+	background-color: $secondary-200;
+	&::placeholder {
+		color: $secondary-400;
+	}
+
+	&:disabled {
+		&::placeholder {
+			color: #7e7e7e;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #d1d1d2;
+			}
+		}
+	}
+}
+.dp__input:hover:not(.dp__input_focus) {
+	--dp-border-color-hover: transparent;
+}
+.dp__input_focus {
+	color: $white;
+	background-color: $secondary-500;
+	&::placeholder {
+		color: $gray-200;
+	}
+}
+
+.dp__input_icon_pad {
+	padding: 0 16px;
+}
+
+.dp__input_reg {
+}
+
+.dp__input_icon {
+	display: none;
+}
+
+.dp__clear_icon {
+	display: none;
+}
+
+.dp__menu {
+	--dp-menu-min-width: 100%;
+	border-radius: 8px;
+	// min-width: 300px;
+	font-family: $font-family-base;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.dp__month_year_row {
+	padding: 8px;
+	height: 50px;
+}
+
+.dp__btn {
+	border: none;
+	background-color: transparent;
+}
+
+.dp__month_year_select {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 120%;
+	color: $black;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $secondary-100;
+		}
+	}
+}
+
+.dp__inner_nav {
+	background: $white;
+	border-radius: 6px;
+	padding: 7px;
+
+	&:hover {
+		background-color: $secondary-100;
+	}
+}
+
+.dp__icon {
+	fill: #bbbdc0;
+	width: 18px;
+	height: 18px;
+}
+
+.dp__calendar_header_separator {
+	display: none;
+}
+
+.dp__calendar {
+	padding-left: 5px;
+
+	&.dp__calendar_next {
+		padding-left: 0;
+		padding-right: 5px;
+	}
+}
+
+.dp__calendar_header {
+	margin-bottom: 8px;
+}
+
+.dp__calendar_header_item {
+	font-size: 12px;
+	line-height: 16px;
+	height: 32px;
+	width: 40px;
+	flex: 0 0 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	letter-spacing: 0.4px;
+	color: $gray-500;
+	font-weight: 400;
+}
+
+.dp__cell_offset {
+	color: $gray-500;
+}
+
+.dp__cell_inner {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.4px;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $secondary-100;
+		}
+	}
+}
+
+.dp__range_end,
+.dp__range_start,
+.dp__active_date {
+	background-color: $secondary;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $secondary;
+		}
+	}
+}
+
+.dp__overlay_cell_active {
+	background-color: $secondary;
+}
+
+.dp__today {
+	border: 2px solid $secondary;
+}
+
+.dp__button {
+	border-top: $gray-300;
+	border-top: 1px solid $gray-300;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $secondary-100;
+		}
+	}
+}
+
+.dp__button svg {
+	height: 24px;
+}
+
+.dp__icon {
+	fill: $black;
+}
+
+.dp__action_row {
+	border-radius: 0 0 17px 17px;
+	border-top: 1px solid $gray-300;
+}
+
+.dp__selection_preview {
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0.4px;
+	color: $black;
+	width: 70%;
+}
+
+.dp__action {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	color: $purple;
+}
+
+.dp__action_button {
+	color: $secondary;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 4px 16px;
+	height: 100%;
+	transition: color 0.3s ease 0s;
+	border: none;
+	background-color: transparent;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: $secondary-600;
+		}
+	}
+}
+.dp__action_select {
+	--dp-primary-color: transparent;
+	--dp-primary-text-color: #978fff;
+}
+.is-invalid {
+	.dp__input {
+		color: $gray-500;
+		border-color: $red;
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: $red;
+			}
+		}
+
+		&:focus {
+			@media (any-hover: hover) {
+				&:hover {
+					border-color: $red;
+				}
+			}
+		}
+
+		&:disabled {
+			&::placeholder {
+				color: #7e7e7e;
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					border-color: #d1d1d2;
+				}
+			}
+		}
+	}
+}
+.dp--clear-btn {
+	display: none;
+}

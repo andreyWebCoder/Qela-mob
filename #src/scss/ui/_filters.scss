@@ -1,0 +1,25 @@
+.qela-filters {
+	display: grid;
+	gap: 1rem;
+	fieldset {
+		display: block;
+		padding: 16px;
+		border-radius: 6px;
+		border: 1px solid $info-200;
+	}
+	.qela-legend {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20.8px;
+		color: $gray-700;
+		padding: 4px 0 16px 0;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		border-bottom: 1px solid $info-400;
+		margin-bottom: 1rem;
+	}
+	hr {
+		border-color: $gray-200;
+	}
+}

@@ -1,0 +1,133 @@
+.qela-tab {
+	box-shadow: 0px 0px 20px rgba($black, 0.05);
+
+	.nav-link {
+		border-bottom: 2px solid $gray-300;
+		background-color: $white;
+
+		&.active {
+			border-color: $yellow;
+		}
+	}
+}
+
+.qela-nav {
+	background-color: $white;
+	box-shadow: 0px 0px 20px rgba($black, 0.05);
+	padding-bottom: rem(24);
+	border-top: 1px solid $info-200;
+	flex-wrap: nowrap;
+	.nav-item {
+		flex: 1 1 20%;
+	}
+	.nav-link {
+		font-weight: 600;
+		line-height: 120%;
+		padding: rem(6) 0;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		[class*="ic-"] {
+			position: relative;
+			line-height: 1;
+			&::before {
+				font-size: rem(28);
+				display: inline-block;
+			}
+		}
+
+		.icon-filled {
+			display: none;
+		}
+
+		&.active {
+			color: $secondary-600;
+
+			.icon {
+				display: none;
+			}
+
+			.icon-filled {
+				display: block;
+				color: $secondary;
+			}
+			.qela-avatar {
+				border-color: $secondary-700;
+			}
+		}
+	}
+}
+
+.qela-navbar {
+	padding-left: rem(72);
+	padding-right: rem(72);
+	justify-content: center;
+	border-bottom: 1px solid $info-200;
+	.text-center {
+		flex: 1 1 auto;
+		text-align: center;
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+	}
+	.btn {
+		padding: 0;
+		border: none;
+		color: $black;
+	}
+	> .btn,
+	.qela-dropdown {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.qela-dropdown {
+		.dropdown-menu-end {
+			right: -16px;
+		}
+	}
+}
+.qela-topbar {
+	padding: rem(8) rem(16);
+	border-bottom: 1px solid $info-200;
+	height: 57px;
+	.navbar-brand {
+		margin-right: auto;
+		img {
+			height: 40px;
+		}
+	}
+	.btn {
+		padding: 0;
+		border: 0;
+		position: relative;
+		.qela-counter {
+			position: absolute;
+			left: 12px;
+			bottom: 13px;
+		}
+	}
+	.qela-btn-top {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.qela-counter {
+	font-size: rem(9);
+	font-weight: 600;
+	padding: rem(2);
+	border-radius: rem(14);
+	background-color: $danger;
+	color: $white;
+	line-height: 100%;
+	height: 16px;
+	min-width: 16px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}

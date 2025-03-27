@@ -1,0 +1,31 @@
+.qela-modal {
+	.modal-title {
+		letter-spacing: -0.408px;
+	}
+
+	.modal-footer {
+		.btn {
+			border-top: 1px solid $info-400;
+			border-radius: 0;
+			letter-spacing: -0.408px;
+		}
+	}
+}
+
+.qela-offcanvas {
+	width: 100%;
+	max-width: 576px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	&.show {
+		&:not(.hiding) {
+			transform: translate(-50%, 0);
+		}
+	}
+
+	&.offcanvas-bottom {
+		left: 50%;
+		transform: translate(-50%, 100%);
+	}
+}

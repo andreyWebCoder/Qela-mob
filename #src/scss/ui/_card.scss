@@ -1,0 +1,87 @@
+.qela-card {
+	&.card {
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+		color: inherit;
+		text-decoration: none;
+		position: relative;
+		&:hover {
+			color: inherit;
+		}
+
+		&.mini {
+			width: 300px;
+			min-height: 160px;
+
+			.card-body {
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		&.text-bg-primary {
+			background-color: $primary-500 !important;
+		}
+
+		&.text-bg-info {
+			background-color: $info-300 !important;
+		}
+		&.is-out {
+			background-color: $info-200;
+		}
+		&.accent {
+			background-color: $primary-200;
+			&.is-out {
+				background-color: $primary-200;
+			}
+		}
+	}
+}
+
+.card {
+	position: relative;
+
+	.btn-del {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+	}
+}
+.qela-time {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: rem(8) 0;
+	font-size: rem(12);
+	gap: rem(4);
+	> [class*="ic-"] {
+		display: flex;
+		align-items: center;
+		gap: rem(4);
+		line-height: 1;
+		&:before {
+			font-size: rem(16);
+		}
+		.btn {
+			font-size: 18px;
+			line-height: 1;
+			background-color: $primary;
+			padding: rem(2);
+			margin-right: rem(4);
+		}
+	}
+}
+.qela-action {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: rem(8);
+	padding-top: rem(8);
+
+	span {
+		font-size: rem(16);
+	}
+
+	.btn {
+		width: 50%;
+	}
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('_head.html',{ "title":"Components" })
+
+<body>
+	<script>
+		function addDarkClass() {
+			try {
+				if (localStorage.getItem("theme") === "night-theme") {
+					document.body.classList.add("night-theme");
+				} else {
+					document.body.classList.remove("night-theme");
+				}
+			} catch (err) { }
+		}
+		addDarkClass();
+	</script>
+	<style>
+		html,
+		body {
+			scroll-behavior: smooth;
+		}
+
+		.qela-body {
+			padding-top: 56px;
+			padding-left: 80px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.--hide {
+			display: none;
+		}
+
+		body,
+		header,
+		aside.--aside {
+			transition: background-color 0.25s ease 0s;
+		}
+
+		header {
+			height: 56px;
+			z-index: 100;
+			padding-left: 80px;
+			background-color: #fff;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+		}
+
+		header .container-fluid {
+			height: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		header .container-fluid>.row {
+			--bs-gutter-x: 0.5rem;
+			height: 100%;
+			position: relative;
+		}
+
+		header .container-fluid>.row [class*="col"] {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+
+		header .container-fluid>.row [class*="col"]:last-child {
+			justify-content: end;
+		}
+
+		* ::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		* scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		* ::-webkit-scrollbar-track {
+			background-color: #dee2e6;
+			border-radius: 50px;
+		}
+
+		* scrollbar-track {
+			background-color: #dee2e6;
+			border-radius: 50px;
+		}
+
+		*::-webkit-scrollbar-thumb {
+			background-color: #6c757d;
+			border: 2px solid #dee2e6;
+			height: 20%;
+			border-radius: 50px;
+		}
+
+		* scrollbar-thumb {
+			background-color: #6c757d;
+			border: 2px solid #dee2e6;
+			height: 20%;
+		}
+
+		body.night-theme {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		body.night-theme header {
+			background-color: rgb(0, 0, 0);
+			box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+		}
+
+		body.night-theme aside.--aside {
+			background-color: rgb(0, 0, 0);
+			color: #fff;
+		}
+
+		body.night-theme aside.--aside a {
+			color: #fff;
+		}
+
+		.night-theme #toggle-bg {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		.night-theme #toggle-bg::before {
+			content: "\e95d";
+			color: #fff;
+		}
+
+		main.qela-body {
+			padding-left: 220px;
+			max-width: 100%;
+		}
+
+		.--btn {
+			padding: 8px;
+		}
+
+		.--btn::before {
+			font-size: 26px !important;
+			line-height: 1;
+		}
+
+		.--btn svg {
+			width: 26px;
+			height: 100%;
+		}
+
+		.night-theme *::-webkit-scrollbar-track,
+		.night-theme::-webkit-scrollbar-track {
+			background-color: #343a40;
+		}
+
+		.night-theme * scrollbar-track,
+		.night-theme scrollbar-track {
+			background-color: #343a40;
+		}
+
+		.night-theme *::-webkit-scrollbar-thumb,
+		.night-theme::-webkit-scrollbar-thumb {
+			background-color: #6c757d;
+			border: 2px solid #343a40;
+		}
+
+		.night-theme * scrollbar-thumb,
+		.night-theme scrollbar-thumb {
+			background-color: #6c757d;
+			border: 2px solid #343a40;
+		}
+
+		.night-theme .--btn {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		.night-theme .--btn::before {
+			color: #fff;
+		}
+
+		.night-theme .--btn path {
+			fill: #fff;
+		}
+
+		.night-theme #toggle-bg::before {
+			content: "\e95d";
+		}
+
+		.night-theme .--elastic li::before {
+			background-color: #9188ff;
+		}
+
+		.night-theme .--elastic li::before {
+			background-color: #9188ff;
+		}
+
+		aside.--aside {
+			width: 220px;
+			height: 100vh;
+			z-index: 10;
+			padding-top: 65px;
+			overflow: auto;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+		}
+
+		aside.--aside a {
+			color: #000000;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		.btn.--burger {
+			display: none;
+		}
+
+		.btn.--burger span {
+			width: 100%;
+			height: 3px;
+			background-color: #ffe000;
+		}
+
+
+		/* .--elastic {
+			counter-reset: olcounter;
+		} */
+
+		.--elastic li {
+			/* counter-increment: olcounter; */
+			list-style: none;
+			position: relative;
+			padding-left: 25px;
+		}
+
+		.--elastic li::before {
+			content: "\e936";
+			font-family: 'icons';
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: #ffe000;
+			left: 0;
+			top: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: inherit;
+			font-size: 20px;
+			line-height: 1;
+			transition: background-color 0.3s ease 0s;
+		}
+
+		.--elastic a {
+			transition: all 0.3s ease 0s;
+		}
+
+		/* .link--active{
+            color: red !important;
+        } */
+		section>h2 {
+			background-color: rgba(28, 109, 12, 0.7);
+			padding: 5px;
+		}
+
+		section>h3 {
+			border-bottom: 2px solid rgba(109, 31, 12, 0.7);
+			padding: 5px;
+		}
+
+		@media (max-width: 1240px) {
+			aside.--aside {
+				left: 150%;
+			}
+
+			aside.--aside.active {
+				left: 0;
+			}
+
+			.btn.--burger {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 36px;
+				height: 36px;
+				gap: 8px;
+				padding: 2px;
+				margin-left: 4px;
+			}
+
+			main.qela-body {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			.--btn {
+				padding: 5px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.--btn {
+				padding: 5px;
+			}
+		}
+	</style>
+	<div id="app" v-cloak>
+		<header class="p-1 h-auto">
+			<div class="container">
+				<div class="row g-1 align-items-center">
+					<div class="col-auto">
+						<a class="navbar-brand d-inline-flex" href="https://qela-admin.a2v10.com/" target="_blank">
+							<img src="img/logo-sm.svg" alt="Logo" width="57" height="40" />
+						</a>
+					</div>
+					<div class="col">
+						<div class="p-2">
+							<input type="search" class="form-control border p-2" id="search-nav" placeholder="Search component" />
+						</div>
+					</div>
+					<div class="col-auto">
+						<a href="#" id="toggle-bg" class="btn btn-info ico ic-circle --btn"></a>
+					</div>
+					<div class="col-auto">
+						<a href="https://frilanser-of-ua.github.io/Qela-bootstrap/Qela/" class="btn btn-info ico --btn">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 5.34315 4.34315 4 6 4H34C35.6569 4 37 5.34315 37 7V27C37 28.6569 35.6569 30 34 30H6C4.34315 30 3 28.6569 3 27V7ZM6 6C5.44771 6 5 6.44772 5 7V27C5 27.5523 5.44772 28 6 28H34C34.5523 28 35 27.5523 35 27V7C35 6.44772 34.5523 6 34 6H6Z" fill="#000000" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M25 34V30H27V34H25Z" fill="#000000" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14 34V30H16V34H14Z" fill="#000000" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M34 35C34 35.5523 33.5523 36 33 36H7C6.44772 36 6 35.5523 6 35C6 34.4477 6.44772 34 7 34H33C33.5523 34 34 34.4477 34 35Z" fill="#000000" />
+							</svg>
+						</a>
+					</div>
+					<div class="col-auto">
+						<button class="btn --burger">
+							<span></span><span></span><span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="qela-body">
+			<!-- Навигация (якоря)-->
+			<aside class="fixed-top --aside">
+				<nav class="ps-3">
+					<h4 class=" my-2">Components</h4>
+					<ul class="d-flex flex-column gap-2 ps-0 --elastic">
+						<li><a class="--link" href="#">buttons</a></li>
+						<li><a class="--link" href="#">checkbox-radiobutton</a></li>
+						<li><a class="--link" href="#">alert</a></li>
+						<li><a class="--link" href="#">breadcrambs</a></li>
+						<li><a class="--link" href="#">campaign</a></li>
+						<li><a class="--link" href="#">coming-soon</a></li>
+						<li><a class="--link" href="#">dialogs</a></li>
+						<li><a class="--link" href="#">empty-space</a></li>
+						<li><a class="--link" href="#">icons</a></li>
+						<li><a class="--link" href="#">links</a></li>
+						<li><a class="--link" href="#">lists</a></li>
+						<li><a class="--link" href="#">logos</a></li>
+						<li><a class="--link" href="#">nav</a></li>
+						<li><a class="--link" href="#">cards-news</a></li>
+						<li><a class="--link" href="#">popups</a></li>
+						<li><a class="--link" href="#">profile</a></li>
+						<li><a class="--link" href="#">progress</a></li>
+						<li><a class="--link" href="#">quest-card</a></li>
+						<li><a class="--link" href="#">quest-page</a></li>
+						<li><a class="--link" href="#">quest-conditions-page</a></li>
+						<li><a class="--link" href="#">organisation</a></li>
+						<li><a class="--link" href="#">page-status</a></li>
+						<li><a class="--link" href="#">special-ic</a></li>
+						<li><a class="--link" href="#">subtitles</a></li>
+						<li><a class="--link" href="#">tabs</a></li>
+						<li><a class="--link" href="#">talents-badges</a></li>
+						<li><a class="--link" href="#">text-fields</a></li>
+						<li><a class="--link" href="#">typography</a></li>
+						<li><a class="--link" href="#">video</a></li>
+						<li><a class="--link" href="#">voting</a></li>
+						<li><a class="--link" href="#">places</a></li>
+						<li><a class="--link" href="#">accordion</a></li>
+						<li><a class="--link" href="#">chat</a></li>
+						<li><a class="--link" href="#">avatars</a></li>
+					</ul>
+					<h4 class="my-3">Layouts</h4>
+					<ul class="d-flex flex-column gap-2 ps-0 --elastic">
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/discussions">discussions</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/img">img</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/layout-top">header-fix</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/layout">layout-default</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/layout1">header-footer-fix</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/layout2">header-footer-fix(tabs)</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/layout3">header-footer-fix(user)</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/layout4">header-footer-fix(back)</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/simple">layout-simple</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/leaderboard">leaderboard</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/leaderboard-filters">leaderboard-filters</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/leaderboard">leaderboard</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/success1">success</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/success2">success-btn bottom</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/success3">success-vote</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/success4">success-list bottom</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/success5">success-telent</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/chat">chat</a></li>
+						<li><a class="--link" href="https://frilanser-of-ua.github.io/Qela-mob/Qela-mob/chat-reply-mess">chat-reply-mess</a></li>
+					</ul>
+				</nav>
+
+			</aside>
+			<!-- Навигация (якоря) -->
+			<div style="max-width: 576px; width: 100%;" class="mx-auto px-3">
+				<div class="mt-3 pb-3 d-flex flex-column gap-3">
+					@@include('./components/_buttons.html',{})
+					@@include('./components/_check-radio.html',{})
+					@@include('./components/_accordion.html',{})
+					@@include('./components/_alert.html',{})
+					@@include('./components/_avatars.html',{})
+					@@include('./components/_breadcrambs.html',{})
+					@@include('./components/_campaign.html',{})
+					@@include('./components/_news.html',{})
+					@@include('./components/_chat.html',{})
+					@@include('./components/_coming-soon.html',{})
+					@@include('./components/_dialog.html',{})
+					@@include('./components/_empty.html',{})
+					@@include('./components/_icons.html',{})
+					@@include('./components/_links.html',{})
+					@@include('./components/_lists.html',{})
+					@@include('./components/_logo.html',{})
+					@@include('./components/_nav.html',{})
+					@@include('./components/_popup.html',{})
+					@@include('./components/_places.html',{})
+					@@include('./components/_profile.html',{})
+					@@include('./components/_progress.html',{})
+					@@include('./components/_quest1.html',{})
+					@@include('./components/_quest2.html',{})
+					@@include('./components/_quest3.html',{})
+					@@include('./components/_quest4.html',{})
+					@@include('./components/_quest5.html',{})
+					@@include('./components/_special-ic.html',{})
+					@@include('./components/_subtitles.html',{})
+					@@include('./components/_tabs.html',{})
+					@@include('./components/_talents.html',{})
+					@@include('./components/_text-fields.html',{})
+					@@include('./components/_typography.html',{})
+					@@include('./components/_video.html',{})
+					@@include('./components/_voting.html',{})
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://www.unpkg.com/vue-multiselect@3.0.0-beta.1/dist/vue-multiselect.js"></script>
+	<script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
+	<script type="text/javascript">
+		let app = Vue.createApp({
+			components: {
+				"v-date-picker": VueDatePicker,
+				"v-multi-select": VueMultiselect.default,
+			},
+			data() {
+				return {
+					// date: [new Date(), new Date()],
+					date: new Date(),
+					value1: "",
+					value2: "",
+					value3: "",
+					value4: "",
+					options: [
+						"Пункт 1",
+						"Пункт 2",
+						"Пункт 3",
+						"Пункт 4",
+						"Пункт 1",
+						"Пункт 2sades",
+						"Пункт 3sd",
+						"Пункт 4sd",
+					],
+				};
+			},
+			methods: {
+				click() {
+					alert(1);
+					this.message += " clicked!";
+				},
+			},
+		});
+		// console.dir(app);
+		app.mount("#app");
+	</script>
+	<!-- Search -->
+	<script defer type="text/javascript">
+		document.querySelector("#search-nav").oninput = function () {
+			let val = this.value.trim();
+			let elasticItems = document.querySelectorAll(".--elastic li");
+			if (val != "") {
+				elasticItems.forEach(function (elem) {
+					if (elem.innerText.search(val) == -1) {
+						elem.classList.add("--hide");
+					} else {
+						elem.classList.remove("--hide");
+					}
+				});
+			} else {
+				elasticItems.forEach(function (elem) {
+					elem.classList.remove("--hide");
+				});
+			}
+		};
+		// ===============================================
+		let togButton = document.querySelector("#toggle-bg");
+		togButton.addEventListener("click", (event) => {
+			event.preventDefault();
+			if (localStorage.getItem("theme") === "night-theme") {
+				localStorage.removeItem("theme");
+			} else {
+				localStorage.setItem("theme", "night-theme");
+			}
+			addDarkClass();
+		});
+		// ==================================================
+		const burgerBtn = document.querySelector(".--burger");
+		const asideMenu = document.querySelector(".--aside");
+		burgerBtn.addEventListener("click", () => {
+			burgerBtn.classList.toggle("active");
+			asideMenu.classList.toggle("active");
+		});
+		// ==================================================
+		let title = document.querySelectorAll("h2.h1");
+		let ul = document.querySelector(".--elastic");
+		let li = ul.querySelectorAll("a");
+
+		let sections = document.querySelectorAll("section");
+		function ulSorted(type = "a") {
+			let res = [];
+			let res2 = [];
+			for (let i = 0; i < li.length; i++) {
+				res[i] = li[i].textContent;
+				switch (type) {
+					case "a":
+						res.sort(function (e1, e2) {
+							return e1 < e2 ? -1 : 1;
+						});
+						break;
+					case "z":
+						res.sort(function (e1, e2) {
+							return e1 > e2 ? -1 : 1;
+						});
+						break;
+				}
+			}
+			for (let i = 0; i < res.length; i++) {
+				li[i].innerText = res[i];
+				li[i].href = `#${res[i].replace(/\W|_/g, "").trim().toLowerCase()}`;
+			}
+			for (let i = 0; i < title.length; i++) {
+				res2[i] = title[i].textContent;
+			}
+			for (let i = 0; i < sections.length; i++) {
+				sections[i].id = `${res2[i]
+					.replace(/\W|_/g, "")
+					.trim()
+					.toLowerCase()}`;
+			}
+		}
+		ulSorted("a");
+		if (li.length > 0 && sections.length > 0) {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							li.forEach((link) => {
+								link.classList.toggle(
+									"link--active",
+									link.getAttribute("href").replace("#", "") ===
+									entry.target.id
+								);
+							});
+						}
+					});
+				},
+				{ threshold: 0.33 }
+			);
+
+			sections.forEach((section) => observer.observe(section));
+		}
+		ul.addEventListener("click", (event) => {
+			if (event.target.classList.contains("--link")) {
+				event.preventDefault();
+				const id = event.target.getAttribute("href").replace("#", "");
+				window.scrollTo({
+					top:
+						document.getElementById(id).offsetTop -
+						document.querySelector("header").offsetHeight,
+					behavior: "smooth",
+				});
+			}
+		});
+	</script>
+	<!-- =========================== -->
+	@@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.qela-avatar-inner {
+	display: flex;
+	.qela-avatar {
+		position: relative;
+		z-index: 2;
+		&:first-child {
+			z-index: 3;
+		}
+		&:last-child {
+			z-index: 1;
+		}
+		&:not(:first-child) {
+			margin-left: calc(var(--img-size) * -0.75);
+		}
+	}
+}
+.qela-avatar {
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-weight: 500;
+	text-transform: uppercase;
+	width: var(--img-size);
+	height: var(--img-size);
+	flex: 0 0 var(--img-size);
+	border-radius: 50%;
+	color: $secondary;
+	border: 1px solid $info-200;
+	background-color: $white;
+
+	img {
+		border-radius: 50%;
+	}
+	&.online,
+	&.online-sm {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			z-index: 2;
+			background-color: $success;
+			border-radius: 50%;
+			border: 1px solid $white;
+		}
+	}
+	&.online {
+		&::before {
+			width: 13px;
+			height: 13px;
+			right: 8px;
+			bottom: 8px;
+		}
+	}
+	&.online-sm {
+		&::before {
+			width: 10px;
+			height: 10px;
+			right: 1px;
+			bottom: 1px;
+		}
+	}
+	&.info-400 {
+		border-color: $info-400;
+	}
+}
+.qela-qr {
+	width: 63.5%;
+	display: inline-block;
+
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
+
+	img {
+		width: 100%;
+	}
+}

@@ -12535,6 +12535,10 @@ textarea.form-control-lg {
   content: "\e977";
 }
 
+.ic-book:before {
+  content: "\e93c";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   max-width: 576px;
@@ -14438,23 +14442,127 @@ input[type=number] {
   justify-content: center;
 }
 
-.qela-dropdown .dropdown-menu {
-  overflow: hidden;
+.dropdown .btn-dropdown {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: #676767;
+  transition: color 0.2s ease 0s;
 }
-.qela-dropdown .dropdown-item {
+.dropdown .btn-dropdown.show {
+  color: #000000;
+}
+.dropdown .btn-dropdown.show::before {
+  transform: rotate(-180deg);
+  color: #000000;
+}
+.dropdown .btn-dropdown::before {
+  font-size: 12px;
+  margin: 0px 0px 0px 4px;
+  color: #676767;
+  transition: all 0.2s ease 0s;
+}
+.dropdown .dropdown-item {
+  transition: color 0.2s ease 0s;
+}
+.dropdown .dropdown-menu {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.dropdown .form-check {
+  font-size: 14px;
+}
+
+.qela-filter .body {
+  display: flex;
+  align-items: center;
+}
+.qela-filter .form-check {
+  margin-bottom: 0;
+}
+.qela-filter .qela-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #676767;
+  margin: 0px 10px 0px 0px;
+}
+.qela-filter.small .dropdown-btn {
+  font-size: 11px;
+  color: #676767;
+  padding: 0px;
+}
+.qela-filter.small .dropdown-btn::before {
+  font-size: 12px;
+}
+
+.qela-dropdown {
+  position: relative;
+  width: 100%;
+}
+.qela-dropdown .dropdown-btn {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  line-height: 17px;
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
 }
-.qela-dropdown .dropdown-item.danger {
-  color: #e53e34;
-}
-.qela-dropdown .dropdown-item.danger::before {
-  color: #e53e34;
-}
-.qela-dropdown .dropdown-item::before {
+.qela-dropdown .dropdown-btn::before {
+  font-size: 14px;
   color: #676767;
+  margin: 0px 0px 0px 4px;
+  transition: transform 0.3s ease 0s;
+}
+.qela-dropdown .dropdown-btn.active::before {
+  transform: rotate(-180deg);
+}
+.qela-dropdown .dropdown-list {
+  position: absolute;
+  z-index: 2;
+  padding: 12px;
+  min-width: 115px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  left: 0;
+  top: calc(100% + 10px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease 0s;
+}
+.qela-dropdown .dropdown-list.visible {
+  top: calc(100% + 4px);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.qela-dropdown .dropdown-item {
+  font-size: 11px;
+  line-height: 18px;
+  color: #676767;
+  cursor: pointer;
+  transition: color 0.3s ease 0s;
+  position: relative;
+}
+.qela-dropdown .dropdown-item:not(:last-child) {
+  margin: 0px 0px 8px 0px;
+}
+@media (any-hover: hover) {
+  .qela-dropdown .dropdown-item:hover {
+    color: #000000;
+  }
+  .qela-dropdown .dropdown-item:hover::before {
+    opacity: 1;
+  }
+}
+.qela-dropdown .dropdown-item.not-visible {
+  display: none;
 }
 
 .qela-card.card {
