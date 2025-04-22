@@ -12635,7 +12635,8 @@ a:hover {
 }
 
 .qela-logo {
-  margin: 120px 0px 90px 0px;
+  margin-top: 7.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
