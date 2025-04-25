@@ -15937,6 +15937,7 @@ input[type=number] {
 .qela-chat-input .form-control {
   padding-top: 0.8125rem;
   padding-bottom: 0.8125rem;
+  padding-right: 3rem;
   box-shadow: none;
   border-color: #dddddd;
   border-radius: 30px;
