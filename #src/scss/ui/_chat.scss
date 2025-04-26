@@ -143,13 +143,20 @@
 }
 .qela-chat-input {
 	position: relative;
+	/* Для WebKit-браузеров */
+	::-webkit-scrollbar {
+		width: 0;
+	}
+	/* Для Firefox */
+	scrollbar {
+		width: 0;
+	}
 	.btn {
 		padding: rem(3);
 		border-radius: 50%;
 		position: absolute;
-		top: 50%;
 		right: 4px;
-		transform: translateY(-50%);
+		bottom: 4px;
 		background-color: $primary-600;
 		&::before {
 			font-size: rem(32);
@@ -162,6 +169,12 @@
 		box-shadow: none;
 		border-color: $info-500;
 		border-radius: 30px;
+		box-sizing: border-box;
+		word-break: break-all;
+		resize: none;
+		line-height: 140%;
+		overflow-y: hidden;
+		min-height: unset;
 		&:focus {
 			border-color: $secondary-500;
 		}
