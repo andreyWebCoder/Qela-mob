@@ -12,13 +12,15 @@ if (btnChatBottom && navBottom) observer.observe(navBottom);
 
 // texarea autoheight
 const myText = document.querySelector('textarea[type="message"]');
-const maxHeight = (myText.dataset.maxHeight * 23 + (myText.scrollHeight - 25));
-myText.style.height = `${myText.scrollHeight}px`;
-myText.addEventListener("input", function () {
-	this.style.height = "auto";
-	if (myText.scrollHeight <= maxHeight) {
-		this.style.cssText = `height: ${this.scrollHeight}px; overflow-y: hidden`;
-	} else {
-		this.style.cssText = `height: ${maxHeight}px; overflow-y: auto`;
-	}
-});
+if (myText) {
+	const maxHeight = (myText.dataset.maxHeight * 23 + (myText.scrollHeight - 25));
+	myText.style.height = `${myText.scrollHeight}px`;
+	myText.addEventListener("input", function () {
+		this.style.height = "auto";
+		if (myText.scrollHeight <= maxHeight) {
+			this.style.cssText = `height: ${this.scrollHeight}px; overflow-y: hidden`;
+		} else {
+			this.style.cssText = `height: ${maxHeight}px; overflow-y: auto`;
+		}
+	});
+}
