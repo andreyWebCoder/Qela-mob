@@ -45,18 +45,23 @@
 	border-radius: 30px;
 }
 .qela-voice {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
 	.body-voice {
 		background-color: $primary-300;
 		border-radius: 10px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 4px;
 		line-height: 1;
-		padding: 4px 10px 4px 8px;
+		position: relative;
+		padding: 4px 10px 4px 26px;
+		img {
+			position: absolute;
+			left: 4px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 20px;
+			height: 20px;
+		}
 	}
 }
 .qela-awards-list {

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('_head.html',{
+"title":"Referral layout"
+})
+
+<body>
+	@@include('components/_aside-layouts.html',{})
+	<main class="qela-fullscreen">
+		<div class="qela-top bg-white mb-0">
+			<nav class="navbar bg-white qela-navbar">
+				<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
+				<a href="#" class="btn ic-alert-filled end-0 me-3"></a>
+			</nav>
+		</div>
+		<!--content-->
+		<div class="flex-grow-1">
+			<div class="bg-white qela-page">
+				<div class="py-4 text-center">
+					<h2 class="h4">Invite friend </h2>
+					<span class="h6 text-info-600"><small>Share your referral link and get bonuses!</small></span>
+					<div class="mt-4 d-flex align-items-center justify-content-center gap-3">
+						<div class="d-flex align-items-center gap-1">
+							<span class="text-info-800 h3">2+</span>
+							<div class="qela-voice">
+								<div class="body-voice">
+									<img src="img/icons/orden-red.svg" width="18" height="18" alt="coin">
+									<small>Vote weight</small>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex align-items-center gap-1">
+							<span class="text-info-800 h3">2+</span>
+							<div class="qela-awards violet">
+								<span class="qela-badge small">
+									<span class="badge">Recruiting</span>
+								</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<img class="img-fluid" src="img/ref.svg" alt="">
+			</div>
+			<div class="bg-white text-center position-relative qela-rounded12 my-3 overflow-hidden">
+				<div class="bg-success-600 position-absolute top-0 w-100 py-2px">
+					<small class="text-white">Link copied</small>
+				</div>
+				<div class="p-4">
+					<h2 class="h5">Share the link</h2>
+					<span class="h6 text-info-700"><small>Tap to copy</small></span>
+					<div class="mt-4">
+						<button type="button" class="btn text-info-900 bg-secondary-200 w-100"><i class="ic-file-copy text-secondary"></i>qela.tech.ua/r/F384MK</button>
+					</div>
+				</div>
+			</div>
+			<div class="mt-3 mb-4">
+				<div class="bg-white qela-rounded12">
+					<div class="d-flex align-items-center p-3 border-bottom border-info">
+						<i class="ic-trophy-1 text-info-400 me-2"></i>
+						<div class="flex-grow-1 me-2">
+							<div><span class="fw-bold">14</span> Вага голосу, <span class="fw-bold">28</span> Рекрутинг</div>
+							<span class="text-info-600 display-7"> 7 користувачів зареєструвалися</span>
+						</div>
+						<a href="#" class="ic-chevron-right text-decoration-none text-info"></a>
+					</div>
+					<ul class="list-group qela-list qela-list-leaderboard p-2">
+						<li class="list-group-item ">
+							<div class="d-flex align-items-center gap-3 bg-white">
+								<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;"><img src="img/avatar.jpg" alt="#"></a>
+								<small class="flex-grow-1 text-break">User Name</small>
+								<div class="d-flex gap-2">
+									<div class="qela-awards violet"><span class="number me-1">4</span><span class="qela-badge small"><span class="badge">Recruiting</span></span></div>
+									<div class="qela-voice">
+										<div class="body-voice bg-primary-300">
+											<img src="/img/icons/orden-red.svg" alt="coin"><small>105</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="d-flex align-items-center gap-3 bg-white">
+								<a href="#" class="qela-avatar qela-ibg" style="--img-size: 34px;"><img src="img/avatar.jpg" alt="#"></a>
+								<small class="flex-grow-1 text-break">User Name</small>
+								<div class="d-flex gap-2">
+									<div class="qela-voice">
+										<div class="body-voice bg-primary-300">
+											<img src="/img/icons/orden-red.svg" alt="coin"><small>105</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+
+	</main>
+	<!-- =========================== -->
+	@@include('_js.html',{})
+</body>
+
+</html>

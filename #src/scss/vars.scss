@@ -251,7 +251,9 @@ $spacers: (
 	2: $spacer * 0.5,
 	3: $spacer,
 	4: $spacer * 1.5,
-	5: $spacer * 3
+	5: $spacer * 3,
+	2px: $spacer * 0.125,
+	12px: $spacer * 0.75
 );
 // Settings for the `<body>` element.
 $body-color: $black;
