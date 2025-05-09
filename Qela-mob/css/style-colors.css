@@ -15203,6 +15203,43 @@ input[type=number] {
   background-color: #fffdf2;
 }
 
+.qela-list-ref .list-group {
+  --bs-list-group-border-radius: 12px;
+}
+.qela-list-ref .list-group-item {
+  --bs-list-group-item-padding-y: 12px;
+  --bs-list-group-item-padding-x: 24px;
+  background-color: #f9f9ff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.qela-list-ref .list-group-item:first-child {
+  padding-top: 24px;
+}
+.qela-list-ref .list-group-item:last-child {
+  padding-bottom: 24px;
+}
+
+.qela-ic-ref {
+  display: inline-block;
+  background-color: #e5e3ff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: relative;
+}
+.qela-ic-ref i {
+  color: #6e63fa;
+}
+.qela-ic-ref .qela-counter {
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  color: #000000;
+  background-color: #ffe000;
+  border: 1px solid #f4f3ff;
+}
+
 .qela-empty {
   display: flex;
   flex-direction: column;

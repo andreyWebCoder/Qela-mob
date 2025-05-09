@@ -373,3 +373,40 @@
 		}
 	}
 }
+.qela-list-ref {
+	.list-group {
+		--bs-list-group-border-radius: 12px;
+	}
+	.list-group-item {
+		--bs-list-group-item-padding-y: 12px;
+		--bs-list-group-item-padding-x: 24px;
+		background-color: $secondary-100;
+		display: flex;
+		align-items: center;
+		gap: rem(16);
+		&:first-child {
+			padding-top: 24px;
+		}
+		&:last-child {
+			padding-bottom: 24px;
+		}
+	}
+}
+.qela-ic-ref {
+	display: inline-block;
+	background-color: $secondary-300;
+	padding: rem(8);
+	border-radius: 50%;
+	position: relative;
+	i {
+		color: $secondary-700;
+	}
+	.qela-counter {
+		position: absolute;
+		bottom: 0;
+		right: -8px;
+		color: $black;
+		background-color: $primary;
+		border: 1px solid $secondary-200;
+	}
+}
