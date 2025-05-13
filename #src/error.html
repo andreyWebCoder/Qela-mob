@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('_head.html',{
+"title":"Error page"
+})
+
+<body>
+	@@include('components/_aside-layouts.html',{})
+	<main class="qela-fullscreen bg-white">
+		<!--content-->
+		<div class="flex-grow-1 d-flex align-items-center">
+			<div class="flex-grow-1">
+				<div class="text-center py-5 px-2 mb-4">
+					<img src="img/error-en.svg" class="img-fluid" alt="Oooops!">
+					<!-- <img src="img/error-ua.svg" class="img-fluid" alt="От халепа!"> -->
+					<div class="mt-2 fs-5">Something went wrong</div>
+				</div>
+				<div class="py-4 px-5">
+					<a href="#" class="btn btn-primary">Back</a>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+	</main>
+	<!-- =========================== -->
+	@@include('_js.html',{})
+</body>
+
+</html>
