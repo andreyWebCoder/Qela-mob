@@ -66,9 +66,6 @@
 .ic-download:before {
 	content: "\e90c";
 }
-.ic-edit:before {
-	content: "\e90d";
-}
 .ic-files:before {
 	content: "\e90e";
 }
@@ -194,9 +191,6 @@
 }
 .ic-circle:before {
 	content: "\e948";
-}
-.ic-writing:before {
-	content: "\e949";
 }
 .ic-flame:before {
 	content: "\e94b";
@@ -345,7 +339,7 @@
 .ic-branch:before {
 	content: "\e98f";
 }
-.ic-edit-2:before {
+.ic-edit:before {
 	content: "\e990";
 }
 .ic-key:before {
@@ -569,4 +563,16 @@
 }
 .ic-book:before {
 	content: "\e93c";
+}
+.ic-gift:before {
+	content: "\e978";
+}
+.ic-unpin:before {
+	content: "\e99a";
+}
+.ic-pin:before {
+	content: "\e9a8";
+}
+.ic-cookie:before {
+	content: "\e90d";
 }

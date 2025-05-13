@@ -12759,10 +12759,6 @@ textarea.form-control-lg {
   content: "\e90c";
 }
 
-.ic-edit:before {
-  content: "\e90d";
-}
-
 .ic-files:before {
   content: "\e90e";
 }
@@ -12929,10 +12925,6 @@ textarea.form-control-lg {
 
 .ic-circle:before {
   content: "\e948";
-}
-
-.ic-writing:before {
-  content: "\e949";
 }
 
 .ic-flame:before {
@@ -13131,7 +13123,7 @@ textarea.form-control-lg {
   content: "\e98f";
 }
 
-.ic-edit-2:before {
+.ic-edit:before {
   content: "\e990";
 }
 
@@ -13429,6 +13421,22 @@ textarea.form-control-lg {
 
 .ic-book:before {
   content: "\e93c";
+}
+
+.ic-gift:before {
+  content: "\e978";
+}
+
+.ic-unpin:before {
+  content: "\e99a";
+}
+
+.ic-pin:before {
+  content: "\e9a8";
+}
+
+.ic-cookie:before {
+  content: "\e90d";
 }
 
 /* Свои глобальние стили (qela-) */
