@@ -86,6 +86,7 @@ input[type="number"] {
 .qela-input-group {
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 	background-color: $white;
+	border-radius: $input-border-radius;
 	&.custom-large {
 		box-shadow: none;
 
