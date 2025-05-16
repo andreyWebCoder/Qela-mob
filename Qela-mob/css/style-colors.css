@@ -12577,10 +12577,9 @@ main {
 .qela-top,
 .qela-bottom {
   position: sticky;
-  left: 0;
   z-index: 10;
-  margin-right: calc(var(--px-main) * -1);
-  margin-left: calc(var(--px-main) * -1);
+  margin-right: calc((var(--px-main) + 1px) * -1);
+  margin-left: calc((var(--px-main) - 1px) * -1);
 }
 
 .qela-top {
