@@ -81,7 +81,9 @@
 	// min-width: 75px;
 	position: relative;
 	display: inline-block;
+
 	.number {
+		color: var(--ql-talent-color);
 		line-height: 13px;
 		font-size: 0.6875rem;
 		font-weight: 700;
@@ -90,189 +92,54 @@
 		z-index: 1;
 		border-radius: 20px;
 		padding: 2px;
-		right: -8px;
+		right: -10px;
 		top: -6px;
 		min-width: 18px;
+		border: 1px solid var(--ql-talent-border-color);
+		background-color: $white;
 	}
 	.qela-badge {
+		color: var(--ql-talent-color);
+		background-color: var(--ql-talent-bg);
 		&.small {
 			border-radius: 6px;
-			.badge {
-				font-weight: normal;
-				padding: 0.25rem 0.5rem;
-				line-height: 14px;
-			}
-		}
-	}
-	&.red {
-		.number {
-			color: $telent-red-600;
-			background-color: $telent-red-200;
-		}
-
-		.qela-badge {
-			background-color: $telent-red-600;
-		}
-	}
-	&.violet {
-		.number {
-			color: $telent-violet-600;
-			background-color: $telent-violet-200;
-		}
-		.qela-badge {
-			background-color: $telent-violet-600;
-		}
-	}
-	&.green {
-		.number {
-			color: $telent-green-600;
-			background-color: $telent-green-200;
-		}
-		.qela-badge {
-			background-color: $telent-green-600;
-		}
-	}
-	&.orange {
-		.number {
-			color: $telent-orange-600;
-			background-color: $telent-orange-200;
-		}
-		.qela-badge {
-			background-color: $telent-orange-600;
-		}
-	}
-	&.lightgreen {
-		.number {
-			color: $telent-lightgreen-600;
-			background-color: $telent-lightgreen-200;
-		}
-
-		.qela-badge {
-			background-color: $telent-lightgreen-600;
-		}
-	}
-	&.lightblue {
-		.number {
-			color: $telent-lightblue-600;
-			background-color: $telent-lightblue-200;
-		}
-		.qela-badge {
-			background-color: $telent-lightblue-600;
-		}
-	}
-	&.blue {
-		.number {
-			color: $telent-blue-600;
-			background-color: $telent-blue-200;
-		}
-		.qela-badge {
-			background-color: $telent-blue-600;
-		}
-	}
-	&.pink {
-		.number {
-			color: $telent-pink-600;
-			background-color: $telent-pink-200;
-		}
-		.qela-badge {
-			background-color: $telent-pink-600;
+			font-weight: normal;
+			padding: rem(4) rem(8);
+			line-height: 14px;
+			font-size: rem(12);
 		}
 	}
 	&.orden {
 		.number {
-			background-color: $white;
-			color: $info-700;
+			color: $primary-900;
 		}
-
 		.qela-badge {
 			background-color: $primary-300;
-			padding-right: 54px;
+			padding-left: rem(24);
 			.badge {
-				color: $info-700;
+				color: $info-900;
 			}
 			img {
 				position: absolute;
-				bottom: 0px;
-				right: 16px;
+				left: 4px;
+				top: 50%;
 				z-index: 1;
-				width: 32px;
-				height: 32px;
+				transform: translateY(-50%);
+				width: 16px;
+				height: 16px;
 			}
 		}
 	}
-	&.light-type {
-		.qela-badge {
-			&.small {
-				border-radius: 10px;
-				.badge {
-					font-weight: normal;
-					padding: 0.375rem 0.5rem;
-				}
-			}
-		}
-		&.red {
-			.qela-badge {
-				.badge {
-					color: $telent-red-700;
-				}
-				background-color: $telent-red-100;
-			}
-		}
-		&.violet {
-			.qela-badge {
-				.badge {
-					color: $telent-violet-700;
-				}
-				background-color: $telent-violet-100;
-			}
-		}
-		&.green {
-			.qela-badge {
-				.badge {
-					color: $telent-green-700;
-				}
-				background-color: $telent-green-100;
-			}
-		}
-		&.orange {
-			.qela-badge {
-				.badge {
-					color: $telent-orange-700;
-				}
-				background-color: $telent-orange-100;
-			}
-		}
-		&.lightgreen {
-			.qela-badge {
-				background-color: $telent-lightgreen-100;
-				.badge {
-					color: $telent-lightgreen-700;
-				}
-			}
-		}
-		&.lightblue {
-			.qela-badge {
-				background-color: $telent-lightblue-100;
-				.badge {
-					color: $telent-lightblue-700;
-				}
-			}
-		}
-		&.blue {
-			.qela-badge {
-				background-color: $telent-blue-100;
-				.badge {
-					color: $telent-blue-700;
-				}
-			}
-		}
-		&.pink {
-			.qela-badge {
-				background-color: $telent-pink-100;
-				.badge {
-					color: $telent-pink-700;
-				}
-			}
-		}
+}
+
+.qela-badge-talent {
+	color: var(--ql-talent-color);
+	background-color: var(--ql-talent-bg);
+	border-color: var(--ql-talent-border-color);
+	border-radius: rem(8);
+	padding: rem(8);
+	i {
+		color: var(--ql-talent-border-color);
 	}
+	// ==========================================
 }
