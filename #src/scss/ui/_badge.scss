@@ -138,8 +138,11 @@
 	border-color: var(--ql-talent-border-color);
 	border-radius: rem(8);
 	padding: rem(8);
+	text-decoration: none;
 	i {
 		color: var(--ql-talent-border-color);
 	}
-	// ==========================================
+	&:hover {
+		color: var(--ql-talent-color);
+	}
 }

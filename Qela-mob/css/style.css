@@ -15286,9 +15286,13 @@ input[type=number] {
   border-color: var(--ql-talent-border-color);
   border-radius: 0.5rem;
   padding: 0.5rem;
+  text-decoration: none;
 }
 .qela-badge-talent i {
   color: var(--ql-talent-border-color);
+}
+.qela-badge-talent:hover {
+  color: var(--ql-talent-color);
 }
 
 .qela-alert {
