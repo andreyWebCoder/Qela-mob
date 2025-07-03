@@ -92,7 +92,7 @@
 		z-index: 1;
 		border-radius: 20px;
 		padding: 2px;
-		right: -10px;
+		left: calc(100% - 10px);
 		top: -6px;
 		min-width: 18px;
 		border: 1px solid var(--ql-talent-border-color);
