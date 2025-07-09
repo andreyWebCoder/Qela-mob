@@ -16371,7 +16371,7 @@ input[type=number] {
   line-height: 130%;
   display: inline-grid;
   gap: 0.125rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .qela-chat-mess.report {
   position: relative;
@@ -16398,7 +16398,7 @@ input[type=number] {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .qela-text-blue-600 {
