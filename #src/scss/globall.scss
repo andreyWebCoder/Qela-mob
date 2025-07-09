@@ -177,21 +177,11 @@ a {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: var(--clamp-line);
-	// max-height: 62px;
-
-	&.clamp-7 {
-		-webkit-line-clamp: 6;
-		height: 115px;
-	}
-
-	&.clamp-name1 {
-		// -webkit-line-clamp: 1;
-		--clamp-line: 1;
-		height: auto;
-		white-space: nowrap;
-	}
 }
-
+.qela-word {
+	word-break: break-all;
+	overflow-wrap: break-word;
+}
 .qela-disabled {
 	position: relative;
 	z-index: 2;

@@ -13632,14 +13632,10 @@ a:hover {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--clamp-line);
 }
-.qela-clamp.clamp-7 {
-  -webkit-line-clamp: 6;
-  height: 115px;
-}
-.qela-clamp.clamp-name1 {
-  --clamp-line: 1;
-  height: auto;
-  white-space: nowrap;
+
+.qela-word {
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .qela-disabled {
