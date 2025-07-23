@@ -325,10 +325,10 @@
 	justify-content: center;
 	width: 40px;
 	height: 40px;
-	color: $gray-700;
+	color: $black;
 	background-color: $white;
 	border-radius: 50%;
-	border: none;
+	border: 1px solid $info-300;
 	z-index: 2;
 }
 

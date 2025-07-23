@@ -12,8 +12,22 @@
 	}
 }
 
-.qela-img_1x1 {
-	padding-bottom: 100%;
+.qela-profile {
+	padding: rem(16) 0;
+	position: relative;
+	.qela-ibg {
+		width: 205px;
+		height: 205px;
+		margin: 0 auto;
+		border: 1px solid $info-200;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.btn-round {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+	}
 }
 
 .qela-img_16x9 {
