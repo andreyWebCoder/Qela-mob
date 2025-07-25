@@ -1,0 +1,22 @@
+.qela-activity-stat {
+	display: flex;
+	padding: rem(16);
+	gap: rem(32);
+	border-radius: 8px;
+	> div {
+		position: relative;
+		flex: 0 0 33.333%;
+		&:not(:last-child) {
+			&::after {
+				content: "";
+				width: 1px;
+				height: calc(100% - 10px);
+				background-color: $info-300;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

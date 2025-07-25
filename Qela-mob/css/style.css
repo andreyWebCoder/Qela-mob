@@ -16591,6 +16591,27 @@ input[type=number] {
   pointer-events: auto;
 }
 
+.qela-activity-stat {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  border-radius: 8px;
+}
+.qela-activity-stat > div {
+  position: relative;
+  flex: 0 0 33.333%;
+}
+.qela-activity-stat > div:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: #dfdfdf;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
 .qela-first {
   background-color: #4D4D4D;
   height: 100vh;
