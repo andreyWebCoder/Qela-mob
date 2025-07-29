@@ -1,18 +1,10 @@
 .qela-alert {
-	position: relative;
-	font-size: 14px;
-	letter-spacing: 0.2px;
-
 	&.alert {
-		span {
+		position: relative;
+		i {
 			position: absolute;
-			left: 16px;
+			left: 1rem;
 			top: 1em;
-
-			&::before {
-				font-size: 16px;
-			}
-
 			&.ic-large {
 				position: static;
 
@@ -21,35 +13,36 @@
 				}
 			}
 		}
-
-		a {
-			text-decoration: none;
-			font-size: 14px;
-			letter-spacing: 0.2px;
-		}
 	}
 
 	.btn-close {
 		position: absolute;
 		top: 16px;
 		right: 16px;
-		padding: 1px;
 		opacity: 1;
-	}
-
-	&.alert-secondary {
-		background-color: $secondary-200;
+		border-radius: 0;
+		padding: 0;
+		&:focus {
+			box-shadow: none;
+		}
 	}
 
 	&.alert-danger {
-		background-color: $danger-200;
+		--bs-alert-bg: #{$danger-100};
+		--bs-alert-border-color: #{$danger};
 	}
 
 	&.alert-warning {
-		background-color: $warning-200;
+		--bs-alert-bg: #{$warning-100};
+		--bs-alert-border-color: #{$warning};
 	}
 
 	&.alert-info {
-		background-color: $gray-100;
+		--bs-alert-bg: #{$info-100};
+		--bs-alert-border-color: #{$info};
+	}
+	&.alert-success {
+		--bs-alert-bg: #{$success-100};
+		--bs-alert-border-color: #{$success};
 	}
 }

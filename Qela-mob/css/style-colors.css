@@ -14413,48 +14413,46 @@ input[type=number] {
   color: var(--ql-talent-color);
 }
 
-.qela-alert {
+.qela-alert.alert {
   position: relative;
-  font-size: 14px;
-  letter-spacing: 0.2px;
 }
-.qela-alert.alert span {
+.qela-alert.alert i {
   position: absolute;
-  left: 16px;
+  left: 1rem;
   top: 1em;
 }
-.qela-alert.alert span::before {
-  font-size: 16px;
-}
-.qela-alert.alert span.ic-large {
+.qela-alert.alert i.ic-large {
   position: static;
 }
-.qela-alert.alert span.ic-large::before {
+.qela-alert.alert i.ic-large::before {
   font-size: 38px;
-}
-.qela-alert.alert a {
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 0.2px;
 }
 .qela-alert .btn-close {
   position: absolute;
   top: 16px;
   right: 16px;
-  padding: 1px;
   opacity: 1;
+  border-radius: 0;
+  padding: 0;
 }
-.qela-alert.alert-secondary {
-  background-color: #ecebff;
+.qela-alert .btn-close:focus {
+  box-shadow: none;
 }
 .qela-alert.alert-danger {
-  background-color: #ffe0de;
+  --bs-alert-bg: #fff2f1;
+  --bs-alert-border-color: #ff4136;
 }
 .qela-alert.alert-warning {
-  background-color: #ffd8b5;
+  --bs-alert-bg: #ffeee0;
+  --bs-alert-border-color: #ff7c02;
 }
 .qela-alert.alert-info {
-  background-color: #f5f5f5;
+  --bs-alert-bg: #f5f5f5;
+  --bs-alert-border-color: #ababab;
+}
+.qela-alert.alert-success {
+  --bs-alert-bg: #e7ffe8;
+  --bs-alert-border-color: #25dd29;
 }
 
 .qela-progress {
@@ -15271,7 +15269,7 @@ input[type=number] {
   padding: 0 0.5rem 0.5rem 0.5rem;
   min-height: 250px;
   border-radius: 0.5rem;
-  background-color: #dec402;
+  background-color: #ffe000;
   position: relative;
 }
 .qela-place.users--2 .qela-place-inner {
