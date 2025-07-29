@@ -131,4 +131,10 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	&.large {
+		height: 24px;
+		min-width: 24px;
+		font-size: rem(16);
+		font-weight: 400;
+	}
 }
