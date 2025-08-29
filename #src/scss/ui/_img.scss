@@ -13,12 +13,13 @@
 }
 
 .qela-profile {
-	padding: rem(16) 0;
 	position: relative;
+	padding: rem(16) 0;
 	.qela-ibg {
 		width: 205px;
 		height: 205px;
 		margin: 0 auto;
+		background: $info-400;
 		border: 1px solid $info-200;
 		border-radius: 30px;
 		overflow: hidden;
