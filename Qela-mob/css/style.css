@@ -4795,7 +4795,7 @@ textarea.form-control-lg {
 
 .alert {
   --bs-alert-bg: transparent;
-  --bs-alert-padding-x: 3rem;
+  --bs-alert-padding-x: 1rem;
   --bs-alert-padding-y: 1rem;
   --bs-alert-margin-bottom: 0;
   --bs-alert-color: inherit;
@@ -4820,14 +4820,14 @@ textarea.form-control-lg {
 }
 
 .alert-dismissible {
-  padding-right: 9rem;
+  padding-right: 3rem;
 }
 .alert-dismissible .btn-close {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
-  padding: 1.25rem 3rem;
+  padding: 1.25rem 1rem;
 }
 
 .alert-primary {
@@ -15295,11 +15295,6 @@ input[type=number] {
 .qela-alert.alert {
   position: relative;
 }
-.qela-alert.alert i {
-  position: absolute;
-  left: 1rem;
-  top: 1em;
-}
 .qela-alert.alert i.ic-large {
   position: static;
 }
@@ -15307,31 +15302,28 @@ input[type=number] {
   font-size: 38px;
 }
 .qela-alert .btn-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
   opacity: 1;
   border-radius: 0;
-  padding: 0;
+  padding: 0.25rem;
 }
 .qela-alert .btn-close:focus {
   box-shadow: none;
 }
 .qela-alert.alert-danger {
   --bs-alert-bg: #fff2f1;
-  --bs-alert-border-color: #ff4136;
+  --bs-alert-border-color: #ff8881;
 }
 .qela-alert.alert-warning {
   --bs-alert-bg: #ffeee0;
-  --bs-alert-border-color: #ff7c02;
+  --bs-alert-border-color: #ff9839;
 }
 .qela-alert.alert-info {
-  --bs-alert-bg: #f5f5f5;
-  --bs-alert-border-color: #ababab;
+  --bs-alert-bg: #fff;
+  --bs-alert-border-color: #cacaca;
 }
 .qela-alert.alert-success {
   --bs-alert-bg: #e7ffe8;
-  --bs-alert-border-color: #25dd29;
+  --bs-alert-border-color: #4ff053;
 }
 
 .qela-progress {
