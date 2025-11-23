@@ -161,9 +161,9 @@ function fonts() {
 		.pipe(browsersync.stream());
 }
 function fontstyle() {
-	let file_content = fs.readFileSync(src_folder + '/scss/fonts.scss');
+	let file_content = fs.readFileSync(src_folder + '/scss/_fonts.scss');
 	if (file_content == '') {
-		fs.writeFile(src_folder + '/scss/fonts.scss', '', cb);
+		fs.writeFile(src_folder + '/scss/_fonts.scss', '', cb);
 		fs.readdir(path.build.fonts, function (err, items) {
 			if (items) {
 				let c_fontname;
@@ -171,7 +171,7 @@ function fontstyle() {
 					let fontname = items[i].split('.');
 					fontname = fontname[0];
 					if (c_fontname != fontname) {
-						fs.appendFile(src_folder + '/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
+						fs.appendFile(src_folder + '/scss/_fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
 					}
 					c_fontname = fontname;
 				}

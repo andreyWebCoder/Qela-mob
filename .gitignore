@@ -1,4 +1,5 @@
 node_modules/
 Qela-mob/components
 jspm_packages/
-
+howtouse.txt
+.gitignore
