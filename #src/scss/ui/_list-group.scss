@@ -177,7 +177,12 @@
 .qela-description {
 	.list-group-item {
 		box-shadow: none;
-
+		> button {
+			border: none;
+			background-color: transparent;
+			padding: 0;
+			width: 100%;
+		}
 		&.active,
 		&.success,
 		&.error {
