@@ -21,18 +21,20 @@
 		flex: 1 1 20%;
 	}
 	.nav-link {
-		font-weight: 450;
-		line-height: 120%;
+		font-size: 11px;
+		font-weight: 600;
+		line-height: 129%;
 		padding: rem(6) 0;
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
-		[class*="ic-"] {
+		i {
 			position: relative;
-			line-height: 1;
+			line-height: 0;
+			font-weight: 450;
+			margin-bottom: rem(2);
 			&::before {
 				font-size: rem(28);
-				display: inline-block;
 			}
 		}
 
