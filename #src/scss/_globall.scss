@@ -37,6 +37,15 @@ main {
 	margin-top: rem(16);
 	bottom: 0;
 }
+
+.qela-actions {
+	display: flex;
+	flex-direction: column;
+	gap: rem(16);
+	bottom: 81px;
+	margin-bottom: -1rem;
+}
+
 .qela-page-info {
 	display: flex;
 	flex-direction: column;
