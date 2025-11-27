@@ -13451,6 +13451,26 @@ textarea.form-control-lg {
   content: "\e9bd";
 }
 
+.ic-exit:before {
+  content: "\e9b1";
+}
+
+.ic-users-arrow:before {
+  content: "\e9bb";
+}
+
+.ic-at:before {
+  content: "\e9bc";
+}
+
+.ic-progress:before {
+  content: "\e9be";
+}
+
+.ic-emptylist:before {
+  content: "\e9bf";
+}
+
 /* Свои глобальние стили (qela-) */
 main {
   --px-main: 1rem;
@@ -16585,14 +16605,14 @@ input[type=number] {
 }
 
 .qela-activity-stat {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
   gap: 2rem;
   border-radius: 8px;
 }
 .qela-activity-stat > div {
   position: relative;
-  flex: 0 0 33.333%;
 }
 .qela-activity-stat > div:not(:last-child)::after {
   content: "";
