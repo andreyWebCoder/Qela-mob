@@ -28,6 +28,8 @@ let ttf2woff2 = require('gulp-ttf2woff2');
 
 let project_name = require("path").basename(__dirname);
 let src_folder = "#src";
+let nunjucksRender = require('gulp-nunjucks-render');
+let progeny = require('gulp-progeny');
 
 let path = {
 	build: {
@@ -37,25 +39,27 @@ let path = {
 		images: project_name + "/img/",
 		fonts: project_name + "/fonts/",
 		json: project_name + "/json/",
-		videos: project_name + "/videos/"
+		txt: project_name + "/",
 	},
 	src: {
 		favicon: src_folder + "/img/favicon.{jpg,png,svg,gif,ico,webp}",
-		html: [src_folder + "/*.html"],
+		// html: [src_folder + "/**/*.html", "!" + src_folder + "/_*.html"],
+		html: [src_folder + "/**/*.njk", "!" + src_folder + "/**/_*.njk"],
 		js: [src_folder + "/js/app.js", src_folder + "/js/vendors.js"],
-		css: [src_folder + "/scss/style.scss", src_folder + "/scss/style-colors.scss", src_folder + "/scss/vendors.scss"],
+		css: [src_folder + "/scss/style.scss", src_folder + "/scss/vendors.scss"],
 		images: [src_folder + "/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}", "!**/favicon.*"],
 		fonts: src_folder + "/fonts/*.ttf",
 		json: src_folder + "/json/**/*.*",
-		videos: src_folder + "/videos/*.*"
+		txt: src_folder + "/**/*.txt"
 	},
 	watch: {
-		html: src_folder + "/**/*.html",
+		// html: src_folder + "/**/*.html",
+		html: src_folder + "/**/*.njk",
 		js: src_folder + "/**/*.js",
 		css: src_folder + "/scss/**/*.scss",
 		images: src_folder + "/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
 		json: src_folder + "/json/**/*.*",
-		videos: src_folder + "/videos/*.*"
+		txt: src_folder + "/**/*.txt"
 	},
 	clean: "./" + project_name + "/"
 };
@@ -81,9 +85,13 @@ function browserSync(done) {
 }
 function html() {
 	return src(path.src.html, {})
-		.pipe(fileinclude())
+		.pipe(plumber())
+		.pipe(progeny())
+		.pipe(nunjucksRender({
+			path: [src_folder]
+		}))
 		.on('error', function (err) {
-			console.error('Error!', err.message);
+			console.error('Nunjucks Error!', err.message);
 		})
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream());
@@ -105,6 +113,11 @@ function css() {
 function json() {
 	return src(path.src.json, {})
 		.pipe(dest(path.build.json))
+		.pipe(browsersync.stream());
+}
+function txt() {
+	return src(path.src.txt, {})
+		.pipe(dest(path.build.txt))
 		.pipe(browsersync.stream());
 }
 function js() {
@@ -136,11 +149,6 @@ function favicon() {
 			})
 		)
 		.pipe(dest(path.build.html))
-}
-function videos() {
-	return src(path.src.videos)
-		.pipe(plumber())
-		.pipe(dest(path.build.videos))
 }
 function fonts_otf() {
 	return src('./' + src_folder + '/fonts/*.otf')
@@ -193,6 +201,7 @@ function watchFiles() {
 	gulp.watch([path.watch.css], css);
 	gulp.watch([path.watch.js], js);
 	gulp.watch([path.watch.json], json);
+	gulp.watch([path.watch.txt], txt);
 	gulp.watch([path.watch.images], images);
 }
 function cssBuild() {
@@ -276,45 +285,24 @@ function imagesBuild() {
 function htmlBuild() {
 	return src(path.src.html, {})
 		.pipe(plumber())
-		.pipe(fileinclude())
+		.pipe(nunjucksRender({
+			path: [src_folder]
+		}))
 		.pipe(webphtml())
 		.pipe(version({
 			'value': '%DT%',
-			'replaces': [
-				'#{VERSION_REPlACE}#',
-				[/#{VERSION_REPlACE}#/g, '%TS%']
-			],
-			'append': {
-				'key': '_v',
-				'cover': 0,
-				'to': [
-					'css',
-					['image', '%TS%'],
-					{
-						'type': 'js',
-						'attr': ['src', 'custom-src'], // String or Array, undefined this will use default. css: "href", js: ...
-						'key': '_v',
-						'value': '%DT%',
-						'cover': 1,
-						'files': ['app.min.js', 'vendors.min.js'] // Array [{String|Regex}] of explicit files to append to
-					}
-				]
-			},
-			'output': {
-				'file': 'version.json'
-			}
+			'append': { 'key': '_v', 'to': ['css', 'js'] }
 		}))
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream());
 }
 let fontsBuild = gulp.series(fonts_otf, fonts, fontstyle);
-let buildDev = gulp.series(clean, gulp.parallel(fontsBuild, copyFolders, json, html, css, js, favicon, images));
+let buildDev = gulp.series(clean, gulp.parallel(fontsBuild, copyFolders, json, txt, html, css, js, favicon, images));
 let watch = gulp.series(buildDev, gulp.parallel(watchFiles, browserSync));
-let build = gulp.parallel(htmlBuild, cssBuild, jsBuild, imagesBuild, videos);
+let build = gulp.parallel(htmlBuild, cssBuild, jsBuild, imagesBuild);
 
 exports.copy = copyFolders;
 exports.fonts = fontsBuild;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-exports.videos = videos;
