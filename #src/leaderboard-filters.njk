@@ -1,190 +1,185 @@
 <!DOCTYPE html>
 <html lang="ua">
-@@include('_head.html',{
-"title":"Leaderboard-filters"
-})
 
-<body>
-	@@include('components/_aside-layouts.html',{})
-	<main class="qela-fullscreen   bg-white">
-		<div class="qela-top bg-white">
-			<nav class="navbar bg-transparent qela-navbar">
-				<a href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></a>
-				<span class="h6 text-center">
+	{% set title = "Leaderboard-filters" %},
+	{% include "_head.njk" %}
+
+	<body>
+		{% include "components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen   bg-white">
+			<div class="qela-top bg-white">
+				<nav class="navbar bg-transparent qela-navbar">
+					<a href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></a>
+					<span class="h6 text-center">
 					Leaderboard
 				</span>
-			</nav>
-		</div>
-		<!--content-->
-		<div class="flex-grow-1 ">
-			<form class="qela-filters" action="">
-				<fieldset>
-					<div class="qela-legend ic-calendar">by Period</div>
-					<div class="row row-cols-2 gx-3 gy-4">
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="period" class="form-check-input" id="Radio1">
-								<label class="form-check-label" for="Radio1">All Time</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="period" class="form-check-input" id="Radio2">
-								<label class="form-check-label" for="Radio2">Last Month</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="period" class="form-check-input" id="Radio3">
-								<label class="form-check-label" for="Radio3">Last Month</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="period" class="form-check-input" id="Radio4">
-								<label class="form-check-label" for="Radio4">Last Year</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="period" class="form-check-input" id="Radio5" checked>
-								<label class="form-check-label" for="Radio5">Select Date</label>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="qela-datapikers">
-								<div>
-									<label class="form-label" for="dp-input-datapiker">From date</label>
-									<v-date-picker uid="datapiker" v-model="date" auto-apply placeholder="Select Date" position="left" />
-								</div>
-								<div class="spacer"></div>
-								<div>
-									<label class="form-label" for="dp-input-datapiker-2">To date</label>
-									<v-date-picker uid="datapiker-2" v-model="date" auto-apply placeholder="Select Date" position="right" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</fieldset>
-				<fieldset>
-					<div class="qela-legend ic-diamond-24">by Achievements</div>
-					<div class="row row-cols-2 gx-3 gy-4">
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="achievements" class="form-check-input" id="Radio11">
-								<label class="form-check-label" for="Radio11">Vote Weight</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="achievements" class="form-check-input" id="Radio12">
-								<label class="form-check-label" for="Radio12">Completed Quests
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="achievements" class="form-check-input" id="Radio13" checked>
-								<label class="form-check-label" for="Radio13">Talent</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="achievements" class="form-check-input" id="Radio14">
-								<label class="form-check-label" for="Radio14">Volunteer Hours</label>
-							</div>
-						</div>
-					</div>
-					<hr class="my-4">
-					<div class="row row-cols-2 gx-3 gy-4">
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio1">
-								<label class="form-check-label" for="TalentRadio1">Fundraising</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio2">
-								<label class="form-check-label" for="TalentRadio2">Determination</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio3">
-								<label class="form-check-label" for="TalentRadio3">Recruiting</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio4">
-								<label class="form-check-label" for="TalentRadio4">Originality</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio5">
-								<label class="form-check-label" for="TalentRadio5">Endurance</label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio6">
-								<label class="form-check-label" for="TalentRadio6">Management </label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio7">
-								<label class="form-check-label" for="TalentRadio7">Eloquence </label>
-							</div>
-						</div>
-						<div class="col">
-							<div class="form-check">
-								<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio8">
-								<label class="form-check-label" for="TalentRadio8">Savvy</label>
-							</div>
-						</div>
-					</div>
-				</fieldset>
-				<button type="button" class="btn btn-info w-100">Clear Filters</button>
-			</form>
-
-
-
-		</div>
-		<!--content-->
-		<div class="qela-bottom bg-white">
-			<div class="d-flex gap-3 px-3 pb-4 pt-3">
-				<button type="button" class="btn btn-info flex-grow-1">Cancel</button>
-				<button type="button" class="btn btn-primary flex-grow-1">Apply</button>
+				</nav>
 			</div>
-		</div>
-	</main>
-	<script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js" type="text/javascript"></script>
-	<script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
-	<script type="text/javascript">
-		let app = Vue.createApp({
-			components: {
-				"v-date-picker": VueDatePicker,
-			},
-			data() {
-				return {
-					date: new Date(),
+			<!--content-->
+			<div class="flex-grow-1 ">
+				<form class="qela-filters" action="">
+					<fieldset>
+						<div class="qela-legend ic-calendar">by Period</div>
+						<div class="row row-cols-2 gx-3 gy-4">
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="period" class="form-check-input" id="Radio1">
+									<label class="form-check-label" for="Radio1">All Time</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="period" class="form-check-input" id="Radio2">
+									<label class="form-check-label" for="Radio2">Last Month</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="period" class="form-check-input" id="Radio3">
+									<label class="form-check-label" for="Radio3">Last Month</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="period" class="form-check-input" id="Radio4">
+									<label class="form-check-label" for="Radio4">Last Year</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="period" class="form-check-input" id="Radio5" checked>
+									<label class="form-check-label" for="Radio5">Select Date</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="qela-datapikers">
+									<div>
+										<label class="form-label" for="dp-input-datapiker">From date</label>
+										<v-date-picker uid="datapiker" v-model="date" auto-apply placeholder="Select Date" position="left"/>
+									</div>
+									<div class="spacer"></div>
+									<div>
+										<label class="form-label" for="dp-input-datapiker-2">To date</label>
+										<v-date-picker uid="datapiker-2" v-model="date" auto-apply placeholder="Select Date" position="right"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="qela-legend ic-diamond-24">by Achievements</div>
+						<div class="row row-cols-2 gx-3 gy-4">
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="achievements" class="form-check-input" id="Radio11">
+									<label class="form-check-label" for="Radio11">Vote Weight</label>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-check">
+									<input type="radio" name="achievements" class="form-check-input" id="Radio12">
+									<label class="form-check-label" for="Radio12">Completed Quests
+							</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="achievements" class="form-check-input" id="Radio13" checked>
+										<label class="form-check-label" for="Radio13">Talent</label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="achievements" class="form-check-input" id="Radio14">
+										<label class="form-check-label" for="Radio14">Volunteer Hours</label>
+									</div>
+								</div>
+							</div>
+							<hr class="my-4">
+							<div class="row row-cols-2 gx-3 gy-4">
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio1">
+										<label class="form-check-label" for="TalentRadio1">Fundraising</label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio2">
+										<label class="form-check-label" for="TalentRadio2">Determination</label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio3">
+										<label class="form-check-label" for="TalentRadio3">Recruiting</label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio4">
+										<label class="form-check-label" for="TalentRadio4">Originality</label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio5">
+										<label class="form-check-label" for="TalentRadio5">Endurance</label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio6">
+										<label class="form-check-label" for="TalentRadio6">Management </label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio7">
+										<label class="form-check-label" for="TalentRadio7">Eloquence </label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form-check">
+										<input type="radio" name="talent-achievements" class="form-check-input" id="TalentRadio8">
+										<label class="form-check-label" for="TalentRadio8">Savvy</label>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<button type="button" class="btn btn-info w-100">Clear Filters</button>
+					</form>
 
-				};
-			},
-			methods: {
-				click() {
-					alert(1);
-					this.message += " clicked!";
-				},
-			},
-		});
-		// console.dir(app);
-		app.mount("#app");
-	</script>
-	<!-- =========================== -->
-	@@include('_js.html',{})
-</body>
+				</div>
+				<!--content-->
+				<div class="qela-bottom bg-white">
+					<div class="d-flex gap-3 px-3 pb-4 pt-3">
+						<button type="button" class="btn btn-info flex-grow-1">Cancel</button>
+						<button type="button" class="btn btn-primary flex-grow-1">Apply</button>
+					</div>
+				</div>
+			</main>
+			<script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js" type="text/javascript"></script>
+			<script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
+			<script type="text/javascript">
+				let app = Vue.createApp({
+					components: {
+						"v-date-picker": VueDatePicker
+					},
+					data() {
+						return {date: new Date()};
+					},
+					methods: {
+						click() {
+							alert(1);
+							this.message += " clicked!";
+						}
+					}
+				});
+				// console.dir(app);
+				app.mount("#app");
+			</script>
+			<!-- =========================== -->
+			{% include "_js.njk" %}
+		</body>
 
-</html>
+	</html>

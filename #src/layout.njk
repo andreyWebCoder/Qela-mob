@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="ua">
-@@include('_head.html',{
-"title":"Layout"
-})
 
-<body>
-	@@include('components/_aside-layouts.html',{})
-	<main class="qela-fullscreen">
-		<div class="qela-top bg-white">
-			<nav class="navbar bg-transparent qela-navbar">
-				<button href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></button>
-				<span class="h6 text-center">
+	{% set title = "Layout" %},
+	{% include "_head.njk" %}
+
+	<body>
+		{% include "components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<div class="qela-top bg-white">
+				<nav class="navbar bg-transparent qela-navbar">
+					<button href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></button>
+					<span class="h6 text-center">
 					Voting
 				</span>
-				<button type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</button>
-			</nav>
-			<ul class="nav nav-pills nav-fill shadow-none qela-tab ">
-				<li class="nav-item">
-					<a class="nav-link bg-transparent active" aria-current="page" href="#">General</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link bg-transparent" href="#">Local</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link bg-transparent" href="#">History</a>
-				</li>
-			</ul>
-		</div>
-		<!--content-->
-		<div class="flex-grow-1">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<h1>lorem</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<h1>lorem</h1>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-		</div>
-		<!--content-->
-		<div class="qela-bottom bg-white">
-			<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="ic-home icon"></i>
-						<i class="ic-home-filled icon-filled"></i>
+					<button type="button" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</button>
+				</nav>
+				<ul class="nav nav-pills nav-fill shadow-none qela-tab ">
+					<li class="nav-item">
+						<a class="nav-link bg-transparent active" aria-current="page" href="#">General</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link bg-transparent" href="#">Local</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link bg-transparent" href="#">History</a>
+					</li>
+				</ul>
+			</div>
+			<!--content-->
+			<div class="flex-grow-1">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<h1>lorem</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<h1>lorem</h1>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+			</div>
+			<!--content-->
+			<div class="qela-bottom bg-white">
+				<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="ic-home icon"></i>
+							<i class="ic-home-filled icon-filled"></i>
 						Home
 					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="ic-user icon"></i>
-						<i class="ic-user-filled icon-filled"></i>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="ic-user icon"></i>
+							<i class="ic-user-filled icon-filled"></i>
 						Profile
 					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="ic-diamond icon"></i>
-						<i class="ic-diamond-filled icon-filled"></i>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="ic-diamond icon"></i>
+							<i class="ic-diamond-filled icon-filled"></i>
 						Quests
 					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="#">
-						<i class="ic-voting icon"></i>
-						<i class="ic-voting-filled icon-filled"></i>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+							<i class="ic-voting icon"></i>
+							<i class="ic-voting-filled icon-filled"></i>
 						Voting
 					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="ic-qela icon"></i>
-						<i class="ic-qela-filled-28 icon-filled"></i>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="ic-qela icon"></i>
+							<i class="ic-qela-filled-28 icon-filled"></i>
 						Organization
 					</a>
-				</li>
-			</ul>
-		</div>
-	</main>
-	<!-- =========================== -->
-	@@include('_js.html',{})
-</body>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
 
 </html>

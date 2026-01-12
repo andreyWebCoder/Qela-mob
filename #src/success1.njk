@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="ua">
-@@include('_head.html',{
-"title":"Success"
-})
 
-<body>
-	@@include('components/_aside-layouts.html',{})
-	<main class="qela-fullscreen">
-		<!--content-->
-		<div class="flex-grow-1 qela-success text-center">
-			<a href="#" class="navbar-brand  d-inline-flex mb-4">
-				<img src="img/logo.svg" alt="Logo" width="125" height="50">
-			</a>
-			<h1 class="mb-2">Your email has been confirmed!</h1>
-			<p class="text-info"><small>Обмеження впливу Ваги Голосу на голосування - знято. Зверніть увагу, що після проходження верифікації Ваше фото видаляється та не зберігається в системі. Докладно про переваги читайте в розділі <a href="#" class="text-decoration-none">Веріфікація</a> в <a href="#" class="text-decoration-none">Профілі</a> користувача</small></p>
-		</div>
-		<!--content-->
-	</main>
-	<!-- =========================== -->
-	@@include('_js.html',{})
-</body>
+	{% set title = "Success" %},
+	{% include "_head.njk" %}
+
+	<body>
+		{% include "components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<!--content-->
+			<div class="flex-grow-1 qela-success text-center">
+				<a href="#" class="navbar-brand  d-inline-flex mb-4">
+					<img src="img/logo.svg" alt="Logo" width="125" height="50">
+				</a>
+				<h1 class="mb-2">Your email has been confirmed!</h1>
+				<p class="text-info">
+					<small>Обмеження впливу Ваги Голосу на голосування - знято. Зверніть увагу, що після проходження верифікації Ваше фото видаляється та не зберігається в системі. Докладно про переваги читайте в розділі <a href="#" class="text-decoration-none">Веріфікація</a> в <a href="#" class="text-decoration-none">Профілі</a> користувача</small>
+				</p>
+			</div>
+			<!--content-->
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
 
 </html>

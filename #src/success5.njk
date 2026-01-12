@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="ua">
-@@include('_head.html',{
-"title":"Success"
-})
 
-<body>
-	@@include('components/_aside-layouts.html',{})
-	<main class="qela-fullscreen">
-		<!--content-->
-		<div class="flex-grow-1 qela-success text-center">
-			<a href="#" class="navbar-brand  d-inline-flex mb-4">
-				<img src="img/icons/success-ic-yellow.svg" alt="success" width="60" height="60">
-			</a>
-			<h1 class="mb-2">Thank you for participating!</h1>
-			<p class="text-info mb-4"><small>You have successfully completed the quest “Share invite to the March!”</small></p>
-			<div class="d-flex flex-column gap-2 mb-4 text-start">
-				<p class="h6 fw-bold"><span class="opacity-75">Talents</span></p>
-			</div>
-			<p class="h6 fw-bold text-start mb-3"><span class="opacity-75">Awards</span></p>
-			<div class="d-flex gap-2 py-2 overflow-auto">
-				<div class="qela-awards gap-1">
-					<span class="fs-5 text-center text-success lh-1">+0.15</span>
-					<span class="qela-badge small">
-						<span class="badge bg-success fw-normal px-2 py-1 text-bg-secondary rounded-2">Endurance</span>
-					</span>
+	{% set title = "Success" %},
+	{% include "_head.njk" %}
+
+	<body>
+		{% include "components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<!--content-->
+			<div class="flex-grow-1 qela-success text-center">
+				<a href="#" class="navbar-brand  d-inline-flex mb-4">
+					<img src="img/icons/success-ic-yellow.svg" alt="success" width="60" height="60">
+				</a>
+				<h1 class="mb-2">Thank you for participating!</h1>
+				<p class="text-info mb-4">
+					<small>You have successfully completed the quest “Share invite to the March!”</small>
+				</p>
+				<div class="d-flex flex-column gap-2 mb-4 text-start">
+					<p class="h6 fw-bold">
+						<span class="opacity-75">Talents</span></p>
 				</div>
-				<div class="d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="32" height="32" alt="orden-red">
-					<span class="fs-5">+3</span>
+				<p class="h6 fw-bold text-start mb-3">
+					<span class="opacity-75">Awards</span></p>
+				<div class="d-flex gap-2 py-2 overflow-auto">
+					<div class="qela-awards gap-1">
+						<span class="fs-5 text-center text-success lh-1">+0.15</span>
+						<span class="qela-badge small">
+							<span class="badge bg-success fw-normal px-2 py-1 text-bg-secondary rounded-2">Endurance</span>
+						</span>
+					</div>
+					<div class="d-flex align-items-center">
+						<img src="img/icons/orden-red.svg" width="32" height="32" alt="orden-red">
+						<span class="fs-5">+3</span>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--content-->
-		<div class="qela-bottom bg-white px-3 py-4 d-flex flex-column gap-2">
-			<button type="button" class="btn btn-primary">Vote</button>
-			<button type="button" class="btn btn-outline-secondary">Back to the vote list</button>
-		</div>
-	</main>
-	<!-- =========================== -->
-	@@include('_js.html',{})
-</body>
+			<!--content-->
+			<div class="qela-bottom bg-white px-3 py-4 d-flex flex-column gap-2">
+				<button type="button" class="btn btn-primary">Vote</button>
+				<button type="button" class="btn btn-outline-secondary">Back to the vote list</button>
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
 
 </html>

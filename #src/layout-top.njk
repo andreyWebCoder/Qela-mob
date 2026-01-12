@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="ua">
-@@include('_head.html',{
-"title":"Layouts"
-})
 
-<body>
-	@@include('components/_aside-layouts.html',{})
-	<main class="qela-fullscreen">
-		<div class="qela-top bg-white">
-			<nav class="navbar bg-transparent qela-navbar">
-				<a href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></a>
-				<span class="h6 text-center">
+	{% set title = "Layouts" %},
+	{% include "_head.njk" %}
+
+	<body>
+		{% include "components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<div class="qela-top bg-white">
+				<nav class="navbar bg-transparent qela-navbar">
+					<a href="#" class="btn btn-link btn-sm text-black ic-chevron-left start-0 ms-3"></a>
+					<span class="h6 text-center">
 					Voting
 				</span>
-			</nav>
-		</div>
-		<!--content-->
-		<div class="flex-grow-1">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<h1>lorem</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<h1>lorem</h1>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
-		</div>
-		<!--content-->
-		<div class="bg-white px-3 py-4 d-flex flex-column gap-2">
-			<button type="button" class="btn btn-primary">Vote</button>
-			<button type="button" class="btn btn-outline-secondary">Back to the vote list</button>
-		</div>
-	</main>
-	<!-- =========================== -->
-	@@include('_js.html',{})
-</body>
+				</nav>
+			</div>
+			<!--content-->
+			<div class="flex-grow-1">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<h1>lorem</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<h1>lorem</h1>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et deserunt dolor dignissimos rerum ut quos sapiente voluptatem ad. Perferendis ab vitae porro deleniti? Obcaecati excepturi unde numquam corrupti tempora.</p>
+			</div>
+			<!--content-->
+			<div class="bg-white px-3 py-4 d-flex flex-column gap-2">
+				<button type="button" class="btn btn-primary">Vote</button>
+				<button type="button" class="btn btn-outline-secondary">Back to the vote list</button>
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
 
 </html>

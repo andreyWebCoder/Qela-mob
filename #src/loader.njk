@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="ua">
-@@include('_head.html',{
-"title":"Loader"
-})
 
-<body>
-	@@include('components/_aside-layouts.html',{})
-	<main class="qela-fullscreen ">
-		<div class="qela-loader">
-			<div class="mb-4">
-				<svg class="spinner" width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-					<circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30">
-					</circle>
-				</svg>
+	{% set title = "Loader" %},
+	{% include "_head.njk" %}
+
+	<body>
+		{% include "components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen ">
+			<div class="qela-loader">
+				<div class="mb-4">
+					<svg class="spinner" width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+						<circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+					</svg>
+				</div>
+				<span>Loading...</span>
 			</div>
-			<span>Loading...</span>
-		</div>
-	</main>
-	<!-- =========================== -->
-	@@include('_js.html',{})
-</body>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
 
 </html>

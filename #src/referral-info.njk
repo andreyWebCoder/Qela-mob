@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="ua">
-@@include('_head.html',{
-"title":"Referral-info"
-})
 
-<body>
-	@@include('components/_aside-layouts.html',{})
-	<main class="qela-fullscreen">
-		<div class="qela-top bg-white mb-0">
-			<nav class="navbar bg-white qela-navbar">
-				<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
-			</nav>
-		</div>
-		<!--content-->
-		<div class="qela-page bg-white pb-3">
-			<div class="p-4 text-center">
-				<h2 class="h4">How to get a reward</h2>
+	{% set title = "Referral-info" %},
+	{% include "_head.njk" %}
+
+	<body>
+		{% include "components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<div class="qela-top bg-white mb-0">
+				<nav class="navbar bg-white qela-navbar">
+					<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
+				</nav>
 			</div>
-			<img class="img-fluid" src="img/ref-2.svg" alt="">
-			<div class="p-3">
-				<ul class="list-group qela-list-ref">
-					<li class="list-group-item">
-						<div class="qela-ic-ref">
-							<i class="ic-link"></i>
-							<span class="qela-counter">1</span>
-						</div>
-						<small>Invite a friend using your link</small>
-					</li>
-					<li class="list-group-item">
-						<div class="qela-ic-ref">
-							<i class="ic-qela"></i>
-							<span class="qela-counter">2</span>
-						</div>
-						<small>Your friend register in the Qela app</small>
-					</li>
-					<li class="list-group-item">
-						<div class="qela-ic-ref">
-							<i class="ic-qela"></i>
-							<span class="qela-counter">3</span>
-						</div>
-						<small>You receive as a gift, Vote weight
+			<!--content-->
+			<div class="qela-page bg-white pb-3">
+				<div class="p-4 text-center">
+					<h2 class="h4">How to get a reward</h2>
+				</div>
+				<img class="img-fluid" src="img/ref-2.svg" alt="">
+				<div class="p-3">
+					<ul class="list-group qela-list-ref">
+						<li class="list-group-item">
+							<div class="qela-ic-ref">
+								<i class="ic-link"></i>
+								<span class="qela-counter">1</span>
+							</div>
+							<small>Invite a friend using your link</small>
+						</li>
+						<li class="list-group-item">
+							<div class="qela-ic-ref">
+								<i class="ic-qela"></i>
+								<span class="qela-counter">2</span>
+							</div>
+							<small>Your friend register in the Qela app</small>
+						</li>
+						<li class="list-group-item">
+							<div class="qela-ic-ref">
+								<i class="ic-qela"></i>
+								<span class="qela-counter">3</span>
+							</div>
+							<small>You receive as a gift, Vote weight
 							and Recruiting talent points</small>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<!--content-->
-		<div class="qela-bottom bg-white px-3 py-4 mt-0">
-			<button type="button" class="btn btn-primary w-100">Continue</button>
-		</div>
-	</main>
-	<!-- =========================== -->
-	@@include('_js.html',{})
-</body>
+			<!--content-->
+			<div class="qela-bottom bg-white px-3 py-4 mt-0">
+				<button type="button" class="btn btn-primary w-100">Continue</button>
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
 
 </html>
