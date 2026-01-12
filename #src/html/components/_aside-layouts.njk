@@ -1,0 +1,84 @@
+<aside class="fixed-top pt-2 d-lg-block d-none overflow-auto" style="width: 280px; height: 100vh;">
+	<div class="m-3">
+		<a href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/" class="btn btn-secondary ic-chevron-left">Components</a>
+	</div>
+	<nav>
+		<ol class="d-flex flex-column gap-2">
+			{% set links2 = [
+								{
+									text: 'discussions',
+									href: 'discussions'
+								}, {
+									text: 'img',
+									href: 'img'
+								}, {
+									text: 'header-fix',
+									href: 'layout-top'
+								},{
+									text: 'layout-default',
+									href: 'layout'
+								},{
+									text: 'header-footer-fix',
+									href: 'layout1'
+								},{
+									text: 'header-footer-fix(tabs)',
+									href: 'layout2'
+								},{
+									text: 'header-footer-fix(user)',
+									href: 'layout3'
+								},{
+									text: 'header-footer-fix(back)',
+									href: 'layout4'
+								},{
+									text: 'layout-simple',
+									href: 'simple'
+								},{
+									text: 'leaderboard',
+									href: 'leaderboard'
+								},{
+									text: 'leaderboard-filters',
+									href: 'leaderboard-filters'
+								},{
+									text: 'success',
+									href: 'success1'
+								},{
+									text: 'success-btn bottom',
+									href: 'success2'
+								},{
+									text: 'success-vote',
+									href: 'success3'
+								},{
+									text: 'success-list bottom',
+									href: 'success4'
+								},{
+									text: 'success-telent',
+									href: 'success5'
+								},{
+									text: 'chat',
+									href: 'chat'
+								},{
+									text: 'chat-reply-mess',
+									href: 'chat-reply-mess'
+								},{
+									text: 'referral',
+									href: 'referral'
+								},{
+									text: 'referral-info',
+									href: 'referral-info'
+								},{
+									text: 'error',
+									href: 'error'
+								},{
+									text: 'shop',
+									href: 'shop'
+								}
+							] %}
+			{% for link in links2 %}
+				<li>
+					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/{{link.href}}">{{link.text}}</a>
+				</li>
+			{% endfor %}
+
+		</ol>
+	</nav>
+</aside>
