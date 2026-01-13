@@ -11,7 +11,7 @@
 	<body>
 		<script src="filesIndex/indexhead.js"></script>
 		<div id="app" v-cloak>
-			<header class="p-1 h-auto">
+			<header class="p-1 h-auto ">
 				<div class="container">
 					<div class="row g-1 align-items-center">
 						<div class="col-auto">
@@ -193,6 +193,10 @@
 							
 								<li>
 									<a class="--link" href="#">activity-stat</a>
+								</li>
+							
+								<li>
+									<a class="--link" href="#">cards</a>
 								</li>
 							
 						</ul>
@@ -828,6 +832,67 @@
 			<p class="card-text text-info"><small>30 September 2021</small></p>
 		</div>
 	</div>
+</section>
+						<section class="d-grid gap-3">
+	<!-- Card-shop -->
+	<h2 class="h1 mt-4">Cards</h2>
+	<h3>Card-shop</h3>
+
+	
+	
+	<div class="card qela-card-shop p-3 border" style="width: 156px;">
+	<div id="shopCarousel" class="carousel slide qela-carousel">
+		
+		<div class="carousel-inner">
+			
+				<div class="carousel-item ratio-1x1 active">
+					<img class="w-100" src="img/shop/shop-img.png" alt="Зображення 1">
+				</div>
+			
+				<div class="carousel-item ratio-1x1 ">
+					<img class="w-100" src="img/shop/shop-img-2.jpg" alt="Зображення 2">
+				</div>
+			
+				<div class="carousel-item ratio-1x1 ">
+					<img class="w-100" src="img/shop/shop-img-3.jpg" alt="Зображення 3">
+				</div>
+			
+				<div class="carousel-item ratio-1x1 ">
+					<img class="w-100" src="img/shop/shop-img-4.jpg" alt="Зображення 4">
+				</div>
+			
+		</div>
+		<div class="carousel-indicators m-0 mt-1">
+			
+				<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="0" class="rounded-circle active" aria-current="true"  aria-label="Slide 1"></button>
+			
+				<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="1" class="rounded-circle "   aria-label="Slide 2"></button>
+			
+				<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="2" class="rounded-circle "   aria-label="Slide 3"></button>
+			
+				<button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="3" class="rounded-circle "   aria-label="Slide 4"></button>
+			
+		</div>
+	</div>
+	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+	<div class="card-body p-0 mt-3 d-grid gap-2">
+		<div class="d-flex gap-2">
+			<div>
+				<div class='text-info-700 display-7'>Ціна Бали</div>
+				<small class="mt-2 fw-semibold d-flex align-items-center">
+					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
+					75
+				</small>
+			</div>
+			<div>
+				<div class='text-info-700 display-7'>В наявності</div>
+				<small class="mt-2 fw-semibold d-block">Немає</small>
+			</div>
+		</div>
+		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
+	</div>
+</div>
+	
 </section>
 						<section class="d-grid gap-3">
 	<!-- Chat -->
@@ -4149,12 +4214,12 @@
 		<div class="qela-datapikers">
 			<div>
 				<label class="form-label" for="dp-input-datapiker">From date</label>
-				<v-date-picker uid="datapiker" v-model="date" auto-apply placeholder="Select Date" position="left" />
+				<v-date-picker uid="datapiker" v-model="date" auto-apply placeholder="Select Date" position="left"/>
 			</div>
 			<div class="spacer"></div>
 			<div>
 				<label class="form-label" for="dp-input-datapiker-2">To date</label>
-				<v-date-picker uid="datapiker-2" v-model="date" auto-apply placeholder="Select Date" position="right" />
+				<v-date-picker uid="datapiker-2" v-model="date" auto-apply placeholder="Select Date" position="right"/>
 			</div>
 		</div>
 	</form>

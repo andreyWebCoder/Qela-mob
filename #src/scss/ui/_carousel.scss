@@ -1,0 +1,20 @@
+.qela-carousel {
+	.carousel-inner {
+		border: 1px solid $info-200;
+		border-radius: 6px;
+	}
+	.carousel-item {
+		img {
+			height: 122px;
+		}
+	}
+	.carousel-indicators {
+		position: static;
+		button {
+			flex: 0 0 $carousel-indicator-width;
+			&.active {
+				background-color: $secondary;
+			}
+		}
+	}
+}

@@ -24,3 +24,13 @@ if (myText) {
 		}
 	});
 }
+
+const carousels = document.querySelectorAll('.qela-carousel');
+carousels.forEach(carouselElement => {
+	// Инициализируем каждую карусель отдельно
+	new bootstrap.Carousel(carouselElement, {
+		touch: true,
+		wrap: true,
+		keyboard: true // можно включить для доступности
+	});
+});

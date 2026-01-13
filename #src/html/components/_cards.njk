@@ -1,0 +1,13 @@
+<section class="d-grid gap-3">
+	<!-- Card-shop -->
+	<h2 class="h1 mt-4">Cards</h2>
+	<h3>Card-shop</h3>
+
+	{% set caruselId = "shopCarousel"%}
+	{% set id = caruselId %}
+	{% include "html/includes/cards/_card-shop.njk" %}
+	{# {% for idx in caruselId %}
+		{% set id = idx %}
+		{% include "html/includes/cards/_card-shop.njk" %}
+	{% endfor %} #}
+</section>

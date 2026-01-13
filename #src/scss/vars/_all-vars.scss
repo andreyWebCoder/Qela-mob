@@ -459,3 +459,33 @@ $breadcrumb-divider: quote("");
 $breadcrumb-divider-flipped: $breadcrumb-divider;
 $breadcrumb-border-radius: null;
 //_breadcrumb
+//carousel
+// $carousel-control-color: $white;
+// $carousel-control-width: 15%;
+// $carousel-control-opacity: 0.5;
+// $carousel-control-hover-opacity: 0.9;
+// $carousel-control-transition: opacity 0.15s ease;
+// $carousel-control-icon-filter: null;
+
+$carousel-indicator-width: 6px;
+$carousel-indicator-height: 6px;
+$carousel-indicator-hit-area-height: 0;
+$carousel-indicator-spacer: 4px;
+$carousel-indicator-opacity: 1;
+$carousel-indicator-active-bg: $info;
+$carousel-indicator-active-opacity: 1;
+$carousel-indicator-transition: null;
+
+// $carousel-caption-width: 70%;
+// $carousel-caption-color: $white;
+// $carousel-caption-padding-y: 1.25rem;
+// $carousel-caption-spacer: 1.25rem;
+
+// $carousel-control-icon-width: 2rem;
+
+$carousel-control-prev-icon-bg: null;
+$carousel-control-next-icon-bg: null;
+
+$carousel-transition-duration: 0.4s;
+$carousel-transition: transform $carousel-transition-duration ease-in-out;
+//carousel

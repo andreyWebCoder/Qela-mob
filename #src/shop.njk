@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="ua">
 
-	{%- set title = "Layout" -%}
+	{%- set title = "Shop" -%}
 	{% include "_head.njk" %}
 
 	<body>
+		{% set title = "Магазин" %}
 		{% include "html/components/_aside-layouts.njk" %}
 		<main class="qela-fullscreen">
-			<div class="qela-top bg-white">
-				{% include "html/includes/nav/_header.njk" %}
+			<div class="qela-top bg-white mb-0">
+				{% include "html/includes/nav/_header-min.njk" %}
 			</div>
 			<!--content-->
-			<div class="flex-grow-1"></div>
+			<div class="flex-grow-1">
+				<div class="d-flex py-2 gap-3">
+					<h2 class="fw-bold fs-6 flex-grow-1">🔥Топ-пропозиції</h2>
+					<a href="#" class="btn btn-link text-secondary-700 btn-sm">Дивитися всі</a>
+				</div>
+				<div class="d-flex gap-2 qela-cards-inner pb-3">
+					{% set caruselId = [
+						"shopCarousel",
+						"shopCarousel-2",
+						"shopCarousel-3",
+						"shopCarousel-4",
+						"shopCarousel-5",
+						"shopCarousel-6"
+					] %}
+					{% for idx in caruselId %}
+						{% set id = idx %}
+						{% include "html/includes/cards/_card-shop.njk" %}
+					{% endfor %}
+				</div>
+				<div class="d-flex py-2 gap-3">
+					<h2 class="fw-bold fs-6 flex-grow-1">🪖 Сувеніри від військових 🇺🇦</h2>
+					<a href="#" class="btn btn-link text-secondary-700 btn-sm">Дивитися всі</a>
+				</div>
+				<div class="d-flex gap-2 qela-cards-inner pb-3">
+					{% set caruselId = [
+						"shopCarousel-7",
+						"shopCarousel-8",
+						"shopCarousel-9",
+						"shopCarousel-10",
+						"shopCarousel-11",
+						"shopCarousel-12"
+					] %}
+					{% for idx in caruselId %}
+						{% set id = idx %}
+						{% include "html/includes/cards/_card-shop.njk" %}
+					{% endfor %}
+				</div>
+			</div>
 			<!--content-->
-			<div class="qela-bottom bg-white"></div>
+			<div class="qela-bottom bg-white">
+				{% set shop = "active" %}
+				{% include "html/includes/tab/_tab-bar.njk" %}
+			</div>
 		</main>
 		<!-- =========================== -->
 		{% include "_js.njk" %}

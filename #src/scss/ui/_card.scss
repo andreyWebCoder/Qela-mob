@@ -85,3 +85,19 @@
 		width: 50%;
 	}
 }
+.qela-cards-inner {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-right: calc(var(--px-main) * -1);
+	padding-right: var(--px-main);
+	margin-left: calc(var(--px-main) * -1);
+	padding-left: var(--px-main);
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.qela-card-shop {
+	flex-shrink: 0;
+}

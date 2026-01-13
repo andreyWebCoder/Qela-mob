@@ -1,0 +1,47 @@
+<div class="card qela-card-shop p-3 border" style="width: 156px;">
+	<div id="{{id}}" class="carousel slide qela-carousel">
+		{% set carouselItems = [
+			{imgSrc:"shop-img.png",
+			 imgAlt:"Зображення 1"
+			 }, 
+			{imgSrc:"shop-img-2.jpg",
+			 imgAlt:"Зображення 2"
+			 }, 
+			{imgSrc:"shop-img-3.jpg",
+			 imgAlt:"Зображення 3"
+			 },
+			{imgSrc:"shop-img-4.jpg",
+			 imgAlt:"Зображення 4"
+			 }
+		]%}
+		<div class="carousel-inner">
+			{% for item in carouselItems %}
+				<div class="carousel-item ratio-1x1 {% if loop.first %}active{% endif %}">
+					<img class="w-100" src="img/shop/{{item.imgSrc}}" alt="{{item.imgAlt}}">
+				</div>
+			{% endfor %}
+		</div>
+		<div class="carousel-indicators m-0 mt-1">
+			{% for item in carouselItems %}
+				<button type="button" data-bs-target="#{{id}}" data-bs-slide-to="{{ loop.index0 }}" class="rounded-circle {% if loop.first %}active{% endif %}" {% if loop.first %}aria-current="true"{% endif %}  aria-label="Slide {{ loop.index }}"></button>
+			{% endfor %}
+		</div>
+	</div>
+	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+	<div class="card-body p-0 mt-3 d-grid gap-2">
+		<div class="d-flex gap-2">
+			<div>
+				<div class='text-info-700 display-7'>Ціна Бали</div>
+				<small class="mt-2 fw-semibold d-flex align-items-center">
+					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
+					75
+				</small>
+			</div>
+			<div>
+				<div class='text-info-700 display-7'>В наявності</div>
+				<small class="mt-2 fw-semibold d-block">Немає</small>
+			</div>
+		</div>
+		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
+	</div>
+</div>
