@@ -1,4 +1,4 @@
-<div class="card qela-card-shop p-3 border" style="width: 156px;">
+<div class="card qela-card-shop p-3 border">
 	<div id="{{id}}" class="carousel slide qela-carousel">
 		{% set carouselItems = [
 			{imgSrc:"shop-img.png",
@@ -16,8 +16,8 @@
 		]%}
 		<div class="carousel-inner">
 			{% for item in carouselItems %}
-				<div class="carousel-item ratio-1x1 {% if loop.first %}active{% endif %}">
-					<img class="w-100" src="img/shop/{{item.imgSrc}}" alt="{{item.imgAlt}}">
+				<div class="carousel-item qela-ibg {% if loop.first %}active{% endif %}">
+					<img  src="img/shop/{{item.imgSrc}}" alt="{{item.imgAlt}}">
 				</div>
 			{% endfor %}
 		</div>
@@ -29,7 +29,7 @@
 	</div>
 	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
 	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2">
+		<div class="d-flex gap-2 justify-content-between">
 			<div>
 				<div class='text-info-700 display-7'>Ціна Бали</div>
 				<small class="mt-2 fw-semibold d-flex align-items-center">

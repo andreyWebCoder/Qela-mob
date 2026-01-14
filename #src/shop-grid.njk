@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+	{%- set title = "Shop grid" -%}
+	{% include "_head.njk" %}
+
+	<body>
+		{% set title = "🔥Топ-пропозиції" %}
+		{% include "html/components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<div class="qela-top bg-white">
+				{% set isLogo = false %}
+				{% set type = 'btnLeft' %}
+				{% include "html/includes/nav/_navbar.njk" %}
+			</div>
+			<!--content-->
+			<div class="flex-grow-1">
+				<div class="row g-2">
+					{% set caruselId = [
+						"shopCarousel",
+						"shopCarousel-2",
+						"shopCarousel-3",
+						"shopCarousel-4",
+						"shopCarousel-5",
+						"shopCarousel-6"
+					] %}
+					{% for idx in caruselId %}
+						<div class="col-6">
+							{% set id = idx %}
+							{% include "html/includes/cards/_card-shop.njk" %}
+						</div>
+					{% endfor %}
+				</div>
+				<!--content-->
+				<div class="qela-bottom bg-white">
+					{% set shop = "active" %}
+					{% include "html/includes/tab/_tab-bar.njk" %}
+				</div>
+			</main>
+			<!-- =========================== -->
+			{% include "_js.njk" %}
+		</body>
+
+	</html>

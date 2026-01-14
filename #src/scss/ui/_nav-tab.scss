@@ -66,7 +66,11 @@
 	padding-right: rem(72);
 	justify-content: center;
 	border-bottom: 1px solid $info-200;
-	min-height: 52px;
+	min-height: 56px;
+	.qela-clamp {
+		flex: 1 1 auto;
+	}
+	// delete
 	.text-center {
 		flex: 1 1 auto;
 		text-align: center;
@@ -75,15 +79,18 @@
 		text-overflow: ellipsis;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 1;
+		-webkit-line-clamp: 2;
 	}
+	// delete
 	.btn {
 		padding: 0;
 		border: none;
 		color: $black;
+		padding: rem(8);
 	}
 	> .btn,
-	.qela-dropdown {
+	.qela-dropdown,
+	.navbar-brand {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
