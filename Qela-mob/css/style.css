@@ -15260,6 +15260,19 @@ input[type=number] {
   flex: 0 0 156px;
 }
 
+.qela-card-shop {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+@media (any-hover: hover) {
+  .qela-card-shop:hover {
+    color: #2c2c2c;
+  }
+  .qela-card-shop:hover * {
+    color: inherit;
+  }
+}
+
 .qela-badge {
   display: inline-flex;
   align-items: center;

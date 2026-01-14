@@ -101,3 +101,15 @@
 		flex: 0 0 156px;
 	}
 }
+.qela-card-shop {
+	text-decoration: none;
+	color: $info-900;
+	@media (any-hover: hover) {
+		&:hover {
+			color: $info-900;
+			* {
+				color: inherit;
+			}
+		}
+	}
+}
