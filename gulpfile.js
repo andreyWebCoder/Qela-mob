@@ -28,6 +28,7 @@ let ttf2woff2 = require('gulp-ttf2woff2');
 
 let project_name = require("path").basename(__dirname);
 let src_folder = "#src";
+const prettyHtml = require('gulp-pretty-html');
 let nunjucksRender = require('gulp-nunjucks-render');
 let progeny = require('gulp-progeny');
 
@@ -96,6 +97,16 @@ function html() {
 		.on('error', function (err) {
 			console.error('Nunjucks Error!', err.message);
 		})
+		/* --- Очистка и форматирование --- */
+		.pipe(prettyHtml({
+			indent_size: 4,
+			indent_char: ' ',
+			unformatted: ['code', 'pre', 'em', 'strong', 'span', 'i'],
+			extra_liners: [],        // Убирает пустые строки перед тегами head, body, html
+			preserve_newlines: false, // Удаляет ВСЕ пустые строки, оставленные Nunjucks
+			max_preserve_newlines: 0  // Запрещает оставлять даже одну пустую строку
+		}))
+		/* ------------------------------- */
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream());
 }
@@ -291,7 +302,11 @@ function htmlBuild() {
 	return src(path.src.html, {})
 		.pipe(plumber())
 		.pipe(nunjucksRender({
-			path: [src_folder]
+			path: [src_folder],
+			envOptions: {
+				trimBlocks: true,    // автоматически удаляет перевод строки после тега
+				lstripBlocks: true   // удаляет пробелы/табы перед тегом (отступы)
+			}
 		}))
 		.pipe(webphtml())
 		.pipe(version({

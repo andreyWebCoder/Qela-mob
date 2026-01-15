@@ -1,489 +1,355 @@
 <!DOCTYPE html>
-<html lang="ua"><head>
-	<title>Shop grid</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/vendors.css">
-	<link rel="stylesheet" href="css/style.css">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ua">
+<head>
+    <title>Shop grid</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-	<body>
-		
-		<aside class="fixed-top pt-2 d-lg-block d-none overflow-auto" style="width: 280px; height: 100vh;">
-	<div class="m-3">
-		<a href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/" class="btn btn-secondary ic-chevron-left">Components</a>
-	</div>
-	<nav>
-		<ol class="d-flex flex-column gap-2">
-			
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/discussions">discussions</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/img">img</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout-top">header-fix</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout">layout-default</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout1">header-footer-fix</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout2">header-footer-fix(tabs)</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout3">header-footer-fix(user)</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout4">header-footer-fix(back)</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/simple">layout-simple</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/leaderboard">leaderboard</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/leaderboard-filters">leaderboard-filters</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success1">success</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success2">success-btn bottom</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success3">success-vote</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success4">success-list bottom</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success5">success-telent</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/chat">chat</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/chat-reply-mess">chat-reply-mess</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/referral">referral</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/referral-info">referral-info</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/error">error</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/shop">shop</a>
-				</li>
-			
-				<li>
-					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/shop-grid">shop-grid</a>
-				</li>
-			
-
-		</ol>
-	</nav>
-</aside>
-		<main class="qela-fullscreen">
-			<div class="qela-top bg-white">
-				
-				
-				<nav class="navbar bg-white qela-navbar">
-	
-		<a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
-	
-	<span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+<body>
+    <aside class="fixed-top pt-2 d-lg-block d-none overflow-auto" style="width: 280px; height: 100vh;">
+        <div class="m-3">
+            <a href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/" class="btn btn-secondary ic-chevron-left">Components</a>
+        </div>
+        <nav>
+            <ol class="d-flex flex-column gap-2">
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/discussions">discussions</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/img">img</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout-top">header-fix</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout">layout-default</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout1">header-footer-fix</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout2">header-footer-fix(tabs)</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout3">header-footer-fix(user)</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/layout4">header-footer-fix(back)</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/simple">layout-simple</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/leaderboard">leaderboard</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/leaderboard-filters">leaderboard-filters</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success1">success</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success2">success-btn bottom</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success3">success-vote</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success4">success-list bottom</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/success5">success-telent</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/chat">chat</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/chat-reply-mess">chat-reply-mess</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/referral">referral</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/referral-info">referral-info</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/error">error</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/shop">shop</a>
+                </li>
+                <li>
+                    <a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/shop-grid">shop-grid</a>
+                </li>
+            </ol>
+        </nav>
+    </aside>
+    <main class="qela-fullscreen">
+        <div class="qela-top bg-white">
+            <nav class="navbar bg-white qela-navbar">
+                <button class="btn ic-chevron-left start-0 ms-3"></button>
+                <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
 		🔥Топ-пропозиції
 	</span>
-	<a href="#" class="btn ic-task me-3 end-0"></a>
-</nav>
-			</div>
-			<!--content-->
-			<div class="flex-grow-1">
-				<div class="row g-2">
-					
-					
-						<div class="col-6">
-							
-							<a href="#" class="card qela-card-shop p-3 border">
-	<div id="shopCarousel" class="carousel slide qela-carousel">
-		
-		<div class="carousel-inner">
-			
-				<div class="carousel-item qela-ibg active">
-					<img  src="img/shop/shop-img.png" alt="Зображення 1">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-2.jpg" alt="Зображення 2">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-3.jpg" alt="Зображення 3">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-4.jpg" alt="Зображення 4">
-				</div>
-			
-		</div>
-		
-	</div>
-	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
-	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2 justify-content-between">
-			<div>
-				<div class='text-info-700 display-7'>Ціна Бали</div>
-				<small class="mt-2 fw-semibold d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
-					75
-				</small>
-			</div>
-			<div>
-				<div class='text-info-700 display-7'>В наявності</div>
-				<small class="mt-2 fw-semibold d-block">Немає</small>
-			</div>
-		</div>
-		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
-	</div>
-</a>
-						</div>
-					
-						<div class="col-6">
-							
-							<a href="#" class="card qela-card-shop p-3 border">
-	<div id="shopCarousel-2" class="carousel slide qela-carousel">
-		
-		<div class="carousel-inner">
-			
-				<div class="carousel-item qela-ibg active">
-					<img  src="img/shop/shop-img.png" alt="Зображення 1">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-2.jpg" alt="Зображення 2">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-3.jpg" alt="Зображення 3">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-4.jpg" alt="Зображення 4">
-				</div>
-			
-		</div>
-		
-	</div>
-	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
-	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2 justify-content-between">
-			<div>
-				<div class='text-info-700 display-7'>Ціна Бали</div>
-				<small class="mt-2 fw-semibold d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
-					75
-				</small>
-			</div>
-			<div>
-				<div class='text-info-700 display-7'>В наявності</div>
-				<small class="mt-2 fw-semibold d-block">Немає</small>
-			</div>
-		</div>
-		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
-	</div>
-</a>
-						</div>
-					
-						<div class="col-6">
-							
-							<a href="#" class="card qela-card-shop p-3 border">
-	<div id="shopCarousel-3" class="carousel slide qela-carousel">
-		
-		<div class="carousel-inner">
-			
-				<div class="carousel-item qela-ibg active">
-					<img  src="img/shop/shop-img.png" alt="Зображення 1">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-2.jpg" alt="Зображення 2">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-3.jpg" alt="Зображення 3">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-4.jpg" alt="Зображення 4">
-				</div>
-			
-		</div>
-		
-	</div>
-	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
-	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2 justify-content-between">
-			<div>
-				<div class='text-info-700 display-7'>Ціна Бали</div>
-				<small class="mt-2 fw-semibold d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
-					75
-				</small>
-			</div>
-			<div>
-				<div class='text-info-700 display-7'>В наявності</div>
-				<small class="mt-2 fw-semibold d-block">Немає</small>
-			</div>
-		</div>
-		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
-	</div>
-</a>
-						</div>
-					
-						<div class="col-6">
-							
-							<a href="#" class="card qela-card-shop p-3 border">
-	<div id="shopCarousel-4" class="carousel slide qela-carousel">
-		
-		<div class="carousel-inner">
-			
-				<div class="carousel-item qela-ibg active">
-					<img  src="img/shop/shop-img.png" alt="Зображення 1">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-2.jpg" alt="Зображення 2">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-3.jpg" alt="Зображення 3">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-4.jpg" alt="Зображення 4">
-				</div>
-			
-		</div>
-		
-	</div>
-	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
-	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2 justify-content-between">
-			<div>
-				<div class='text-info-700 display-7'>Ціна Бали</div>
-				<small class="mt-2 fw-semibold d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
-					75
-				</small>
-			</div>
-			<div>
-				<div class='text-info-700 display-7'>В наявності</div>
-				<small class="mt-2 fw-semibold d-block">Немає</small>
-			</div>
-		</div>
-		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
-	</div>
-</a>
-						</div>
-					
-						<div class="col-6">
-							
-							<a href="#" class="card qela-card-shop p-3 border">
-	<div id="shopCarousel-5" class="carousel slide qela-carousel">
-		
-		<div class="carousel-inner">
-			
-				<div class="carousel-item qela-ibg active">
-					<img  src="img/shop/shop-img.png" alt="Зображення 1">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-2.jpg" alt="Зображення 2">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-3.jpg" alt="Зображення 3">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-4.jpg" alt="Зображення 4">
-				</div>
-			
-		</div>
-		
-	</div>
-	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
-	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2 justify-content-between">
-			<div>
-				<div class='text-info-700 display-7'>Ціна Бали</div>
-				<small class="mt-2 fw-semibold d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
-					75
-				</small>
-			</div>
-			<div>
-				<div class='text-info-700 display-7'>В наявності</div>
-				<small class="mt-2 fw-semibold d-block">Немає</small>
-			</div>
-		</div>
-		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
-	</div>
-</a>
-						</div>
-					
-						<div class="col-6">
-							
-							<a href="#" class="card qela-card-shop p-3 border">
-	<div id="shopCarousel-6" class="carousel slide qela-carousel">
-		
-		<div class="carousel-inner">
-			
-				<div class="carousel-item qela-ibg active">
-					<img  src="img/shop/shop-img.png" alt="Зображення 1">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-2.jpg" alt="Зображення 2">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-3.jpg" alt="Зображення 3">
-				</div>
-			
-				<div class="carousel-item qela-ibg ">
-					<img  src="img/shop/shop-img-4.jpg" alt="Зображення 4">
-				</div>
-			
-		</div>
-		
-	</div>
-	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
-	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2 justify-content-between">
-			<div>
-				<div class='text-info-700 display-7'>Ціна Бали</div>
-				<small class="mt-2 fw-semibold d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
-					75
-				</small>
-			</div>
-			<div>
-				<div class='text-info-700 display-7'>В наявності</div>
-				<small class="mt-2 fw-semibold d-block">Немає</small>
-			</div>
-		</div>
-		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
-	</div>
-</a>
-						</div>
-					
-				</div>
-				<!--content-->
-				<div class="qela-bottom bg-white">
-					
-					<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
-	
-	
-		<li class="nav-item">
-			<a class="nav-link " href="#">
-				
-					<i class="ic-home icon"></i>
-					<i class="ic-home-filled icon-filled"></i>
-				
-				Головна
-			</a>
-		</li>
-	
-		<li class="nav-item">
-			<a class="nav-link " href="#">
-				
-					<i class="ic-user icon"></i>
-					<i class="ic-user-filled icon-filled"></i>
-				
-				Профіль
-			</a>
-		</li>
-	
-		<li class="nav-item">
-			<a class="nav-link " href="#">
-				
-					<i class="ic-diamond icon"></i>
-					<i class="ic-diamond-filled icon-filled"></i>
-				
-				Квести
-			</a>
-		</li>
-	
-		<li class="nav-item">
-			<a class="nav-link " href="#">
-				
-					<i class="ic-voting icon"></i>
-					<i class="ic-voting-filled icon-filled"></i>
-				
-				Голосуй
-			</a>
-		</li>
-	
-		<li class="nav-item">
-			<a class="nav-link active" href="#">
-				
-					<i class="ic-shop icon"></i>
-					<i class="ic-shop-filled icon-filled"></i>
-				
-				Магазин
-			</a>
-		</li>
-	
-		<li class="nav-item">
-			<a class="nav-link " href="#">
-				
-					<span href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+                <button href="#" class="btn ic-task me-3 end-0"></button>
+            </nav>
+        </div>
+        <!--content-->
+        <div class="flex-grow-1">
+            <div class="row g-2">
+                <div class="col-6">
+                    <button class="card qela-card-shop p-3 border">
+                        <div id="shopCarousel" class="carousel slide qela-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item qela-ibg active">
+                                    <img src="img/shop/shop-img.png" alt="Зображення 1">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-2.jpg" alt="Зображення 2">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-3.jpg" alt="Зображення 3">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-4.jpg" alt="Зображення 4">
+                                </div>
+                            </div>
+                        </div>
+                        <small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+                        <div class="card-body p-0 mt-3 d-grid gap-2">
+                            <div class="d-flex gap-2 justify-content-between">
+                                <div>
+                                    <div class='text-info-700 display-7'>Ціна Бали</div>
+                                    <small class="mt-2 fw-semibold d-flex align-items-center">
+                                        <img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red"> 75 </small>
+                                </div>
+                                <div>
+                                    <div class='text-info-700 display-7'>В наявності</div>
+                                    <small class="mt-2 fw-semibold d-block">Немає</small>
+                                </div>
+                            </div>
+                            <span class="btn btn-outline-secondary btn-sm">Купити</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button class="card qela-card-shop p-3 border">
+                        <div id="shopCarousel-2" class="carousel slide qela-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item qela-ibg active">
+                                    <img src="img/shop/shop-img.png" alt="Зображення 1">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-2.jpg" alt="Зображення 2">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-3.jpg" alt="Зображення 3">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-4.jpg" alt="Зображення 4">
+                                </div>
+                            </div>
+                        </div>
+                        <small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+                        <div class="card-body p-0 mt-3 d-grid gap-2">
+                            <div class="d-flex gap-2 justify-content-between">
+                                <div>
+                                    <div class='text-info-700 display-7'>Ціна Бали</div>
+                                    <small class="mt-2 fw-semibold d-flex align-items-center">
+                                        <img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red"> 75 </small>
+                                </div>
+                                <div>
+                                    <div class='text-info-700 display-7'>В наявності</div>
+                                    <small class="mt-2 fw-semibold d-block">Немає</small>
+                                </div>
+                            </div>
+                            <span class="btn btn-outline-secondary btn-sm">Купити</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button class="card qela-card-shop p-3 border">
+                        <div id="shopCarousel-3" class="carousel slide qela-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item qela-ibg active">
+                                    <img src="img/shop/shop-img.png" alt="Зображення 1">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-2.jpg" alt="Зображення 2">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-3.jpg" alt="Зображення 3">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-4.jpg" alt="Зображення 4">
+                                </div>
+                            </div>
+                        </div>
+                        <small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+                        <div class="card-body p-0 mt-3 d-grid gap-2">
+                            <div class="d-flex gap-2 justify-content-between">
+                                <div>
+                                    <div class='text-info-700 display-7'>Ціна Бали</div>
+                                    <small class="mt-2 fw-semibold d-flex align-items-center">
+                                        <img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red"> 75 </small>
+                                </div>
+                                <div>
+                                    <div class='text-info-700 display-7'>В наявності</div>
+                                    <small class="mt-2 fw-semibold d-block">Немає</small>
+                                </div>
+                            </div>
+                            <span class="btn btn-outline-secondary btn-sm">Купити</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button class="card qela-card-shop p-3 border">
+                        <div id="shopCarousel-4" class="carousel slide qela-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item qela-ibg active">
+                                    <img src="img/shop/shop-img.png" alt="Зображення 1">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-2.jpg" alt="Зображення 2">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-3.jpg" alt="Зображення 3">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-4.jpg" alt="Зображення 4">
+                                </div>
+                            </div>
+                        </div>
+                        <small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+                        <div class="card-body p-0 mt-3 d-grid gap-2">
+                            <div class="d-flex gap-2 justify-content-between">
+                                <div>
+                                    <div class='text-info-700 display-7'>Ціна Бали</div>
+                                    <small class="mt-2 fw-semibold d-flex align-items-center">
+                                        <img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red"> 75 </small>
+                                </div>
+                                <div>
+                                    <div class='text-info-700 display-7'>В наявності</div>
+                                    <small class="mt-2 fw-semibold d-block">Немає</small>
+                                </div>
+                            </div>
+                            <span class="btn btn-outline-secondary btn-sm">Купити</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button class="card qela-card-shop p-3 border">
+                        <div id="shopCarousel-5" class="carousel slide qela-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item qela-ibg active">
+                                    <img src="img/shop/shop-img.png" alt="Зображення 1">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-2.jpg" alt="Зображення 2">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-3.jpg" alt="Зображення 3">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-4.jpg" alt="Зображення 4">
+                                </div>
+                            </div>
+                        </div>
+                        <small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+                        <div class="card-body p-0 mt-3 d-grid gap-2">
+                            <div class="d-flex gap-2 justify-content-between">
+                                <div>
+                                    <div class='text-info-700 display-7'>Ціна Бали</div>
+                                    <small class="mt-2 fw-semibold d-flex align-items-center">
+                                        <img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red"> 75 </small>
+                                </div>
+                                <div>
+                                    <div class='text-info-700 display-7'>В наявності</div>
+                                    <small class="mt-2 fw-semibold d-block">Немає</small>
+                                </div>
+                            </div>
+                            <span class="btn btn-outline-secondary btn-sm">Купити</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button class="card qela-card-shop p-3 border">
+                        <div id="shopCarousel-6" class="carousel slide qela-carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item qela-ibg active">
+                                    <img src="img/shop/shop-img.png" alt="Зображення 1">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-2.jpg" alt="Зображення 2">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-3.jpg" alt="Зображення 3">
+                                </div>
+                                <div class="carousel-item qela-ibg ">
+                                    <img src="img/shop/shop-img-4.jpg" alt="Зображення 4">
+                                </div>
+                            </div>
+                        </div>
+                        <small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
+                        <div class="card-body p-0 mt-3 d-grid gap-2">
+                            <div class="d-flex gap-2 justify-content-between">
+                                <div>
+                                    <div class='text-info-700 display-7'>Ціна Бали</div>
+                                    <small class="mt-2 fw-semibold d-flex align-items-center">
+                                        <img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red"> 75 </small>
+                                </div>
+                                <div>
+                                    <div class='text-info-700 display-7'>В наявності</div>
+                                    <small class="mt-2 fw-semibold d-block">Немає</small>
+                                </div>
+                            </div>
+                            <span class="btn btn-outline-secondary btn-sm">Купити</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!--content-->
+            <div class="qela-bottom bg-white">
+                <ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="ic-home icon"></i>
+                            <i class="ic-home-filled icon-filled"></i> Головна </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="ic-user icon"></i>
+                            <i class="ic-user-filled icon-filled"></i> Профіль </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="ic-diamond icon"></i>
+                            <i class="ic-diamond-filled icon-filled"></i> Квести </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="ic-voting icon"></i>
+                            <i class="ic-voting-filled icon-filled"></i> Голосуй </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="ic-shop icon"></i>
+                            <i class="ic-shop-filled icon-filled"></i> Магазин </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <span href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
 						<img src="img/avatar.jpg" alt="#">
-					</span>
-				
-				Магазин
-			</a>
-		</li>
-	
-</ul>
-				</div>
-			</main>
-			<!-- =========================== -->
-			<script src="js/vendors.js"></script>
-<script src="js/app.js"></script>
-		</body>
-
-	</html>
+					</span> Магазин </a>
+                    </li>
+                </ul>
+            </div>
+    </main>
+    <!-- =========================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

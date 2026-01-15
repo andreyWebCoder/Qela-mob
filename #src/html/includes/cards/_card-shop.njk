@@ -1,4 +1,4 @@
-<a href="#" class="card qela-card-shop p-3 border">
+<button class="card qela-card-shop p-3 border">
 	<div id="{{id}}" class="carousel slide qela-carousel">
 		{% set carouselItems = [
 			{imgSrc:"shop-img.png",
@@ -23,7 +23,7 @@
 		</div>
 		{# <div class="carousel-indicators m-0 mt-1">
 			{% for item in carouselItems %}
-				<button type="button" data-bs-target="#{{id}}" data-bs-slide-to="{{ loop.index0 }}" class="rounded-circle {% if loop.first %}active{% endif %}" {% if loop.first %}aria-current="true"{% endif %}  aria-label="Slide {{ loop.index }}"></button>
+				<span type="button" data-bs-target="#{{id}}" data-bs-slide-to="{{ loop.index0 }}" class="rounded-circle {% if loop.first %}active{% endif %}" {% if loop.first %}aria-current="true"{% endif %}  aria-label="Slide {{ loop.index }}"></span>
 			{% endfor %}
 		</div> #}
 	</div>
@@ -42,6 +42,6 @@
 				<small class="mt-2 fw-semibold d-block">Немає</small>
 			</div>
 		</div>
-		<button type="button" class="btn btn-outline-secondary btn-sm">Купити</button>
+		<span class="btn btn-outline-secondary btn-sm">Купити</span>
 	</div>
-</a>
+</button>
