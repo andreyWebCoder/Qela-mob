@@ -9,7 +9,6 @@
 		{% include "html/components/_aside-layouts.njk" %}
 		<main class="qela-fullscreen">
 			<div class="qela-top bg-white">
-				{% set isLogo = false %}
 				{% set type = 'btnLeft' %}
 				{% include "html/includes/nav/_navbar.njk" %}
 			</div>
@@ -31,14 +30,16 @@
 						</div>
 					{% endfor %}
 				</div>
-				<!--content-->
-				<div class="qela-bottom bg-white">
-					{% set shop = "active" %}
-					{% include "html/includes/tab/_tab-bar.njk" %}
-				</div>
-			</main>
-			<!-- =========================== -->
-			{% include "_js.njk" %}
-		</body>
+			</div>
+			<!--content-->
+			<div class="qela-bottom bg-white">
+				{% set shop = "active" %}
+				{% include "html/includes/tab/_tab-bar.njk" %}
+			</div>
 
-	</html>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
+
+</html>
