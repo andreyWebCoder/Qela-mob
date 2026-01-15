@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ua">
-	{%- set links = {
+	{% set links = {
 		indexCss: '<link rel="stylesheet" href="filesIndex/index.css">'
-	} -%}
-	{%- set title = "Components" -%}
+	} %}
+	{% set title = "Components" %}
 	{% include "_head.njk" %}
 	<body>
 		<script src="filesIndex/indexhead.js"></script>
@@ -50,7 +50,7 @@
 					<nav class="ps-3">
 						<h4 class=" my-2">Components</h4>
 						<ul class="d-flex flex-column gap-1 ps-0 --elastic">
-							{% set links = ['buttons','checkbox-radiobutton','alert','breadcrambs','campaign','coming-soon','dialogs','empty-space','icons', 'links', 'lists', 'logos', 'nav','cards-news','popups','profile','progress','quest-card', 'quest-page','quest-conditions-page', 'organisation', 'page-status', 'special-ic', 'subtitles', 'tabs', 'talents-badges', 'text-fields', 'typography', 'video', 'voting', 'places', 'accordion', 'chat', 'avatars', 'activity-stat', 'cards'] %}
+							{% set links = ['buttons','checkbox-radiobutton','alert','breadcrambs','campaign','coming-soon','dialogs','empty-space','icons','links','lists', 'logos', 'nav','cards-news','popups','profile','progress','quest-card','quest-page','quest-conditions-page','organisation','page-status','special-ic', 'subtitles','tabs','talents-badges','text-fields','typography','video','voting','places','accordion','chat','avatars','activity-stat','cards'] %}
 							{% for link in links %}
 								<li>
 									<a class="--link" href="#">{{link}}</a>

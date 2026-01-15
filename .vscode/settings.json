@@ -1,17 +1,8 @@
-// {
-//     "editor.detectIndentation": false,
-//     "editor.dragAndDrop": false,
-//     "editor.renderWhitespace": "all",
-//     "editor.insertSpaces": false
-// }
 {
 	"html.format.wrapLineLength": 0,
+	"html.format.indentInnerHtml": true,
 	"emmet.includeLanguages": {
 		"nunjucks": "html",
 		"njk": "html"
 	},
-	"emmet.triggerExpansionOnTab": true
-	// "files.associations": {
-	// 	"*.njk": "html"
-	// }
 }

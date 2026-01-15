@@ -87,12 +87,18 @@ function browserSync(done) {
 		port: 3000,
 	});
 }
+const manageEnvironment = function (environment) {
+	environment.addFilter('split', function (str, separator) {
+		return str.split(separator);
+	});
+}
 function html() {
 	return src(path.src.html, {})
 		.pipe(plumber())
 		.pipe(progeny())
 		.pipe(nunjucksRender({
-			path: [src_folder]
+			path: [src_folder],
+			manageEnv: manageEnvironment,
 		}))
 		.on('error', function (err) {
 			console.error('Nunjucks Error!', err.message);
@@ -306,7 +312,8 @@ function htmlBuild() {
 			envOptions: {
 				trimBlocks: true,    // автоматически удаляет перевод строки после тега
 				lstripBlocks: true   // удаляет пробелы/табы перед тегом (отступы)
-			}
+			},
+			manageEnv: manageEnvironment,
 		}))
 		.pipe(webphtml())
 		.pipe(version({
