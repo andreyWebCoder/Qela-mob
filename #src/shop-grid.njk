@@ -15,17 +15,16 @@
 			<!--content-->
 			<div class="flex-grow-1">
 				<div class="row g-2">
-					{% set caruselId = [
-						"shopCarousel",
-						"shopCarousel-2",
-						"shopCarousel-3",
-						"shopCarousel-4",
-						"shopCarousel-5",
-						"shopCarousel-6"
-					] %}
-					{% for idx in caruselId %}
+					{% set cardImgs = [
+						{imgSrc:"shop-img.png",imgAlt:"Зображення 1"}, 
+						{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 2"}, 
+						{imgSrc:"shop-img-3.jpg",imgAlt:"Зображення 3"},
+						{imgSrc:"shop-img-4.jpg",imgAlt:"Зображення 4"},
+						{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 5"}, 
+						{imgSrc:"shop-img-3.jpg",imgAlt:"Зображення 6"}
+					]%}
+					{% for img in cardImgs %}
 						<div class="col-6">
-							{% set id = idx %}
 							{% include "html/includes/cards/_card-shop.njk" %}
 						</div>
 					{% endfor %}

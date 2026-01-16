@@ -15711,6 +15711,24 @@ input[type=number] {
 .qela-card-shop {
   text-decoration: none;
   color: #2c2c2c;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: start;
+}
+.qela-card-shop .qela-ibg {
+  padding-bottom: 100%;
+}
+.qela-card-shop .qela-ibg img {
+  border: 1px solid #e9e9e8;
+  border-radius: 6px;
+}
+.qela-card-shop .card-text {
+  flex-grow: 1;
+}
+.qela-card-shop .card-body {
+  align-content: end;
 }
 .qela-card-shop:hover {
   color: #2c2c2c;

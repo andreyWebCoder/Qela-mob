@@ -1,0 +1,23 @@
+<div id="{{id}}" class="carousel slide qela-carousel">
+	{% set carouselItems = [
+		{imgSrc:"shop-img.png",imgAlt:"Зображення 1"}, 
+		{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 2"}, 
+		{imgSrc:"shop-img-3.jpg",imgAlt:"Зображення 3"},
+		{imgSrc:"shop-img-4.jpg",imgAlt:"Зображення 4"}
+	]%}
+	<div class="carousel-inner">
+		{% for item in carouselItems %}
+			<div class="carousel-item qela-ibg {% if loop.first %}active{% endif %}">
+				<img  src="img/shop/{{item.imgSrc}}" alt="{{item.imgAlt}}">
+			</div>
+		{% endfor %}
+	</div>
+	{# Условие виведения индикаторов Dots #}
+	{% if typeCarousel == 'withIndicators' %}
+		<div class="carousel-indicators m-0 mt-1">
+			{% for item in carouselItems %}
+				<button type="button" data-bs-target="#{{id}}" data-bs-slide-to="{{ loop.index0 }}" class="rounded-circle {% if loop.first %}active{% endif %}" {% if loop.first %}aria-current="true"{% endif %}  aria-label="Slide {{ loop.index }}"></button>
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>

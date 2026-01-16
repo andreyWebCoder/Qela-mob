@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+	{% set title = "Shop-category" %}
+	{% include "_head.njk" %}
+
+	<body>
+		{% set title = "Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекцій
+ Subtitle " %}
+		{% include "html/components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<div class="qela-top bg-white">
+				{% set type = 'logoLeft' %}
+				{% include "html/includes/nav/_navbar.njk" %}
+			</div>
+			<!--content-->
+			<div class="flex-grow-1">
+				{% set typeCarousel = 'withIndicators'%}
+				{% set id = "shopCarousel" %}
+				{% include "html/includes/carousel/_carousel.njk" %}
+			</div>
+			<!--content-->
+			<div class="qela-bottom bg-white">
+				{% set shop = "active" %}
+				{% include "html/includes/tab/_tab-bar.njk" %}
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
+
+</html>

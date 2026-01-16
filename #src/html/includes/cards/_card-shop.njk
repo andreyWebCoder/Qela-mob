@@ -1,31 +1,6 @@
-<button class="card qela-card-shop p-3 border">
-	<div id="{{id}}" class="carousel slide qela-carousel">
-		{% set carouselItems = [
-			{imgSrc:"shop-img.png",
-			 imgAlt:"Зображення 1"
-			 }, 
-			{imgSrc:"shop-img-2.jpg",
-			 imgAlt:"Зображення 2"
-			 }, 
-			{imgSrc:"shop-img-3.jpg",
-			 imgAlt:"Зображення 3"
-			 },
-			{imgSrc:"shop-img-4.jpg",
-			 imgAlt:"Зображення 4"
-			 }
-		]%}
-		<div class="carousel-inner">
-			{% for item in carouselItems %}
-				<div class="carousel-item qela-ibg {% if loop.first %}active{% endif %}">
-					<img  src="img/shop/{{item.imgSrc}}" alt="{{item.imgAlt}}">
-				</div>
-			{% endfor %}
-		</div>
-		{# <div class="carousel-indicators m-0 mt-1">
-			{% for item in carouselItems %}
-				<spa type="button" data-bs-target="#{{id}}" data-bs-slide-to="{{ loop.index0 }}" class="rounded-circle {% if loop.first %}active{% endif %}" {% if loop.first %}aria-current="true"{% endif %}  aria-label="Slide {{ loop.index }}"></spa>
-			{% endfor %}
-		</div> #}
+<button type="button" class="card qela-card-shop p-3 border">
+	<div class="qela-ibg">
+		<img  src="img/shop/{{img.imgSrc}}" alt="{{img.imgAlt}}">
 	</div>
 	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
 	<div class="card-body p-0 mt-3 d-grid gap-2">
