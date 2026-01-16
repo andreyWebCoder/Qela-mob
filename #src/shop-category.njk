@@ -5,24 +5,57 @@
 	{% include "_head.njk" %}
 
 	<body>
-		{% set title = "Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекцій
- Subtitle " %}
+		{% set title = "Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекцій Subtitle" %}
 		{% include "html/components/_aside-layouts.njk" %}
-		<main class="qela-fullscreen">
+		<main class="qela-fullscreen bg-white">
 			<div class="qela-top bg-white">
 				{% set type = 'logoLeft' %}
 				{% include "html/includes/nav/_navbar.njk" %}
 			</div>
 			<!--content-->
 			<div class="flex-grow-1">
-				{% set typeCarousel = 'withIndicators'%}
-				{% set id = "shopCarousel" %}
-				{% include "html/includes/carousel/_carousel.njk" %}
+				<div class="d-grid w-100 gap-3">
+					{% set typeCarousel = 'withIndicators'%}
+					{% set id = "shopCarousel" %}
+					{% include "html/includes/carousel/_carousel.njk" %}
+					<h3>Колекційна футболка від гурту ТНМК з автографом </h3>
+					<div>
+						<div class="h6">
+							Опис:
+						</div>
+						<small class="d-block mt-1">Креативна чорна футболка з класичним від Strichka. Зручна, стильна та створена для тих, хто цінує якість і простоту. Унісекс-модель, 100% бавовна.</small>
+					</div>
+					<div>
+						<div class="h6">
+							Формат:
+						</div>
+						<small class="d-block mt-1">Фізичний товар, доставка поштою</small>
+					</div>
+					<div>
+						<div class="h6">
+							Що включено:
+						</div>
+						<ul class="mt-1 display-6 p-0 ps-3 ms-1">
+							<li>
+								1 товар
+							</li>
+							<li>
+								Пакування
+							</li>
+							<li>
+								Доставка
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<!--content-->
 			<div class="qela-bottom bg-white">
-				{% set shop = "active" %}
-				{% include "html/includes/tab/_tab-bar.njk" %}
+				{% set footerType = "shop"%}
+				{% set footerBtns = [
+					{class: "btn-primary", text:"Купити"}
+				]%}
+				{% include "html/includes/nav/_footer.njk" %}
 			</div>
 		</main>
 		<!-- =========================== -->

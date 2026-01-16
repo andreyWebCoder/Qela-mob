@@ -1,0 +1,14 @@
+.qela-quantity {
+	button {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		color: $info-700;
+		&:active {
+			color: $info-900;
+		}
+	}
+	.form-control {
+		flex: 0 0 72px;
+	}
+}

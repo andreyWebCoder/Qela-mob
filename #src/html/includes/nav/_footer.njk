@@ -1,0 +1,22 @@
+<div class="px-3 py-4 d-flex flex-column gap-2 border-top">
+	{% if footerType == "shop" %}
+		<div class="d-flex justify-content-between gap-2">
+			<div>
+				<div class="text-info-700 fw-semibold">Ціна Бали</div>
+				<div class="mt-2 d-flex align-items-center gap-2">
+					<img src="img/icons/orden-red.svg" width="36" height="36" alt="orden-red">
+					<span class="h1">75</span>
+				</div>
+			</div>
+			{% set label = "Кількість" %}
+			{% include "html/includes/counter/_counter.njk" %}
+		</div>
+		{% for btn in footerBtns %}
+			<button type="button" class="btn {{btn.class}}">{{btn.text}}</button>
+		{% endfor %}
+	{% elif footerType == " " %}
+		{% for btn in footerBtns %}
+			<button type="button" class="btn {{btn.class}}">{{btn.text}}</button>
+		{% endfor %}
+	{% endif %}
+</div>
