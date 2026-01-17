@@ -1,0 +1,54 @@
+.theme--strichka {
+	// globall colors
+	--bs-blue: #0057b8;
+	--bs-yellow: #ffe000;
+	--bs-secondary: var(--bs-blue);
+	--bs-primary: var(--bs-yellow);
+	--bs-primary-rgb: 255, 224, 0;
+	--bs-secondary-rgb: 0, 87, 184;
+	// prymarys
+	--bs-ql-primary-100: #fffce6;
+	--bs-ql-primary-200: #fff8c1;
+	--bs-ql-primary-300: #fff399;
+	--bs-ql-primary-400: #ffeb75;
+	--bs-ql-primary-500: #ffe000;
+	--bs-ql-primary-600: #e9c608;
+	--bs-ql-primary-700: #c3a502;
+	--bs-ql-primary-800: #8a7500;
+	--bs-ql-primary-900: #625301;
+	// secondarys
+	--bs-ql-secondary-100: #edf5ff;
+	--bs-ql-secondary-200: #d9ebff;
+	--bs-ql-secondary-300: #9fccff;
+	--bs-ql-secondary-400: #1f7fea;
+	--bs-ql-secondary-500: #0057b8;
+	--bs-ql-secondary-600: #0351a9;
+	--bs-ql-secondary-700: #014796;
+	--bs-ql-secondary-800: #013672;
+	--bs-ql-secondary-900: #012c5c;
+	// components colors
+	// link
+	--bs-link-color-rgb: var(--bs-secondary-rgb);
+	--bs-link-hover-color-rgb: 1, 71, 150;
+	// input
+	--bs-ql-input-color: var(--bs-ql-info-900);
+	--bs-ql-input-border-color: var(--bs-ql-info-400);
+	--bs-ql-input-bg-color: var(--bs-white);
+
+	--bs-ql-input-placeholder-color: var(--bs-info);
+
+	--bs-ql-input-hover-color: var(--bs-ql-info-900);
+	--bs-ql-input-hover-border-color: var(--bs-ql-secondary-500);
+	--bs-ql-input-hover-bg-color: var(--bs-white);
+
+	--bs-ql-input-focus-color: var(--bs-ql-info-900);
+	--bs-ql-input-focus-border-color: var(--bs-ql-secondary-500);
+	--bs-ql-input-focus-bg-color: var(--bs-white);
+	--bs-ql-input-focus-box-shadow: var(--bs-ql-secondary-500);
+
+	--bs-ql-input-disabled-color: var(--bs-ql-info-600);
+	--bs-ql-input-disabled-border-color: var(--bs-ql-info-400);
+	--bs-ql-input-disabled-bg-color: var(--bs-ql-info-200);
+
+	--bs-ql-input-ivalid-border-color: var(--bs-danger);
+}

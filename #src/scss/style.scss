@@ -2,12 +2,26 @@
 
 /* Bootstrap style imports*/
 @import "bootstrap/functions";
-@import "vars"; // Переназначение переменных
+
+//Reassigning variables
+@import "vars";
+
 @import "bootstrap/variables";
 @import "bootstrap/maps";
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
+
 $all-colors: map-merge-multiple($primarys, $secondarys, $warnings, $succeses, $dangers, $infos);
+
+$all-colors-vars: ();
+@each $name, $value in $all-colors {
+	$all-colors-vars: map-merge(
+		$all-colors-vars,
+		(
+			$name: var(--bs-ql-#{$name})
+		)
+	);
+}
 
 $utilities: map-merge(
 	$utilities,
@@ -16,23 +30,21 @@ $utilities: map-merge(
 			map-merge(
 				map-get($utilities, "color"),
 				(
-					values: map-merge(map-get(map-get($utilities, "color"), "values"), ($all-colors))
+					values: map-merge(map-get(map-get($utilities, "color"), "values"), $all-colors-vars)
 				)
-			)
-	)
-);
-$utilities: map-merge(
-	$utilities,
-	(
+			),
 		"background-color":
 			map-merge(
 				map-get($utilities, "background-color"),
 				(
-					values: map-merge(map-get(map-get($utilities, "background-color"), "values"), ($all-colors))
+					values: map-merge(map-get(map-get($utilities, "background-color"), "values"), $all-colors-vars)
 				)
 			)
 	)
 );
+// Generation and add custom colors css vars
+@import "my-root";
+
 @import "bootstrap/root";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
@@ -63,30 +75,31 @@ $utilities: map-merge(
 @import "bootstrap/offcanvas";
 @import "bootstrap/carousel";
 
-// @import "bootstrap/bootstrap";
-
 // Helpers
 @import "bootstrap/helpers";
 // /* Bootstrap style imports*/
 // Utilities
 @import "bootstrap/utilities/api";
 
+// Qela custom scss styles
 @import "resources";
-/* ======================================================================== */
-/* Qela */
-/* Шрифты */
+
+// Fonts
 @import "fonts";
-/* Иконочный шрифт */
+
+// Icons font
 @import "icons";
-/* Свои глобальние стили (qela-) */
+
+// Custom globall styles (qela-)
 @import "globall";
 
-//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ>================================
+//<Include files UI styles and forms>
 @import "forms";
 @import "ui";
-//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ>==================================
 
-//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ 	БЛОКОВ>======================================
+//<Include files styles components>
 @import "./components/first";
 @import "./components/reg";
-//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ 	БЛОКОВ>===========================================
+
+//<Themes>
+@import "themes/theme-strichka";
