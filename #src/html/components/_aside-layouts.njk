@@ -30,8 +30,8 @@
 									text: 'header-footer-fix(back)',
 									href: 'layout4'
 								},{
-									text: 'layout-simple',
-									href: 'simple'
+									text: 'layout-symple',
+									href: 'symple'
 								},{
 									text: 'leaderboard',
 									href: 'leaderboard'
@@ -77,10 +77,16 @@
 								},{
 									text: 'shop-empty',
 									href: 'shop-empty'
+								},{
+									text: 'shop-category',
+									href: 'shop-category'
+								},{
+									text: 'shop-checkout',
+									href: 'shop-checkout'
 								}
 							] %}
 			{% for link in links2 %}
-				<li>
+				<li class="display-6 p-0">
 					<a class="text-black" href="https://andreywebcoder.github.io/Qela-mob/Qela-mob/{{link.href}}">{{link.text}}</a>
 				</li>
 			{% endfor %}

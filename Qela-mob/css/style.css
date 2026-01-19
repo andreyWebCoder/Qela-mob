@@ -15816,6 +15816,13 @@ input[type=number] {
 .qela-card-shop:hover * {
   color: inherit;
 }
+.qela-card-shop.qela-card-row {
+  min-height: unset;
+}
+.qela-card-shop.qela-card-row .qela-ibg {
+  flex: 0 0 56px;
+  padding-bottom: 56px;
+}
 
 .qela-badge {
   display: inline-flex;

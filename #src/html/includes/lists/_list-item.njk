@@ -1,0 +1,21 @@
+<div class="list-group qela-description">
+	<div class="list-group-item">
+		<a href="#" class="d-flex justify-content-between gap-3">
+			<div class="d-flex align-items-center gap-2 lh-0">
+				<span class="{{item.ic}} text-info-600"></span>
+				<span>{{item.title}}</span>
+			</div>
+			<span class="btn btn-link text-info-600 btn-sm ic-right ic-chevron-right">Змінити</span>
+		</a>
+	</div>
+	<div class="list-group-item pt-0 pb-2">
+		<ul class='ps-0 mb-0'>
+			{% for idx in item.itemContent %}
+				<li class="d-flex gap-2 py-2">
+					<span class="display-7 flex-grow-1">{{idx.label}}</span>
+					<span class="display-7">{{idx.text}}</span>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

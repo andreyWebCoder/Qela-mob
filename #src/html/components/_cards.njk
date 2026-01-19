@@ -3,12 +3,12 @@
 	<h2 class="h1 mt-4">Cards</h2>
 	<h3>Card-shop</h3>
 	<div class="d-flex gap-2 qela-cards-inner pb-3">
-		{% set caruselId = "shopCarousel"%}
-		{% set id = caruselId %}
-		{% include "html/includes/cards/_card-shop.njk" %}
-		{# {% for idx in caruselId %}
-		{% set id = idx %}
-		{% include "html/includes/cards/_card-shop.njk" %}
-	{% endfor %} #}
+		{% set cardImgs = [
+			{imgSrc:"shop-img.png",imgAlt:"Зображення 1"}, 
+			{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 2"} 
+		]%}
+		{% for img in cardImgs %}
+			{% include "html/includes/cards/_card-shop.njk" %}
+		{% endfor %}
 	</div>
 </section>

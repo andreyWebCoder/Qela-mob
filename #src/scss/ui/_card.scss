@@ -128,4 +128,11 @@
 			color: inherit;
 		}
 	}
+	&.qela-card-row {
+		min-height: unset;
+		.qela-ibg {
+			flex: 0 0 56px;
+			padding-bottom: 56px;
+		}
+	}
 }

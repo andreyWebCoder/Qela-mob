@@ -1,17 +1,34 @@
-<div class="px-3 py-4 d-flex flex-column gap-2 border-top">
+<div class="px-3 py-4 d-flex flex-column gap-2 {{borderClass}}">
 	{# Footer for shop #}
 	{% if footerType == "shop" %}
-		<div class="d-flex justify-content-between gap-2">
-			<div>
-				<div class="text-info-700 fw-semibold">Ціна Бали</div>
-				<div class="mt-2 d-flex align-items-center gap-2">
-					<img src="img/icons/orden-red.svg" width="36" height="36" alt="orden-red">
-					<span class="h1">75</span>
+		{% if list == "true" %}
+			<div class="d-grid gap-3 p-3 rounded bg-white">
+				<div class="d-flex gap-2">
+					<small class="flex-grow-1">Ви маєте</small>
+					<small>160 балів</small>
+				</div>
+				<div class="d-flex gap-2">
+					<small class="flex-grow-1">Залишається</small>
+					<small>10 балів</small>
+				</div>
+				<div class="d-flex gap-2">
+					<div class="fs-7 fw-semibold flex-grow-1">Всього до сплати</div>
+					<div class="fs-7">150 балів</div>
 				</div>
 			</div>
-			{% set label = "Кількість" %}
-			{% include "html/includes/counter/_counter.njk" %}
-		</div>
+		{% else %}
+			<div class="d-flex justify-content-between gap-2">
+				<div>
+					<div class="text-info-700 fw-semibold">Ціна Бали</div>
+					<div class="mt-2 d-flex align-items-center gap-2">
+						<img src="img/icons/orden-red.svg" width="36" height="36" alt="orden-red">
+						<span class="h1">75</span>
+					</div>
+				</div>
+				{% set label = "Кількість" %}
+				{% include "html/includes/counter/_counter.njk" %}
+			</div>
+		{% endif %}
 		{% for btn in footerBtns %}
 			<button type="button" class="btn {{btn.class}}">{{btn.text}}</button>
 		{% endfor %}

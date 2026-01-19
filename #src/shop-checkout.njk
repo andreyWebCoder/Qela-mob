@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+	{% set title = "Shop-checkout" %}
+	{% include "_head.njk" %}
+
+	<body>
+		{% set title = "Оформлення замовлення" %}
+		{% include "html/components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<div class="qela-top bg-white">
+				{% set type = 'btnLeftNoright' %}
+				{% include "html/includes/nav/_navbar.njk" %}
+			</div>
+			<!--content-->
+			<div class="flex-grow-1">
+				<div class="d-grid gap-4">
+					<div>
+						{% set cardContent = {imgSrc:"shop-img.png",imgAlt:"Зображення 1", cardText:"Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом"}%}
+						{% include "html/includes/cards/_card-shop-row.njk" %}
+						<div class="d-flex align-items-center py-3 gap-2">
+							<i class="text-secondary ic-info"></i>
+							<span>Доставка поштою, будь ласка заповніть всі необхідні поля доставки, вкажіть розмір у коментарі, якщо це одяг.</span>
+						</div>
+					</div>
+					<div class="fw-bold">Доставка</div>
+					{% set listItems = [
+						{ic: "ic-user1", title:"Одержувач", itemContent: [
+						{ label: "Імʼя:", text: "Ostap Kovalchuk" },
+						{ label: "Номер телефону:", text: "+4915210923822" },
+						{ label: "Електронна пошта:", text: "ostap@mail.com" }
+					] },
+						{ic: "ic-mark", title:"Адреса", itemContent: [
+						{ label: "Країна:", text: "Німеччина" },
+						{ label: "Індекс:", text: "-" },
+						{ label: "Вулиця або пункт видачі:", text: "-" },
+						{ label: "Додаткові дані адреси:", text: "-" },
+						{ label: "Коментар для курʼєра:", text: "-" }
+					]},
+					{ic: "ic-message-circle", title:"Коментар", itemContent: [
+						{ label: "-", text: "-" }
+					] }
+					]%}
+					{% for item in listItems %}
+						{% include "html/includes/lists/_list-item.njk" %}
+					{% endfor %}
+				</div>
+			</div>
+			<!--content-->
+			<div class="qela-bottom">
+				{% set footerType = "shop"%}
+				{% set list = "true"%}
+				{% set footerBtns = [
+					{class: "btn-primary", text:"Підтвердити"}
+				]%}
+				{% include "html/includes/nav/_footer.njk" %}
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
+
+</html>
