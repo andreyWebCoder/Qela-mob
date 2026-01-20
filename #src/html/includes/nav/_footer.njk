@@ -26,14 +26,14 @@
 					</div>
 				</div>
 				{% set label = "Кількість" %}
-				{% include "html/includes/counter/_counter.njk" %}
+				{% include "html/includes/form/counter/_counter.njk" %}
 			</div>
 		{% endif %}
 		{% for btn in footerBtns %}
 			<button type="button" class="btn {{btn.class}}">{{btn.text}}</button>
 		{% endfor %}
 		{# Footer for  #}
-	{% elif footerType == " " %}
+	{% elif footerType == "btns" %}
 		{% for btn in footerBtns %}
 			<button type="button" class="btn {{btn.class}}">{{btn.text}}</button>
 		{% endfor %}

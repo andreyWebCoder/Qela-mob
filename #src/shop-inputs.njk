@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+	{% set title = "Shop-inputs" %}
+	{% include "_head.njk" %}
+
+	<body>
+		{% set title = "Одержувач Subtitle" %}
+		{% include "html/components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen">
+			<!--header-->
+			<div class="qela-top bg-white">
+				{% set type = 'btnLeftNoright' %}
+				{% include "html/includes/nav/_navbar.njk" %}
+			</div>
+			<!--content-->
+			<div class="flex-grow-1">
+				<!-- radiobattons -->
+				<div class="d-flex gap-32px py-2">
+					{% set checks = [
+						{
+							label: 'Я',
+							id: 'radiobutton1',
+							type: 'radio',
+							errorText: 'Error text',
+							error: false,
+							disabled: false,
+							checked: false,
+							name: 'persone'
+						}, {
+							label: 'Інша особа',
+							id: 'radiobutton2',
+							type: 'radio',
+							errorText: 'Error text',
+							error: false,
+							disabled: false,
+							checked: true,
+							name: 'persone'
+						}
+					] %}
+					{% from "html/includes/form/input/_checkbox.njk" import inputCheckbox %}
+					{% for radio in checks %}
+						{{ inputCheckbox(radio) }}
+					{% endfor %}
+				</div>
+				<!-- inputs -->
+				<div class="d-grid gap-4 py-3">
+					{% set inputs = [
+						{
+							label: 'Вкажіть імʼя',
+							id: 'inputText1',
+							type: 'text',
+							placeholder: 'Імʼя',
+							helpText: 'Вкажіть імʼя так, як у документі',
+							errorText: 'Error text',
+							error: false,
+							disabled: false
+						}, {
+							label: 'Прізвище',
+							id: 'inputText2',
+							type: 'text',
+							placeholder: 'Прізвище',
+							helpText: 'Вкажіть прізвище так, як у документі',
+							errorText: 'Error text',
+							error: false,
+							disabled: false
+						}, {
+							label: 'Електронна пошта',
+							id: 'inputEmail',
+							type: 'email',
+							placeholder: 'Введіть пошту',
+							helpText: '',
+							errorText: 'Error text',
+							error: false,
+							disabled: false
+						}, {
+							label: 'Номер телефону',
+							id: 'inputNum',
+							type: 'number',
+							placeholder: 'Номер телефону',
+							helpText: 'Вкажіть код країни',
+							errorText: 'Error text',
+							error: false,
+							disabled: false
+						}, {
+							label: 'Коментар для курʼєра (необовʼязково)',
+							id: 'textarea',
+							placeholder: 'Коментар',
+							helpText: 'Корисні інструкції для курʼєра (наприклад: зателефонувати перед доставкою)',
+							errorText: '',
+							error: false,
+							disabled: false,
+							textarea: true,
+							rows: 5
+						}
+					] %}
+					{% from "html/includes/form/input/_input.njk" import inputField %}
+					{% for input in inputs %}
+						{{ inputField(input) }}
+					{% endfor %}
+				</div>
+				<!-- checkbox -->
+				<div class="pb-8 pt-4">
+					{% set check = {
+						label: 'Оновити в профілі',
+						id: 'checkbox1',
+						type: 'checkbox',
+						errorText: 'Error text',
+						error: false,
+						disabled: false,
+						checked: false,
+						name: ''
+					} %}
+					{% from "html/includes/form/input/_checkbox.njk" import inputCheckbox %}
+					{{ inputCheckbox(check) }}
+				</div>
+			</div>
+			<!--content-->
+			<!--footer-->
+			<div class="qela-bottom position-static">
+				{% set footerType = "btns"%}
+				{% set footerBtns = [
+					{class: "btn-primary", text:"Зберегти"}
+				]%}
+				{% include "html/includes/nav/_footer.njk" %}
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
+
+</html>

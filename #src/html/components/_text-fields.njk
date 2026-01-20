@@ -1,108 +1,116 @@
-<section>
-	<form class="d-grid gap-3">
-		<h2 class="h1 mt-4">Text-fields</h2>
-		<h3>Field solo</h3>
-		<div>
-			<label for="inputText1" class="form-label">Name</label>
-			<input type="text" class="form-control" id="inputText1" placeholder="Name">
-			<span class="form-error">Error text</span>
-			<span class="helper-text">helper-text</span>
+<section class="d-grid gap-3">
+	<h2 class="h1 mt-4">Text-fields</h2>
+	<h3>Input default</h3>
+	{% set inputs = [
+		{
+			label: 'Label',
+			id: 'inputText1',
+			type: 'text',
+			placeholder: 'Placeholder',
+			helpText: 'helper text',
+			errorText: 'Error text',
+			error: false,
+			disabled: false
+		}, {
+			label: 'Label',
+			id: 'inputText2',
+			type: 'text',
+			placeholder: 'Placeholder',
+			helpText: 'helper text',
+			errorText: 'Error text',
+			error: false,
+			disabled: true
+		}, {
+			label: 'Label',
+			id: 'inputText3',
+			type: 'text',
+			placeholder: 'Placeholder',
+			helpText: 'helper text',
+			errorText: 'Error text',
+			error: true,
+			disabled: false
+		}
+	] %}
+	{% from "html/includes/form/input/_input.njk" import inputField %}
+	{% for input in inputs %}
+		{{ inputField(input) }}
+	{% endfor %}
+
+	<h3>Text-field btn-group</h3>
+	<div>
+		<label for="inputEmail1" class="form-label ">Password</label>
+		<div class="input-group qela-input-group">
+			<input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="button-addon1">
+			<button class="btn qela-btn ic-eye-close" type="button" id="button-addon1"></button>
 		</div>
-		<div>
-			<label for="inputText2" class="form-label">Name</label>
-			<input type="text" class="form-control" id="inputText2" value="Taras" placeholder="Name">
-			<span class="form-error">Error text</span>
-			<span class="helper-text">helper-text</span>
+		<span class="form-error">Error text1</span>
+		<span class="helper-text">helper-text</span>
+	</div>
+	<div>
+		<label for="inputEmail2" class="form-label">Confirm password</label>
+		<div class="input-group qela-input-group has-validation">
+			<input type="text" class="form-control" placeholder="Confirm password" aria-label="Confirm password" aria-describedby="button-addon2">
+			<button class="btn qela-btn ic-eye" type="button" id="button-addon2"></button>
 		</div>
-		<div>
-			<label for="inputText3" class="form-label">Name</label>
-			<input type="text" class="form-control invalid" id="inputText3" placeholder="Name">
-			<span class="form-error">Error text</span>
-			<span class="helper-text">helper-text</span>
+		<span class="form-error">Error text1</span>
+		<span class="helper-text">helper-text</span>
+	</div>
+
+	<h3>Textarea</h3>
+	{% set textarea = {
+		label: 'Коментар для курʼєра (необовʼязково)',
+		id: 'textarea',
+		placeholder: 'Коментар',
+		helpText: 'Корисні інструкції для курʼєра (наприклад: зателефонувати перед доставкою)',
+		errorText: '',
+		error: false,
+		disabled: false,
+		textarea: true,
+		rows: 5
+	} %}
+	{% from "html/includes/form/input/_input.njk" import inputField %}
+	{{ inputField(textarea) }}
+
+	<h3>Field solo-simple</h3>
+	<div class="d-flex gap-3 ">
+		<input type="number" class="form-control text-center">
+		<input type="number" class="form-control text-center">
+		<input type="number" value="5" class="form-control text-center">
+		<input type="number" value="15" class="form-control text-center invalid">
+	</div>
+
+	<h3>Text-field group custom large</h3>
+	<!-- Text-field group custom large -->
+	<div>
+		<label for="inputCustom" class="form-label ">Custom</label>
+		<div class="input-group qela-input-group custom-large">
+			<input id="inputCustom" type="number" class="form-control" placeholder="0">
+			<label for="inputCustom" class="input-group-text">$</label>
 		</div>
-		<h3>Field solo-simple</h3>
-		<div class="d-flex gap-3 ">
-			<input type="number" class="form-control text-center">
-			<input type="number" class="form-control text-center">
-			<input type="number" value="5" class="form-control text-center">
-			<input type="number" value="15" class="form-control text-center invalid">
+		<span class="form-error">Error text1</span>
+		<span class="helper-text">helper-text</span>
+	</div>
+
+	<h3>Switch</h3>
+	<!-- Switch -->
+	<div>
+		<div class="form-check form-check-inline form-switch">
+			<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5">
 		</div>
-		<h3>Text-field btn-group</h3>
-		<div>
-			<label for="inputEmail1" class="form-label ">Password</label>
-			<div class="input-group qela-input-group">
-				<input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="button-addon1">
-				<button class="btn qela-btn ic-eye-close" type="button" id="button-addon1"></button>
-			</div>
-			<span class="form-error">Error text1</span>
-			<span class="helper-text">helper-text</span>
+		<div class="form-check form-check-inline form-switch">
+			<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck6" disabled="">
 		</div>
-		<div>
-			<label for="inputEmail2" class="form-label">Confirm password</label>
-			<div class="input-group qela-input-group has-validation">
-				<input type="text" class="form-control" placeholder="Confirm password" aria-label="Confirm password" aria-describedby="button-addon2">
-				<button class="btn qela-btn ic-eye" type="button" id="button-addon2"></button>
-			</div>
-			<span class="form-error">Error text1</span>
-			<span class="helper-text">helper-text</span>
+	</div>
+	<div>
+		<div class="form-check form-check-inline form-switch">
+			<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck7" checked>
 		</div>
-		<h3>Field text-area</h3>
-		<div>
-			<label for="exampleFormControlTextarea1" class="form-label">Your report</label>
-			<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your report" rows="5"></textarea>
-			<span class="form-error">Error text1</span>
-			<span class="helper-text">helper-text</span>
+		<div class="form-check form-check-inline form-switch">
+			<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck8" disabled="" checked>
 		</div>
-		<div>
-			<label for="exampleFormControlTextarea2" class="form-label">Your report</label>
-			<textarea class="form-control invalid" id="exampleFormControlTextarea2" placeholder="Your report" rows="5"></textarea>
-			<span class="form-error">Error text1</span>
-			<span class="helper-text">helper-text</span>
-		</div>
-		<h3>Text-field group custom large</h3>
-		<!-- Text-field group custom large -->
-		<div>
-			<label for="inputCustom" class="form-label ">Custom</label>
-			<div class="input-group qela-input-group custom-large">
-				<input id="inputCustom" type="number" class="form-control" placeholder="0">
-				<label for="inputCustom" class="input-group-text">$</label>
-			</div>
-			<span class="form-error">Error text1</span>
-			<span class="helper-text">helper-text</span>
-		</div>
-		<h3>Switch</h3>
-		<!-- Switch -->
-		<div>
-			<div class="form-check form-check-inline form-switch">
-				<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5">
-			</div>
-			<div class="form-check form-check-inline form-switch">
-				<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck6" disabled="">
-			</div>
-		</div>
-		<div>
-			<div class="form-check form-check-inline form-switch">
-				<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck7" checked>
-			</div>
-			<div class="form-check form-check-inline form-switch">
-				<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck8" disabled="" checked>
-			</div>
-		</div>
-		<h3>Datapiker</h3>
-		<!-- Datapiker -->
-		<div class="qela-datapikers">
-			<div>
-				<label class="form-label" for="dp-input-datapiker">From date</label>
-				<v-date-picker uid="datapiker" v-model="date" auto-apply placeholder="Select Date" position="left"/>
-			</div>
-			<div class="spacer"></div>
-			<div>
-				<label class="form-label" for="dp-input-datapiker-2">To date</label>
-				<v-date-picker uid="datapiker-2" v-model="date" auto-apply placeholder="Select Date" position="right"/>
-			</div>
-		</div>
-		<h3>Counter</h3>
-		<!-- Counter -->
-		{% include "html/includes/counter/_counter.njk" %}
-	</form>
+	</div>
+
+	<h3>Counter</h3>
+	<!-- Counter -->
+	{% include "html/includes/form/counter/_counter.njk" %}
 </section>
