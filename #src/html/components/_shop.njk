@@ -1,7 +1,8 @@
 <section class="d-grid gap-3">
-	<!-- Card-shop -->
+	<!-- Components shop -->
 	<h2 class="h1 mt-4">Shop</h2>
 	<h3>Card-shop</h3>
+	<!-- Card shop -->
 	<div class="d-flex gap-2 qela-cards-inner pb-3">
 		{% set cardImgs = [
 			{imgSrc:"shop-img.png",imgAlt:"Зображення 1",status:true}, 
@@ -10,5 +11,11 @@
 		{% for img in cardImgs %}
 			{% include "html/includes/cards/_card-shop.njk" %}
 		{% endfor %}
+	</div>
+	<h3>Card checkout</h3>
+	<div class="d-flex flex-column gap-2">
+		{% set cardContent = {imgSrc:"shop-img.png",imgAlt:"Зображення 1", cardText:"Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом"}%}
+		{% from "html/includes/cards/_card-shop-checkout.njk" import cardCheckout %}
+		{{cardCheckout(cardContent)}}
 	</div>
 </section>

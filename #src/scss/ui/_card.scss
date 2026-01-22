@@ -124,7 +124,7 @@
 	}
 	&:hover {
 		color: $info-900;
-		* {
+		*:not(button) {
 			color: inherit;
 		}
 	}

@@ -17,7 +17,8 @@
 				<div class="d-grid gap-4">
 					<div>
 						{% set cardContent = {imgSrc:"shop-img.png",imgAlt:"Зображення 1", cardText:"Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом"}%}
-						{% include "html/includes/cards/_card-shop-row.njk" %}
+						{% from "html/includes/cards/_card-shop-checkout.njk" import cardCheckout %}
+						{{cardCheckout(cardContent)}}
 						<div class="d-flex align-items-center py-3 gap-2">
 							<i class="text-secondary ic-info"></i>
 							<span>Доставка поштою, будь ласка заповніть всі необхідні поля доставки, вкажіть розмір у коментарі, якщо це одяг.</span>

@@ -14747,13 +14747,29 @@ a:hover {
   height: 24px;
   background: none;
   padding: 0;
-  color: #000;
   background-color: white;
   border-radius: 50%;
   border: none;
 }
 .btn-del::before {
   font-size: 16px;
+}
+
+.btn-ic {
+  background: none;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: var(--bs-ql-info-700);
+  transition: color 0.2s ease 0s;
+}
+.btn-ic:disabled {
+  color: var(--bs-ql-info-400);
+  pointer-events: none;
+}
+.btn-ic:active {
+  color: var(--bs-ql-info-900);
 }
 
 .btn-custom {
@@ -15342,15 +15358,6 @@ input[type=number] {
   display: none;
 }
 
-.qela-quantity button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  color: #676767;
-}
-.qela-quantity button:active {
-  color: #2c2c2c;
-}
 .qela-quantity .form-control {
   flex: 0 0 72px;
 }
@@ -15813,7 +15820,7 @@ input[type=number] {
 .qela-card-shop:hover {
   color: #2c2c2c;
 }
-.qela-card-shop:hover * {
+.qela-card-shop:hover *:not(button) {
   color: inherit;
 }
 .qela-card-shop.qela-card-row {
