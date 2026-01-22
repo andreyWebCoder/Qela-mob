@@ -1,11 +1,11 @@
 <section class="d-grid gap-3">
 	<!-- Card-shop -->
-	<h2 class="h1 mt-4">Cards</h2>
+	<h2 class="h1 mt-4">Shop</h2>
 	<h3>Card-shop</h3>
 	<div class="d-flex gap-2 qela-cards-inner pb-3">
 		{% set cardImgs = [
-			{imgSrc:"shop-img.png",imgAlt:"Зображення 1"}, 
-			{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 2"} 
+			{imgSrc:"shop-img.png",imgAlt:"Зображення 1",status:true}, 
+			{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 2",status:false} 
 		]%}
 		{% for img in cardImgs %}
 			{% include "html/includes/cards/_card-shop.njk" %}
