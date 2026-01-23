@@ -15,8 +15,12 @@
 					{% if idx.invalid %}
 						<span class="display-7 flex-grow-1 text-danger-600">{{idx.invalid}}</span>
 					{% else %}
-						<span class="display-7 flex-grow-1">{{idx.label}}</span>
-						<span class="display-7">{{idx.text}}</span>
+						{% if idx.label %}
+							<span class="display-7 flex-grow-1">{{ idx.label }}</span>
+						{% endif %}
+						{% if idx.text %}
+							<span class="display-7">{{idx.text}}</span>
+						{% endif %}
 					</li>
 				{% endif %}
 			{% endfor %}
