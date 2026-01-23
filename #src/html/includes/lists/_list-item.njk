@@ -12,9 +12,13 @@
 		<ul class='ps-0 mb-0'>
 			{% for idx in item.itemContent %}
 				<li class="d-flex gap-2 py-2">
-					<span class="display-7 flex-grow-1">{{idx.label}}</span>
-					<span class="display-7">{{idx.text}}</span>
-				</li>
+					{% if idx.invalid %}
+						<span class="display-7 flex-grow-1 text-danger-600">{{idx.invalid}}</span>
+					{% else %}
+						<span class="display-7 flex-grow-1">{{idx.label}}</span>
+						<span class="display-7">{{idx.text}}</span>
+					</li>
+				{% endif %}
 			{% endfor %}
 		</ul>
 	</div>
