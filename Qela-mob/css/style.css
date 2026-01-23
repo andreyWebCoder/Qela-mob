@@ -15861,6 +15861,62 @@ input[type=number] {
   padding-bottom: 56px;
 }
 
+.qela-card-order .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--bs-ql-info-300);
+}
+.qela-card-order .card-body .qela-ibg {
+  padding-bottom: 32px;
+  flex: 0 0 32px;
+}
+.qela-card-order .card-body > ul li {
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.qela-card-order .card-body > ul li:last-child {
+  padding-top: 0.25rem;
+  padding-bottom: 0rem;
+}
+.qela-card-order .card-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.qela-card-order .qela-ibg {
+  overflow: hidden;
+  border: 1px solid var(--bs-ql-info-200);
+  border-radius: 4px;
+}
+.qela-card-order li {
+  list-style: none;
+}
+.qela-card-order.lg .card-header .qela-ibg {
+  padding-bottom: 60px;
+  flex: 0 0 60px;
+}
+.qela-card-order.lg .card-body > ul li {
+  font-size: 0.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.qela-card-order.lg .card-body > ul li:last-child {
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+}
+.qela-card-order.lg .card-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.qela-card-order.lg .btn-ic {
+  transition: transform 0.3s ease 0s;
+}
+.qela-card-order.lg .btn-ic:not(.collapsed) {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
 .qela-badge {
   display: inline-flex;
   align-items: center;

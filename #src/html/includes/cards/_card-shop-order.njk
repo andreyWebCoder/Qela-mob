@@ -1,23 +1,141 @@
-<button type="button" class="card qela-card-shop p-3 border">
-	<div class="qela-ibg">
-		<img  src="img/shop/{{img.imgSrc}}" alt="{{img.imgAlt}}">
-	</div>
-
-	<small class="card-text fw-semibold qela-clamp text-break mt-2" style="--clamp-line: 2">Колекційна футболка від гурту ТНМК з автографом</small>
-	<div class="card-body p-0 mt-3 d-grid gap-2">
-		<div class="d-flex gap-2 justify-content-between">
-			<div>
-				<div class='text-info-700 display-7'>Ціна Бали</div>
-				<small class="mt-2 fw-semibold d-flex align-items-center">
-					<img src="img/icons/orden-red.svg" width="18" height="18" alt="orden-red">
-					75
-				</small>
-			</div>
-			<div>
-				<div class='text-info-700 display-7'>В наявності</div>
-				<small class="mt-2 fw-semibold d-block">Немає</small>
+{% if card.type == 'lg' %}
+	<div class="card qela-card-order lg">
+		<div class="card-header py-3">
+			<div class="d-flex align-items-center gap-2">
+				<div class="qela-ibg">
+					<img src="img/shop/shop-img.png" alt="Зображення футболки">
+				</div>
+				<div class="card-text">{{card.text}}</div>
 			</div>
 		</div>
-		<span class="btn btn-outline-secondary btn-sm">Купити</span>
+		<div class="card-body">
+			<ul class='ps-0 mb-0'>
+				{% for idx in card.itemContent %}
+					<li>
+						<div class="d-flex gap-2 align-items-center">
+							<div class="flex-grow-1">{{idx.label}}</div>
+							<div class="text-info-700 {{'d-flex align-items-center gap-1' if idx.ic }}">
+								{% if idx.text %}
+									{{idx.text}}
+								{% endif %}
+
+								{% if idx.ic %}
+									<i class="ico-sm text-info-600 {{idx.ic}}"></i>
+								{% endif %}
+
+								{% if idx.status %}
+									<div class="d-flex align-items-center gap-2">
+										{% set tag = {
+											text: 'В роботі',
+											ic: 'clock',
+											color: 'warning-900',
+											bg: 'warning-200'
+										} %}
+										{% from "html/includes/status/_status.njk" import statusTag %}
+										{{statusTag(tag)}}
+										<button type="button" class="btn-ic text-black ic-chevron collapsed" data-bs-toggle="collapse" data-bs-target="#collapseList" aria-expanded="false" aria-controls="collapseList"></button>
+									</div>
+								{% endif %}
+							</div>
+						</div>
+						{% if idx.status %}
+							<div class="collapse" id="collapseList">
+								<ul class="mb-0 mt-2 ps-0 pt-2 border-top d-grid gap-2">
+									{% set lists = [
+									{
+										text: 'Отримано',
+										data: '15.12.2025 - 21:15'
+									},
+									{
+										text: 'В роботі',
+										data: '15.12.2025 - 21:15'
+									},
+									{
+										text: 'Нове',
+										data: '15.12.2025 - 21:15'
+									}
+								] %}
+									{% for item in lists %}
+										<li class="d-flex gap-1 p-0">
+											<small class="flex-grow-1">{{item.text}}</small>
+											<small class="text-info-700">{{item.data}}</small>
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
 	</div>
-</button>
+{% else %}
+	<div class="card qela-card-order">
+		<div class="card-header py-3">
+			<div class="text-info-700">{{card.title}}</div>
+			<button type="button" class="btn-ic text-info-600 ic-right ic-chevron-right"></button>
+		</div>
+		<div class="card-body">
+			<div class="d-flex align-items-center gap-2 pb-2">
+				<div class="qela-ibg">
+					<img src="img/shop/shop-img.png" alt="Зображення футболки">
+				</div>
+				<div class="card-text">{{card.text}}</div>
+			</div>
+			<ul class='ps-0 mb-0'>
+				{% for idx in card.itemContent %}
+					<li>
+						<div class="d-flex gap-2 align-items-center">
+							<div class="flex-grow-1">{{idx.label}}</div>
+							<div class="{{'d-flex align-items-center gap-1' if idx.ic }}">
+								{% if idx.text %}
+									{{idx.text}}
+								{% endif %}
+
+								{% if idx.ic %}
+									<i class="ico-sm text-info-600 {{idx.ic}}"></i>
+								{% endif %}
+
+								{% if idx.status %}
+									{% set tag = {
+								text: 'Нове',
+								ic: 'star-nofilled',
+								color: 'info-900',
+								bg: 'info-200'
+								}%}
+									{% from "html/includes/status/_status.njk" import statusTag %}
+									{{statusTag(tag)}}
+								{% endif %}
+							</div>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+{% endif %}
+
+{# <h3>Card order</h3>
+	{% set cardOrders = [
+		{
+			title: "Продовжити оформлення",
+			text: "Колекційна футболка від гурту ТНМК з автографом",
+			itemContent: [
+				{
+					label: "Дата створення:",
+					text: "15.12.2025",
+				}, {
+					label: "Тип:",
+					text: "Фізичний",
+					ic: 'ic-box',
+				}, {
+					label: "Статус",
+					status:true,
+				}
+			]
+		}
+	] %}
+	{% for card in cardOrders %}
+		{% include "html/includes/cards/_card-shop-order.njk" %}
+	{% endfor %} #}

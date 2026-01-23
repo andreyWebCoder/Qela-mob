@@ -16,6 +16,73 @@
 	{% set cardContent = {imgSrc:"shop-img.png",imgAlt:"Зображення 1", cardText:"Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом"}%}
 	{% from "html/includes/cards/_card-shop-checkout.njk" import cardCheckout %}
 	{{cardCheckout(cardContent)}}
+	{# ====================== #}
+	<h3>Card order</h3>
+	{% set cardOrders = [
+		{
+			title: "Продовжити оформлення",
+			text: "Колекційна футболка від гурту ТНМК з автографом",
+			itemContent: [
+				{
+					label: "Дата створення:",
+					text: "15.12.2025"
+				}, {
+					label: "Тип:",
+					text: "Фізичний",
+					ic: 'ic-box'
+				}, {
+					label: "Статус",
+					status:true
+				}
+			]
+		},
+		{	type:'lg',
+			text: "Колекційна футболка від гурту ТНМК з автографом",
+			itemContent: [
+				{
+					label: "Номер замовлення:",
+					text: "0123456789"
+				},{
+					label: "Дата створення:",
+					text: "15.12.2025"
+				},{
+					label: "Кількість:",
+					text: "1"
+				},{
+					label: "Ціна (бали)::",
+					text: "75"
+				},
+				{
+					label: "Тип:",
+					text: "Фізичний",
+					ic: 'ic-box'
+				}, {
+					label: "Статус",
+					status:true
+				}
+			]
+		}
+	] %}
+	{% for card in cardOrders %}
+		{% include "html/includes/cards/_card-shop-order.njk" %}
+	{% endfor %}
+	{# ====================== #}
+	<h3>Shop list order</h3>
+	{% set listItems = [
+		{
+			ic: "ic-user1", 
+			title: "Одержувач", 
+			itemContent: [
+				{ label: "Імʼя:", text: "Ostap Kovalchuk" },
+				{ label: "Номер телефону:", text: "+4915210923822" },
+				{ label: "Електронна пошта:", text: "ostap@mail.com" }
+			] 
+		}
+	] %}
+	{% for item in listItems %}
+		{% include "html/includes/lists/_list-item.njk" %}
+	{% endfor %}
+	{# ====================== #}
 	<h3>Shop footers</h3>
 	{% set footerType = "shop"%}
 	{# {% set borderClass = "qela-footer-shadow"%} #}
