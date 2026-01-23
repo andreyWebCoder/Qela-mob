@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+	{% set title = "Shop success" %}
+	{% include "_head.njk" %}
+
+	<body>
+		{% set title = "Мої замовлення" %}
+		{% include "html/components/_aside-layouts.njk" %}
+		<main class="qela-fullscreen  bg-white">
+			<!--content-->
+			<div class="flex-grow-1 d-flex align-items-center">
+				<div class="text-center px-32px">
+					<img src="img/shop/svg/Shop.svg" alt="icon bag" width="200" height="200">
+					<div class="mt-32px">
+						<h1 class="text-info-800 h2">Дякуємо за замовлення!</h1>
+						<small class="text-info-600 mt-2 d-block">Ваше замовлення було успішно оформлено! Слідкуйте за статусом у розділі Мої замовлення</small>
+					</div>
+				</div>
+			</div>
+			<!--content-->
+			<div class="qela-bottom bg-white">
+				{% set footerType = "btns" %}
+				{# {% set borderClass = "qela-footer-shadow" %} #}
+				{% set footerBtns = [
+					{class: "btn-outline-secondary ic-right ic-order-list", text:"Мої замовлення"},
+					{class: "btn-primary", text:"Продовжити покупки"}
+				]%}
+				{% include "html/includes/nav/_footer.njk" %}
+			</div>
+		</main>
+		<!-- =========================== -->
+		{% include "_js.njk" %}
+	</body>
+
+</html>
