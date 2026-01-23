@@ -16,12 +16,12 @@
 			<div class="flex-grow-1">
 				<div class="row g-2">
 					{% set cardImgs = [
-						{imgSrc:"shop-img.png",imgAlt:"Зображення 1"}, 
-						{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 2"}, 
-						{imgSrc:"shop-img-3.jpg",imgAlt:"Зображення 3"},
-						{imgSrc:"shop-img-4.jpg",imgAlt:"Зображення 4"},
-						{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 5"}, 
-						{imgSrc:"shop-img-3.jpg",imgAlt:"Зображення 6"}
+						{imgSrc:"shop-img.png",imgAlt:"Зображення 1",status:true}, 
+						{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 2",status:true}, 
+						{imgSrc:"shop-img-3.jpg",imgAlt:"Зображення 3",status:false},
+						{imgSrc:"shop-img-4.jpg",imgAlt:"Зображення 4",status:true},
+						{imgSrc:"shop-img-2.jpg",imgAlt:"Зображення 5",status:true}, 
+						{imgSrc:"shop-img-3.jpg",imgAlt:"Зображення 6",status:true}
 					]%}
 					{% for img in cardImgs %}
 						<div class="col-6">
