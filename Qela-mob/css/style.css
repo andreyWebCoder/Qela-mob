@@ -14035,6 +14035,10 @@ textarea.form-control-lg {
   content: "\e9cb";
 }
 
+.ic-star-nofilled:before {
+  content: "\e9cc";
+}
+
 main {
   --px-main: 1rem;
   max-width: 576px;

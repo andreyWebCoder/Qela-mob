@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ua">
 <head>
-    <title>Shop-inputs</title>
+    <title>Shop order</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/vendors.css">
@@ -101,73 +101,148 @@
         </nav>
     </aside>
     <main class="qela-fullscreen">
-        <!--header-->
         <div class="qela-top bg-white">
             <nav class="navbar bg-white qela-navbar">
                 <button type="button" class="btn ic-chevron-left start-0 ms-3"></button>
-                <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">Одержувач Subtitle</span>
+                <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">Мої замовлення</span>
             </nav>
+            <ul class="nav nav-pills nav-fill qela-tab">
+                <li class="nav-item">
+                    <button type="button" class="nav-link active" aria-current="current"> Поточні </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="nav-link"> Історія </button>
+                </li>
+            </ul>
         </div>
         <!--content-->
         <div class="flex-grow-1">
-            <!-- radiobattons -->
-            <div class="d-flex gap-32px py-2">
-                <div class="form-check">
-                    <input id="radiobutton1" name="persone" type="radio" class="form-check-input">
-                    <label class="form-check-label" for="radiobutton1">Я</label>
-                    <span class="form-error">Error text</span>
-                </div>
-                <div class="form-check">
-                    <input id="radiobutton2" name="persone" type="radio" class="form-check-input" checked>
-                    <label class="form-check-label" for="radiobutton2">Інша особа</label>
-                    <span class="form-error">Error text</span>
-                </div>
-            </div>
-            <!-- inputs -->
-            <div class="d-grid gap-4 py-3">
+            <div class="d-grid gap-4">
                 <div>
-                    <label class="form-label" for="inputText1">Вкажіть імʼя</label>
-                    <input id="inputText1" type="text" class="form-control" placeholder="Імʼя">
-                    <span class="helper-text">Вкажіть імʼя так, як у документі</span>
-                    <span class="form-error">Error text</span>
+                    <div class="card qela-card-shop qela-card-row p-3 d-grig gap-3">
+                        <div class="d-flex gap-2">
+                            <div class="qela-ibg">
+                                <img src="img/shop/shop-img.png" alt="Зображення 1">
+                            </div>
+                            <small class="card-text">Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом</small>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-between align-items-center fs-7">
+                            <div class="d-flex gap-3 align-items-center">
+                                <button type="button" class="btn-ic ic-add"></button>
+                                <span>2 шт.</span>
+                                <button type="button" class="btn-ic ic-minus-circled" disabled></button>
+                            </div>
+                            <span>150 балів</span>
+                        </div>
+                        <span class="display-7">Доступно 1</span>
+                    </div>
+                    <div class="d-flex align-items-center py-3 gap-2">
+                        <i class="text-secondary ic-info"></i>
+                        <span>Доставка поштою, будь ласка заповніть всі необхідні поля доставки, вкажіть розмір у коментарі, якщо це одяг.</span>
+                    </div>
                 </div>
-                <div>
-                    <label class="form-label" for="inputText2">Прізвище</label>
-                    <input id="inputText2" type="text" class="form-control" placeholder="Прізвище">
-                    <span class="helper-text">Вкажіть прізвище так, як у документі</span>
-                    <span class="form-error">Error text</span>
+                <div class="fw-bold">Доставка</div>
+                <div class="list-group qela-description">
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between gap-3">
+                            <div class="d-flex align-items-center gap-2 lh-0">
+                                <span class="ic-user1 text-info-600"></span>
+                                <span>Одержувач</span>
+                            </div>
+                            <button type="button" class="btn btn-link text-info-600 btn-sm ic-right ic-chevron-right">Змінити</button>
+                        </div>
+                    </div>
+                    <div class="list-group-item pt-0 pb-2">
+                        <ul class='ps-0 mb-0'>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Імʼя:</span>
+                                <span class="display-7">Ostap Kovalchuk</span>
+                            </li>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Номер телефону:</span>
+                                <span class="display-7">+4915210923822</span>
+                            </li>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Електронна пошта:</span>
+                                <span class="display-7">ostap@mail.com</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <label class="form-label" for="inputEmail">Електронна пошта</label>
-                    <input id="inputEmail" type="email" class="form-control" placeholder="Введіть пошту">
-                    <span class="form-error">Error text</span>
+                <div class="list-group qela-description">
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between gap-3">
+                            <div class="d-flex align-items-center gap-2 lh-0">
+                                <span class="ic-mark text-info-600"></span>
+                                <span>Адреса</span>
+                            </div>
+                            <button type="button" class="btn btn-link text-info-600 btn-sm ic-right ic-chevron-right">Змінити</button>
+                        </div>
+                    </div>
+                    <div class="list-group-item pt-0 pb-2">
+                        <ul class='ps-0 mb-0'>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Країна:</span>
+                                <span class="display-7">Німеччина</span>
+                            </li>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Індекс:</span>
+                                <span class="display-7">-</span>
+                            </li>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Вулиця або пункт видачі:</span>
+                                <span class="display-7">-</span>
+                            </li>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Додаткові дані адреси:</span>
+                                <span class="display-7">-</span>
+                            </li>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">Коментар для курʼєра:</span>
+                                <span class="display-7">-</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <label class="form-label" for="inputNum">Номер телефону</label>
-                    <input id="inputNum" type="number" class="form-control" placeholder="Номер телефону">
-                    <span class="helper-text">Вкажіть код країни</span>
-                    <span class="form-error">Error text</span>
-                </div>
-                <div>
-                    <label class="form-label" for="textarea">Коментар для курʼєра (необовʼязково)</label>
-                    <textarea id="textarea" class="form-control" placeholder="Коментар" rows="5"></textarea>
-                    <span class="helper-text">Корисні інструкції для курʼєра (наприклад: зателефонувати перед доставкою)</span>
-                </div>
-            </div>
-            <!-- checkbox -->
-            <div class="pb-8 pt-4">
-                <div class="form-check">
-                    <input id="checkbox1" type="checkbox" class="form-check-input">
-                    <label class="form-check-label" for="checkbox1">Оновити в профілі</label>
-                    <span class="form-error">Error text</span>
+                <div class="list-group qela-description">
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between gap-3">
+                            <div class="d-flex align-items-center gap-2 lh-0">
+                                <span class="ic-message-circle text-info-600"></span>
+                                <span>Коментар</span>
+                            </div>
+                            <button type="button" class="btn btn-link text-info-600 btn-sm ic-right ic-chevron-right">Змінити</button>
+                        </div>
+                    </div>
+                    <div class="list-group-item pt-0 pb-2">
+                        <ul class='ps-0 mb-0'>
+                            <li class="d-flex gap-2 py-2">
+                                <span class="display-7 flex-grow-1">-</span>
+                                <span class="display-7">-</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <!--content-->
-        <!--footer-->
-        <div class="qela-bottom position-static">
+        <div class="qela-bottom bg-white">
             <div class="p-3 d-flex flex-column gap-3 ">
-                <button type="button" class="btn btn-primary">Зберегти</button>
+                <div class="d-grid px-3">
+                    <div class="d-flex gap-2 py-1">
+                        <small class="flex-grow-1">Ви маєте</small>
+                        <small>160 балів</small>
+                    </div>
+                    <div class="d-flex gap-2 py-1">
+                        <small class="flex-grow-1">Залишається</small>
+                        <small>10 балів</small>
+                    </div>
+                    <div class="d-flex gap-2 py-1">
+                        <div class="fs-7 fw-semibold flex-grow-1" style="line-height: 167%;">Всього до сплати</div>
+                        <div class="fs-7">150 балів</div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">Підтвердити</button>
             </div>
         </div>
     </main>

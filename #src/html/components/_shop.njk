@@ -49,4 +49,44 @@
 	]%}
 	{% include "html/includes/nav/_footer.njk" %}
 	{# ====================== #}
+	<h3>Shop card status tag</h3>
+	<div class="d-flex flex-wrap gap-2">
+		{% set statutsItems = [
+		{
+			text: 'Нове',
+			ic: 'star-nofilled',
+			color: 'info-900',
+			bg: 'info-200'
+		},
+		{
+			text: 'В роботі',
+			ic: 'clock',
+			color: 'warning-800',
+			bg: 'warning-100'
+		},
+		{
+			text: 'Відправлено',
+			ic: 'send1',
+			color: 'secondary',
+			bg: 'secondary-200'
+		},
+		{
+			text: 'Отримано',
+			ic: 'success',
+			color: 'success-800',
+			bg: 'success-200'
+		},
+		{
+			text: 'Скасовано',
+			ic: 'stop',
+			color: 'danger-800',
+			bg: 'danger-200'
+		}
+	] %}
+		{% from "html/includes/status/_status.njk" import statusTag %}
+		{% for tag in statutsItems %}
+			{{statusTag(tag)}}
+		{% endfor %}
+	</div>
+	{# ====================== #}
 </section>

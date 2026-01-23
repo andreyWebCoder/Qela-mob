@@ -1,0 +1,6 @@
+{% macro statusTag(tag) %}
+	<small class="p-2 pe-3 rounded-3 d-inline-flex gap-2 align-items-center fw-semibold bg-{{tag.bg}} text-{{tag.color}}">
+		<i class="ico-sm ic-{{tag.ic}}"></i>
+		{{tag.text}}
+	</small>
+{% endmacro %}

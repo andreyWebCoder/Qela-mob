@@ -1,0 +1,12 @@
+<ul class="nav nav-pills nav-fill qela-tab">
+	{% for item in tabItems %}
+		<li class="nav-item">
+			<button 
+			type="button" 
+			class="nav-link{{ ' ' + 'active' if item.active }}" 
+			{% if item.active %} aria-current="{{item.ariaCurrent}}"{% endif %}>
+				{{item.text}}
+			</button>
+		</li>
+	{% endfor %}
+</ul>

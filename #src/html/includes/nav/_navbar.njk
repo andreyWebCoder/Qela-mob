@@ -3,15 +3,14 @@
 		<a class="navbar-brand start-0 p-0 ms-3" href="#">
 			<img src="img/logo-strichka.svg">
 		</a>
-			<span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">{{ title | default('Заголовок') }}</span>
-	<button type="button" class="btn ic-order-list me-3 end-0"></button>
+		<span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">{{ title | default('Заголовок') }}</span>
+		<button type="button" class="btn ic-order-list me-3 end-0"></button>
 	{% elif type == 'btnLeft' %}
 		<button type="button" class="btn ic-chevron-left start-0 ms-3"></button>
-			<span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">{{ title | default('Заголовок') }}</span>
-	<button type="button" class="btn ic-order-list me-3 end-0"></button>
+		<span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">{{ title | default('Заголовок') }}</span>
+		<button type="button" class="btn ic-order-list me-3 end-0"></button>
 	{% elif type == 'btnLeftNoright' %}
 		<button type="button" class="btn ic-chevron-left start-0 ms-3"></button>
-			<span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">{{ title | default('Заголовок') }}</span>
+		<span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">{{ title | default('Заголовок') }}</span>
 	{% endif %}
-
 </nav>
