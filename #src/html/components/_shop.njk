@@ -13,9 +13,40 @@
 		{% endfor %}
 	</div>
 	<h3>Card checkout</h3>
-	<div class="d-flex flex-column gap-2">
-		{% set cardContent = {imgSrc:"shop-img.png",imgAlt:"Зображення 1", cardText:"Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом"}%}
-		{% from "html/includes/cards/_card-shop-checkout.njk" import cardCheckout %}
-		{{cardCheckout(cardContent)}}
-	</div>
+	{% set cardContent = {imgSrc:"shop-img.png",imgAlt:"Зображення 1", cardText:"Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом"}%}
+	{% from "html/includes/cards/_card-shop-checkout.njk" import cardCheckout %}
+	{{cardCheckout(cardContent)}}
+	<h3>Shop footers</h3>
+	{% set footerType = "shop"%}
+	{# {% set borderClass = "qela-footer-shadow"%} #}
+	{% set counter = true %}
+	{% set footerBtns = [
+		{class: "btn-primary", text:"Купити"}
+	]%}
+	{% include "html/includes/nav/_footer.njk" %}
+	{# ====================== #}
+	{% set footerType = "shop"%}
+	{# {% set borderClass = "qela-footer-shadow"%} #}
+	{% set counter = false %}
+	{% set footerBtns = [
+		{class: "btn-primary", text:"Купити"}
+	]%}
+	{% include "html/includes/nav/_footer.njk" %}
+	{% set footerType = "shop"%}
+	{# {% set borderClass = "qela-footer-shadow"%} #}
+	{% set counter = false %}
+	{% set limit = true %}
+	{% set footerBtns = [
+		{class: "btn-primary", text:"Купити"}
+	]%}
+	{% include "html/includes/nav/_footer.njk" %}
+	{# ====================== #}
+	{% set footerType = "shop"%}
+	{% set list = "true"%}
+	{# {% set borderClass = "qela-footer-shadow"%} #}
+	{% set footerBtns = [
+		{class: "btn-primary", text:"Підтвердити"}
+	]%}
+	{% include "html/includes/nav/_footer.njk" %}
+	{# ====================== #}
 </section>

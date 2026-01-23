@@ -1,18 +1,18 @@
-<div class="p-3 d-flex flex-column gap-2 {{borderClass}}">
+<div class="p-3 d-flex flex-column gap-3 {{borderClass}}">
 	{# Footer for shop #}
 	{% if footerType == "shop" %}
-		{% if list == "true" %}
-			<div class="d-grid gap-3 p-3 rounded bg-white">
-				<div class="d-flex gap-2">
+		{% if list %}
+			<div class="d-grid px-3">
+				<div class="d-flex gap-2 py-1">
 					<small class="flex-grow-1">Ви маєте</small>
 					<small>160 балів</small>
 				</div>
-				<div class="d-flex gap-2">
+				<div class="d-flex gap-2 py-1">
 					<small class="flex-grow-1">Залишається</small>
 					<small>10 балів</small>
 				</div>
-				<div class="d-flex gap-2">
-					<div class="fs-7 fw-semibold flex-grow-1">Всього до сплати</div>
+				<div class="d-flex gap-2 py-1">
+					<div class="fs-7 fw-semibold flex-grow-1" style="line-height: 167%;" >Всього до сплати</div>
 					<div class="fs-7">150 балів</div>
 				</div>
 			</div>
@@ -25,9 +25,23 @@
 						<span class="h1">75</span>
 					</div>
 				</div>
-				{% set label = "Кількість" %}
-				{% include "html/includes/form/counter/_counter.njk" %}
+				{% if counter %}
+					<div>
+						<div class="text-info-700 fw-semibold text-center mb-1">Кількість</div>
+						{% include "html/includes/form/counter/_counter.njk" %}
+						<div class="text-info-600 text-center mt-1">Ліміт: 5</div>
+					</div>
+				{% elif not counter and not limit %}
+					<div>
+						<div class="text-info-700 fw-semibold  mb-1">Кількість</div>
+						<div class="text-danger-600 mt-2">Немає в наявності</div>
+					</div>
+				{% elif limit %}
+					<div class="fw-semibold align-self-end">Ліміт: 1</div>
+				{% endif %}
+
 			</div>
+			<div>Більше немає в наявності</div>
 		{% endif %}
 		{% for btn in footerBtns %}
 			<button type="button" class="btn {{btn.class}}">{{btn.text}}</button>

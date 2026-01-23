@@ -7,7 +7,7 @@
 	<body>
 		{% set title = "Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекційна футболка від гурту ТНМК з автографом Колекцій Subtitle" %}
 		{% include "html/components/_aside-layouts.njk" %}
-		<main class="qela-fullscreen bg-white">
+		<main class="qela-fullscreen bg-white overflow-hidden">
 			<div class="qela-top bg-white">
 				{% set type = 'logoLeft' %}
 				{% include "html/includes/nav/_navbar.njk" %}
@@ -52,7 +52,7 @@
 			<!--content-->
 			<div class="qela-bottom bg-white">
 				{% set footerType = "shop"%}
-				{% set borderClass = "border-top"%}
+				{# {% set borderClass = "qela-footer-shadow"%} #}
 				{% set footerBtns = [
 					{class: "btn-primary", text:"Купити"}
 				]%}
