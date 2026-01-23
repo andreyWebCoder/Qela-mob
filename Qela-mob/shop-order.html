@@ -241,10 +241,25 @@
         <div class="qela-bottom bg-white">
             <div class="p-3 d-flex flex-column gap-3 ">
                 <button type="button" class="btn btn-info ic-message-circle">Чат з адміном</button>
-                <button type="button" class="btn btn-danger">Скасувати</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalOrder">Скасувати</button>
             </div>
         </div>
     </main>
+    <!-- =========================== -->
+    <div class="modal fade" id="modalOrder" tabindex="-1" aria-labelledby="modalOrderLabel" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-sm modal-dialog-centered qela-modal">
+            <div class="modal-content">
+                <div class="modal-header flex-column gap-1 text-center">
+                    <h5 class="modal-title" id="modalOrderLabel"> Ви впевнені що бажаєти скасувати замовлення? </h5>
+                    <small>Ви не отримаєте ваше замовлення</small>
+                </div>
+                <div class="modal-footer p-0">
+                    <button type="button" class="btn btn-link py-3 fw-normal w-100 text-danger"> Cкасувати </button>
+                    <button type="button" class="btn btn-link py-3 fw-normal w-100 text-black" data-bs-dismiss="modal"> Назад </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- =========================== -->
     <script src="js/vendors.js"></script>
     <script src="js/app.js"></script>

@@ -49,7 +49,7 @@
 		{# Footer for  #}
 	{% elif footerType == "btns" %}
 		{% for btn in footerBtns %}
-			<button type="button" class="btn {{btn.class}}">{{btn.text}}</button>
+			<button type="button" class="btn {{btn.class}}" {% if btn.modal %} {{btn.modal | safe}} {% endif %}>{{btn.text}}</button>
 		{% endfor %}
 	{% endif %}
 </div>
