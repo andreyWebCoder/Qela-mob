@@ -190,7 +190,7 @@
 		}
 
 		&:not(:last-child) {
-			border-bottom: 1px solid $info;
+			border-bottom: 1px solid $info-300;
 		}
 		.qela-clamp {
 			max-height: unset;
@@ -212,11 +212,11 @@
 .qela-icon {
 	width: 30px;
 	height: 30px;
-	background-color: $secondary;
+	background-color: var(--bs-secondary);
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	color: $white;
+	color: var(--bs-white);
 	border-radius: 7px;
 
 	&::before {
