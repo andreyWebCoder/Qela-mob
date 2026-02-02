@@ -16,18 +16,18 @@
 
 	&:checked {
 		&:disabled {
-			background-color: $secondary-400;
-			border-color: $secondary-400;
+			background-color: var(--bs-ql-secondary-400);
+			border-color: var(--bs-ql-secondary-400);
 		}
 	}
 
 	&[type="radio"] {
 		border-color: $black;
-		background-color: $white;
+		background-color: var(--bs-white);
 		&:checked {
 			border-width: 2px;
-			border-color: $secondary-500;
-			background-color: $secondary-200;
+			border-color: var(--bs-secondary);
+			background-color: var(--bs-ql-secondary-200);
 			background-size: 140%;
 		}
 
@@ -35,7 +35,7 @@
 			border-color: $gray-500;
 
 			&:checked {
-				border-color: $secondary-400;
+				border-color: var(--bs-ql-secondary-400);
 				background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{rgba($secondary-400, 0.99)}'/></svg>");
 			}
 		}
@@ -45,7 +45,7 @@
 		border-color: $danger-500;
 
 		&:checked {
-			border-color: $secondary-500;
+			border-color: var(--bs-secondary);
 		}
 
 		& ~ .form-error {
@@ -91,11 +91,11 @@
 		}
 
 		&:checked {
-			background-color: $secondary;
+			background-color: var(--bs-secondary);
 			background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3.5' fill='#{rgba($white, 0.99)}'/></svg>");
 
 			&:hover {
-				background-color: $secondary-700;
+				background-color: var(--bs-ql-secondary-700);
 			}
 
 			&:disabled {

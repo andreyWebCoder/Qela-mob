@@ -43,7 +43,7 @@
 		--bs-alert-border-color: #{$info-400};
 	}
 	&.alert-success {
-		--bs-alert-bg: #{$success-100};
+		--bs-alert-bg: #{var(--bs-ql-success-100)};
 		--bs-alert-border-color: #{$success-400};
 	}
 }

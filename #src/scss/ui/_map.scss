@@ -16,27 +16,29 @@
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
-	transition: opacity 0.2s ease 0s, visibility 0.2s ease 0s;
+	transition:
+		opacity 0.2s ease 0s,
+		visibility 0.2s ease 0s;
 	margin-left: -13px;
 	transform: translateY(-60px);
 
 	&.secondary {
 		.qela-pin__num {
 			small {
-				border-color: $secondary;
+				border-color: var(--bs-secondary);
 			}
 
 			&::after {
-				background-color: $secondary;
+				background-color: var(--bs-secondary);
 			}
 		}
 
 		.qela-pin__dot {
-			background-color: $secondary;
+			background-color: var(--bs-secondary);
 		}
 
 		.qela-pin__area {
-			border: 2px solid $secondary;
+			border: 2px solid var(--bs-secondary);
 			background: #{rgba($secondary, 0.1)};
 		}
 	}
@@ -44,20 +46,20 @@
 	&.success {
 		.qela-pin__num {
 			small {
-				border-color: $success;
+				border-color: var(--bs-success);
 			}
 
 			&::after {
-				background-color: $success;
+				background-color: var(--bs-success);
 			}
 		}
 
 		.qela-pin__dot {
-			background-color: $success;
+			background-color: var(--bs-success);
 		}
 
 		.qela-pin__area {
-			border: 2px solid $success;
+			border: 2px solid var(--bs-success);
 			background: #{rgba($success, 0.1)};
 		}
 	}
@@ -114,7 +116,7 @@
 			opacity: 1;
 		}
 
-		@media (any-hover:hover) {
+		@media (any-hover: hover) {
 			&:hover {
 				.qela-pin__num {
 					transform: translateY(-10px);
@@ -122,13 +124,13 @@
 
 				&.secondary {
 					.qela-pin__dot {
-						background-color: $secondary;
+						background-color: var(--bs-secondary);
 					}
 				}
 
 				&.success {
 					.qela-pin__dot {
-						background-color: $success;
+						background-color: var(--bs-success);
 					}
 				}
 
@@ -155,7 +157,7 @@
 		transform: translateY(-15px);
 
 		small {
-			background-color: $white;
+			background-color: var(--bs-white);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -166,7 +168,7 @@
 		}
 
 		&::after {
-			content: '';
+			content: "";
 			height: 27px;
 			width: 3px;
 		}
@@ -197,7 +199,7 @@
 .qela-line {
 	height: 4px;
 	width: 100%;
-	border: 1px solid $white;
+	border: 1px solid var(--bs-white);
 }
 
 .qela-distance {
@@ -227,7 +229,7 @@
 	}
 
 	&::before {
-		content: '';
+		content: "";
 		display: block;
 		position: absolute;
 		top: 50%;
@@ -235,15 +237,15 @@
 		transform: translate(-50%, -50%);
 		width: 17px;
 		height: 17px;
-		background-color: $secondary-700;
-		border: 2px solid $white;
+		background-color: var(--bs-ql-secondary-700);
+		border: 2px solid var(--bs-white);
 		border-radius: 50%;
 		z-index: 2;
 		transition: border-width 0.3s ease 0s;
 	}
 
 	&::after {
-		content: '';
+		content: "";
 		display: block;
 		position: absolute;
 		top: 50%;
@@ -254,6 +256,6 @@
 		z-index: 1;
 		border-style: solid;
 		border-width: 8.5px 0 8.5px 15px;
-		border-color: transparent transparent transparent $secondary-700;
+		border-color: transparent transparent transparent var(--bs-ql-secondary-700);
 	}
 }

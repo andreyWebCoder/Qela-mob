@@ -52,7 +52,7 @@
 	}
 }
 .qela-place-card {
-	background-color: $white;
+	background-color: var(--bs-white);
 	padding: rem(4) rem(8) rem(14) rem(8);
 	border-radius: rem(12);
 	text-align: center;
@@ -89,8 +89,8 @@
 		}
 	}
 	&.active {
-		border-color: $secondary-600;
-		background-color: $secondary-200;
+		border-color: var(--bs-ql-secondary-600);
+		background-color: var(--bs-ql-secondary-200);
 	}
 	&:not(.collapsed) {
 		.qela-avatar-inner {
@@ -138,11 +138,11 @@
 	font-weight: 700;
 	text-align: center;
 	color: $primary;
-	background-color: $secondary;
+	background-color: var(--bs-secondary);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
 	border: 1px solid $primary;
-	box-shadow: 0px 0px 0px 2px $secondary;
+	box-shadow: 0px 0px 0px 2px var(--bs-secondary);
 }

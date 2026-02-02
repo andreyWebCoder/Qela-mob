@@ -19,11 +19,11 @@ $dp__font_family: $font-family-base;
 .dp__input {
 	height: 40px;
 	border-radius: $border-radius;
-	color: $secondary-800;
+	color: var(--bs-ql-secondary-800);
 	border-color: $input-border-color;
-	background-color: $secondary-200;
+	background-color: var(--bs-ql-secondary-200);
 	&::placeholder {
-		color: $secondary-400;
+		color: var(--bs-ql-secondary-400);
 	}
 
 	&:disabled {
@@ -42,8 +42,8 @@ $dp__font_family: $font-family-base;
 	--dp-border-color-hover: transparent;
 }
 .dp__input_focus {
-	color: $white;
-	background-color: $secondary-500;
+	color: var(--bs-white);
+	background-color: var(--bs-secondary);
 	&::placeholder {
 		color: $gray-200;
 	}
@@ -91,18 +91,18 @@ $dp__font_family: $font-family-base;
 
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $secondary-100;
+			background-color: var(--bs-ql-secondary-100);
 		}
 	}
 }
 
 .dp__inner_nav {
-	background: $white;
+	background: var(--bs-white);
 	border-radius: 6px;
 	padding: 7px;
 
 	&:hover {
-		background-color: $secondary-100;
+		background-color: var(--bs-ql-secondary-100);
 	}
 }
 
@@ -160,7 +160,7 @@ $dp__font_family: $font-family-base;
 
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $secondary-100;
+			background-color: var(--bs-ql-secondary-100);
 		}
 	}
 }
@@ -168,21 +168,21 @@ $dp__font_family: $font-family-base;
 .dp__range_end,
 .dp__range_start,
 .dp__active_date {
-	background-color: $secondary;
+	background-color: var(--bs-secondary);
 
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $secondary;
+			background-color: var(--bs-secondary);
 		}
 	}
 }
 
 .dp__overlay_cell_active {
-	background-color: $secondary;
+	background-color: var(--bs-secondary);
 }
 
 .dp__today {
-	border: 2px solid $secondary;
+	border: 2px solid var(--bs-secondary);
 }
 
 .dp__button {
@@ -191,7 +191,7 @@ $dp__font_family: $font-family-base;
 
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $secondary-100;
+			background-color: var(--bs-ql-secondary-100);
 		}
 	}
 }
@@ -225,7 +225,7 @@ $dp__font_family: $font-family-base;
 }
 
 .dp__action_button {
-	color: $secondary;
+	color: var(--bs-secondary);
 	font-weight: 500;
 	font-size: 14px;
 	padding: 4px 16px;
@@ -236,7 +236,7 @@ $dp__font_family: $font-family-base;
 
 	@media (any-hover: hover) {
 		&:hover {
-			color: $secondary-600;
+			color: var(--bs-ql-secondary-600);
 		}
 	}
 }

@@ -37,14 +37,14 @@
 		margin-bottom: rem(8);
 		pointer-events: auto;
 		&::before {
-			color: $secondary-700;
+			color: var(--bs-ql-secondary-700);
 		}
 	}
 }
 .qela-chat-mess {
 	position: relative;
 	align-self: flex-start;
-	background-color: $white;
+	background-color: var(--bs-white);
 	border-radius: 12px;
 	padding: rem(8);
 	margin: rem(2) rem(24) 0 rem(42);
@@ -60,9 +60,9 @@
 		margin: rem(2) rem(8) 0 rem(24);
 		align-self: flex-end;
 		align-items: end;
-		background-color: $secondary-300;
+		background-color: var(--bs-ql-secondary-300);
 		.qela-chat-reply {
-			background-color: $white;
+			background-color: var(--bs-white);
 		}
 	}
 	.qela-avatar {
@@ -84,7 +84,7 @@
 	color: #2a6bb5;
 }
 .qela-chat-like {
-	background-color: $white;
+	background-color: var(--bs-white);
 	border: 1px solid $info-200;
 	display: inline-flex;
 	gap: rem(4);
@@ -109,7 +109,7 @@
 				}
 				&:nth-child(2) {
 					display: block;
-					color: $secondary-700;
+					color: var(--bs-ql-secondary-700);
 				}
 			}
 		}
@@ -175,7 +175,7 @@
 		overflow-y: hidden;
 		min-height: unset;
 		&:focus {
-			border-color: $secondary-500;
+			border-color: var(--bs-secondary);
 		}
 	}
 }
@@ -194,7 +194,7 @@
 	border-bottom: 1px solid $info-300;
 }
 .qela-report-mess {
-	background: $white;
+	background: var(--bs-white);
 	padding: rem(16);
 	border-radius: 8px 8px 0 0;
 	display: grid;

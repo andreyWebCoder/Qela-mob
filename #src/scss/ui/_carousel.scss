@@ -14,7 +14,7 @@
 		button {
 			flex: 0 0 $carousel-indicator-width;
 			&.active {
-				background-color: $secondary;
+				background-color: var(--bs-secondary);
 			}
 		}
 	}

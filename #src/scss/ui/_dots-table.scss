@@ -7,14 +7,14 @@
 	position: relative;
 	cursor: pointer;
 
-	@media (max-width:($md2+px)) {
+	@media (max-width: ($md2+px)) {
 		font-size: 14px;
 		padding: 10px 10px 10px 5px;
 		margin: -2px 0px 0px 0px;
 	}
 
 	&.active {
-		@media (max-width:($md2+px)) {
+		@media (max-width: ($md2+px)) {
 			.dots-table__body {
 				bottom: 0;
 				opacity: 1;
@@ -23,7 +23,7 @@
 		}
 	}
 
-	@media (any-hover:hover) {
+	@media (any-hover: hover) {
 		&:hover {
 			.dots-table__body {
 				bottom: -8px;
@@ -43,7 +43,7 @@
 		position: absolute;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 		border-radius: 10px;
-		background-color: $white;
+		background-color: var(--bs-white);
 		padding: 12px;
 		left: 100%;
 		bottom: 0;
@@ -63,16 +63,16 @@
 		transition: color 0.2s ease 0s;
 		text-decoration: none;
 
-		@media (any-hover:hover) {
+		@media (any-hover: hover) {
 			&:hover {
-				color: $secondary-500;
+				color: var(--bs-secondary);
 			}
 		}
 
 		&:not(:last-child) {
 			margin: 0px 0px 3px 0px;
 
-			@media (max-width:($md2+px)) {
+			@media (max-width: ($md2+px)) {
 				margin: 0px 0px 10px 0px;
 			}
 		}

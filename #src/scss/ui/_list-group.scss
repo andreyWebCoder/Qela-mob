@@ -16,8 +16,8 @@
 
 		&.active {
 			span {
-				border-color: $secondary-500;
-				background-color: $secondary-500;
+				border-color: var(--bs-secondary);
+				background-color: var(--bs-secondary);
 
 				&::before {
 					opacity: 1;
@@ -26,7 +26,7 @@
 
 			&.success {
 				span {
-					background-color: $success-500;
+					background-color: var(--bs-success);
 				}
 			}
 
@@ -38,11 +38,11 @@
 		}
 
 		&.success {
-			background-color: $success-100;
-			border-color: $success-400;
+			background-color: var(--bs-ql-success-100);
+			border-color: var(--bs-success)-400;
 
 			span {
-				border-color: $success-500;
+				border-color: var(--bs-success);
 			}
 		}
 
@@ -71,7 +71,7 @@
 			&::before {
 				font-size: 16px;
 				opacity: 0;
-				color: $white;
+				color: var(--bs-white);
 			}
 		}
 	}
@@ -86,26 +86,26 @@
 
 		&.active {
 			span {
-				border-color: $secondary-500;
-				background-color: $white;
+				border-color: var(--bs-secondary);
+				background-color: var(--bs-white);
 				border-width: 2px;
 
 				&::before {
 					opacity: 1;
-					color: $secondary-500;
+					color: var(--bs-secondary);
 				}
 			}
 
 			&.success {
-				background-color: $success-100;
-				border-color: $success-400;
+				background-color: var(--bs-ql-success-100);
+				border-color: var(--bs-success)-400;
 
 				span {
-					border-color: $success-500;
+					border-color: var(--bs-success);
 
 					&::before {
-						color: $success-500;
-						background-color: $success-500;
+						color: var(--bs-success);
+						background-color: var(--bs-success);
 					}
 				}
 			}
@@ -126,11 +126,11 @@
 		}
 
 		&.success {
-			background-color: $success-100;
-			border-color: $success-400;
+			background-color: var(--bs-ql-success-100);
+			border-color: var(--bs-success)-400;
 
 			span {
-				border-color: $success;
+				border-color: var(--bs-success);
 			}
 		}
 
@@ -167,7 +167,7 @@
 				width: 14px;
 				height: 14px;
 				border-radius: 50%;
-				background-color: $secondary-500;
+				background-color: var(--bs-secondary);
 				opacity: 0;
 			}
 		}
@@ -308,8 +308,8 @@
 			z-index: 5;
 			> div,
 			.accordion-button {
-				background-color: $secondary-200;
-				border: 1px solid $secondary;
+				background-color: var(--bs-ql-secondary-200);
+				border: 1px solid var(--bs-secondary);
 				&.accordion {
 					border: none;
 					background-color: transparent;
@@ -363,7 +363,7 @@
 	.list-group-item {
 		--bs-list-group-item-padding-y: 12px;
 		--bs-list-group-item-padding-x: 24px;
-		background-color: $secondary-100;
+		background-color: var(--bs-ql-secondary-100);
 		display: flex;
 		align-items: center;
 		gap: rem(16);
@@ -377,12 +377,12 @@
 }
 .qela-ic-ref {
 	display: inline-block;
-	background-color: $secondary-300;
+	background-color: var(--bs-ql-secondary-300);
 	padding: rem(8);
 	border-radius: 50%;
 	position: relative;
 	i {
-		color: $secondary-700;
+		color: var(--bs-ql-secondary-700);
 	}
 	.qela-counter {
 		position: absolute;
@@ -390,6 +390,6 @@
 		right: -8px;
 		color: $black;
 		background-color: $primary;
-		border: 1px solid $secondary-200;
+		border: 1px solid var(--bs-ql-secondary-200);
 	}
 }
