@@ -11,7 +11,7 @@
 			padding-left: 40px;
 
 			&::after {
-				content: '';
+				content: "";
 				width: $form-select-checbox-size;
 				height: $form-select-checbox-size;
 				border: $form-select-border-width solid $form-select-border-color;
@@ -23,8 +23,8 @@
 			}
 
 			&::before {
-				content: '';
-				font-family: 'icons';
+				content: "";
+				font-family: "icons";
 				content: "\e924";
 				position: absolute;
 				left: 16px;
@@ -35,18 +35,17 @@
 		}
 	}
 
-	@media (any-hover:hover) {
+	@media (any-hover: hover) {
 		&:hover {
 			.select__title {
-				border-color: $black;
+				border-color: var(--bs-black);
 			}
 
 			.select__options {
-				border-color: $black;
+				border-color: var(--bs-black);
 			}
 		}
 	}
-
 
 	// .select__itemexample
 	&__item {
@@ -72,7 +71,6 @@
 		justify-content: space-between;
 		flex-direction: row-reverse;
 
-
 		span {
 			height: auto;
 			overflow: hidden;
@@ -83,7 +81,7 @@
 
 		&:before {
 			content: "\e903";
-			font-family: 'icons';
+			font-family: "icons";
 			display: inline-block;
 			transition: transform 0.3s ease 0s;
 			font-size: $form-select-font-size;
@@ -114,7 +112,7 @@
 		padding: 12px 15px;
 		margin: 0px 0px 0px 0px;
 
-		@media (any-hover:hover) {
+		@media (any-hover: hover) {
 			&:hover {
 				background-color: $gray-100;
 			}
@@ -141,7 +139,7 @@
 		}
 
 		.select__value {
-			color: $black;
+			color: var(--bs-black);
 
 			&:before {
 				transform: rotate(-180deg);

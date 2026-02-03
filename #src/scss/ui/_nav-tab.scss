@@ -85,7 +85,7 @@
 	.btn {
 		padding: 0;
 		border: none;
-		color: $black;
+		color: var(--bs-black);
 		padding: rem(8);
 	}
 	> .btn,

@@ -1,16 +1,22 @@
 {% macro inputCheckbox(check) %}
-	<div class="form-check">
+	<div class="form-check{{ check.class if check.class}}">
 		<input 
-			id="{{check.id}}" 
+			{% if check.id %}
+				id="{{check.id}}" 
+			{% endif %}
 			{% if check.type != 'checkbox' %} 
-			name="{{ check.name }}"{% endif %} 
+				name="{{ check.name }}"
+			{% endif %} 
 			type="{{check.type}}" 
 			class="form-check-input{{' ' + 'invalid' if check.error }}" 
 			{{ 'disabled' if check.disabled }} 
 			{{ 'checked' if check.checked }}
+			{% if check.role %}
+				role="{{check.role}}"
+			{% endif %}
 		>
 		{% if check.label %}
-			<label class="form-check-label" for="{{check.id}}">{{check.label}}</label>
+			<label class="form-check-label" for="{{check.id}}">{{check.label | safe }}</label>
 		{% endif %}
 		{% if check.errorText %}
 			<span class="form-error">{{check.errorText}}</span>

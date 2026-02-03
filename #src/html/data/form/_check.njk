@@ -1,0 +1,272 @@
+{# checkbox radiobutton swicher Components #}
+{% set checkComponent = [
+	{
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: false,
+		name: ''
+	}, {
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: false,
+		name: ''
+	}, {
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: true,
+		name: ''
+	}, {
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: true,
+		name: ''
+	}, {
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: true,
+		disabled: false,
+		checked: false
+	}
+] %}
+{% set checkLabelComponent = [
+	{
+		label: 'Checkbox-label',
+		id: 'Check1',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: false
+	}, {
+		label: 'Checkbox-label',
+		id: 'Check2',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: false
+	}, {
+		label: 'Checkbox-label',
+		id: 'Check3',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: true
+	}, {
+		label: 'Checkbox-label',
+		id: 'Check4',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: true
+	}, {
+		label: 'Checkbox-label Checkbox-label Checkbox-label Checkbox-label
+			Checkbox-label',
+		id: 'Check5',
+		type: 'checkbox',
+		errorText: '',
+		error: true,
+		disabled: false,
+		checked: false,
+		errorText: 'Error text1 Error text1 Error text1'
+	},{
+		label: 'Checkbox-label <a href="#">With Link</a>',
+		id: 'Check6',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: false
+	}
+] %}
+{% set radioComponent = [
+	{
+		label: '',
+		id: '',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: false,
+		name: 'radio'
+	}, {
+		label: '',
+		id: '',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: false,
+		name: 'radio'
+	}, {
+		label: '',
+		id: '',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: true,
+		name: 'radio'
+	}, {
+		label: '',
+		id: '',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: true,
+		name: 'radio'
+	}, {
+		label: '',
+		id: '',
+		type: 'radio',
+		errorText: '',
+		error: true,
+		disabled: false,
+		checked: false,
+		name: 'radio'
+	}
+] %}
+{% set radioLabelComponent = [
+	{
+		label: 'Radiobutton-label',
+		id: 'Radiobutton1',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: false,
+		name: 'radioLabel'
+	}, {
+		label: 'Radiobutton-label',
+		id: 'Radiobutton2',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: false,
+		name: 'radioLabel'
+	}, {
+		label: 'Radiobutton-label',
+		id: 'Radiobutton3',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: true,
+		name: 'radioLabel'
+	}, {
+		label: 'Radiobutton-label',
+		id: 'Radiobutton4',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: true,
+		name: 'radioLabel'
+	}, {
+		label: 'Radiobutton-label Radiobutton-label Radiobutton-label Radiobutton-label
+			Radiobutton-label',
+		id: 'Radiobutton5',
+		type: 'radio',
+		errorText: '',
+		error: true,
+		disabled: false,
+		checked: false,
+		errorText: 'Error text1 Error text1 Error text1',
+		name: 'radioLabel'
+	},{
+		label: 'Radiobutton-label <a href="#">With Link</a>',
+		id: 'Radiobutton6',
+		type: 'radio',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: false,
+		name: 'radioLabel'
+	}
+] %}
+{% set switchComponent = [
+	{
+		label: '',
+		id: '',
+		type: 'checkbox',
+		error: false,
+		disabled: false,
+		checked: false,
+		role: "switch",
+		class: 'form-check-inline form-switch'
+	},{
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: true,
+		role: "switch",
+		class: 'form-check-inline form-switch'
+	},{
+		label: '',
+		id: '',
+		type: 'checkbox',
+		error: false,
+		disabled: true,
+		checked: false,
+		role: "switch",
+		class: 'form-check-inline form-switch'
+	}, {
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: true,
+		checked: true,
+		role: "switch",
+		class: 'form-check-inline form-switch'
+	}, {
+		label: '',
+		id: '',
+		type: 'checkbox',
+		errorText: '',
+		error: false,
+		disabled: false,
+		checked: false,
+		role: "switch",
+		class: 'form-check-inline form-switch sm'
+	}
+] %}
+{% set switchLabelComponent = 
+	{
+		label: 'Label label switch',
+		id: 'swich1',
+		type: 'checkbox',
+		error: false,
+		disabled: false,
+		checked: false,
+		role: "switch",
+		class: 'form-check-inline form-switch gap-2 flex-row justify-content-start'
+	}
+%}
+{# checkbox radiobutton swicher Components #}

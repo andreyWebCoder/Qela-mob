@@ -56,7 +56,7 @@
 
 	a {
 		display: block;
-		color: $black;
+		color: var(--bs-black);
 		font-size: 11px;
 		line-height: 13px;
 		cursor: pointer;

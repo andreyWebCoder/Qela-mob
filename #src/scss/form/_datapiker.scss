@@ -6,7 +6,7 @@ $dp__font_family: $font-family-base;
 	.spacer {
 		height: 40px;
 		width: 1px;
-		background-color: $gray-400;
+		background-color: var(--bs-ql-info-400);
 		align-self: flex-end;
 	}
 }
@@ -45,7 +45,7 @@ $dp__font_family: $font-family-base;
 	color: var(--bs-white);
 	background-color: var(--bs-secondary);
 	&::placeholder {
-		color: $gray-200;
+		color: var(--bs-ql-info-200);
 	}
 }
 
@@ -87,7 +87,7 @@ $dp__font_family: $font-family-base;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 120%;
-	color: $black;
+	color: var(--bs-black);
 
 	@media (any-hover: hover) {
 		&:hover {
@@ -140,12 +140,12 @@ $dp__font_family: $font-family-base;
 	justify-content: center;
 	text-align: center;
 	letter-spacing: 0.4px;
-	color: $gray-500;
+	color: var(--bs-info);
 	font-weight: 400;
 }
 
 .dp__cell_offset {
-	color: $gray-500;
+	color: var(--bs-info);
 }
 
 .dp__cell_inner {
@@ -201,7 +201,7 @@ $dp__font_family: $font-family-base;
 }
 
 .dp__icon {
-	fill: $black;
+	fill: var(--bs-black);
 }
 
 .dp__action_row {
@@ -213,7 +213,7 @@ $dp__font_family: $font-family-base;
 	font-size: 16px;
 	line-height: 100%;
 	letter-spacing: 0.4px;
-	color: $black;
+	color: var(--bs-black);
 	width: 70%;
 }
 
@@ -242,23 +242,23 @@ $dp__font_family: $font-family-base;
 }
 .dp__action_select {
 	--dp-primary-color: transparent;
-	--dp-primary-text-color: #978fff;
+	--dp-primary-text-color: var(--bs-secondary);
 }
 .is-invalid {
 	.dp__input {
-		color: $gray-500;
-		border-color: $red;
+		color: var(--bs-info);
+		border-color: var(--bs-danger);
 
 		@media (any-hover: hover) {
 			&:hover {
-				border-color: $red;
+				border-color: var(--bs-danger);
 			}
 		}
 
 		&:focus {
 			@media (any-hover: hover) {
 				&:hover {
-					border-color: $red;
+					border-color: var(--bs-danger);
 				}
 			}
 		}

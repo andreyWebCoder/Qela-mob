@@ -16,7 +16,7 @@
 	}
 
 	span {
-		color: $black;
+		color: var(--bs-black);
 		opacity: 0.4;
 
 		&::before {

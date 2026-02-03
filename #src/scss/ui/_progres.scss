@@ -65,7 +65,7 @@ $dasharray: 327;
 		circle {
 			fill: none;
 			stroke-width: 4;
-			stroke: $gray-700;
+			stroke: var(--bs-ql-info-700);
 			stroke-dasharray: $dasharray;
 
 			&:nth-child(2) {

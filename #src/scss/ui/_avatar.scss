@@ -63,7 +63,7 @@
 		}
 	}
 	&.info-400 {
-		border-color: $info-400;
+		border-color: var(--bs-ql-info-400);
 	}
 }
 .qela-qr {

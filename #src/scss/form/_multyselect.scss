@@ -21,7 +21,7 @@
 	display: flex;
 	align-items: center;
 	border-radius: 8px;
-	border: 1px solid $gray-500;
+	border: 1px solid var(--bs-info);
 
 	@media (any-hover: hover) {
 		&:hover {
@@ -41,7 +41,7 @@
 	border-radius: 6px;
 	margin-right: 2px;
 	margin-bottom: 2px;
-	color: $black;
+	color: var(--bs-black);
 	line-height: 120%;
 	background: var(--bs-ql-secondary-300);
 }
@@ -63,7 +63,7 @@
 			background-color: var(--bs-ql-secondary-400);
 
 			&::after {
-				color: $black;
+				color: var(--bs-black);
 			}
 		}
 	}
@@ -115,11 +115,11 @@
 
 .multiselect__option--highlight {
 	background: var(--bs-white);
-	color: $black;
+	color: var(--bs-black);
 }
 
 .multiselect__option {
-	color: $black;
+	color: var(--bs-black);
 	line-height: 17px;
 	padding: 12px 12px 12px 16px;
 
@@ -131,12 +131,12 @@
 
 .multiselect__option--selected {
 	background: var(--bs-ql-secondary-200);
-	color: $black;
+	color: var(--bs-black);
 	font-weight: 400;
 
 	&.multiselect__option--highlight {
 		background: var(--bs-ql-secondary-200);
-		color: $black;
+		color: var(--bs-black);
 		font-weight: 400;
 	}
 }

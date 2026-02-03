@@ -57,7 +57,7 @@
 
 		span {
 			position: absolute;
-			border: 1px solid $black;
+			border: 1px solid var(--bs-black);
 			border-radius: 50%;
 			width: 1.25em;
 			height: 1.25em;
@@ -151,7 +151,7 @@
 
 		span {
 			position: absolute;
-			border: 1px solid $black;
+			border: 1px solid var(--bs-black);
 			border-radius: 50%;
 			width: 22px;
 			height: 22px;
@@ -190,7 +190,7 @@
 		}
 
 		&:not(:last-child) {
-			border-bottom: 1px solid $info-300;
+			border-bottom: 1px solid var(--bs-ql-info-300);
 		}
 		.qela-clamp {
 			max-height: unset;
@@ -256,7 +256,7 @@
 				flex-basis: 48px;
 				> div {
 					&:first-child {
-						color: $gray-700;
+						color: var(--bs-ql-info-700);
 					}
 				}
 			}
@@ -339,7 +339,7 @@
 				margin-left: rem(8);
 				line-height: 1;
 				font-size: 24px;
-				color: $gray-700;
+				color: var(--bs-ql-info-700);
 			}
 			> div {
 				flex-grow: 1;
@@ -388,7 +388,7 @@
 		position: absolute;
 		bottom: 0;
 		right: -8px;
-		color: $black;
+		color: var(--bs-black);
 		background-color: $primary;
 		border: 1px solid var(--bs-ql-secondary-200);
 	}
