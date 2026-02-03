@@ -1,4 +1,4 @@
-//Подключение шрифта
+// Include fonts
 @mixin font($font_name, $file_name, $weight, $style) {
 	@font-face {
 		font-family: $font_name;
@@ -10,16 +10,8 @@
 		font-style: #{$style};
 	}
 }
-//  Функции
+//  Functions
 @function rem($px) {
 	$result: math.div($px, 16) + rem;
 	@return $result;
 }
-
-//<ПЕРЕМЕННЫЕ>========================================================
-$minWidth: 320px;
-$maxWidth: 1440;
-$md1: 1200;
-$md2: 990.98;
-$md3: 767.98; // @include media-breakpoint-down(md)
-$md4: 567.98;
