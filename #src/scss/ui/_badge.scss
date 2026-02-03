@@ -4,44 +4,43 @@
 	gap: 4px;
 
 	&:not(:last-child) {
-		margin-right: 16px;
+		margin-right: rem(16);
 	}
 
 	.badge {
 		&.text-bg-secondary {
-			color: $white !important;
+			color: var(--bs-white) !important;
 			font-weight: 600;
 		}
 	}
 
 	&.small {
-		font-size: 12px;
+		font-size: rem(12);
 		border-radius: 14px;
-
 		[class^="ic-"],
 		[class*="ic-"] {
 			&:before {
-				font-size: 14px;
+				font-size: rem(14);
 			}
 		}
 
 		.badge {
-			font-size: 12px;
-			padding: 2px 4px;
+			font-size: rem(12);
+			padding: rem(2) rem(4);
 		}
 	}
 }
 .qela-list-num {
-	font-size: 18px;
+	font-size: rem(18);
 	font-weight: 500;
-	padding: 4px;
+	padding: rem(4);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 24px;
 	min-width: 24px;
 	line-height: 1;
-	background-color: $primary-500;
+	background-color: var(--bs-primary);
 	border-radius: 30px;
 }
 .qela-voice {
@@ -49,11 +48,11 @@
 	// align-items: center;
 	// justify-content: center;
 	.body-voice {
-		background-color: $primary-300;
+		background-color: var(--bs-ql-primary-300);
 		border-radius: 10px;
 		line-height: 1;
 		position: relative;
-		padding: 4px 10px 4px 26px;
+		padding: rem(4) rem(10) rem(4) rem(26);
 		img {
 			position: absolute;
 			left: 4px;
@@ -91,7 +90,7 @@
 		position: absolute;
 		z-index: 1;
 		border-radius: 20px;
-		padding: 2px;
+		padding: rem(2);
 		left: calc(100% - 10px);
 		top: -6px;
 		min-width: 18px;
@@ -111,13 +110,13 @@
 	}
 	&.orden {
 		.number {
-			color: $primary-900;
+			color: var(--bs-ql-primary-900);
 		}
 		.qela-badge {
-			background-color: $primary-300;
+			background-color: var(--bs-ql-primary-300);
 			padding-left: rem(24);
 			.badge {
-				color: $info-900;
+				color: var(--bs-ql-info-900);
 			}
 			img {
 				position: absolute;

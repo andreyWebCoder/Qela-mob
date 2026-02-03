@@ -85,13 +85,13 @@
 }
 .qela-chat-like {
 	background-color: var(--bs-white);
-	border: 1px solid $info-200;
+	border: 1px solid var(--bs-ql-info-200);
 	display: inline-flex;
 	gap: rem(4);
 	border-radius: 20px;
 	padding: rem(1) rem(7);
 	.btn {
-		color: $info-700;
+		color: var(--bs-ql-info-700);
 		padding: 0;
 		border-radius: 0;
 		font-size: rem(12);
@@ -100,7 +100,7 @@
 		gap: rem(2);
 		&:not(:first-child) {
 			padding-left: rem(4);
-			border-left: 1px solid $gray-300;
+			border-left: 1px solid var(--bs-ql-info-300);
 		}
 		&.current {
 			i {
@@ -115,7 +115,7 @@
 		}
 		&:active {
 			border-color: transparent !important;
-			color: $info-700 !important;
+			color: var(--bs-ql-info-700) !important;
 		}
 		i {
 			&:nth-child(2) {
@@ -130,13 +130,13 @@
 .qela-chat-time {
 	font-size: rem(10);
 	margin-left: auto;
-	color: $info-700;
+	color: var(--bs-ql-info-700);
 }
 .qela-chat-reply {
 	font-size: rem(12);
 	padding: rem(2) rem(2) rem(2) rem(5);
-	border-left: 3px solid $info-500;
-	background-color: $info-100;
+	border-left: 3px solid var(--bs-info);
+	background-color: var(--bs-ql-info-100);
 	border-radius: 4px;
 	flex-grow: 1;
 }
@@ -156,7 +156,7 @@
 		position: absolute;
 		right: 4px;
 		bottom: 4px;
-		background-color: $primary-600;
+		background-color: var(--bs-ql-primary-600);
 		&::before {
 			font-size: rem(32);
 		}
@@ -166,7 +166,7 @@
 		padding-bottom: rem(13);
 		padding-right: rem(48);
 		box-shadow: none;
-		border-color: $info-500;
+		border-color: var(--bs-info);
 		border-radius: 30px;
 		box-sizing: border-box;
 		word-break: break-all;
@@ -184,7 +184,7 @@
 	font-size: rem(12);
 	padding: rem(6) rem(12);
 	border-radius: 20px;
-	background-color: $info-200;
+	background-color: var(--bs-ql-info-200);
 }
 .qela-pinned-mess {
 	font-size: rem(14);
@@ -215,7 +215,7 @@
 		--bs-list-group-item-padding-x: 0;
 		--bs-list-group-item-padding-y: 0.75rem;
 		padding: 0 rem(12);
-		background-color: $gray-100;
+		background-color: var(--bs-ql-info-100);
 	}
 	.list-group-item {
 		background-color: transparent;
@@ -233,13 +233,13 @@
 	left: 0;
 }
 .qela-chat-overlay {
-	background-color: rgba($black, 0.4);
+	background-color: color-mix(in srgb, var(--bs-black), transparent 60%);
 	backdrop-filter: blur(12px);
 	top: 0;
 	z-index: 21;
 }
 .qela-report-overlay {
-	background-color: rgba($black, 0.1);
+	background-color: color-mix(in srgb, var(--bs-black), transparent 90%);
 	bottom: 0;
 	z-index: 21;
 	opacity: 0;

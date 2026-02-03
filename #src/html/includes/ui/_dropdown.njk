@@ -1,0 +1,12 @@
+{% macro dropdown(props) %}
+	<div class="dropdown qela-dropdown{{' ' + props.class if props.class}}">
+		<button class="btn{{' ' + props.btnClass if props.btnClass}}" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+		<ul class="dropdown-menu dropdown-menu-end mt-3">
+			{% for li in props.item %}
+				<li>
+					<button type="button" class="dropdown-item{{' ' + li.ic if li.ic}}{{' ' + li.class if li.class}}">{{li.text}}</button>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endmacro %}

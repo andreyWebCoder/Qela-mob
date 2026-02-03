@@ -1,7 +1,7 @@
 .qela-list {
 	.list-group-item {
 		border-radius: 10px;
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+		box-shadow: 0px 4px 10px color-mix(in srgb, var(--bs-black), transparent 95%);
 	}
 }
 
@@ -11,7 +11,7 @@
 	}
 
 	.checkbox-container {
-		padding-right: 60px;
+		padding-right: rem(60);
 		position: relative;
 
 		&.active {
@@ -32,14 +32,14 @@
 
 			&.error {
 				span {
-					background-color: $danger;
+					background-color: var(--bs-danger);
 				}
 			}
 		}
 
 		&.success {
 			background-color: var(--bs-ql-success-100);
-			border-color: var(--bs-success)-400;
+			border-color: var(--bs-ql-success-400);
 
 			span {
 				border-color: var(--bs-success);
@@ -47,11 +47,11 @@
 		}
 
 		&.error {
-			background-color: $danger-100;
-			border-color: $danger-300;
+			background-color: var(--bs-ql-danger-100);
+			border-color: var(--bs-ql-danger-300);
 
 			span {
-				border-color: $danger;
+				border-color: var(--bs-danger);
 			}
 		}
 
@@ -111,15 +111,15 @@
 			}
 
 			&.error {
-				background-color: $danger-100;
-				border: 1px solid $danger-300;
+				background-color: var(--bs-ql-danger-100);
+				border: 1px solid var(--bs-ql-danger-300);
 
 				span {
-					border-color: $danger;
+					border-color: var(--bs-danger);
 
 					&::before {
-						color: $danger;
-						background-color: $danger;
+						color: var(--bs-danger);
+						background-color: var(--bs-danger);
 					}
 				}
 			}
@@ -135,11 +135,11 @@
 		}
 
 		&.error {
-			background-color: $danger-100;
-			border: 1px solid $danger-300;
+			background-color: var(--bs-ql-danger-100);
+			border: 1px solid var(--bs-ql-danger-300);
 
 			span {
-				border-color: $danger;
+				border-color: var(--bs-danger);
 			}
 		}
 
@@ -250,7 +250,7 @@
 			}
 			small {
 				-webkit-line-clamp: 2;
-				color: $gray-900;
+				color: var(--bs-ql-info-900);
 			}
 			&:last-child {
 				flex-basis: 48px;
@@ -284,7 +284,7 @@
 		width: 100%;
 	}
 	&.orden {
-		background-color: $primary-200;
+		background-color: var(--bs-ql-primary-200);
 		img {
 			width: 32px;
 			height: 32px;
@@ -326,7 +326,7 @@
 		.accordion-button {
 			padding: rem(8);
 			border-radius: 8px;
-			background-color: $info-100;
+			background-color: var(--bs-ql-info-100);
 			&.accordion {
 				padding: 0;
 				background-color: transparent;
@@ -352,7 +352,7 @@
 	}
 	.qela-voice {
 		.body-voice {
-			background-color: $primary-100;
+			background-color: var(--bs-ql-primary-100);
 		}
 	}
 }
@@ -361,17 +361,17 @@
 		--bs-list-group-border-radius: 12px;
 	}
 	.list-group-item {
-		--bs-list-group-item-padding-y: 12px;
-		--bs-list-group-item-padding-x: 24px;
+		--bs-list-group-item-padding-y: rem(12);
+		--bs-list-group-item-padding-x: rem(24);
 		background-color: var(--bs-ql-secondary-100);
 		display: flex;
 		align-items: center;
 		gap: rem(16);
 		&:first-child {
-			padding-top: 24px;
+			padding-top: rem(24);
 		}
 		&:last-child {
-			padding-bottom: 24px;
+			padding-bottom: rem(24);
 		}
 	}
 }
@@ -389,7 +389,7 @@
 		bottom: 0;
 		right: -8px;
 		color: var(--bs-black);
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		border: 1px solid var(--bs-ql-secondary-200);
 	}
 }

@@ -1,0 +1,15 @@
+{% from "html/includes/ui/_dropdown.njk" import dropdown %}
+<section class="d-grid gap-3">
+	<!-- Dropdown -->
+	<h2 class="h1 mt-4">Dropdown</h2>
+
+	{% set dropdownNav = {
+		class: 'end-0 me-3',
+		btnClass: 'ic-dots p-2 border-0',
+		item:[  {ic:'ic-mute',text:'Unmute'},
+				{ic:'ic-delete',text:'Text'},
+				{ic:'ic-archive',text:'Unarchive', class:'danger'}
+			]
+		} %}
+	{{dropdown(dropdownNav)}}
+</section>

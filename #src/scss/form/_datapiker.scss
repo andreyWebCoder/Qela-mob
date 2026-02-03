@@ -186,8 +186,8 @@ $dp__font_family: $font-family-base;
 }
 
 .dp__button {
-	border-top: $gray-300;
-	border-top: 1px solid $gray-300;
+	border-top: var(--bs-ql-info-300);
+	border-top: 1px solid var(--bs-ql-info-300);
 
 	@media (any-hover: hover) {
 		&:hover {
@@ -206,7 +206,7 @@ $dp__font_family: $font-family-base;
 
 .dp__action_row {
 	border-radius: 0 0 17px 17px;
-	border-top: 1px solid $gray-300;
+	border-top: 1px solid var(--bs-ql-info-300);
 }
 
 .dp__selection_preview {

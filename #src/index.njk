@@ -50,7 +50,7 @@
 					<nav class="ps-3">
 						<h4 class=" my-2">Components</h4>
 						<ul class="d-flex flex-column gap-1 ps-0 --elastic">
-							{% set links = ['buttons','checkbox-radiobutton','alert','breadcrambs','campaign','coming-soon','dialogs','empty-space','icons','links','lists', 'logos', 'nav','cards-news','popups','profile','progress','quest-card','quest-page','quest-conditions-page','organisation','page-status','special-ic', 'subtitles','tabs','talents-badges','text-fields','typography','video','voting','places','accordion','chat','avatars','activity-stat','shop'] %}
+							{% set links = ['buttons','checkbox-radiobutton','alert','breadcrambs','campaign','coming-soon','dialogs','empty-space','icons','links','lists', 'logos', 'nav','cards-news','popups','profile','progress','quest-card','quest-page','quest-conditions-page','organisation','page-status','special-ic', 'subtitles','tabs','talents-badges','text-fields','typography','video','voting','places','accordion','chat','avatars','activity-stat','shop', 'dropdown'] %}
 							{% for link in links %}
 								<li>
 									<a class="--link" href="#">{{link}}</a>
@@ -172,6 +172,7 @@
 						{% include "html/components/_chat.njk" %}
 						{% include "html/components/_coming-soon.njk" %}
 						{% include "html/components/_dialog.njk" %}
+						{% include "html/components/_dropdown.njk" %}
 						{% include "html/components/_empty.njk" %}
 						{% include "html/components/_icons.njk" %}
 						{% include "html/components/_items.njk" %}

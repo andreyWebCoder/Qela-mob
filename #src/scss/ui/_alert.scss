@@ -9,7 +9,7 @@
 				position: static;
 
 				&::before {
-					font-size: 38px;
+					font-size: rem(38);
 				}
 			}
 		}
@@ -29,21 +29,21 @@
 	}
 
 	&.alert-danger {
-		--bs-alert-bg: #{$danger-100};
-		--bs-alert-border-color: #{$danger-400};
+		--bs-alert-bg: var(--bs-ql-danger-100);
+		--bs-alert-border-color: var(--bs-ql-danger-400);
 	}
 
 	&.alert-warning {
-		--bs-alert-bg: #{$warning-100};
-		--bs-alert-border-color: #{$warning-400};
+		--bs-alert-bg: var(--bs-ql-warning-100);
+		--bs-alert-border-color: var(--bs-ql-warning-400);
 	}
 
 	&.alert-info {
-		--bs-alert-bg: #{$white};
-		--bs-alert-border-color: #{$info-400};
+		--bs-alert-bg: var(--bs-white);
+		--bs-alert-border-color: var(--bs-ql-info-400);
 	}
 	&.alert-success {
 		--bs-alert-bg: #{var(--bs-ql-success-100)};
-		--bs-alert-border-color: #{$success-400};
+		--bs-alert-border-color: var(--bs-ql-success-400);
 	}
 }

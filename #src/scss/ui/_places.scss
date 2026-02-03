@@ -2,7 +2,7 @@
 	padding: 0 rem(8) rem(8) rem(8);
 	min-height: 250px;
 	border-radius: rem(8);
-	background-color: $primary;
+	background-color: var(--bs-primary);
 	position: relative;
 	&.users--2 {
 		.qela-place-inner {
@@ -137,12 +137,12 @@
 	font-size: 18px;
 	font-weight: 700;
 	text-align: center;
-	color: $primary;
+	color: var(--bs-primary);
 	background-color: var(--bs-secondary);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	border: 1px solid $primary;
+	border: 1px solid var(--bs-primary);
 	box-shadow: 0px 0px 0px 2px var(--bs-secondary);
 }

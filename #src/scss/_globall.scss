@@ -235,7 +235,7 @@ a {
 }
 
 .qela-upload_ic {
-	background-color: $gray-300;
+	background-color: var(--bs-ql-info-300);
 	color: var(--bs-white);
 	padding: 10px;
 	width: 70px;
@@ -358,7 +358,7 @@ a {
 }
 
 .qela-step {
-	background-color: $gray-300;
+	background-color: var(--bs-ql-info-300);
 	font-size: 14px;
 	border-radius: 8px;
 	border: 1px solid var(--bs-info);
@@ -383,7 +383,7 @@ a {
 
 	&.disabled {
 		color: $gray-600;
-		border-color: $gray-300;
+		border-color: var(--bs-ql-info-300);
 	}
 }
 

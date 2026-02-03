@@ -330,18 +330,12 @@ $input-group-addon-border-color: $input-border-color;
 $form-check-input-width: 1.5em;
 $form-check-padding-start: 30px;
 $form-check-margin-bottom: 0;
-// $form-check-input-border: 1px solid $secondary-500;
-// $form-check-input-bg: $secondary-200;
 $form-check-input-border-radius: 0.15em;
-// $form-check-input-focus-border: $secondary-500;
-// $form-check-input-checked-color: $white;
-// $form-check-input-checked-bg-color: $secondary-500;
 $form-check-label-cursor: pointer;
 $form-check-transition:
 	background-color 0.3s ease-in-out,
 	border-color 0.3s ease-in-out;
 $form-check-input-focus-box-shadow: none;
-// $form-check-input-checked-border-color: $secondary-500;
 $form-check-input-checked-bg-image: none;
 $form-check-radio-checked-bg-image: none;
 $form-check-input-disabled-opacity: 1;
@@ -353,19 +347,13 @@ $form-check-btn-check-disabled-opacity: 1;
 // Dropdown menu container and contents.
 // scss-docs-start dropdown-variables
 $dropdown-min-width: 8rem;
-$dropdown-padding-x: 12px;
-$dropdown-padding-y: 12px;
-$dropdown-font-size: 11px;
-$dropdown-color: $gray-700;
-$dropdown-bg: $white;
+$dropdown-padding-x: 0.75rem;
+$dropdown-padding-y: 0.75rem;
+$dropdown-font-size: 0.6875rem;
 $dropdown-border-radius: 10px;
 $dropdown-border-width: 0px;
-$dropdown-divider-bg: rgba(126, 131, 137, 0.2);
 $dropdown-divider-margin-y: $spacer * 0.4;
-$dropdown-link-color: $gray-700;
-$dropdown-link-hover-color: $black;
 $dropdown-link-hover-bg: none;
-$dropdown-link-active-color: $black;
 $dropdown-link-active-bg: transparent;
 $dropdown-item-padding-y: $spacer * 0.25;
 $dropdown-item-padding-x: $spacer * 0;
@@ -465,8 +453,8 @@ $card-spacer-x: $spacer;
 $card-title-spacer-y: $spacer;
 $card-border-width: 0;
 $card-border-radius: 8px;
-$card-bg: $white;
-$card-cap-bg: $white;
+$card-bg: var(--bs-white);
+$card-cap-bg: var(--bs-white);
 //card
 // Accordion
 
@@ -503,10 +491,10 @@ $accordion-button-icon: none;
 $accordion-button-active-icon: none;
 // scss-docs-end accordion-variables
 // badge
-$badge-font-size: 14px;
+$badge-font-size: 0.875rem;
 $badge-font-weight: 400;
-$badge-padding-y: 4px;
-$badge-padding-x: 6px;
+$badge-padding-y: 0.25rem;
+$badge-padding-x: 0.375rem;
 $badge-border-radius: 14px;
 // badge
 //list-group
@@ -539,8 +527,8 @@ $breadcrumb-padding-x: 0;
 $breadcrumb-item-padding-x: 0;
 $breadcrumb-margin-bottom: 0;
 $breadcrumb-bg: null;
-$breadcrumb-divider-color: $black;
-$breadcrumb-active-color: $black;
+$breadcrumb-divider-color: var(--bs-black);
+$breadcrumb-active-color: var(--bs-black);
 $breadcrumb-divider: quote("");
 $breadcrumb-divider-flipped: $breadcrumb-divider;
 $breadcrumb-border-radius: null;
@@ -558,7 +546,7 @@ $carousel-indicator-height: 6px;
 $carousel-indicator-hit-area-height: 0;
 $carousel-indicator-spacer: 4px;
 $carousel-indicator-opacity: 1;
-$carousel-indicator-active-bg: $info;
+$carousel-indicator-active-bg: var(--bs-info);
 $carousel-indicator-active-opacity: 1;
 $carousel-indicator-transition: null;
 

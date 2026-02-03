@@ -3,20 +3,20 @@
 	gap: 1rem;
 	fieldset {
 		display: block;
-		padding: 16px;
+		padding: rem(16);
 		border-radius: 6px;
-		border: 1px solid $info-200;
+		border: 1px solid var(--bs-ql-info-200);
 	}
 	.qela-legend {
-		font-size: 16px;
+		font-size: rem(16);
 		font-weight: 500;
 		line-height: 20.8px;
 		color: var(--bs-ql-info-700);
-		padding: 4px 0 16px 0;
+		padding: rem(4) 0 rem(16) 0;
 		display: flex;
 		align-items: center;
 		gap: 8px;
-		border-bottom: 1px solidvar(--bs-ql-info-400);
+		border-bottom: 1px solid var(--bs-ql-info-400);
 		margin-bottom: 1rem;
 	}
 	hr {

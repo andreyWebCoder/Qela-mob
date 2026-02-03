@@ -1,3 +1,18 @@
+.dropdown-menu {
+	--bs-dropdown-color: var(--bs-ql-info-700);
+	--bs-dropdown-bg: var(--bs-white);
+	// --bs-dropdown-border-color: var(--bs-ql-info-400);
+	--bs-dropdown-divider-bg: var(--bs-ql-info-300);
+	// --bs-dropdown-box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--bs-black), transparent 85%);
+	--bs-dropdown-link-color: var(--bs-black);
+	--bs-dropdown-link-hover-color: var(--bs-black);
+	// --bs-dropdown-link-hover-bg: var(--bs-ql-info-200);
+	--bs-dropdown-link-active-color: var(--bs-black);
+	--bs-dropdown-link-active-bg: transparent;
+	// --bs-dropdown-link-disabled-color: var(--bs-ql-info-200);
+	// --bs-dropdown-header-color: var(--bs-ql-info-600);
+}
+
 .qela-dropdown {
 	.dropdown-menu {
 		overflow: hidden;
@@ -8,12 +23,12 @@
 		align-items: center;
 		justify-content: space-between;
 		&::before {
-			color: $info-700;
+			color: var(--bs-ql-info-700);
 		}
 		&.danger {
-			color: $danger-600;
+			color: var(--bs-ql-danger-600);
 			&::before {
-				color: $danger-600;
+				color: var(--bs-ql-danger-600);
 			}
 		}
 	}

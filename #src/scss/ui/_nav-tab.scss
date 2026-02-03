@@ -2,7 +2,7 @@
 	box-shadow: 0px 0px 20px rgba($black, 0.05);
 
 	.nav-link {
-		border-bottom: 2px solid $gray-300;
+		border-bottom: 2px solid var(--bs-ql-info-300);
 		background-color: var(--bs-white);
 
 		&.active {
@@ -15,7 +15,7 @@
 	background-color: var(--bs-white);
 	box-shadow: 0px 0px 20px rgba($black, 0.05);
 	padding-bottom: rem(24);
-	border-top: 1px solid $info-200;
+	border-top: 1px solid var(--bs-ql-info-200);
 	flex-wrap: nowrap;
 	.nav-item {
 		flex: 1 1 20%;
@@ -65,7 +65,7 @@
 	padding-left: rem(72);
 	padding-right: rem(72);
 	justify-content: center;
-	border-bottom: 1px solid $info-200;
+	border-bottom: 1px solid var(--bs-ql-info-200);
 	min-height: 56px;
 	.qela-clamp {
 		flex: 1 1 auto;
@@ -103,7 +103,7 @@
 }
 .qela-topbar {
 	padding: rem(8) rem(16);
-	border-bottom: 1px solid $info-200;
+	border-bottom: 1px solid var(--bs-ql-info-200);
 	height: 57px;
 	.navbar-brand {
 		margin-right: auto;
@@ -133,7 +133,7 @@
 	font-weight: 600;
 	padding: rem(2);
 	border-radius: rem(14);
-	background-color: $danger;
+	background-color: var(--bs-danger);
 	color: var(--bs-white);
 	line-height: 100%;
 	height: 16px;

@@ -80,7 +80,7 @@
 
 	.qela-avatar {
 		margin-right: 1.25rem;
-		background-color: $gray-300;
+		background-color: var(--bs-ql-info-300);
 	}
 
 	.custom-large {
@@ -142,7 +142,7 @@
 
 		&.circle-danger {
 			&::before {
-				background-color: $danger;
+				background-color: var(--bs-danger);
 			}
 		}
 
@@ -169,7 +169,7 @@
 		justify-content: flex-end;
 
 		img {
-			margin: 0px 0px 0px 0.5rem;
+			margin: 0 0 0 0.5rem;
 		}
 
 		span {
