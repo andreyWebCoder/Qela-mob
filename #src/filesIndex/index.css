@@ -271,7 +271,7 @@ section > h3 {
 }
 @media (max-width: 1240px) {
 	aside.--aside {
-		left: 150%;
+		left: -100%;
 	}
 
 	aside.--aside.active {

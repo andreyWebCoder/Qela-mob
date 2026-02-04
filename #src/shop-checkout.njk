@@ -42,8 +42,9 @@
 						{ label: "-", text: "-" }
 					] }
 					]%}
+					{% from "html/includes/lists/_list-item.njk" import listItemsShop %}
 					{% for item in listItems %}
-						{% include "html/includes/lists/_list-item.njk" %}
+						{{listItemsShop(item)}}
 					{% endfor %}
 				</div>
 			</div>
