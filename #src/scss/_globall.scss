@@ -382,7 +382,7 @@ a {
 	}
 
 	&.disabled {
-		color: $gray-600;
+		color: var(--bs-ql-info-600);
 		border-color: var(--bs-ql-info-300);
 	}
 }

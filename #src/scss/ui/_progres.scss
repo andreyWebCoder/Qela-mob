@@ -70,7 +70,7 @@ $dasharray: 327;
 
 			&:nth-child(2) {
 				stroke-dashoffset: calc($dasharray - ($dasharray * var(--num)) / 100);
-				stroke: $yellow;
+				stroke: var(--bs-primary);
 				stroke-width: 5;
 			}
 		}

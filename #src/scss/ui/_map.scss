@@ -39,7 +39,7 @@
 
 		.qela-pin__area {
 			border: 2px solid var(--bs-secondary);
-			background: #{rgba($secondary, 0.1)};
+			background: color-mix(in srgb, var(--bs-secondary), transparent 90%);
 		}
 	}
 
@@ -60,7 +60,7 @@
 
 		.qela-pin__area {
 			border: 2px solid var(--bs-success);
-			background: #{rgba($success, 0.1)};
+			background: color-mix(in srgb, var(--bs-success), transparent 90%);
 		}
 	}
 
@@ -81,7 +81,7 @@
 
 		.qela-pin__area {
 			border: 1px solid var(--bs-danger);
-			background: #{rgba($danger, 0.1)};
+			background: color-mix(in srgb, var(--bs-danger), transparent 90%);
 		}
 	}
 
@@ -206,11 +206,11 @@
 	text-align: center;
 
 	span {
-		font-size: 14px;
+		font-size: rem(14);
 
 		&:first-child {
-			color: $gray-600;
-			margin-right: 4px;
+			color: var(--bs-ql-info-600);
+			margin-right: rem(4);
 		}
 	}
 }
@@ -220,7 +220,7 @@
 	height: 27px;
 	border-radius: 50%;
 	position: relative;
-	background-color: rgba($secondary-700, 0.5);
+	background-color: color-mix(in srgb, var(--bs-ql-secondary-700), transparent 50%);
 
 	&.active {
 		&::before {

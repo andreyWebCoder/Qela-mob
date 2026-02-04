@@ -362,16 +362,16 @@ $dropdown-item-padding-x: $spacer * 0;
 // Modals
 
 // scss-docs-start modal-variables
-$modal-inner-padding: 16px;
+$modal-inner-padding: 1rem;
 $modal-footer-margin-between: 0;
-$modal-content-color: $black;
-$modal-content-bg: $white;
+$modal-content-color: var(--bs-black);
+$modal-content-bg: var(--bs-white);
 $modal-content-border-color: transparent;
 $modal-content-border-width: 0;
 $modal-content-border-radius: 14px;
 $modal-content-box-shadow-xs: none;
 $modal-content-box-shadow-sm-up: none;
-$modal-backdrop-bg: $black;
+$modal-backdrop-bg: var(--bs-black);
 $modal-backdrop-opacity: 0.5;
 $modal-sm: 270px;
 // scss-docs-end modal-variables
@@ -498,18 +498,12 @@ $badge-padding-x: 0.375rem;
 $badge-border-radius: 14px;
 // badge
 //list-group
-$list-group-color: $black;
-$list-group-bg: $white;
-$list-group-border-color: transparent;
+
 $list-group-border-width: $border-width;
 $list-group-border-radius: $border-radius;
-
 $list-group-item-padding-y: 0.85rem;
 $list-group-item-padding-x: $spacer;
 
-$list-group-active-color: $black;
-$list-group-active-bg: $secondary-100;
-$list-group-active-border-color: $secondary-400;
 //list-group
 //alert
 $alert-padding-y: $spacer;

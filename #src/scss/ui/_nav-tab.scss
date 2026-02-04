@@ -1,19 +1,19 @@
 .qela-tab {
-	box-shadow: 0px 0px 20px rgba($black, 0.05);
+	box-shadow: 0px 0px 20px color-mix(in srgb, var(--bs-black), transparent 95%);
 
 	.nav-link {
 		border-bottom: 2px solid var(--bs-ql-info-300);
 		background-color: var(--bs-white);
 
 		&.active {
-			border-color: $yellow;
+			border-color: var(--bs-primary);
 		}
 	}
 }
 
 .qela-nav {
 	background-color: var(--bs-white);
-	box-shadow: 0px 0px 20px rgba($black, 0.05);
+	box-shadow: 0px 0px 20px color-mix(in srgb, var(--bs-black), transparent 95%);
 	padding-bottom: rem(24);
 	border-top: 1px solid var(--bs-ql-info-200);
 	flex-wrap: nowrap;
@@ -21,7 +21,7 @@
 		flex: 1 1 20%;
 	}
 	.nav-link {
-		font-size: 11px;
+		font-size: rem(11);
 		font-weight: 600;
 		line-height: 129%;
 		padding: rem(6) 0;
