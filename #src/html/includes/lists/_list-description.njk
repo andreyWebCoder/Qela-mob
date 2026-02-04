@@ -33,7 +33,12 @@
 						</div>
 					{% endif %}
 
-					{% if li.icRight %}
+					{% if li.icRightText and li.icRight %}
+						<span class="d-flex align-items-center ms-auto text-info-800">
+							{{li.icRightText}}
+							<i class="text-info-600{{' ' + li.icRight}}"></i>
+						</span>
+					{% elif li.icRight %}
 						<i class="text-info-600{{' ' + li.icRight}}"></i>
 					{% endif %}
 
@@ -43,7 +48,6 @@
 							<span class="ic-check-filled filled">Copied</span>
 						</button>
 					{% endif %}
-
 				</{{tag}}>
 			</li>
 		{% endfor %}
