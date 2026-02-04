@@ -1,249 +1,14 @@
+{% import "html/data/_listsData.njk" as data %}
+{% from "html/includes/lists/_list-description.njk" import listTitle %}
 <section class="d-grid gap-3">
 	<h2 class="mt-4 h1">Lists</h2>
-	<!-- List-item title-description col -->
-	<h3>List-item title-description col</h3>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div>
-					<p class="text-info m-0"><small>Name of the branch</small></p>
-					<div>West Wing</div>
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Change</span>
-			</a>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div class="d-flex align-items-center gap-3">
-					<span class="ic-success text-info"></span>
-					<div>
-						<p class="text-info m-0"><small>Name of the branch</small></p>
-						<div>West Wing</div>
-					</div>
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Change</span>
-			</a>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div class="d-flex align-items-center gap-3">
-					<span class="ic-check-filled text-success"></span>
-					<div>
-						<p class="text-info m-0"><small>Name of the branch</small></p>
-						<div>West Wing</div>
-					</div>
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Change</span>
-			</a>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div>
-					<p class="text-info m-0"><small>Name of the branch</small></p>
-					<div>West Wing</div>
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Change</span>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div>
-					<p class="text-info m-0"><small>Name of the branch</small></p>
-					<div>West Wing</div>
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Change</span>
-			</a>
-		</li>
-		<li class="list-group-item shadow-none">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div>
-					<p class="text-info m-0"><small>Name of the branch</small></p>
-					<div class="">West Wing</div>
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Change</span>
-			</a>
-		</li>
-	</ul>
-	<!-- List-item title-ic-small -->
-	<h3>List-item title-ic-small</h3>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div class="d-flex align-items-center gap-2 lh-0">
-					<span class="ic-success text-info"></span> Verification of identity
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Verified</span>
-			</a>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div class="d-flex text-danger align-items-center gap-2 lh-0">
-					<span class="ic-no-success"></span> Verification of identity
-				</div>
-			</a>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<button class="d-flex justify-content-between gap-3">
-				<div class="d-flex align-items-center gap-2 lh-0">
-					<span class="ic-success text-info"></span> Verification of identity
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Verified</span>
-			</button>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div class="d-flex align-items-center gap-2 lh-0">
-					<span class="ic-success text-info"></span> Verification of identity
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Verified</span>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div class="d-flex align-items-center gap-2 lh-0">
-					<span class="ic-success text-info"></span> Verification of identity
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Verified</span>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between gap-3">
-				<div class="d-flex align-items-center gap-2 lh-0">
-					<span class="ic-success text-info"></span> Verification of identity
-				</div>
-				<span class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Verified</span>
-			</a>
-		</li>
-	</ul>
-	<!-- List-item center -->
-	<h3>List-item center</h3>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-center gap-3">
-				<div class="d-flex gap-2 lh-0">Remove current photo</div>
-			</a>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-center gap-3 text-secondary">
-				<div class="d-flex gap-2 lh-0">Remove current photo</div>
-			</a>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-center gap-3">
-				<div class="d-flex gap-2 lh-0">Remove current photo</div>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-center gap-3">
-				<div class="d-flex gap-2 lh-0">Take photo</div>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-center gap-3">
-				<div class="d-flex gap-2 lh-0">Choose from gallery</div>
-			</a>
-		</li>
-	</ul>
-	<!-- list-item copyed-btn -->
-	<h3>List-item copyed-btn</h3>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<div class="d-flex justify-content-between gap-3">
-				Your ID
-				<div class="d-flex align-items-cente gap-2 lh-0">
-					<button type="button" class="btn-copyed">
-						<span class="ic-file-copy">C12****** D7F6</span>
-						<span class="ic-check-filled filled">Copied</span>
-					</button>
-				</div>
-			</div>
-		</li>
-	</ul>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<div class="d-flex justify-content-between gap-3">
-				Your ID
-				<div class="d-flex align-items-cente gap-2 lh-0">
-					<button type="button" class="btn-copyed success">
-						<span class="ic-file-copy">C12****** D7F6</span>
-						<span class="ic-check-filled filled">Copied</span>
-					</button>
-				</div>
-			</div>
-		</li>
-	</ul>
-	<!-- List-item title-description row -->
-	<h3>List-item title-description row</h3>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<h6>+0.15</h6>
-				<p class="text-info m-0">
-					<small>Received in the quest "Medcanabis" 15.09.21 </small>
-				</p>
-				<span class="ic-chevron-right text-info"></span>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<h6>+0.33</h6>
-				<p class="text-info m-0">
-					<small>Received in the quest "Medcanabis" 15.09.21 </small>
-				</p>
-				<span class="ic-chevron-right text-info"></span>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<h6>+0.26</h6>
-				<p class="text-info m-0">
-					<small>Received in the quest "Medcanabis" 15.09.21 </small>
-				</p>
-				<span class="ic-chevron-right text-info"></span>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<h6>+0.15</h6>
-				<p class="text-info m-0">
-					<small>Received in the quest "Medcanabis" 15.09.21 </small>
-				</p>
-				<span class="ic-chevron-right text-info"></span>
-			</a>
-		</li>
-	</ul>
-	<!-- list-item title-ic-large -->
-	<h3>List-item title-ic-large</h3>
-	<ul class="list-group qela-description">
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<span class="ic-diamond-filled qela-icon"></span>
-				<h6>Голосування</h6>
-				<span class="ic-chevron-right text-info"></span>
-			</a>
-		</li>
-		<li class="list-group-item">
-			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
-				<span class="ic-voting-filled qela-icon"></span>
-				<h6>Квести</h6>
-				<span class="ic-chevron-right text-info"></span>
-			</a>
-		</li>
-	</ul>
+	<h3>List-items descriptions</h3>
+
+	{% for item in data.listDescriptionComponentData %}
+		{{listTitle(item)}}
+	{% endfor %}
+
+	{# <div class="bg-danger-500 p-5"></div> #}
 	<!-- List-item progress -->
 	<h3>List-item progress</h3>
 	<ul class="list-group qela-condenced qela-list d-flex flex-column gap-2">
@@ -376,12 +141,12 @@
 	<h3>List-item radiobutton whith img</h3>
 	<ul class="list-group qela-condenced qela-list d-flex flex-column gap-2">
 		<li class="list-group-item radiobutton-container img-pad active">
-			<img src="img/rating/rating3.svg" width="41" height="41" alt="" />
+			<img src="img/rating/rating3.svg" width="41" height="41" alt=""/>
 			Yes, I fully support
 			<span></span>
 		</li>
 		<li class="list-group-item radiobutton-container img-pad">
-			<img src="img/rating/rating3.svg" width="41" height="41" alt="" />
+			<img src="img/rating/rating3.svg" width="41" height="41" alt=""/>
 			No, I don’t agree
 			<span></span>
 		</li>
@@ -413,10 +178,12 @@
 	<ul class="list-group qela-custom">
 		<li class="list-group-item p-0 d-flex">
 			<div class="d-flex gap-2 w-50 p-2 align-items-center">
-				<img src="img/icons/orden-red.svg" width="48" height="48" alt="" />
+				<img src="img/icons/orden-red.svg" width="48" height="48" alt=""/>
 				<div class="">
 					<span class="h2">105</span>
-					<p class="m-0 text-info"><small>Vote weight</small></p>
+					<p class="m-0 text-info">
+						<small>Vote weight</small>
+					</p>
 				</div>
 			</div>
 			<a href="#" class="btn btn-secondary text-white w-50 ic-add">Increase</a>
@@ -427,7 +194,7 @@
 	<ul class="list-group qela-notification">
 		<li class="list-group-item new">
 			<div class="qela-preview orden">
-				<img src="img/icons/orden-red.svg" alt="orden image" />
+				<img src="img/icons/orden-red.svg" alt="orden image"/>
 			</div>
 			<div class="flex-grow-1 position-relative">
 				<h2 class="h6">Vote weight added</h2>
@@ -443,7 +210,7 @@
 		</li>
 		<li class="list-group-item">
 			<div class="qela-preview orden">
-				<img src="img/icons/orden-red.svg" alt="orden image" />
+				<img src="img/icons/orden-red.svg" alt="orden image"/>
 			</div>
 			<div class="flex-grow-1 position-relative">
 				<h2 class="h6">Vote weight added</h2>
@@ -456,7 +223,7 @@
 		</li>
 		<li class="list-group-item">
 			<div class="qela-preview orden">
-				<img src="img/icons/orden-red.svg" alt="orden image" />
+				<img src="img/icons/orden-red.svg" alt="orden image"/>
 			</div>
 			<div class="flex-grow-1 position-relative">
 				<h2 class="h6">Vote weight added</h2>
@@ -468,7 +235,7 @@
 		</li>
 		<li class="list-group-item">
 			<div class="qela-preview orden">
-				<img src="img/icons/orden-red.svg" alt="orden image" />
+				<img src="img/icons/orden-red.svg" alt="orden image"/>
 			</div>
 			<div class="flex-grow-1 position-relative">
 				<h2 class="h6 text-danger">Vote weight added</h2>
@@ -482,10 +249,10 @@
 	</ul>
 	<div class="d-inline-flex gap-2">
 		<div class="qela-preview orden">
-			<img src="img/icons/orden-red.svg" alt="orden image" />
+			<img src="img/icons/orden-red.svg" alt="orden image"/>
 		</div>
 		<div class="qela-preview">
-			<img src="img/img.jpg" alt="" />
+			<img src="img/img.jpg" alt=""/>
 		</div>
 		<div class="qela-preview " style="--ql-talent-color: #d92525; --ql-talent-bg: #ffcccc;">
 			<i class="ic-achievement-filled"></i>
@@ -507,7 +274,7 @@
 			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
 				Change password
 				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5" />
+					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5"/>
 				</div>
 			</a>
 		</li>
@@ -515,7 +282,7 @@
 			<a href="#" class="d-flex justify-content-between text-danger align-items-center gap-3">
 				Contact info
 				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5" />
+					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5"/>
 				</div>
 			</a>
 		</li>
@@ -523,7 +290,7 @@
 			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
 				Rules
 				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5" />
+					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5"/>
 				</div>
 			</a>
 		</li>
@@ -531,7 +298,7 @@
 			<a href="#" class="d-flex justify-content-between align-items-center gap-3">
 				Customer support
 				<div class="form-check form-switch">
-					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5" />
+					<input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck5"/>
 				</div>
 			</a>
 		</li>

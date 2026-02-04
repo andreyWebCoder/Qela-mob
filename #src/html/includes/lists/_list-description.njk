@@ -1,0 +1,67 @@
+{% macro listTitle(props) %}
+	<ul class="list-group qela-description">
+		{% for li in props.li %}
+			<li class="list-group-item">
+				{% set tag = li.tag | default("div") %}
+
+				<{{tag}} 
+					{% if tag == 'button' %}
+            			type="{{ li.type or 'button' }}"
+        			 {% elif tag == "a" %}
+           				href="{{ li.url or '#' }}"
+        			{% endif %}
+						class="d-flex align-items-center lh-0 gap-2{{" " + li.class if li.class}}">
+
+					{% if li.icLeft %}
+						<i class="{{li.icLeft}}"></i>
+					{% endif %}
+
+					{% if li.title %}
+						<h6>{{li.title}}</h6>
+					{% endif %}
+
+					{% if li.text or li.label%}
+						<div>
+							{% if li.text %}
+								<span class="display-7 text-info-600">
+									{{li.text}}
+								</span>
+							{% endif %}
+							{% if li.label %}
+								<div>{{li.label}}</div>
+							{% endif %}
+						</div>
+					{% endif %}
+
+					{% if li.icRight %}
+						<i class="text-info-600{{' ' + li.icRight}}"></i>
+					{% endif %}
+
+					{% if li.button %}
+						<button type="button" class="{{li.button}}">
+							<span class="ic-file-copy">C12****** D7F6</span>
+							<span class="ic-check-filled filled">Copied</span>
+						</button>
+					{% endif %}
+
+				</{{tag}}>
+			</li>
+		{% endfor %}
+
+	</ul>
+{% endmacro %}
+
+{# {% set listDescriptionComponentData = [
+	{
+		ul: 'qela-description',
+		li: [
+			{  
+				tag:'a',
+				text: 'Name of the branch',
+				label: 'West Wing',
+				icLeft: 'ic-check-filled text-success',
+				icRight: 'ic-chevron-right ms-auto'
+			}
+		]
+	}
+] %} #}
