@@ -1,3 +1,8 @@
+.progress {
+	--bs-progress-bg: var(--bs-ql-secondary-300);
+	--bs-progress-bar-color: var(--bs-black);
+	--bs-progress-bar-bg: var(--bs-secondary);
+}
 .qela-progress {
 	width: 100%;
 	position: relative;
@@ -15,7 +20,7 @@
 
 	.left {
 		width: 100%;
-		background: $progress-bar-bg;
+		background: var(--bs-progress-bar-bg);
 		color: var(--bs-white);
 	}
 
@@ -26,8 +31,8 @@
 		bottom: 0;
 		height: 100%;
 		width: 100%;
-		background: $progress-bg;
-		color: $progress-bar-color;
+		background: var(--bs-progress-bg);
+		color: var(--bs-progress-bar-color);
 		clip-path: inset(-1px -1px -1px var(--percent));
 	}
 }

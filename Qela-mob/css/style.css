@@ -4008,9 +4008,9 @@ textarea.form-control-lg {
   --bs-nav-link-padding-y: 1.25rem;
   --bs-nav-link-font-size: 0.8125rem;
   --bs-nav-link-font-weight: 600;
-  --bs-nav-link-color: #858585;
-  --bs-nav-link-hover-color: #858585;
-  --bs-nav-link-disabled-color: #e9e9e8;
+  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-disabled-color: #858585;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -4045,10 +4045,10 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-width: 1px;
   --bs-nav-tabs-border-color: #dfdfdf;
   --bs-nav-tabs-border-radius: 0;
-  --bs-nav-tabs-link-hover-border-color: transparent;
-  --bs-nav-tabs-link-active-color: #858585;
-  --bs-nav-tabs-link-active-bg: #fff;
-  --bs-nav-tabs-link-active-border-color: #ffe000;
+  --bs-nav-tabs-link-hover-border-color: #e9e9e8 #e9e9e8 #dfdfdf;
+  --bs-nav-tabs-link-active-color: #676767;
+  --bs-nav-tabs-link-active-bg: #f5f5f5;
+  --bs-nav-tabs-link-active-border-color: #dfdfdf #dfdfdf #f5f5f5;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
@@ -4131,12 +4131,12 @@ textarea.form-control-lg {
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: #9188ff;
+  --bs-navbar-active-color: var(--bs-secondary);
   --bs-navbar-brand-padding-y: 1.09375rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: #9188ff;
-  --bs-navbar-brand-hover-color: #9188ff;
+  --bs-navbar-brand-color: var(--bs-secondary);
+  --bs-navbar-brand-hover-color: var(--bs-secondary);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -5367,11 +5367,11 @@ textarea.form-control-lg {
 .progress {
   --bs-progress-height: 1rem;
   --bs-progress-font-size: 0.6875rem;
-  --bs-progress-bg: #d5d3ff;
+  --bs-progress-bg: #e9e9e8;
   --bs-progress-border-radius: 6px;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  --bs-progress-bar-color: #000;
-  --bs-progress-bar-bg: #9188ff;
+  --bs-progress-bar-color: #fff;
+  --bs-progress-bar-bg: #ffe000;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -15433,6 +15433,19 @@ input[type=number] {
   transform: translate(-50%, 100%);
 }
 
+.nav {
+  --bs-nav-link-color: var(--bs-ql-info-600);
+  --bs-nav-link-hover-color: var(--bs-ql-info-600);
+  --bs-nav-link-disabled-color: var(--bs-ql-info-200);
+}
+
+.nav-tabs {
+  --bs-nav-tabs-link-hover-border-color: transparent;
+  --bs-nav-tabs-link-active-color: var(--bs-ql-info-600);
+  --bs-nav-tabs-link-active-bg: var(--bs-white);
+  --bs-nav-tabs-link-active-border-color: var(--bs-primary);
+}
+
 .qela-tab {
   box-shadow: 0px 0px 20px color-mix(in srgb, var(--bs-black), transparent 95%);
 }
@@ -15962,13 +15975,19 @@ input[type=number] {
   --bs-alert-border-color: var(--bs-ql-success-400);
 }
 
+.progress {
+  --bs-progress-bg: var(--bs-ql-secondary-300);
+  --bs-progress-bar-color: var(--bs-black);
+  --bs-progress-bar-bg: var(--bs-secondary);
+}
+
 .qela-progress {
   width: 100%;
   position: relative;
   display: flex;
   height: 1rem;
   border-radius: 6px;
-  font-size: 11px;
+  font-size: 0.6875rem;
   overflow: hidden;
 }
 .qela-progress > div {
@@ -15978,7 +15997,7 @@ input[type=number] {
 }
 .qela-progress .left {
   width: 100%;
-  background: #9188ff;
+  background: var(--bs-progress-bar-bg);
   color: var(--bs-white);
 }
 .qela-progress .right {
@@ -15988,8 +16007,8 @@ input[type=number] {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: #d5d3ff;
-  color: #000;
+  background: var(--bs-progress-bg);
+  color: var(--bs-progress-bar-color);
   clip-path: inset(-1px -1px -1px var(--percent));
 }
 
@@ -16863,12 +16882,12 @@ input[type=number] {
 }
 .qela-place-card:nth-child(1) {
   order: 2;
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   z-index: 1;
 }
 .qela-place-card:nth-child(2) {
   order: 1;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 @media screen and (max-width: 400px) {
   .qela-place-card:nth-child(2) {
@@ -16877,7 +16896,7 @@ input[type=number] {
 }
 .qela-place-card:nth-child(3) {
   order: 3;
-  margin-top: 66px;
+  margin-top: 4.125rem;
 }
 @media screen and (max-width: 400px) {
   .qela-place-card:nth-child(3) {
@@ -16927,7 +16946,7 @@ input[type=number] {
   z-index: 1;
   width: 28px;
   height: 28px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   text-align: center;
   color: var(--bs-primary);

@@ -1,3 +1,15 @@
+.nav {
+	--bs-nav-link-color: var(--bs-ql-info-600);
+	--bs-nav-link-hover-color: var(--bs-ql-info-600);
+	--bs-nav-link-disabled-color: var(--bs-ql-info-200);
+}
+.nav-tabs {
+	--bs-nav-tabs-link-hover-border-color: transparent;
+	--bs-nav-tabs-link-active-color: var(--bs-ql-info-600);
+	--bs-nav-tabs-link-active-bg: var(--bs-white);
+	--bs-nav-tabs-link-active-border-color: var(--bs-primary);
+}
+
 .qela-tab {
 	box-shadow: 0px 0px 20px color-mix(in srgb, var(--bs-black), transparent 95%);
 
