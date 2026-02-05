@@ -14503,9 +14503,9 @@ a:hover {
   flex-direction: row-reverse;
 }
 .btn.success {
-  background-color: var(--bs-ql-success-100) !important;
-  color: var(--bs-success) var(--bs-success) !important;
-  border-color: var(--bs-ql-success-100) !important;
+  --bs-btn-bg: var(--bs-ql-success-100) !important;
+  --bs-btn-color: var(--bs-success) !important;
+  --bs-btn-border-color: var(--bs-ql-success-100) !important;
   position: relative;
   padding-right: 3rem;
   padding-left: 3rem;
@@ -14523,9 +14523,14 @@ a:hover {
   display: none;
 }
 .btn.success:active {
-  background-color: var(--bs-ql-success-100) !important;
-  color: var(--bs-success) !important;
-  border-color: var(--bs-ql-success-100) !important;
+  --bs-btn-active-bg: var(--bs-ql-success-300) !important;
+  --bs-btn-active-color: var(--bs-success) !important;
+  --bs-btn-active-border-color: var(--bs-ql-success-100) !important;
+}
+.btn.success:hover {
+  --bs-btn-hover-color: var(--bs-success) !important;
+  --bs-btn-hover-bg: var(--bs-ql-success-100) !important;
+  --bs-btn-hover-border-color: var(--bs-ql-success-100) !important;
 }
 .btn.active--filter {
   position: relative;

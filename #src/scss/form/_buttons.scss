@@ -6,11 +6,10 @@
 	&.ic-right {
 		flex-direction: row-reverse;
 	}
-
 	&.success {
-		background-color: var(--bs-ql-success-100) !important;
-		color: var(--bs-success) var(--bs-success) !important;
-		border-color: var(--bs-ql-success-100) !important;
+		--bs-btn-bg: var(--bs-ql-success-100) !important;
+		--bs-btn-color: var(--bs-success) !important;
+		--bs-btn-border-color: var(--bs-ql-success-100) !important;
 		position: relative;
 		padding-right: rem(48);
 		padding-left: rem(48);
@@ -29,9 +28,14 @@
 			display: none;
 		}
 		&:active {
-			background-color: var(--bs-ql-success-100) !important;
-			color: var(--bs-success) !important;
-			border-color: var(--bs-ql-success-100) !important;
+			--bs-btn-active-bg: var(--bs-ql-success-300) !important;
+			--bs-btn-active-color: var(--bs-success) !important;
+			--bs-btn-active-border-color: var(--bs-ql-success-100) !important;
+		}
+		&:hover {
+			--bs-btn-hover-color: var(--bs-success) !important;
+			--bs-btn-hover-bg: var(--bs-ql-success-100) !important;
+			--bs-btn-hover-border-color: var(--bs-ql-success-100) !important;
 		}
 	}
 	&.active--filter {
@@ -54,6 +58,7 @@
 	// 	border-color: var(--bs-ql-info-300);;
 	// }
 }
+
 .btn-primary {
 	--bs-btn-color: var(--bs-black);
 	--bs-btn-bg: var(--bs-primary);
