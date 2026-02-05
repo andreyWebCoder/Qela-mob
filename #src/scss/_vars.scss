@@ -297,33 +297,32 @@ $btn-transition:
 	box-shadow 0.3s ease-in-out;
 // scss-docs-end btn-variables
 // scss-docs-start form-label-variables
-$form-label-margin-bottom: 4px;
-$form-label-font-size: 16px;
-$form-label-color: $gray-700;
+$form-label-margin-bottom: 0.25rem;
+$form-label-font-size: 1rem;
+$form-label-color: var(--bs-ql-info-700);
 $form-label-font-weight: 500;
 // scss-docs-end form-label-variables
 // scss-docs-start form-input-variables
 $input-border-width: 1px;
-$input-bg: $white;
-$input-border-color: $white;
+$input-bg: var(--bs-white);
+$input-border-color: var(--bs-white);
 $input-border-radius: $border-radius;
-$input-disabled-color: $info-700;
-$input-disabled-bg: $white;
-$input-disabled-border-color: #d1d1d2;
+$input-disabled-color: var(--bs-ql-info-700);
+$input-disabled-bg: var(--bs-white);
+$input-disabled-border-color: var(--bs-white);
 $input-focus-bg: $input-bg;
-$input-focus-border-color: $white;
-$input-placeholder-color: $gray-500;
-$input-plaintext-color: $gray-500;
-$input-focus-bg: $input-bg;
+$input-focus-border-color: var(--bs-white);
+$input-placeholder-color: var(--bs-info);
+$input-plaintext-color: var(--bs-info);
 
 $input-focus-border-color: $input-border-color;
 $input-focus-width: $input-border-width;
 $input-box-shadow: none;
 
-$input-group-addon-padding-y: 5px;
-$input-group-addon-padding-x: 16px;
-$input-group-addon-color: $gray-800;
-$input-group-addon-bg: $white;
+$input-group-addon-padding-y: 0.3125rem;
+$input-group-addon-padding-x: 1rem;
+$input-group-addon-color: var(--bs-ql-info-800);
+$input-group-addon-bg: var(--bs-white);
 $input-group-addon-border-color: $input-border-color;
 // scss-docs-end form-input-variables
 // scss-docs-start form-check-variables
@@ -398,7 +397,7 @@ $navbar-padding-x: $spacer;
 $navbar-light-active-color: var(--bs-secondary);
 $nav-link-padding-y: 1.25rem;
 $nav-link-padding-x: 0.75rem;
-$nav-link-font-size: 13px;
+$nav-link-font-size: 0.8125rem;
 $nav-link-font-weight: 600;
 $nav-tabs-border-radius: 0;
 $nav-pills-border-radius: 0;
