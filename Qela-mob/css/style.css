@@ -15942,6 +15942,10 @@ input[type=number] {
 .qela-alert .btn-close:focus {
   box-shadow: none;
 }
+.qela-alert.alert-secondary {
+  --bs-alert-bg: var(--bs-ql-secondary-100);
+  --bs-alert-border-color: var(--bs-ql-secondary-400);
+}
 .qela-alert.alert-danger {
   --bs-alert-bg: var(--bs-ql-danger-100);
   --bs-alert-border-color: var(--bs-ql-danger-400);
