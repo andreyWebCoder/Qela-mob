@@ -88,7 +88,7 @@ main {
 		padding: 0 rem(16);
 	}
 	i {
-		color: $info;
+		color: var(--bs-info);
 		line-height: 1;
 		&::before {
 			font-size: rem(104);
@@ -141,7 +141,7 @@ a {
 }
 
 .qela-decision {
-	padding: 24px 16px 16px 16px;
+	padding: rem(24) rem(16) rem(16) rem(16);
 	background-color: var(--bs-white);
 	border: 3px solid var(--bs-secondary);
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
@@ -155,7 +155,7 @@ a {
 }
 
 .text-orange {
-	color: $orange !important;
+	color: var(--bs-warning) !important;
 }
 
 .qela-username {
@@ -222,7 +222,7 @@ a {
 
 .fs-6 {
 	&::before {
-		font-size: 16px !important;
+		font-size: rem(16) !important;
 	}
 }
 
@@ -230,14 +230,13 @@ a {
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 	border-radius: 6px;
 	display: flex;
-	border-radius: 6px;
 	overflow: hidden;
 }
 
 .qela-upload_ic {
 	background-color: var(--bs-ql-info-300);
 	color: var(--bs-white);
-	padding: 10px;
+	padding: rem(10);
 	width: 70px;
 	height: 70px;
 	display: flex;
@@ -264,10 +263,10 @@ a {
 		align-items: center;
 
 		&::before {
-			font-size: 48px;
+			font-size: rem(48);
 
 			@media (max-width: 360px) {
-				font-size: 36px;
+				font-size: rem(36);
 			}
 		}
 	}
@@ -394,7 +393,7 @@ a {
 	z-index: 100;
 	left: 0;
 	top: 0;
-	background-color: rgba($black, 0.7);
+	background-color: color-mix(in srgb, var(--bs-black), transparent 30%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -402,7 +401,7 @@ a {
 	flex-direction: column;
 	span {
 		color: var(--bs-white);
-		font-style: 18px;
+		font-size: rem(18);
 	}
 
 	$offset: 187;
@@ -426,7 +425,7 @@ a {
 		stroke-dashoffset: 0;
 		transform-origin: center;
 		animation: dash $duration ease-in-out infinite;
-		stroke: #f7c223;
+		stroke: var(--bs-primary);
 	}
 
 	@keyframes dash {
@@ -447,10 +446,10 @@ a {
 	display: flex;
 	align-items: center;
 	padding: 0.5rem 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+	border-bottom: 1px solid color-mix(in srgb, var(--bs-black), transparent 89%);
 	> * {
 		&:not(:last-child) {
-			margin: 0px 0.5rem 0px 0px;
+			margin: 0 0.5rem 0 0;
 		}
 	}
 
@@ -473,10 +472,10 @@ a {
 
 	span {
 		position: absolute;
-		font-size: 20px;
+		font-size: rem(20);
 		text-align: center;
 		letter-spacing: 0.0038em;
-		color: #8a8a8e;
+		color: var(--bs-info);
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);

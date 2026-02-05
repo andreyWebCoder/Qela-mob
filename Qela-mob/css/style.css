@@ -55,21 +55,6 @@
   --bs-ql-info-700: #676767;
   --bs-ql-info-800: #4b4b4b;
   --bs-ql-info-900: #2c2c2c;
-  --bs-ql-input-color: var(--bs-ql-info-900);
-  --bs-ql-input-border-color: var(--bs-ql-info-400);
-  --bs-ql-input-bg-color: var(--bs-white);
-  --bs-ql-input-placeholder-color: var(--bs-info);
-  --bs-ql-input-hover-color: var(--bs-ql-info-900);
-  --bs-ql-input-hover-border-color: var(--bs-ql-secondary-500);
-  --bs-ql-input-hover-bg-color: var(--bs-white);
-  --bs-ql-input-focus-color: var(--bs-ql-info-900);
-  --bs-ql-input-focus-border-color: var(--bs-ql-secondary-500);
-  --bs-ql-input-focus-bg-color: var(--bs-white);
-  --bs-ql-input-focus-box-shadow: var(--bs-ql-secondary-500);
-  --bs-ql-input-disabled-color: var(--bs-ql-info-600);
-  --bs-ql-input-disabled-border-color: var(--bs-ql-info-400);
-  --bs-ql-input-disabled-bg-color: var(--bs-ql-info-200);
-  --bs-ql-input-ivalid-border-color: var(--bs-danger);
 }
 
 :root {
@@ -2372,10 +2357,10 @@ progress {
   }
 }
 .form-label {
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #676767;
+  color: var(--bs-ql-info-700);
 }
 
 .col-form-label {
@@ -2385,7 +2370,7 @@ progress {
   font-size: inherit;
   font-weight: 500;
   line-height: 1.25;
-  color: #676767;
+  color: var(--bs-ql-info-700);
 }
 
 .col-form-label-lg {
@@ -2414,9 +2399,9 @@ progress {
   font-weight: 400;
   line-height: 1.25;
   color: #2c2c2c;
-  background-color: #fff;
+  background-color: var(--bs-white);
   background-clip: padding-box;
-  border: 1px solid #fff;
+  border: 1px solid var(--bs-white);
   appearance: none;
   border-radius: 10px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2434,8 +2419,8 @@ progress {
 }
 .form-control:focus {
   color: #2c2c2c;
-  background-color: #fff;
-  border-color: #fff;
+  background-color: var(--bs-white);
+  border-color: var(--bs-white);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(255, 224, 0, 0.25);
 }
@@ -2443,13 +2428,13 @@ progress {
   height: 1.25em;
 }
 .form-control::placeholder {
-  color: #ababab;
+  color: var(--bs-info);
   opacity: 1;
 }
 .form-control:disabled {
-  color: #676767;
-  background-color: #fff;
-  border-color: #d1d1d2;
+  color: var(--bs-ql-info-700);
+  background-color: var(--bs-white);
+  border-color: var(--bs-white);
   opacity: 1;
 }
 .form-control::file-selector-button {
@@ -2481,7 +2466,7 @@ progress {
   padding: 0.875rem 0;
   margin-bottom: 0;
   line-height: 1.25;
-  color: #ababab;
+  color: var(--bs-info);
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2559,12 +2544,12 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.25;
   color: #2c2c2c;
-  background-color: #fff;
+  background-color: var(--bs-white);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%234b4b4b' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 16px 12px;
-  border: 1px solid #fff;
+  border: 1px solid var(--bs-white);
   border-radius: 10px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -2575,7 +2560,7 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: #fff;
+  border-color: var(--bs-white);
   outline: 0;
   box-shadow: 0 0 0 1px rgba(255, 224, 0, 0.25);
 }
@@ -2585,7 +2570,7 @@ textarea.form-control-lg {
 }
 .form-select:disabled {
   background-color: #e9e9e8;
-  border-color: #d1d1d2;
+  border-color: var(--bs-white);
 }
 .form-select:-moz-focusring {
   color: transparent;
@@ -2635,7 +2620,7 @@ textarea.form-control-lg {
   height: 1.5em;
   margin-top: -0.125em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: var(--bs-white);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2659,7 +2644,7 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #fff;
+  border-color: var(--bs-white);
   outline: 0;
   box-shadow: none;
 }
@@ -2709,7 +2694,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='var%28--bs-white%29'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
@@ -2921,15 +2906,15 @@ textarea.form-control-lg {
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 5px 16px;
+  padding: 0.3125rem 1rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25;
-  color: #4b4b4b;
+  color: var(--bs-ql-info-800);
   text-align: center;
   white-space: nowrap;
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid var(--bs-white);
   border-radius: 10px;
 }
 
@@ -4748,7 +4733,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: none;
-  --bs-accordion-btn-focus-border-color: #fff;
+  --bs-accordion-btn-focus-border-color: var(--bs-white);
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-body-padding-x: 0;
   --bs-accordion-body-padding-y: 0;
@@ -14132,7 +14117,7 @@ main {
   padding: 0 1rem;
 }
 .qela-page-info i {
-  color: #ababab;
+  color: var(--bs-info);
   line-height: 1;
 }
 .qela-page-info i::before {
@@ -14184,7 +14169,7 @@ a:hover {
 }
 
 .qela-decision {
-  padding: 24px 16px 16px 16px;
+  padding: 1.5rem 1rem 1rem 1rem;
   background-color: var(--bs-white);
   border: 3px solid var(--bs-secondary);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
@@ -14197,7 +14182,7 @@ a:hover {
 }
 
 .text-orange {
-  color: #ff7c02 !important;
+  color: var(--bs-warning) !important;
 }
 
 .qela-username {
@@ -14260,21 +14245,20 @@ a:hover {
 }
 
 .fs-6::before {
-  font-size: 16px !important;
+  font-size: 1rem !important;
 }
 
 .qela-upload {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   display: flex;
-  border-radius: 6px;
   overflow: hidden;
 }
 
 .qela-upload_ic {
   background-color: var(--bs-ql-info-300);
   color: var(--bs-white);
-  padding: 10px;
+  padding: 0.625rem;
   width: 70px;
   height: 70px;
   display: flex;
@@ -14301,11 +14285,11 @@ a:hover {
   align-items: center;
 }
 .qela-add .icon::before {
-  font-size: 48px;
+  font-size: 3rem;
 }
 @media (max-width: 360px) {
   .qela-add .icon::before {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 
@@ -14414,7 +14398,7 @@ a:hover {
   z-index: 100;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: color-mix(in srgb, var(--bs-black), transparent 30%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14423,7 +14407,7 @@ a:hover {
 }
 .qela-loader span {
   color: var(--bs-white);
-  font-style: 18px;
+  font-size: 1.125rem;
 }
 .qela-loader .spinner {
   animation: rotator 1.4s linear infinite;
@@ -14441,7 +14425,7 @@ a:hover {
   stroke-dashoffset: 0;
   transform-origin: center;
   animation: dash 1.4s ease-in-out infinite;
-  stroke: #f7c223;
+  stroke: var(--bs-primary);
 }
 @keyframes dash {
   0% {
@@ -14461,10 +14445,10 @@ a:hover {
   display: flex;
   align-items: center;
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  border-bottom: 1px solid color-mix(in srgb, var(--bs-black), transparent 89%);
 }
 .qela-limit > *:not(:last-child) {
-  margin: 0px 0.5rem 0px 0px;
+  margin: 0 0.5rem 0 0;
 }
 .qela-limit.reached {
   font-weight: 500;
@@ -14484,10 +14468,10 @@ a:hover {
 }
 .loading span {
   position: absolute;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   letter-spacing: 0.0038em;
-  color: #8a8a8e;
+  color: var(--bs-info);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -14945,24 +14929,6 @@ a:hover {
   height: auto;
   background-color: var(--bs-body-bg);
   padding: 0;
-}
-
-.form-control {
-  --bs-ql-input-color: var(--bs-ql-info-900);
-  --bs-ql-input-border-color: var(--bs-white);
-  --bs-ql-input-bg-color: var(--bs-white);
-  --bs-ql-input-placeholder-color: var(--bs-info);
-  --bs-ql-input-hover-color: var(--bs-ql-info-900);
-  --bs-ql-input-hover-border-color: var(--bs-ql-secondary-500);
-  --bs-ql-input-hover-bg-color: var(--bs-white);
-  --bs-ql-input-focus-color: var(--bs-ql-info-900);
-  --bs-ql-input-focus-border-color: var(--bs-ql-secondary-500);
-  --bs-ql-input-focus-bg-color: var(--bs-white);
-  --bs-ql-input-focus-box-shadow: var(--bs-ql-secondary-500);
-  --bs-ql-input-disabled-color: var(--bs-ql-info-600);
-  --bs-ql-input-disabled-border-color: var(--bs-ql-info-400);
-  --bs-ql-input-disabled-bg-color: var(--bs-ql-info-200);
-  --bs-ql-input-ivalid-border-color: var(--bs-danger);
 }
 
 input::-webkit-outer-spin-button,
@@ -17330,19 +17296,4 @@ input[type=number] {
   --bs-ql-secondary-900: #012c5c;
   --bs-link-color-rgb: var(--bs-secondary-rgb);
   --bs-link-hover-color-rgb: 1, 71, 150;
-  --bs-ql-input-color: var(--bs-ql-info-900);
-  --bs-ql-input-border-color: var(--bs-ql-info-400);
-  --bs-ql-input-bg-color: var(--bs-white);
-  --bs-ql-input-placeholder-color: var(--bs-info);
-  --bs-ql-input-hover-color: var(--bs-ql-info-900);
-  --bs-ql-input-hover-border-color: var(--bs-ql-secondary-500);
-  --bs-ql-input-hover-bg-color: var(--bs-white);
-  --bs-ql-input-focus-color: var(--bs-ql-info-900);
-  --bs-ql-input-focus-border-color: var(--bs-ql-secondary-500);
-  --bs-ql-input-focus-bg-color: var(--bs-white);
-  --bs-ql-input-focus-box-shadow: var(--bs-ql-secondary-500);
-  --bs-ql-input-disabled-color: var(--bs-ql-info-600);
-  --bs-ql-input-disabled-border-color: var(--bs-ql-info-400);
-  --bs-ql-input-disabled-bg-color: var(--bs-ql-info-200);
-  --bs-ql-input-ivalid-border-color: var(--bs-danger);
 }

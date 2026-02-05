@@ -322,7 +322,7 @@ $input-box-shadow: none;
 $input-group-addon-padding-y: 0.3125rem;
 $input-group-addon-padding-x: 1rem;
 $input-group-addon-color: var(--bs-ql-info-800);
-$input-group-addon-bg: var(--bs-white);
+$input-group-addon-bg: $white;
 $input-group-addon-border-color: $input-border-color;
 // scss-docs-end form-input-variables
 // scss-docs-start form-check-variables
