@@ -17,12 +17,7 @@
 				justify-content: center;
 			}
 		}
-
-		&.text-bg-primary {
-			background-color: var(--bs-primary) !important;
-		}
-
-		&.text-bg-info {
+		&.bg-info {
 			background-color: var(--bs-ql-info-300) !important;
 		}
 		&.is-out {

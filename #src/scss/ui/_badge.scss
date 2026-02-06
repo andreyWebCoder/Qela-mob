@@ -7,13 +7,6 @@
 		margin-right: rem(16);
 	}
 
-	.badge {
-		&.text-bg-secondary {
-			color: var(--bs-white) !important;
-			font-weight: 600;
-		}
-	}
-
 	&.small {
 		font-size: rem(12);
 		border-radius: 14px;

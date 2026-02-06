@@ -15619,10 +15619,7 @@ input[type=number] {
   align-items: center;
   justify-content: center;
 }
-.qela-card.card.text-bg-primary {
-  background-color: var(--bs-primary) !important;
-}
-.qela-card.card.text-bg-info {
+.qela-card.card.bg-info {
   background-color: var(--bs-ql-info-300) !important;
 }
 .qela-card.card.is-out {
@@ -15799,10 +15796,6 @@ input[type=number] {
 }
 .qela-badge:not(:last-child) {
   margin-right: 1rem;
-}
-.qela-badge .badge.text-bg-secondary {
-  color: var(--bs-white) !important;
-  font-weight: 600;
 }
 .qela-badge.small {
   font-size: 0.75rem;
