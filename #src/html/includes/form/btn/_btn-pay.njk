@@ -1,0 +1,25 @@
+{% macro btnPay(props) %}
+	<button class="btn-pay{{' ' + props.class}}">
+		<img src="img/icons/{{ props.img }}" width="60" height="28" alt="icon {{ props.class }}">
+	</button>
+{% endmacro %}
+
+{# {% set btnsPayComponents = [
+	{
+		class: 'apple-white',
+		img: 'apple-black.svg',
+		alt: 'apple Pay'
+	}, {
+		class: 'apple-black',
+		img: 'apple-white.svg',
+		alt: 'apple Pay'
+	}, {
+		class: 'google-white',
+		img: 'google-gray.svg',
+		alt: 'google Pay'
+	}, {
+		class: 'google-black',
+		img: 'google-white.svg',
+		alt: 'google Pay'
+	}
+] %} #}

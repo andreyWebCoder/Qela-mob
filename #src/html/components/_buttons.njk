@@ -1,142 +1,41 @@
-<!-- FIX Buttons  -->
+{% from "html/includes/form/btn/_btn.njk" import btns %}
+{% from "html/includes/form/btn/_btn-pay.njk" import btnPay %}
+{% from "html/includes/form/btn/_btn-round.njk" import btnRound %}
+{% import "html/data/form/_btnData.njk" as data %}
+<!-- Buttons  -->
 <section class="d-grid gap-3">
 	<h2 class="h1 mt-4">Buttons</h2>
-	<!-- buttons large standart start -->
+	<!-- buttons large standart -->
 	<h3>Buttons types, large </h3>
-	<button type="button" class="btn btn-primary">Primary</button>
-	<button type="button" class="btn btn-primary" disabled>Primary disabled</button>
-	<button type="button" class="btn btn-secondary">Secondary</button>
-	<button type="button" class="btn btn-secondary" disabled>Secondary disabled</button>
-	<button type="button" class="btn btn-info">Info</button>
-	<button type="button" class="btn btn-info" disabled>Info</button>
-	<button type="button" class="btn btn-light">Light</button>
-	<button type="button" class="btn btn-light" disabled>Light disabled</button>
-	<button type="button" class="btn btn-outline-secondary">Secondary</button>
-	<button type="button" class="btn btn-outline-secondary" disabled>Secondary</button>
-	<button type="button" class="btn btn-danger">Danger</button>
-	<button type="button" class="btn btn-danger" disabled>Danger</button>
-	<button type="button" class="btn btn-warning">Warning</button>
-	<button type="button" class="btn btn-warning" disabled>Warning</button>
-	<button type="button" class="btn btn-success">Success</button>
-	<button type="button" class="btn btn-success" disabled>Success</button>
+	{% for item in data.btnsComponents %}
+		{{ btns(item) }}
+	{% endfor %}
 	<!-- buttons large standart end -->
-	<!-- buttons large standart with icon-right start -->
-	<h3 class="mt-4">Buttons large icon right</h3>
-	<button type="button" class="btn btn-primary ic-right ic-chevron-right">Primary</button>
-	<button type="button" class="btn btn-primary ic-right ic-chevron-right" disabled>Primary disabled</button>
-	<!-- buttons large standart with icon-right end -->
-	<!-- buttons large standart with icon-left start -->
-	<h3 class="mt-4">Buttons large icon left</h3>
-	<button type="button" class="btn btn-primary ic-chevron-left">Primary</button>
-	<button type="button" class="btn btn-primary ic-chevron-left" disabled>Primary disabled</button>
-	<button type="button" class="btn btn-success ic-check-filled"></button>
-	<button type="button" class="btn btn-success ic-check-filled" disabled></button>
-	<button type="button" class="btn btn-primary ic-right ic-chevron-left success">Success</button>
-	<!-- buttons large standart with icon-left end -->
-	<!-- buttons large icon start -->
+	<!-- bButtons large icon -->
 	<h3 class="mt-4">Buttons large icon</h3>
-	<div class="d-flex gap-2">
-		<button type="button" class="btn btn-primary ic-chevron-left"></button>
-		<button type="button" class="btn btn-primary ic-chevron-left" disabled></button>
-		<button type="button" class="btn btn-primary ic-chevron-right"></button>
-		<button type="button" class="btn btn-primary ic-chevron-right" disabled></button>
+	{% for item in data.btnsIconComponents %}
+		{{ btns(item) }}
+	{% endfor %}
+	<!-- buttons icon -->
+	<h3 class="mt-4">Buttons only icon</h3>
+	<div class="d-flex align-items-start gap-2">
+		{% for item in data.btnsOnlyIconComponents %}
+			{{ btns(item) }}
+		{% endfor %}
 	</div>
-	<!-- buttons large icon end -->
-	<!-- ======================small=========================== -->
-	<!-- buttons small start  -->
-	<h3 class="mt-4">Buttons types small</h3>
-	<button type="button" class="btn btn-primary btn-sm">Primary</button>
-	<button type="button" class="btn btn-primary btn-sm" disabled>Primary disabled</button>
-	<button type="button" class="btn btn-secondary btn-sm">Secondary</button>
-	<button type="button" class="btn btn-secondary btn-sm" disabled>Secondary disabled</button>
-	<button type="button" class="btn btn-info btn-sm">Info</button>
-	<button type="button" class="btn btn-info btn-sm" disabled>Info</button>
-	<button type="button" class="btn btn-light btn-sm">Light</button>
-	<button type="button" class="btn btn-light btn-sm" disabled>Light disabled</button>
-	<button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
-	<button type="button" class="btn btn-outline-secondary btn-sm" disabled>Secondary</button>
-	<button type="button" class="btn btn-danger btn-sm">Danger</button>
-	<button type="button" class="btn btn-danger btn-sm" disabled>Danger</button>
-	<button type="button" class="btn btn-warning btn-sm">Warning</button>
-	<button type="button" class="btn btn-warning btn-sm" disabled>Warning</button>
-	<button type="button" class="btn btn-success btn-sm">Warning</button>
-	<button type="button" class="btn btn-success btn-sm" disabled>Warning</button>
-	<!-- buttons small end -->
-	<!-- buttons small with icon-right start -->
-	<h3 class="mt-4">Buttons small icon right</h3>
-	<button type="button" class="btn btn-primary btn-sm ic-right ic-chevron-right">Primary</button>
-	<button type="button" class="btn btn-primary btn-sm ic-right ic-chevron-right" disabled>Primary
-		disabled</button>
-	<!-- buttons small with icon-left end -->
-	<!-- buttons small icon start -->
-	<h3 class="mt-4">Buttons large icon</h3>
-	<div class="d-flex gap-2">
-		<button type="button" class="btn btn-primary btn-sm ic-chevron-left"></button>
-		<button type="button" class="btn btn-primary btn-sm ic-chevron-left" disabled></button>
-		<button type="button" class="btn btn-primary btn-sm ic-chevron-right"></button>
-		<button type="button" class="btn btn-primary btn-sm ic-chevron-right" disabled></button>
-	</div>
-	<!-- buttons small icon end -->
-	<!-- =========================== -->
 	<!-- buttons link normal start -->
 	<h3 class="mt-4">Buttons large links</h3>
-	<button type="button" class="btn btn-link">Secondary</button>
-	<button type="button" class="btn btn-link" disabled>Secondary disabled</button>
-	<button type="button" class="btn btn-link text-info">Info</button>
-	<button type="button" class="btn btn-link text-info" disabled>Info disabled</button>
-	<!-- buttons link normal end -->
-	<!-- buttons link normal with icon-left start -->
-	<h3 class="mt-4 ">Buttons large links icon left</h3>
-	<button type="button" class="btn btn-link ic-chevron-left">Secondary</button>
-	<button type="button" class="btn btn-link ic-chevron-left" disabled>Secondary
-		disabled</button>
-	<button type="button" class="btn btn-link text-info ic-chevron-left">Info</button>
-	<button type="button" class="btn btn-link text-info ic-chevron-left" disabled>Info disabled</button>
-	<!-- buttons link normal with icon-left end -->
-	<!-- buttons link normal with icon-left start -->
-	<h3 class="mt-4 ">Buttons large links icon right</h3>
-	<button type="button" class="btn btn-link ic-right ic-chevron-right">Secondary</button>
-	<button type="button" class="btn btn-link ic-right ic-chevron-right" disabled>Secondary
-		disabled</button>
-	<button type="button" class="btn btn-link text-info ic-right ic-chevron-right">Info</button>
-	<button type="button" class="btn btn-link text-info ic-right ic-chevron-right" disabled>Info
-		disabled</button>
-	<!-- buttons link normal with icon-left end -->
-	<!-- =====================================small=============== -->
-	<!-- buttons link small start -->
-	<h3 class="mt-4">Buttons small links</h3>
-	<div>
-		<button type="button" class="btn btn-link btn-sm">Secondary</button>
-		<button type="button" class="btn btn-link btn-sm" disabled>Secondary disabled</button>
-		<button type="button" class="btn btn-link text-info btn-sm">Info</button>
-		<button type="button" class="btn btn-link text-info btn-sm" disabled>Info disabled</button>
-	</div>
-	<!-- buttons link small end -->
-	<!-- buttons link small with icon-right start -->
-	<h3 class="mt-4">Buttons small links icon right</h3>
-	<div>
-		<button type="button" class="btn btn-link btn-sm ic-right ic-chevron-right">Secondary</button>
-		<button type="button" class="btn btn-link btn-sm ic-right ic-chevron-right" disabled>Secondary
-			disabled</button>
-		<button type="button" class="btn btn-link text-info btn-sm ic-right ic-chevron-right">Info</button>
-		<button type="button" class="btn btn-link text-info btn-sm ic-right ic-chevron-right" disabled>Info
-			disabled</button>
-	</div>
-	<!-- buttons link small with icon-right end -->
-	<!-- buttons link small with icon-left start -->
-	<h3 class="mt-4">Buttons small links icon left</h3>
-	<div>
-		<button type="button" class="btn btn-link btn-sm ic-chevron-left">Secondary</button>
-		<button type="button" class="btn btn-link btn-sm ic-chevron-left" disabled>Secondary
-			disabled</button>
-		<button type="button" class="btn btn-link text-info btn-sm ic-chevron-left">Info</button>
-		<button type="button" class="btn btn-link text-info btn-sm ic-chevron-left" disabled>Info
-			disabled</button>
-	</div>
-	<!-- buttons link small with icon-left end -->
+	{% for item in data.btnsLinksComponents %}
+		{{ btns(item) }}
+	{% endfor %}
+	<!-- buttons size -->
+	<h3 class="mt-4">Buttons size</h3>
+	{% for item in data.btnsSizeComponents %}
+		{{ btns(item) }}
+	{% endfor %}
 	<!-- button round -->
 	<h3 class="mt-4">Button round</h3>
-	<button type="button" class="btn-round ic-camera-plus"></button>
+	{{ btnRound(data.btnsRoundComponents) }}
 	<!-- button custom -->
 	<h3 class="mt-4">Button custon</h3>
 	<button type="button" class="btn btn-custom">
@@ -157,18 +56,10 @@
 			<button type="button" class="btn btn-light btn-map ic-location"></button>
 		</div>
 	</div>
+
 	<!-- buttons Pay -->
 	<h3 class="mt-4 ">Buttons Pay</h3>
-	<button class="btn-pay apple-white">
-		<img src="img/icons/apple-black.svg" width="60" height="28" alt="icon apple Pay">
-	</button>
-	<button class="btn-pay apple-black">
-		<img src="img/icons/apple-white.svg" width="60" height="28" alt="icon apple Pay">
-	</button>
-	<button class="btn-pay google-white">
-		<img src="img/icons/google-gray.svg" width="60" height="28" alt="icon apple Pay">
-	</button>
-	<button class="btn-pay google-black">
-		<img src="img/icons/google-white.svg" width="60" height="28" alt="icon apple Pay">
-	</button>
+	{% for item in data.btnsPayComponents %}
+		{{ btnPay(item) }}
+	{% endfor %}
 </section>

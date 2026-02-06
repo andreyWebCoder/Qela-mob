@@ -1,0 +1,39 @@
+{% macro btns(props) %}
+	{% set tag = "button" if props.button else 
+		"a" %}
+
+	<{{ tag }} 
+		{% if props.id %}
+			id="{{props.id}}"
+		{% endif %}
+		{% if not props.button %}href="{{ props.url or '#' }}"{% endif %}
+		{% if props.button %}type="button"{% endif %}
+		class="btn{{' btn-' + props.type if props.type}}{{' ' + props.classes if props.classes}}{{" disabled" if props.disabled and not props.button}}"
+		{{ "disabled" if props.disabled and props.button}} 
+		{{ props.modal | safe if props.modal }}
+	>
+
+		{{ props.text }}
+		{% if props.counter %}
+			<span class="qela-counter position-absolute bottom-50 start-100 translate-middle">
+				{{ props.counter }}
+			</span>
+		{% endif %}
+	</{{ tag }}>
+{% endmacro %}
+
+{# {% set btnsOnlyIconComponents = [
+	{
+		button: true,
+		type: "primary",
+		classes: "ic-chevron-left",
+		text: "",
+		disabled: false
+	},{
+		button: true,
+		type: "primary",
+		classes: "btn-sm ic-chevron-right",
+		text: "",
+		disabled: false
+	}
+] %} #}

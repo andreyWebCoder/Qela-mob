@@ -37,6 +37,11 @@
 			--bs-btn-hover-bg: var(--bs-ql-success-100) !important;
 			--bs-btn-hover-border-color: var(--bs-ql-success-100) !important;
 		}
+		&:disabled {
+			--bs-btn-disabled-color: var(--bs-success) !important;
+			--bs-btn-disabled-bg: var(--bs-ql-success-100) !important;
+			--bs-btn-disabled-border-color: var(--bs-ql-success-100) !important;
+		}
 	}
 	&.active--filter {
 		position: relative;
