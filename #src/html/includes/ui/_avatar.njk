@@ -1,0 +1,38 @@
+{% macro avatar(props) %}
+	{% set tag = props.tag | default("span") %}
+	<{{ tag }}
+		{% if tag == 'a' %}
+			href="{{ props.url or '#' }}"
+        {% endif %}
+		class="qela-avatar{{' qela-ibg' if props.src or props.name}}{{' ' + props.online if props.online}}{{' ' + props.class if props.class}}" 
+		style="--img-size: {{ props.size }}px">
+		{% if props.src %}
+			<img src="{{ props.src }}" alt="{{ props.alt }}"/>
+		{% elif props.name %}
+			{% if props.fs == 'lg' %}
+				{{ props.name }}
+			{% elif props.fs == 'md' %}
+				<small>{{ props.name }}</small>
+			{% elif props.fs == 'sm' %}
+				<small>
+					<small>{{ props.name }}</small>
+				</small>
+			{% endif %}
+		{% else %}
+			<span class="ic-img-plus text-info-500"></span>
+		{% endif %}
+	</{{ tag }}>
+{% endmacro %}
+
+{# {% set avatarsComponent = [
+	{
+		tag: 'a',
+		online: false,
+		size: 100,
+		fs: 'lg',
+		name: '',
+		src: 'img/type-logo.svg',
+		alt: 'type-logo',
+		class: ''
+	}
+] %} #}

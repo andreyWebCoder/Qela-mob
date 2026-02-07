@@ -44,26 +44,23 @@
 			background-color: var(--bs-success);
 			border-radius: 50%;
 			border: 1px solid var(--bs-white);
+			top: calc(50% + 35%);
+			left: calc(50% + 35%);
+			transform: translate(-50%, -50%);
 		}
 	}
+
 	&.online {
 		&::before {
 			width: 13px;
 			height: 13px;
-			right: 8px;
-			bottom: 8px;
 		}
 	}
 	&.online-sm {
 		&::before {
 			width: 10px;
 			height: 10px;
-			right: 1px;
-			bottom: 1px;
 		}
-	}
-	&.info-400 {
-		border-color: var(--bs-ql-info-400);
 	}
 }
 .qela-qr {
