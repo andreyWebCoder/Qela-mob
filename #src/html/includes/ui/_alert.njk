@@ -11,9 +11,13 @@
 				<i class="{{ props.ic }}"></i>
 				<div class="flex-grow-1 d-flex flex-column gap-2">
 					<div class="text-black">{{ props.message }}</div>
-					<a href="#" class="{{ props.link.class }} align-self-end">{{ props.link.text }}</a>
+					{% if props.link %}
+						<a href="#" class="{{ props.link.class }} align-self-end">{{ props.link.text }}</a>
+					{% endif %}
 				</div>
-				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				{% if props.isBtnClose %}
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				{% endif %}
 			</div>
 		{% endif %}
 	</div>
