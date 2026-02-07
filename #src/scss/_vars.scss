@@ -374,6 +374,19 @@ $modal-backdrop-bg: var(--bs-black);
 $modal-backdrop-opacity: 0.5;
 $modal-sm: 270px;
 // scss-docs-end modal-variables
+// scss-docs-start close-variables
+$btn-close-width: 1em;
+$btn-close-height: $btn-close-width;
+$btn-close-padding-x: 0;
+$btn-close-padding-y: 0;
+$btn-close-color: var(--bs-black);
+$btn-close-bg: none;
+$btn-close-focus-shadow: none;
+$btn-close-opacity: 1;
+$btn-close-hover-opacity: 1;
+$btn-close-focus-opacity: 1;
+$btn-close-disabled-opacity: 0.5;
+// scss-docs-end close-variables
 // offcanvas
 $offcanvas-padding-y: $modal-inner-padding;
 $offcanvas-padding-x: $modal-inner-padding;

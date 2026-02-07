@@ -1,53 +1,38 @@
 .qela-alert {
 	&.alert {
-		position: relative;
 		i {
-			// position: absolute;
-			// left: 1rem;
-			// top: 1em;
 			&.ic-large {
-				position: static;
-
 				&::before {
 					font-size: rem(38);
 				}
 			}
 		}
 	}
-
-	.btn-close {
-		// position: absolute;
-		// top: 16px;
-		// right: 16px;
-		opacity: 1;
-		border-radius: 0;
-		padding: rem(4);
-
-		&:focus {
-			box-shadow: none;
-		}
-	}
-
 	&.alert-secondary {
 		--bs-alert-bg: var(--bs-ql-secondary-100);
-		--bs-alert-border-color: var(--bs-ql-secondary-400);
+		--bs-alert-border-color: var(--bs-secondary);
+		--bs-alert-color: var(--bs-ql-secondary-700);
 	}
 	&.alert-danger {
 		--bs-alert-bg: var(--bs-ql-danger-100);
-		--bs-alert-border-color: var(--bs-ql-danger-400);
+		--bs-alert-border-color: var(--bs-danger);
+		--bs-alert-color: var(--bs-danger);
 	}
 
 	&.alert-warning {
 		--bs-alert-bg: var(--bs-ql-warning-100);
-		--bs-alert-border-color: var(--bs-ql-warning-400);
+		--bs-alert-border-color: var(--bs-warning);
+		--bs-alert-color: var(--bs-ql-warning-600);
 	}
 
 	&.alert-info {
-		--bs-alert-bg: var(--bs-white);
-		--bs-alert-border-color: var(--bs-ql-info-400);
+		--bs-alert-bg: var(--bs-ql-info-100);
+		--bs-alert-border-color: var(--bs-info);
+		--bs-alert-color: var(--bs-ql-info-600);
 	}
 	&.alert-success {
 		--bs-alert-bg: #{var(--bs-ql-success-100)};
-		--bs-alert-border-color: var(--bs-ql-success-400);
+		--bs-alert-border-color: var(--bs-success);
+		--bs-alert-color: var(--bs-ql-success-700);
 	}
 }
