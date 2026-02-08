@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ua">
 	{% set links = {
-		indexCss: '<link rel="stylesheet" href="filesIndex/index.css">'
+		indexCss: '<link rel="stylesheet" href="demo-assets/index.css">'
 	} %}
 	{% set title = "Components" %}
 	{% include "_head.njk" %}
 	<body class="theme--strichka">
-		<script src="filesIndex/indexhead.js"></script>
+		<script src="demo-assets/indexhead.js"></script>
 		<div id="app" v-cloak>
 			<header class="p-1 h-auto ">
 				<div class="container">
@@ -241,7 +241,7 @@
 			// console.dir(app);
 			app.mount("#app");
 		</script>
-		<script src="filesIndex/index.js"></script>
+		<script src="demo-assets/index.js"></script>
 		{% include "_js.njk" %}
 	</body>
 

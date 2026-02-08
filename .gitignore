@@ -1,6 +1,7 @@
 node_modules/
-Qela-mob/components
-jspm_packages/
+/*src/videos
 howtouse.txt
+/*src/json
+.vscode
 package-lock.json
-.gitignore
+version.json
