@@ -27,7 +27,7 @@ let ttf2woff = require('gulp-ttf2woff');
 let ttf2woff2 = require('gulp-ttf2woff2');
 
 let project_name = require("path").basename(__dirname);
-let src_folder = "src";
+let src_folder = "_src";
 const prettyHtml = require('gulp-pretty-html');
 let nunjucksRender = require('gulp-nunjucks-render');
 let progeny = require('gulp-progeny');
