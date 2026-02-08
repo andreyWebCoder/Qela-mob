@@ -72,7 +72,7 @@ Qela-mob/
 │   ├── videos/         # Видео файлы
 │   ├── index.njk       # Entry page (GitHub Pages demo)
 │   └──	[name].njk 		# Остальные страницы
-├── Qela/               # Готовая сборка 
+├── Qela-mob/           # Готовая сборка 
 ├── .gitignore        
 ├── gulpfile.js         
 └── package.json       	
