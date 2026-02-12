@@ -1,62 +1,11 @@
+{% import "html/data/nav-tab/_tabData.njk" as data %}
+{% from "html/includes/tab/_tab-bar.njk" import tabBar %}
+{% from "html/includes/tab/_tabs.njk" import tabs %}
 <section class="d-grid gap-3">
 	<h2 class="h1 mt-4">Tabs</h2>
 	<h3>Tab-bar</h3>
-	<ul class="nav nav-pills nav-fill qela-nav">
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<i class="ic-home icon"></i>
-				<i class="ic-home-filled icon-filled"></i>
-				Home
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<i class="ic-user icon"></i>
-				<i class="ic-user-filled icon-filled"></i>
-				Profile
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<i class="ic-diamond icon"></i>
-				<i class="ic-diamond-filled icon-filled"></i>
-				Quests
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">
-				<i class="ic-voting icon"></i>
-				<i class="ic-voting-filled icon-filled"></i>
-				Voting
-			</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" href="#">
-				<!-- <i class="ic-qela icon"></i>
-				<i class="ic-qela-filled icon-filled"></i> -->
-				<span class="qela-avatar qela-ibg" style="--img-size: 28px;">
-					<img src="img/type-logo.svg" alt="#">
-				</span>
-				Organization
-			</a>
-		</li>
-	</ul>
+	{{tabBar(data.tabBarComponetData, "Головна")}}
 	<!-- ====== -->
 	<h3>Tabs</h3>
-	{% set tabItems = [
-		{
-			text: 'Головна',
-			ariaCurrent: "home",
-			active: true
-		}, {
-			text: 'Поточні',
-			ariaCurrent: "current",
-			active: false
-		}, {
-			text: 'Історія',
-			ariaCurrent: "histori",
-			active: false
-		}
-	] %}
-	{% include "html/includes/tab/_tabs.njk" %}
+	{{tabs(data.tabComponetData)}}
 </section>

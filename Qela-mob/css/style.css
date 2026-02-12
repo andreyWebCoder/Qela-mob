@@ -15446,6 +15446,21 @@ input[type=number] {
 .qela-tab .nav-link.active {
   border-color: var(--bs-primary);
 }
+.qela-tab .nav-link.indicator span {
+  display: inline-block;
+  position: relative;
+}
+.qela-tab .nav-link.indicator span::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  transform: translateY(50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+}
 
 .qela-nav {
   background-color: var(--bs-white);

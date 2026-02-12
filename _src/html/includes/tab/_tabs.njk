@@ -1,12 +1,14 @@
-<ul class="nav nav-pills nav-fill qela-tab">
-	{% for item in tabItems %}
-		<li class="nav-item">
-			<button 
-			type="button" 
-			class="nav-link{{ ' ' + 'active' if item.active }}" 
-			{% if item.active %} aria-current="{{item.ariaCurrent}}"{% endif %}>
-				{{item.text}}
-			</button>
-		</li>
-	{% endfor %}
-</ul>
+{% macro tabs(props) %}
+	<ul class="nav nav-pills nav-fill qela-tab">
+		{% for item in props %}
+			<li class="nav-item">
+				<button 
+					type="button" 
+					class="nav-link{{ ' ' + 'active' if item.active }}{{ ' ' + 'indicator' if item.indicator }}" 
+					{% if item.active %} aria-current="{{item.ariaCurrent}}"{% endif %}>
+					<span>{{item.text}}</span>
+				</button>
+			</li>
+		{% endfor %}
+	</ul>
+{% endmacro %}

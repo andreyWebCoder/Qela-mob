@@ -1,3 +1,5 @@
+{% import "html/data/nav-tab/_tabData.njk" as data %}
+{% from "html/includes/tab/_tabs.njk" import tabs %}
 <!DOCTYPE html>
 <html lang="ua">
 
@@ -14,17 +16,7 @@
 					Voting
 				</span>
 				</nav>
-				<ul class="nav nav-pills nav-fill shadow-none qela-tab ">
-					<li class="nav-item">
-						<a class="nav-link bg-transparent active" aria-current="page" href="#">General</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link bg-transparent" href="#">Local</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link bg-transparent" href="#">History</a>
-					</li>
-				</ul>
+				{{tabs(data.tabComponetData)}}
 			</div>
 			<!--content-->
 			<div class="flex-grow-1">

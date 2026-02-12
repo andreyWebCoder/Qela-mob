@@ -1,55 +1,19 @@
-<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
-	{% set navItems = [
-		{	text:"Головна",
-			icon:"home",
-			iconFilled:"home-filled",
-			linkActive: false,
-			type:"icon"
-		},
-		{	text:"Профіль",
-			icon:"user",
-			iconFilled:"user-filled",
-			linkActive: false,
-			type:"icon"
-		},
-		{	text:"Квести",
-			icon:"diamond",
-			iconFilled:"diamond-filled",
-			linkActive: false,
-			type:"icon"
-		},
-		{	text:"Голосуй",
-			icon:"voting",
-			iconFilled:"voting-filled",
-			linkActive: false,
-			type:"icon"
-		},
-		{	text:"Магазин",
-			icon:"shop",
-			iconFilled:"shop-filled",
-			linkActive: shop == 'active',
-			type:"icon"
-		},
-		{	text:"Магазин",
-			icon:false,
-			iconFilled:false,
-			linkActive: false,
-			type:"img"
-		}
-	]%}
-	{% for item in navItems %}
-		<li class="nav-item">
-			<a class="nav-link {{ 'active' if item.linkActive }}" href="#">
-				{% if item.type == "icon" %}
-					<i class="ic-{{item.icon}} icon"></i>
-					<i class="ic-{{item.iconFilled}} icon-filled"></i>
-				{% elif item.type == "img" %}
-					<span href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
-						<img src="img/avatar.jpg" alt="#">
-					</span>
-				{% endif %}
-				{{item.text}}
-			</a>
-		</li>
-	{% endfor %}
-</ul>
+{% macro tabBar(props, isActive) %}
+	<ul class="nav nav-pills nav-fill qela-nav">
+		{% for item in props %}
+			<li class="nav-item">
+				<a class="nav-link {{ 'active' if item.text == isActive }}" href="#">
+					{% if item.type == "icon" %}
+						<i class="ic-{{item.icon}} icon"></i>
+						<i class="ic-{{item.iconFilled}} icon-filled"></i>
+					{% elif item.type == "img" %}
+						<span href="#" class="qela-avatar qela-ibg" style="--img-size: 30px">
+							<img src="img/type-logo.svg" alt="#">
+						</span>
+					{% endif %}
+					{{item.text}}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endmacro %}

@@ -1,7 +1,10 @@
+{% import "html/data/nav-tab/_tabData.njk" as data %}
+{% from "html/includes/tab/_tab-bar.njk" import tabBar %}
+{% from "html/includes/tab/_tabs.njk" import tabs %}
 <!DOCTYPE html>
 <html lang="ua">
 
-	{%- set title = "Discussions" -%}
+	{% set title = "Discussions" %}
 	{% include "_head.njk" %}
 
 	<body>
@@ -12,17 +15,10 @@
 					<button href="#" class="btn ic-chevron-left start-0 ms-3"></button>
 					<span class="h6 text-center">
 					Discussions
-				</span>
+					</span>
 					<button type="button" class="btn ic-dots end-0 me-3"></button>
 				</nav>
-				<ul class="nav nav-pills nav-fill shadow-none qela-tab ">
-					<li class="nav-item">
-						<a class="nav-link bg-transparent active" href="#">Organization</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link bg-transparent" href="#">My comments</a>
-					</li>
-				</ul>
+				{{tabs(data.tabDiscussionsData)}}
 			</div>
 			<!--content-->
 			<div class="qela-page d-flex flex-column">
@@ -69,50 +65,10 @@
 			</div>
 			<!--content-->
 			<div class="qela-bottom bg-white">
-				<ul class="nav nav-pills nav-fill qela-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<i class="ic-home icon"></i>
-							<i class="ic-home-filled icon-filled"></i>
-						Home
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<i class="ic-user icon"></i>
-							<i class="ic-user-filled icon-filled"></i>
-						Profile
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<i class="ic-diamond icon"></i>
-							<i class="ic-diamond-filled icon-filled"></i>
-						Quests
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<i class="ic-voting icon"></i>
-							<i class="ic-voting-filled icon-filled"></i>
-						Voting
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="#">
-							<!-- <i class="ic-qela icon"></i>
-						<i class="ic-qela-filled icon-filled"></i> -->
-							<span class="qela-avatar qela-ibg" style="--img-size: 28px;">
-								<img src="img/type-logo.svg" alt="#">
-							</span>
-						Organization
-					</a>
-					</li>
-				</ul>
+				{{tabBar(data.tabBarComponetData, "Організація")}}
 			</div>
 		</main>
 		<!-- =========================== -->
-		{% include "_js.njk" %}
 		{% include "_js.njk" %}
 	</body>
 

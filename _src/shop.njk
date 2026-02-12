@@ -1,3 +1,5 @@
+{% import "html/data/nav-tab/_tabData.njk" as data %}
+{% from "html/includes/tab/_tab-bar.njk" import tabBar %}
 <!DOCTYPE html>
 <html lang="ua">
 
@@ -51,9 +53,7 @@
 			</div>
 			<!--content-->
 			<div class="qela-bottom bg-white">
-				{% set borderClass = "border-top"%}
-				{% set shop = "active" %}
-				{% include "html/includes/tab/_tab-bar.njk" %}
+				{{tabBar(data.tabBarComponetData, "Магазин")}}
 			</div>
 		</main>
 		<!-- =========================== -->

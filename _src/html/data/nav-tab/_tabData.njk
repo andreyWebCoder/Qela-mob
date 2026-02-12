@@ -1,0 +1,61 @@
+{# Tab Componet #}
+{% set tabComponetData = [
+	{
+		text: 'Головна',
+		ariaCurrent: "home",
+		active: true,
+		indicator: true
+	}, {
+		text: 'Поточні',
+		ariaCurrent: "current",
+		active: false
+	}, {
+		text: 'Історія',
+		ariaCurrent: "histori",
+		active: false
+	}
+] %}
+{% set tabDiscussionsData = [
+	{
+		text: 'Organization',
+		ariaCurrent: "home",
+		active: true
+	}, {
+		text: 'My comments',
+		ariaCurrent: "current",
+		active: false
+	}
+] %}
+{# Nav-tab Componet #}
+{% set tabBarComponetData = [
+		{	text:"Головна",
+			icon:"home",
+			iconFilled:"home-filled",
+			type:"icon"
+		},
+		{	text:"Профіль",
+			icon:"user",
+			iconFilled:"user-filled",
+			type:"icon"
+		},
+		{	text:"Квести",
+			icon:"diamond",
+			iconFilled:"diamond-filled",
+			type:"icon"
+		},
+		{	text:"Голосуй",
+			icon:"voting",
+			iconFilled:"voting-filled",
+			type:"icon"
+		},
+		{	text:"Магазин",
+			icon:"shop",
+			iconFilled:"shop-filled",
+			type:"icon"
+		},
+		{	text:"Організація",
+			icon:false,
+			iconFilled:false,
+			type:"img"
+		}
+] %}

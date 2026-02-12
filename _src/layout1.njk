@@ -1,3 +1,6 @@
+{% import "html/data/nav-tab/_tabData.njk" as data %}
+{% from "html/includes/tab/_tab-bar.njk" import tabBar %}
+{% from "html/includes/tab/_tabs.njk" import tabs %}
 <!DOCTYPE html>
 <html lang="ua">
 
@@ -14,17 +17,7 @@
 					Voting
 				</span>
 				</nav>
-				<ul class="nav nav-pills nav-fill shadow-none qela-tab ">
-					<li class="nav-item">
-						<a class="nav-link bg-transparent active" aria-current="page" href="#">General</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link bg-transparent" href="#">Local</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link bg-transparent" href="#">History</a>
-					</li>
-				</ul>
+				{{tabs(data.tabComponetData)}}
 			</div>
 			<!--content-->
 			<div class="flex-grow-1">
@@ -51,43 +44,7 @@
 			</div>
 			<!--content-->
 			<div class="qela-bottom bg-white">
-				<ul class="nav nav-pills nav-fill bg-transparent shadow-none qela-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<span class="ic-home icon"></span>
-							<span class="ic-home-filled-28 icon-filled"></span>
-						Home
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<span class="ic-profile icon"></span>
-							<span class="ic-user-filled-28 icon-filled"></span>
-						Profile
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<span class="ic-diamond-28 icon"></span>
-							<span class="ic-diamond-filled-28 icon-filled"></span>
-						Quests
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="#">
-							<span class="ic-voting icon"></span>
-							<span class="ic-voting-filled-28 icon-filled"></span>
-						Voting
-					</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<span class="ic-qela icon"></span>
-							<span class="ic-qela-filled-28 icon-filled"></span>
-						Organization
-					</a>
-					</li>
-				</ul>
+				{{tabBar(data.tabBarComponetData, "Головна")}}
 			</div>
 		</main>
 		<!-- =========================== -->
