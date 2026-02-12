@@ -15924,6 +15924,11 @@ input[type=number] {
   color: var(--ql-talent-color);
 }
 
+.qela-alert.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
 .qela-alert.alert i.ic-large::before {
   font-size: 2.375rem;
 }

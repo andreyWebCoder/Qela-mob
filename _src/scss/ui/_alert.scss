@@ -1,5 +1,8 @@
 .qela-alert {
 	&.alert {
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
 		i {
 			&.ic-large {
 				&::before {

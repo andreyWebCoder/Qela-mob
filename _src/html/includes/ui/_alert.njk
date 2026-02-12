@@ -1,24 +1,22 @@
 {% macro alert(props) %}
 	<div class="alert alert-{{ props.type }} qela-alert fade show" role="alert">
 		{% if props.type == 'secondary' %}
-			<div class="d-flex flex-column align-items-center gap-2">
+			<div class="d-flex flex-column align-items-center flex-grow-1 gap-2">
 				<i class="ic-success ic-large text-secondary"></i>
 				<div class="mb-2">{{ props.message }}</div>
 				<a href="#">{{ props.link.text }}</a>
 			</div>
 		{% else %}
-			<div class="d-flex align-items-start gap-2">
-				<i class="{{ props.ic }}"></i>
-				<div class="flex-grow-1 d-flex flex-column gap-2">
-					<div class="text-black">{{ props.message }}</div>
-					{% if props.link %}
-						<a href="#" class="{{ props.link.class }} align-self-end">{{ props.link.text }}</a>
-					{% endif %}
-				</div>
-				{% if props.isBtnClose %}
-					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			<i class="{{ props.ic }}"></i>
+			<div class="flex-grow-1 d-flex flex-column gap-2">
+				<div class="text-black">{{ props.message }}</div>
+				{% if props.link %}
+					<a href="#" class="{{ props.link.class }} align-self-end">{{ props.link.text }}</a>
 				{% endif %}
 			</div>
+			{% if props.isBtnClose %}
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			{% endif %}
 		{% endif %}
 	</div>
 {% endmacro %}
