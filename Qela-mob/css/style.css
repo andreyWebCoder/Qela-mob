@@ -16311,7 +16311,7 @@ input[type=number] {
   gap: 0.5rem;
 }
 .qela-list-leaderboard .list-group-item {
-  --bs-list-group-border-color: var(--bs-ql-info-100);
+  --bs-list-group-border-color: transparent;
   box-shadow: none;
   border-top-width: 1px;
   padding: 0;
