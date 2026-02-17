@@ -21,7 +21,7 @@
 			border-color: var(--bs-primary);
 		}
 		&.indicator {
-			span {
+			> span {
 				display: inline-block;
 				position: relative;
 				&::before {
