@@ -90,12 +90,15 @@ $utilities: map-merge(
 // Icons font
 @import "icons";
 
-// Custom globall styles (qela-)
+// Custom globall styles
 @import "globall";
 
 //<Include files UI styles and forms>
 @import "forms";
 @import "ui";
+
+//<Include files animation styles and forms>
+@import "animation/animation";
 
 //<Include files styles components>
 
