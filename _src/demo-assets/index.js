@@ -1,31 +1,29 @@
 // < !--Search -->
-document
-	.querySelector("#search-nav")
-	.oninput = function () {
-		let val = this
-			.value
-			.trim();
-		let elasticItems = document.querySelectorAll(".--elastic li");
-		if (val != "") {
-			elasticItems.forEach(function (elem) {
-				if (elem.innerText.search(val) == -1) {
-					elem
-						.classList
-						.add("--hide");
-				} else {
-					elem
-						.classList
-						.remove("--hide");
-				}
-			});
-		} else {
-			elasticItems.forEach(function (elem) {
+document.querySelector("#search-nav").oninput = function () {
+	let val = this
+		.value
+		.trim();
+	let elasticItems = document.querySelectorAll(".--elastic li");
+	if (val != "") {
+		elasticItems.forEach(function (elem) {
+			if (elem.innerText.search(val) == -1) {
+				elem
+					.classList
+					.add("--hide");
+			} else {
 				elem
 					.classList
 					.remove("--hide");
-			});
-		}
-	};
+			}
+		});
+	} else {
+		elasticItems.forEach(function (elem) {
+			elem
+				.classList
+				.remove("--hide");
+		});
+	}
+};
 // ===============================================
 let togButton = document.querySelector("#toggle-bg");
 togButton.addEventListener("click", (event) => {
@@ -39,9 +37,7 @@ togButton.addEventListener("click", (event) => {
 		aside.style.willChange = 'background-color';
 	}
 
-	body
-		.classList
-		.toggle('night-theme');
+	body.classList.toggle('night-theme');
 	if (localStorage.getItem("theme") === "night-theme") {
 		localStorage.removeItem("theme");
 	} else {
