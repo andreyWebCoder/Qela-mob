@@ -14191,9 +14191,6 @@ a:hover {
   justify-content: center;
   flex-wrap: nowrap;
 }
-.qela-username > div {
-  display: block;
-}
 .qela-username[class=ic-],
 .qela-username [class*=ic-] {
   color: var(--bs-secondary);

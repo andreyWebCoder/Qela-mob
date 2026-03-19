@@ -164,9 +164,9 @@ a {
 	justify-content: center;
 	flex-wrap: nowrap;
 
-	& > div {
-		display: block;
-	}
+	// & > div {
+	// 	display: block;
+	// }
 
 	&[class="ic-"],
 	[class*="ic-"] {
