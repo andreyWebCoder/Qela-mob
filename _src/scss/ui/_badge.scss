@@ -22,6 +22,14 @@
 			padding: rem(2) rem(4);
 		}
 	}
+	&.number {
+		border: 1px solid var(--bs-ql-info-600);
+		color: var(--bs-ql-info-900);
+		border-radius: 4px;
+		font-size: rem(14);
+		padding-top: rem(3);
+		padding-bottom: rem(3);
+	}
 }
 .qela-list-num {
 	font-size: rem(18);
@@ -37,22 +45,29 @@
 	border-radius: 30px;
 }
 .qela-voice {
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
 	.body-voice {
+		display: flex;
+		align-items: center;
 		background-color: var(--bs-ql-primary-300);
 		border-radius: 10px;
 		line-height: 1;
 		position: relative;
-		padding: rem(4) rem(10) rem(4) rem(26);
-		img {
+		padding: rem(6) rem(10) rem(6) rem(26);
+		img,
+		i {
 			position: absolute;
-			left: 4px;
-			top: 50%;
-			transform: translateY(-50%);
+			left: 6px;
+			// top: 50%;
+			// transform: translateY(-50%);
+		}
+		img {
 			width: 20px;
 			height: 20px;
+		}
+		i {
+			&::before {
+				font-size: rem(16);
+			}
 		}
 	}
 }
@@ -69,8 +84,6 @@
 }
 
 .qela-awards {
-	// max-width: 75px;
-	// min-width: 75px;
 	position: relative;
 	display: inline-block;
 
@@ -87,6 +100,7 @@
 		left: calc(100% - 10px);
 		top: -6px;
 		min-width: 18px;
+		height: 18px;
 		border: 1px solid var(--ql-talent-border-color);
 		background-color: var(--bs-white);
 	}
@@ -104,6 +118,7 @@
 	&.orden {
 		.number {
 			color: var(--bs-ql-primary-900);
+			border: 1px solid var(--bs-ql-primary-200);
 		}
 		.qela-badge {
 			background-color: var(--bs-ql-primary-300);
@@ -111,14 +126,31 @@
 			.badge {
 				color: var(--bs-ql-info-900);
 			}
-			img {
+			img,
+			i {
 				position: absolute;
 				left: 4px;
 				top: 50%;
 				z-index: 1;
 				transform: translateY(-50%);
-				width: 16px;
-				height: 16px;
+			}
+			img {
+				width: 20px;
+				height: 20px;
+			}
+
+			i {
+				&::before {
+					font-size: 16px;
+				}
+			}
+		}
+		&.blue {
+			.qela-badge {
+				background-color: var(--bs-ql-secondary-200);
+			}
+			.number {
+				border-color: var(--bs-ql-secondary-200);
 			}
 		}
 	}

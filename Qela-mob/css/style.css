@@ -14024,6 +14024,10 @@ textarea.form-control-lg {
   content: "\e9cc";
 }
 
+.ic-coin:before {
+  content: "\e9cd";
+}
+
 main {
   --px-main: 1rem;
   max-width: 576px;
@@ -14744,32 +14748,30 @@ a:hover {
   display: flex;
   text-decoration: none;
   align-items: center;
-  color: var(--bs-secondary);
   background-color: var(--bs-ql-secondary-200);
   border-radius: 20px;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 .qela-btn-top:hover {
   color: var(--bs-secondary);
 }
-.qela-btn-top .left {
-  padding: 0.5625rem;
-  border-right: 1px solid var(--bs-body-bg);
-}
-.qela-btn-top .left::before {
-  font-size: 1.375rem;
-}
+.qela-btn-top .left,
 .qela-btn-top .right {
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 21px;
+  padding: 0.375rem 0.375rem 0.375rem 0.625rem;
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.375rem 0.375rem 0.375rem 0.625rem;
+}
+.qela-btn-top .left {
+  border-right: 1px solid var(--bs-body-bg);
 }
 .qela-btn-top .right img {
   width: 24px;
   display: block;
+}
+.qela-btn-top .right i {
+  color: var(--bs-secondary);
 }
 
 .btn-round {
@@ -15827,6 +15829,14 @@ input[type=number] {
   font-size: 0.75rem;
   padding: 0.125rem 0.25rem;
 }
+.qela-badge.number {
+  border: 1px solid var(--bs-ql-info-600);
+  color: var(--bs-ql-info-900);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  padding-top: 0.1875rem;
+  padding-bottom: 0.1875rem;
+}
 
 .qela-list-num {
   font-size: 1.125rem;
@@ -15843,19 +15853,25 @@ input[type=number] {
 }
 
 .qela-voice .body-voice {
+  display: flex;
+  align-items: center;
   background-color: var(--bs-ql-primary-300);
   border-radius: 10px;
   line-height: 1;
   position: relative;
-  padding: 0.25rem 0.625rem 0.25rem 1.625rem;
+  padding: 0.375rem 0.625rem 0.375rem 1.625rem;
+}
+.qela-voice .body-voice img,
+.qela-voice .body-voice i {
+  position: absolute;
+  left: 6px;
 }
 .qela-voice .body-voice img {
-  position: absolute;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
   width: 20px;
   height: 20px;
+}
+.qela-voice .body-voice i::before {
+  font-size: 1rem;
 }
 
 .qela-awards-list {
@@ -15887,6 +15903,7 @@ input[type=number] {
   left: calc(100% - 10px);
   top: -6px;
   min-width: 18px;
+  height: 18px;
   border: 1px solid var(--ql-talent-border-color);
   background-color: var(--bs-white);
 }
@@ -15903,6 +15920,7 @@ input[type=number] {
 }
 .qela-awards.orden .number {
   color: var(--bs-ql-primary-900);
+  border: 1px solid var(--bs-ql-primary-200);
 }
 .qela-awards.orden .qela-badge {
   background-color: var(--bs-ql-primary-300);
@@ -15911,14 +15929,26 @@ input[type=number] {
 .qela-awards.orden .qela-badge .badge {
   color: var(--bs-ql-info-900);
 }
-.qela-awards.orden .qela-badge img {
+.qela-awards.orden .qela-badge img,
+.qela-awards.orden .qela-badge i {
   position: absolute;
   left: 4px;
   top: 50%;
   z-index: 1;
   transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
+}
+.qela-awards.orden .qela-badge img {
+  width: 20px;
+  height: 20px;
+}
+.qela-awards.orden .qela-badge i::before {
+  font-size: 16px;
+}
+.qela-awards.orden.blue .qela-badge {
+  background-color: var(--bs-ql-secondary-200);
+}
+.qela-awards.orden.blue .number {
+  border-color: var(--bs-ql-secondary-200);
 }
 
 .qela-badge-talent {
@@ -16219,6 +16249,9 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+.qela-custom .list-group-item i::before {
+  font-size: 2rem;
 }
 
 .qela-icon {

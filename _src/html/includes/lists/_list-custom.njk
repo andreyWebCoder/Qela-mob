@@ -1,0 +1,24 @@
+{% macro listCustom(props) %}
+	<ul class="list-group qela-custom">
+		<li class="list-group-item p-0 d-flex">
+			<a href="#" class="d-flex gap-2 w-50 p-2 align-items-center">
+				{% if props.img %}
+					<img src="img/icons/orden-red.svg" width="48" height="48" alt=""/>
+				{% else %}
+					<i class="p-2 text-secondary ic-coin"></i>
+				{% endif %}
+
+				<div class="flex-grow-1">
+					<span class="h2 text-black fw-semibold">105</span>
+					<p class="m-0 text-info">
+						<small>{{props.text}}</small>
+					</p>
+				</div>
+				<div class="m-3 ic-right text-info ic-chevron-right"></div>
+			</a>
+			<button type="button" class="btn btn-secondary text-white w-50 {{props.icBtn}}">{{props.textBtn}}</button>
+		</li>
+	</ul>
+{% endmacro %}
+{# include #}
+{# {{listCustom({text:'Бали', textBtn:"Increase", icBtn:'ic-add', img:true})}} #}
