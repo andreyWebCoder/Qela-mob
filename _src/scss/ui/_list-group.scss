@@ -228,6 +228,13 @@
 		justify-content: center;
 		gap: 8px;
 	}
+	.list-group-item {
+		i {
+			&::before {
+				font-size: rem(32);
+			}
+		}
+	}
 }
 
 .qela-icon {

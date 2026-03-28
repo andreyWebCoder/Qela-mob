@@ -306,35 +306,34 @@
 	display: flex;
 	text-decoration: none;
 	align-items: center;
-	color: var(--bs-secondary);
 	background-color: var(--bs-ql-secondary-200);
 	border-radius: 20px;
+	font-size: rem(18);
+	font-weight: 500;
 
 	&:hover {
 		color: var(--bs-secondary);
 	}
 
-	.left {
-		padding: rem(9);
-		border-right: 1px solid var(--bs-body-bg);
-
-		&::before {
-			font-size: rem(22);
-		}
-	}
-
+	.left,
 	.right {
-		font-weight: 500;
-		font-size: rem(18);
-		line-height: 21px;
+		padding: rem(6) rem(6) rem(6) rem(10);
 		display: flex;
 		align-items: center;
 		gap: rem(4);
-		padding: rem(6) rem(6) rem(6) rem(10);
+	}
 
+	.left {
+		border-right: 1px solid var(--bs-body-bg);
+	}
+
+	.right {
 		img {
 			width: 24px;
 			display: block;
+		}
+		i {
+			color: var(--bs-secondary);
 		}
 	}
 }

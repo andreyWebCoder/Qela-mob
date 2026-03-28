@@ -1,5 +1,6 @@
 {% import "html/data/_listsData.njk" as data %}
 {% from "html/includes/lists/_list-description.njk" import listTitle %}
+{% from "html/includes/lists/_list-custom.njk" import listCustom %}
 <section class="d-grid gap-3">
 	<h2 class="mt-4 h1">Lists</h2>
 	<h3>List-items descriptions</h3>
@@ -175,21 +176,8 @@
 	</ul>
 	<!-- list-item custom -->
 	<h3>List-item custom</h3>
-	<ul class="list-group qela-custom">
-		<li class="list-group-item p-0 d-flex">
-			<a href="#" class="d-flex gap-2 w-50 p-2 align-items-center">
-				<img src="img/icons/orden-red.svg" width="48" height="48" alt=""/>
-				<div>
-					<span class="h2 text-black">105</span>
-					<p class="m-0 text-info">
-						<small>Vote weight</small>
-					</p>
-				</div>
-				<div class="m-3 ic-right text-info ic-chevron-right"></div>
-			</a>
-			<button type="button" class="btn btn-secondary text-white w-50 ic-add">Increase</button>
-		</li>
-	</ul>
+	{{listCustom({text:'Бали', textBtn:"Increase", icBtn:'ic-add', img:true})}}
+	{{listCustom({text:'Монети', textBtn:"Spend", icBtn:'ic-shop', img:false})}}
 	<!--  List-item notification -->
 	<h3>List-item notification</h3>
 	<ul class="list-group qela-notification">
