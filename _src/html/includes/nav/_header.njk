@@ -1,20 +1,25 @@
-<nav class="navbar bg-white qela-topbar">
-	<a class="navbar-brand p-0" href="#">
-		<img src="img/logo-strichka.svg">
-	</a>
-	<a href="#" class="qela-btn-top">
-		<div class="ic-add left"></div>
-		<div class="text-black right">
-			<span>150</span>
-			<img src="img/icons/orden-red.svg" alt="#"/>
+{% macro topBar(props) %}
+	<nav class="navbar bg-white qela-topbar">
+		<a class="navbar-brand p-0" href="#">
+			<img src="img/logo-strichka.svg">
+		</a>
+		<a href="#" class="qela-btn-top text-black">
+			<div class="left">
+				<img src="img/icons/orden-red.svg" alt="#"/>
+				<span>150</span>
+			</div>
+			<div class="d-flex right">
+				<i class="ic-coin"></i>
+				<span>150</span>
+			</div>
+		</a>
+		<div class="d-flex gap-3 ms-auto">
+			<button type="button" class="btn ic-message-circle">
+				<span class="qela-counter">1</span>
+			</button>
+			<button type="button" class="btn ic-bell">
+				<span class="qela-counter">2565</span>
+			</button>
 		</div>
-	</a>
-	<div class="d-flex gap-3 ms-auto">
-		<button type="button" class="btn ic-message-circle">
-			<span class="qela-counter">1</span>
-		</button>
-		<button type="button" class="btn ic-bell">
-			<span class="qela-counter">2565</span>
-		</button>
-	</div>
-</nav>
+	</nav>
+{% endmacro %}

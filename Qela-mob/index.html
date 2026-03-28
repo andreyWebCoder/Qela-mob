@@ -1594,15 +1594,30 @@
                             <li class="list-group-item p-0 d-flex">
                                 <a href="#" class="d-flex gap-2 w-50 p-2 align-items-center">
                                     <img src="img/icons/orden-red.svg" width="48" height="48" alt="" />
-                                    <div>
-                                        <span class="h2 text-black">105</span>
+                                    <div class="flex-grow-1">
+                                        <span class="h2 text-black fw-semibold">105</span>
                                         <p class="m-0 text-info">
-                                            <small>Vote weight</small>
+                                            <small>Бали</small>
                                         </p>
                                     </div>
                                     <div class="m-3 ic-right text-info ic-chevron-right"></div>
                                 </a>
                                 <button type="button" class="btn btn-secondary text-white w-50 ic-add">Increase</button>
+                            </li>
+                        </ul>
+                        <ul class="list-group qela-custom">
+                            <li class="list-group-item p-0 d-flex">
+                                <a href="#" class="d-flex gap-2 w-50 p-2 align-items-center">
+                                    <i class="p-2 text-secondary ic-coin"></i>
+                                    <div class="flex-grow-1">
+                                        <span class="h2 text-black fw-semibold">105</span>
+                                        <p class="m-0 text-info">
+                                            <small>Монети</small>
+                                        </p>
+                                    </div>
+                                    <div class="m-3 ic-right text-info ic-chevron-right"></div>
+                                </a>
+                                <button type="button" class="btn btn-secondary text-white w-50 ic-shop">Spend</button>
                             </li>
                         </ul>
                         <!--  List-item notification -->
@@ -1908,29 +1923,55 @@
                         <!-- Nav-bar -->
                         <h3>Nav-bar</h3>
                         <nav class="navbar bg-white qela-navbar">
-                            <span class="h6 text-center"> Campaigns </span>
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
                         </nav>
-                        <!-- Nav-bar icon left-->
                         <nav class="navbar bg-white qela-navbar">
-                            <a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
-                            <span class="h6 text-center"> Campaigns </span>
+                            <a class="navbar-brand start-0 p-0 ms-3" href="#"><img src="img/logo-strichka.svg"></a>
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
+                            <button type="button" class="btn ic-order-list me-3 end-0"></button>
                         </nav>
-                        <!-- Nav-bar icon left, button right-->
                         <nav class="navbar bg-white qela-navbar">
-                            <a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
-                            <span class="h6 text-center"> Campaigns </span>
+                            <button type="button" class="btn ic-chevron-left start-0 ms-3"></button>
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
+                            <button type="button" class="btn ic-order-list me-3 end-0"></button>
+                        </nav>
+                        <nav class="navbar bg-white qela-navbar">
+                            <button type="button" class="btn ic-chevron-left start-0 ms-3"></button>
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
+                        </nav>
+                        <nav class="navbar bg-white qela-navbar">
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
+                            <button type="button" class="btn ic-order-list me-3 end-0"></button>
+                        </nav>
+                        <nav class="navbar bg-white qela-navbar">
+                            <button type="button" class="btn ic-chevron-left start-0 ms-3"></button>
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
                             <a href="#" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
                         </nav>
-                        <!-- Nav-bar button right-->
                         <nav class="navbar bg-white qela-navbar">
-                            <span class="h6 text-center"> Campaigns </span>
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
                             <a href="#" class="btn btn-link btn-sm text-secondary end-0 me-3">Cancel</a>
                         </nav>
-                        <!-- Nav-bar icon left, button icon right-->
+                        <!-- Nav-bar + dropdown-->
                         <nav class="navbar bg-white qela-navbar">
-                            <a href="#" class="btn ic-chevron-left start-0 ms-3"></a>
-                            <span class="h6 text-center"> Campaigns </span>
-                            <!-- <button type="button" class="btn ic-dots end-0 me-3"></a> -->
+                            <button type="button" class="btn ic-chevron-left start-0 ms-3"></button>
+                            <span class="fw-bold text-center qela-clamp" style="--clamp-line: 2">
+			Campaigns
+		</span>
                             <div class="dropdown qela-dropdown end-0 me-3">
                                 <button class="btn ic-dots" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                                 <ul class="dropdown-menu dropdown-menu-end mt-3">
@@ -1947,13 +1988,16 @@
                         <h3 class="mt-5">Top bar</h3>
                         <nav class="navbar bg-white qela-topbar">
                             <a class="navbar-brand p-0" href="#">
-                                <img src="img/logo-sm.svg" />
+                                <img src="img/logo-strichka.svg">
                             </a>
-                            <a href="#" class="qela-btn-top">
-                                <div class="ic-add left"></div>
-                                <div class="text-black right">
-                                    <span>150</span>
+                            <a href="#" class="qela-btn-top text-black">
+                                <div class="left">
                                     <img src="img/icons/orden-red.svg" alt="#" />
+                                    <span>150</span>
+                                </div>
+                                <div class="d-flex right">
+                                    <i class="ic-coin"></i>
+                                    <span>150</span>
                                 </div>
                             </a>
                             <div class="d-flex gap-3 ms-auto">
@@ -2599,8 +2643,8 @@
                                     </div>
                                     <hr>
                                 </div>
-                                <div class="py-2">
-                                    <div class="qela-awards orden me-3">
+                                <div class="py-2 d-flex gap-4 flex-wrap">
+                                    <div class="qela-awards orden">
                                         <span class="number">+4</span>
                                         <span class="qela-badge badge small">
 						<span>Vote weight</span>
@@ -2612,6 +2656,14 @@
                                         <span class="qela-badge badge small">
 						<span>Fundraising</span></span>
                                     </div>
+                                    <div class="qela-awards orden blue">
+                                        <span class="number">+4</span>
+                                        <span class="qela-badge badge small">
+						<span>Монети</span>
+                                        <i class="ic-coin text-secondary"></i>
+                                        </span>
+                                    </div>
+                                    <span class="qela-badge badge small number">+7</span>
                                 </div>
                             </div>
                         </a>
@@ -2672,8 +2724,8 @@
                                     </div>
                                     <hr>
                                 </div>
-                                <div class="py-2">
-                                    <div class="qela-awards orden me-3">
+                                <div class="py-2 d-flex flex-wrap gap-4">
+                                    <div class="qela-awards orden">
                                         <span class="number">+4</span>
                                         <span class="qela-badge badge small">
 						<span>Vote weight</span>
@@ -2684,6 +2736,13 @@
                                         <span class="number">+2</span>
                                         <span class="qela-badge badge small">
 						<span>Fundraising</span></span>
+                                    </div>
+                                    <div class="qela-awards orden blue">
+                                        <span class="number">+4</span>
+                                        <span class="qela-badge badge small">
+						<span>Монети</span>
+                                        <i class="ic-coin text-secondary"></i>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="qela-action">
@@ -2747,8 +2806,8 @@
                                     </div>
                                     <hr>
                                 </div>
-                                <div class="py-2">
-                                    <div class="qela-awards orden me-3">
+                                <div class="py-2 d-flex flex-wrap gap-4">
+                                    <div class="qela-awards orden">
                                         <span class="number">+4</span>
                                         <span class="qela-badge badge small">
 						<span>Vote weight</span>
@@ -2758,7 +2817,13 @@
                                     <div class="qela-awards" style="--ql-talent-color: #921c14; --ql-talent-bg: #ffcccc; --ql-talent-border-color: #ffcccc;">
                                         <span class="number">+2</span>
                                         <span class="qela-badge badge small">
-						<span>Fundraising</span>
+						<span>Fundraising</span></span>
+                                    </div>
+                                    <div class="qela-awards orden blue">
+                                        <span class="number">+4</span>
+                                        <span class="qela-badge badge small">
+						<span>Монети</span>
+                                        <i class="ic-coin text-secondary"></i>
                                         </span>
                                     </div>
                                 </div>
@@ -2819,8 +2884,8 @@
                                     </div>
                                     <hr>
                                 </div>
-                                <div class="py-2">
-                                    <div class="qela-awards orden me-3">
+                                <div class="py-2 d-flex flex-wrap gap-4">
+                                    <div class="qela-awards orden">
                                         <span class="number">+4</span>
                                         <span class="qela-badge badge small">
 						<span>Vote weight</span>
@@ -2831,6 +2896,13 @@
                                         <span class="number">+2</span>
                                         <span class="qela-badge badge small">
 						<span>Fundraising</span></span>
+                                    </div>
+                                    <div class="qela-awards orden blue">
+                                        <span class="number">+4</span>
+                                        <span class="qela-badge badge small">
+						<span>Монети</span>
+                                        <i class="ic-coin text-secondary"></i>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="qela-action">
@@ -2890,8 +2962,8 @@
                                     </div>
                                     <hr>
                                 </div>
-                                <div class="py-2">
-                                    <div class="qela-awards orden me-3">
+                                <div class="py-2 d-flex flex-wrap gap-4">
+                                    <div class="qela-awards orden">
                                         <span class="number">+4</span>
                                         <span class="qela-badge badge small">
 						<span>Vote weight</span>
@@ -2902,6 +2974,13 @@
                                         <span class="number">+2</span>
                                         <span class="qela-badge badge small">
 						<span>Fundraising</span></span>
+                                    </div>
+                                    <div class="qela-awards orden blue">
+                                        <span class="number">+4</span>
+                                        <span class="qela-badge badge small">
+						<span>Монети</span>
+                                        <i class="ic-coin text-secondary"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -2957,8 +3036,8 @@
                                     </div>
                                     <hr>
                                 </div>
-                                <div class="py-2">
-                                    <div class="qela-awards orden me-3">
+                                <div class="py-2 d-flex flex-wrap gap-4">
+                                    <div class="qela-awards orden">
                                         <span class="number">+4</span>
                                         <span class="qela-badge badge small">
 						<span>Vote weight</span>
@@ -2969,6 +3048,13 @@
                                         <span class="number">+2</span>
                                         <span class="qela-badge badge small">
 						<span>Fundraising</span></span>
+                                    </div>
+                                    <div class="qela-awards orden blue">
+                                        <span class="number">+4</span>
+                                        <span class="qela-badge badge small">
+						<span>Монети</span>
+                                        <i class="ic-coin text-secondary"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -3047,8 +3133,8 @@
                                                 </div>
                                                 <hr>
                                             </div>
-                                            <div class="py-2">
-                                                <div class="qela-awards orden me-3">
+                                            <div class="py-2 d-flex flex-wrap gap-4">
+                                                <div class="qela-awards orden">
                                                     <span class="number">+4</span>
                                                     <span class="qela-badge badge small">
 									<span>Vote weight</span>
@@ -3059,6 +3145,13 @@
                                                     <span class="number">+2</span>
                                                     <span class="qela-badge badge small">
 									<span>Fundraising</span></span>
+                                                </div>
+                                                <div class="qela-awards orden blue">
+                                                    <span class="number">+4</span>
+                                                    <span class="qela-badge badge small">
+									<span>Монети</span>
+                                                    <i class="ic-coin text-secondary"></i>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3118,8 +3211,8 @@
                                                 </div>
                                                 <hr>
                                             </div>
-                                            <div class="py-2">
-                                                <div class="qela-awards orden me-3">
+                                            <div class="py-2 d-flex flex-wrap gap-4">
+                                                <div class="qela-awards orden">
                                                     <span class="number">+4</span>
                                                     <span class="qela-badge badge small">
 									<span>Vote weight</span>
@@ -3130,6 +3223,13 @@
                                                     <span class="number">+2</span>
                                                     <span class="qela-badge badge small">
 									<span>Fundraising</span></span>
+                                                </div>
+                                                <div class="qela-awards orden blue">
+                                                    <span class="number">+4</span>
+                                                    <span class="qela-badge badge small">
+									<span>Монети</span>
+                                                    <i class="ic-coin text-secondary"></i>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -4018,14 +4118,23 @@
                         <div class="d-flex gap-3 py-2 align-items-center flex-wrap">
                             <div class="qela-awards" style="--ql-talent-color: #921c14; --ql-talent-bg: #ffcccc; --ql-talent-border-color: #ffcccc;">
                                 <span class="number">+2</span>
-                                <span class="qela-badge badge small"><span>Fundraising</span></span>
+                                <span class="qela-badge badge small">
+				<span>Fundraising</span></span>
                             </div>
                             <!-- ==== -->
                             <div class="qela-awards orden">
                                 <span class="number">+4</span>
                                 <span class="qela-badge badge small">
-				<span>Vote weight</span>
+				<span>Бали</span>
                                 <img src="img/icons/orden-red.svg" alt="orden-red" />
+                                </span>
+                            </div>
+                            <!-- ==== -->
+                            <div class="qela-awards orden blue">
+                                <span class="number">+4</span>
+                                <span class="qela-badge badge small">
+				<span>Монети</span>
+                                <i class="ic-coin text-secondary"></i>
                                 </span>
                             </div>
                             <!-- ===== -->
@@ -4035,6 +4144,20 @@
                                     <small>105</small>
                                 </div>
                             </div>
+                            <!-- ===== -->
+                            <div class="qela-voice">
+                                <div class="body-voice bg-secondary-200">
+                                    <i class="ic-coin text-secondary"></i>
+                                    <small>105</small>
+                                </div>
+                            </div>
+                            <!-- ===== -->
+                            <span class="qela-badge badge small number">
+			+7
+		</span>
+                            <!-- ===== -->
+                            <img src="img/icons/orden-red.svg" alt="orden-red" width="20" height="20" />
+                            <img src="img/icons/medal.svg" alt="orden-red" width="40" height="48" />
                         </div>
                         <h4> Badges awards large variant</h4>
                         <div class="d-flex gap-3 py-2 align-items-center flex-wrap">
